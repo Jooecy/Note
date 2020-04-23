@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "zh-cn"
-title = "My New Hugo Site"
+title = "XiaoXi Blog"
 
 theme = "hello-friend"
 paginate = 5
@@ -21,7 +21,7 @@ publishDir = "docs"
   showReadingTime = false
 
 [languages]
-  [languages.en]
+  [languages.zh]
     title = "Hello Friend"
     subtitle = "A simple theme for Hugo"
     keywords = ""
@@ -38,7 +38,7 @@ publishDir = "docs"
     # leave empty to disable, enter display text to enable
     # lastModDisplay = ""
 
-    [languages.en.params.logo]
+    [languages.zh.params.logo]
       logoText = "hello friend"
       logoHomeLink = "/"
     # or
@@ -46,12 +46,12 @@ publishDir = "docs"
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-    [languages.en.menu]
+    [languages.zh.menu]
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
-      [[languages.en.menu.main]]
+      [[languages.zh.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
