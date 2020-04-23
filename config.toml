@@ -1,5 +1,6 @@
 baseURL = "/"
-languageCode = "zh-cn"
+
+defaultContentLanguage = "zh"
 title = "XiaoXi Blog"
 
 theme = "hello-friend"
@@ -47,7 +48,7 @@ publishDir = "docs"
     # alt = "Your example logo alt text"
 
     [languages.zh.menu]
-      [[languages.en.menu.main]]
+      [[languages.zh.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
