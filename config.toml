@@ -22,8 +22,8 @@ publishDir = "docs"
 
 [languages]
   [languages.zh]
-    title = "Hello Friend"
-    subtitle = "A simple theme for Hugo"
+    title = "XiaoXi Blog"
+    subtitle = ""
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -39,7 +39,7 @@ publishDir = "docs"
     # lastModDisplay = ""
 
     [languages.zh.params.logo]
-      logoText = "hello friend"
+      logoText = "XiaoXi"
       logoHomeLink = "/"
     # or
     #
