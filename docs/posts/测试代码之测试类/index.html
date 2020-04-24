@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    
+      <title>测试代码之测试类 :: XiaoXi Blog</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="类的测试于函数的测试类似，但也有些许不同。
+测试类 先写出一个用于测试的类，并存储在diaocha.py中：
+class Dc(): &amp;#39;&amp;#39;&amp;#39;收集匿名调查问卷&amp;#39;&amp;#39;&amp;#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：
+import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test_oneres(self): &amp;#39;&amp;#39;&amp;#39;测试存储一个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#34;你是中国人嘛？&amp;#34; mydiaoche = Dc(question) mydiaoche.store_res(&amp;#39;是&amp;#39;) self.assertIn(&amp;#39;是&amp;#39;,mydiaoche.responses) def test_more_res(self): &amp;#39;&amp;#39;&amp;#39;测试存储多个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#39;你是中国人？&amp;#39; mydiaocha = Dc(question) huida = [&amp;#39;是&amp;#39;,&amp;#39;ok&amp;#39;,&amp;#39;你猜&amp;#39;] for i in huida: mydiaocha.store_res(i) for j in huida: self."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试代码之测试类"/>
+<meta name="twitter:description" content="类的测试于函数的测试类似，但也有些许不同。"/>
+
+
+
+<meta property="og:title" content="测试代码之测试类" />
+<meta property="og:description" content="类的测试于函数的测试类似，但也有些许不同。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" /><meta property="og:site_name" content="XiaoXi Blog" />
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">XiaoXi</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h1 class="post-title"><a href="/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/">测试代码之测试类</a></h1>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2020-04-24
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="/tags/assertin/">assertIn()</a>&nbsp;
+        
+          #<a href="/tags/setup/">setUp()</a>&nbsp;
+        
+          #<a href="/tags/unittest/">unittest</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      <p>类的测试于函数的测试类似，但也有些许不同。</p>
+<h3 id="测试类">测试类</h3>
+<p>先写出一个用于测试的类，并存储在<code>diaocha.py</code>中：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dc</span>():
+    <span style="color:#e6db74">&#39;&#39;&#39;收集匿名调查问卷&#39;&#39;&#39;</span>
+    <span style="color:#66d9ef">def</span> __init__(self,question):
+        self<span style="color:#f92672">.</span>question <span style="color:#f92672">=</span> question
+        self<span style="color:#f92672">.</span>responses <span style="color:#f92672">=</span> []
+    
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">printquestion</span>(self):
+        <span style="color:#960050;background-color:#1e0010">‘’‘打印问题’‘’</span>
+        <span style="color:#66d9ef">print</span>(self<span style="color:#f92672">.</span>question)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">store_res</span>(self,newres):
+        <span style="color:#960050;background-color:#1e0010">‘’‘存储答案’‘’</span>
+        self<span style="color:#f92672">.</span>responses<span style="color:#f92672">.</span>append(newres)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_results</span>(self):
+        <span style="color:#960050;background-color:#1e0010">‘’‘打印全部答案’‘’</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>responses:
+            <span style="color:#66d9ef">print</span>(i)
+
+
+</code></pre></div><p>接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> unittest
+<span style="color:#f92672">from</span> diaocha <span style="color:#f92672">import</span> Dc
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestDc</span>(unittest<span style="color:#f92672">.</span>TestCase):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_oneres</span>(self):
+        <span style="color:#e6db74">&#39;&#39;&#39;测试存储一个答案&#39;&#39;&#39;</span>
+        question <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;你是中国人嘛？&#34;</span>
+        mydiaoche <span style="color:#f92672">=</span> Dc(question)
+        mydiaoche<span style="color:#f92672">.</span>store_res(<span style="color:#e6db74">&#39;是&#39;</span>)
+        self<span style="color:#f92672">.</span>assertIn(<span style="color:#e6db74">&#39;是&#39;</span>,mydiaoche<span style="color:#f92672">.</span>responses)
+    
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_more_res</span>(self):
+        <span style="color:#e6db74">&#39;&#39;&#39;测试存储多个答案&#39;&#39;&#39;</span>
+        question <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;你是中国人？&#39;</span>
+        mydiaocha <span style="color:#f92672">=</span> Dc(question)
+        huida <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;是&#39;</span>,<span style="color:#e6db74">&#39;ok&#39;</span>,<span style="color:#e6db74">&#39;你猜&#39;</span>]
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> huida:
+            mydiaocha<span style="color:#f92672">.</span>store_res(i)
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> huida:
+            self<span style="color:#f92672">.</span>assertIn(j,mydiaocha<span style="color:#f92672">.</span>responses)
+
+
+unittest<span style="color:#f92672">.</span>main()
+
+</code></pre></div><p>使用断言assertIn判断一个item是不是在list中，结果如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">..</span>
+<span style="color:#f92672">----------------------------------------------------------------------</span>
+Ran <span style="color:#ae81ff">2</span> tests <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.002</span>s
+
+OK
+
+</code></pre></div><p>两个测试都通过了！</p>
+<h3 id="方法setup">方法setUp()</h3>
+<p>在上面两个测试中，每次我们都需要创建Dc的实例，每个方法中都需要创建答案，做了很多重复的工作。</p>
+<p>可以使用unittest.TestCase类包含的方法setUp()简化代码。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> unittest
+<span style="color:#f92672">from</span> diaocha <span style="color:#f92672">import</span> Dc
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestDc</span>(unittest<span style="color:#f92672">.</span>TestCase):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setUp</span>(self):
+        question <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;你是中国人吗？&#39;</span>
+        self<span style="color:#f92672">.</span>mydiaocha <span style="color:#f92672">=</span> Dc(question)
+        self<span style="color:#f92672">.</span>huida <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;是&#39;</span>,<span style="color:#e6db74">&#39;ok&#39;</span>,<span style="color:#e6db74">&#39;你猜&#39;</span>]
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_oneres</span>(self):
+        self<span style="color:#f92672">.</span>mydiaocha<span style="color:#f92672">.</span>store_res(self<span style="color:#f92672">.</span>huida[<span style="color:#ae81ff">0</span>])
+        self<span style="color:#f92672">.</span>assertIn(self<span style="color:#f92672">.</span>huida[<span style="color:#ae81ff">0</span>],self<span style="color:#f92672">.</span>mydiaocha<span style="color:#f92672">.</span>responses)
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_more_res</span>(self):
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>huida:
+            self<span style="color:#f92672">.</span>mydiaocha<span style="color:#f92672">.</span>store_res(i)
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>huida:
+            self<span style="color:#f92672">.</span>assertIn(j,self<span style="color:#f92672">.</span>mydiaocha<span style="color:#f92672">.</span>responses)
+unittest<span style="color:#f92672">.</span>main()
+
+</code></pre></div><p>如果TestCase中包含了方法setUp()，那么Python将先运行它，再运行test_打头的方法。
+我们在setUp()方法中，创建了Dc的实例和存储答案的列表，只不过它们都包含前缀self，也就是说，我们把它们存储在属性中，这样，就可以在这个类中的任何一个地方使用它们了。</p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">Read other posts</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">测试代码之测试函数</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="/posts/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/">
+                  <span class="button__text">用户输入</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+        
+
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">XiaoXi</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
