@@ -12,10 +12,10 @@
     
     <item>
       <title>类</title>
-      <link>/posts/%E7%B1%BB/</link>
+      <link>/python/%E7%B1%BB/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E7%B1%BB/</guid>
+      <guid>/python/%E7%B1%BB/</guid>
       <description>类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。
 创建和使用类 使用关键字class定义类：
 class Dog(): pass 这样就创建了Dog类。

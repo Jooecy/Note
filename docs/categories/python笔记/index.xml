@@ -12,10 +12,10 @@
     
     <item>
       <title>if语句</title>
-      <link>/posts/if%E8%AF%AD%E5%8F%A5/</link>
+      <link>/python/if%E8%AF%AD%E5%8F%A5/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/if%E8%AF%AD%E5%8F%A5/</guid>
+      <guid>/python/if%E8%AF%AD%E5%8F%A5/</guid>
       <description>if语句可以检查程序的当前状态，本据此采取相应的措施。
 if语句的简单示例 a = [&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;] for i in a: if i == &amp;#39;joecy&amp;#39;: print(i.title()) 输出：
 Joecy wang 在这个for循环中，if语句来检测，所遍历的元素是否为joecy，如果是，就对其使用方法title()。
@@ -25,10 +25,10 @@ Joecy wang 在这个for循环中，if语句来检测，所遍历的元素是否�
     
     <item>
       <title>Json模块</title>
-      <link>/posts/json%E6%A8%A1%E5%9D%97/</link>
+      <link>/python/json%E6%A8%A1%E5%9D%97/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/json%E6%A8%A1%E5%9D%97/</guid>
+      <guid>/python/json%E6%A8%A1%E5%9D%97/</guid>
       <description>很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。
  JSON格式最初是为了JavaScript开发的，但随后成了一种常见格式，被众多编程语言采用。
  使用json.dump()存储数据 使用json.dump()可以轻松的存储数据，json.dump()接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：
@@ -42,10 +42,10 @@ import json with open(&amp;#39;name.json&amp;#39;) as name_obj: username_tmp = j
     
     <item>
       <title>requests基本用法</title>
-      <link>/posts/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <link>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <guid>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
       <description>基本的GET、POST请求方法
 GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。
 使用requests.get() import requests r = requests.get(&amp;#39;https://baidu.com/&amp;#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
@@ -60,20 +60,20 @@ import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests
     
     <item>
       <title>requests库</title>
-      <link>/posts/requests%E5%BA%93/</link>
+      <link>/python/requests%E5%BA%93/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/requests%E5%BA%93/</guid>
+      <guid>/python/requests%E5%BA%93/</guid>
       <description>Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；
 相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。</description>
     </item>
     
     <item>
       <title>requests高级用法</title>
-      <link>/posts/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</link>
+      <link>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</guid>
+      <guid>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</guid>
       <description>requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。
 文件上传 import requests files = {&amp;#39;file&amp;#39;:open(&amp;#39;logo.png&amp;#39;,&amp;#39;rb&amp;#39;)} r = requests.post(&amp;#39;http://httpbin.org/post&amp;#39;,files=files) print(r.text) 首先创建一个表示文件的字典：files，它的键为file，值为使用open()函数&#39;rb&#39;模式打开的待上传文件。之后在post方法中传递参数files,值为files字典。
 Cookies </description>
@@ -81,20 +81,20 @@ Cookies </description>
     
     <item>
       <title>urllib库的使用</title>
-      <link>/posts/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <link>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
       <description>urllib库是Python内置的HTTP请求库，它包含四个模块：
  request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
     </item>
     
     <item>
       <title>while循环</title>
-      <link>/posts/while%E5%BE%AA%E7%8E%AF/</link>
+      <link>/python/while%E5%BE%AA%E7%8E%AF/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/while%E5%BE%AA%E7%8E%AF/</guid>
+      <guid>/python/while%E5%BE%AA%E7%8E%AF/</guid>
       <description>Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环。
 使用while循环 下面的例子是使用while循环计算100以内奇数和：
 a = 0 b = 99 while b &amp;gt; 0: a = a + b b = b -2 print(a) 让用户选择何时退出 message = &amp;#39;&amp;#39; while message != &amp;#39;q&amp;#39;: message = input() if message != &amp;#39;q&amp;#39;: print(message) 上面的示例代码，在用户输入q是退出循环，否则将循环执行打印用户输入的操作。if语句使用户在输入退出指令q时，不至于将&#39;q&#39;打印出来。
@@ -105,10 +105,10 @@ while True: message = input() if message == &amp;#39;q&amp;#39;: break else: pri
     
     <item>
       <title>函数</title>
-      <link>/posts/%E5%87%BD%E6%95%B0/</link>
+      <link>/python/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E5%87%BD%E6%95%B0/</guid>
+      <guid>/python/%E5%87%BD%E6%95%B0/</guid>
       <description>函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。
 定义函数 def hello(): print(&amp;#39;hello&amp;#39;) hello() 输出：
 hello 我们使用def关键字来定义函数，具体规则如下：
@@ -122,10 +122,10 @@ def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 值4、5按照
     
     <item>
       <title>发送请求</title>
-      <link>/posts/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
+      <link>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
+      <guid>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
       <description>使用urllib的request模块，可以方便的实现请求的发送并得到响应。
 发送请求 urlopen() 抓取Python官网：
 import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.python.org&amp;#34;) print(response.read().decode(&amp;#39;utf-8&amp;#39;)) 部分输出：
@@ -140,10 +140,10 @@ import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.bai
     
     <item>
       <title>变量与数据类型</title>
-      <link>/posts/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <link>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <guid>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
       <description>学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。
 变量 a = &amp;#34;hello world!&amp;#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。
 变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&amp;quot;&amp;quot;）或单引号（&#39;&#39;）。
@@ -157,10 +157,10 @@ JOECY WANG joecy wang 拼接字符串 first_name = &amp;#34;joecy&amp;#34; last_
     
     <item>
       <title>字典</title>
-      <link>/posts/%E5%AD%97%E5%85%B8/</link>
+      <link>/python/%E5%AD%97%E5%85%B8/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E5%AD%97%E5%85%B8/</guid>
+      <guid>/python/%E5%AD%97%E5%85%B8/</guid>
       <description>Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。
 一个简单的字典 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) 输出：
 25 在Python中，字典是由一系列键-值对（key-value）组成。并放在花括号{}中。每一个键与一个值相关联，可以使用键来访问与其对应的值。与键相关联的值可以是数字、字符串、列表甚至另一个字典。
@@ -179,10 +179,10 @@ d = {} d[&amp;#39;key1&amp;#39;] = &amp;#39;第一个值&amp;#39; d[&amp;#39;key
     
     <item>
       <title>操作列表</title>
-      <link>/posts/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</link>
+      <link>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</guid>
+      <guid>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</guid>
       <description>很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。
 使用for循环遍历列表 a = [&amp;#39;我&amp;#39;,&amp;#39;你&amp;#39;,&amp;#39;他&amp;#39;] for i in a: print(i) 输出：
 我 你 他 创建数值列表 使用函数range() for i in range(1,5): print(i) 输出：
@@ -198,10 +198,10 @@ a = [] for i in range(1,5): a.append(i ** 2) print(a) 输出：
     
     <item>
       <title>文件读写</title>
-      <link>/posts/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
+      <link>/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
+      <guid>/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
       <description>要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。
 读取整个文件 with open(&#39;1.txt&#39;) as file_obj:neirong = file_obj.read()print(neirong)要使用文件内容，要先打开open()文件，接着读取read()内容到内存中，最后当我们还要关闭close()文件，以免浪费内存。
 这时使用关键字with就可以实现文件的自动关闭，Python会在合适的时候自动关闭文件。
@@ -217,10 +217,10 @@ with open(&#39;4.txt&#39;,&#39;w&#39;) as file_obj:file_obj.write(&#39;我在�
     
     <item>
       <title>测试代码之测试函数</title>
-      <link>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</link>
+      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</guid>
+      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</guid>
       <description>测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。
 测试函数 测试通过 现在有一个格式化姓名的函数：
 def print_name(l,f): a = l.title() + &amp;#39; &amp;#39; + f.title() return a  这段代码保存在name.py
@@ -236,10 +236,10 @@ E ====================================================================== ERROR: 
     
     <item>
       <title>测试代码之测试类</title>
-      <link>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
+      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
+      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
       <description>类的测试于函数的测试类似，但也有些许不同。
 测试类 先写出一个用于测试的类，并存储在diaocha.py中：
 class Dc(): &amp;#39;&amp;#39;&amp;#39;收集匿名调查问卷&amp;#39;&amp;#39;&amp;#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：
@@ -248,10 +248,10 @@ import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test
     
     <item>
       <title>用户输入</title>
-      <link>/posts/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
+      <link>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
+      <guid>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
       <description>函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。
 使用函数input获取输入 a = input() print(a) input()函数接受一个参数，即要向用户显示的提示信息：
 a = input(&amp;#39;这是提示信息。&amp;#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：
@@ -261,10 +261,10 @@ a = input(&amp;#39;这是提示信息。&amp;#39;) print(a) 使用函数int()来
     
     <item>
       <title>类</title>
-      <link>/posts/%E7%B1%BB/</link>
+      <link>/python/%E7%B1%BB/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E7%B1%BB/</guid>
+      <guid>/python/%E7%B1%BB/</guid>
       <description>类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。
 创建和使用类 使用关键字class定义类：
 class Dog(): pass 这样就创建了Dog类。
@@ -278,10 +278,10 @@ class Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(&amp;#39
     
     <item>
       <title>组织列表</title>
-      <link>/posts/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</link>
+      <link>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</guid>
+      <guid>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</guid>
       <description>列表是一系列元素按照特定顺序排列的组成，列表是有序集合。
 访问列表元素 因为列表是有序集合，所以我们只要给出想要访问的元素的位置告诉Python即可：
 list1 = [1,2,3,4] print(list1[0]) 输出：

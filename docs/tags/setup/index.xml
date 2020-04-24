@@ -12,10 +12,10 @@
     
     <item>
       <title>测试代码之测试类</title>
-      <link>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
+      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
+      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
       <description>类的测试于函数的测试类似，但也有些许不同。
 测试类 先写出一个用于测试的类，并存储在diaocha.py中：
 class Dc(): &amp;#39;&amp;#39;&amp;#39;收集匿名调查问卷&amp;#39;&amp;#39;&amp;#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：

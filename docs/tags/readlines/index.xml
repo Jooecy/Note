@@ -12,10 +12,10 @@
     
     <item>
       <title>文件读写</title>
-      <link>/posts/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
+      <link>/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
+      <guid>/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
       <description>要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。
 读取整个文件 with open(&#39;1.txt&#39;) as file_obj:neirong = file_obj.read()print(neirong)要使用文件内容，要先打开open()文件，接着读取read()内容到内存中，最后当我们还要关闭close()文件，以免浪费内存。
 这时使用关键字with就可以实现文件的自动关闭，Python会在合适的时候自动关闭文件。

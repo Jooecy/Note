@@ -12,10 +12,10 @@
     
     <item>
       <title>字典</title>
-      <link>/posts/%E5%AD%97%E5%85%B8/</link>
+      <link>/python/%E5%AD%97%E5%85%B8/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E5%AD%97%E5%85%B8/</guid>
+      <guid>/python/%E5%AD%97%E5%85%B8/</guid>
       <description>Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。
 一个简单的字典 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) 输出：
 25 在Python中，字典是由一系列键-值对（key-value）组成。并放在花括号{}中。每一个键与一个值相关联，可以使用键来访问与其对应的值。与键相关联的值可以是数字、字符串、列表甚至另一个字典。

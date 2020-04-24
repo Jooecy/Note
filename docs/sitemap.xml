@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/python/</loc>
+    <lastmod>2020-04-24T19:00:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/javascript/</loc>
+    <lastmod>2020-04-24T20:18:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vuejs/</loc>
+    <lastmod>2020-04-24T20:18:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/assertequal/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
@@ -28,7 +48,7 @@
   </url>
   
   <url>
-    <loc>/posts/if%E8%AF%AD%E5%8F%A5/</loc>
+    <loc>/python/if%E8%AF%AD%E5%8F%A5/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,17 +68,12 @@
   </url>
   
   <url>
-    <loc>/posts/json%E6%A8%A1%E5%9D%97/</loc>
+    <loc>/python/json%E6%A8%A1%E5%9D%97/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/open/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -83,17 +98,17 @@
   </url>
   
   <url>
-    <loc>/posts/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</loc>
+    <loc>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/requests%E5%BA%93/</loc>
+    <loc>/python/requests%E5%BA%93/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</loc>
+    <loc>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,7 +133,7 @@
   </url>
   
   <url>
-    <loc>/posts/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <loc>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -133,7 +148,7 @@
   </url>
   
   <url>
-    <loc>/posts/while%E5%BE%AA%E7%8E%AF/</loc>
+    <loc>/python/while%E5%BE%AA%E7%8E%AF/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -143,17 +158,12 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/%E5%87%BD%E6%95%B0/</loc>
+    <loc>/python/%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -163,7 +173,7 @@
   </url>
   
   <url>
-    <loc>/posts/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</loc>
+    <loc>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,7 +183,7 @@
   </url>
   
   <url>
-    <loc>/posts/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+    <loc>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -183,7 +193,7 @@
   </url>
   
   <url>
-    <loc>/posts/%E5%AD%97%E5%85%B8/</loc>
+    <loc>/python/%E5%AD%97%E5%85%B8/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -198,12 +208,12 @@
   </url>
   
   <url>
-    <loc>/posts/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</loc>
+    <loc>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</loc>
+    <loc>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -213,17 +223,17 @@
   </url>
   
   <url>
-    <loc>/posts/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</loc>
+    <loc>/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</loc>
+    <loc>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</loc>
+    <loc>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -233,7 +243,7 @@
   </url>
   
   <url>
-    <loc>/posts/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</loc>
+    <loc>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -243,12 +253,12 @@
   </url>
   
   <url>
-    <loc>/posts/%E7%B1%BB/</loc>
+    <loc>/python/%E7%B1%BB/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</loc>
+    <loc>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -263,12 +273,8 @@
   </url>
   
   <url>
-    <loc>/posts/%E9%AA%91%E5%A3%AB/</loc>
+    <loc>/python/%E9%AA%91%E5%A3%AB/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
   </url>
   
 </urlset>

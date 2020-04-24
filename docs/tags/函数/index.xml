@@ -12,10 +12,10 @@
     
     <item>
       <title>函数</title>
-      <link>/posts/%E5%87%BD%E6%95%B0/</link>
+      <link>/python/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E5%87%BD%E6%95%B0/</guid>
+      <guid>/python/%E5%87%BD%E6%95%B0/</guid>
       <description>函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。
 定义函数 def hello(): print(&amp;#39;hello&amp;#39;) hello() 输出：
 hello 我们使用def关键字来定义函数，具体规则如下：

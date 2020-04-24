@@ -12,10 +12,10 @@
     
     <item>
       <title>用户输入</title>
-      <link>/posts/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
+      <link>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
+      <guid>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
       <description>函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。
 使用函数input获取输入 a = input() print(a) input()函数接受一个参数，即要向用户显示的提示信息：
 a = input(&amp;#39;这是提示信息。&amp;#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：

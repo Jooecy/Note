@@ -12,10 +12,10 @@
     
     <item>
       <title>测试代码之测试函数</title>
-      <link>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</link>
+      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</guid>
+      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</guid>
       <description>测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。
 测试函数 测试通过 现在有一个格式化姓名的函数：
 def print_name(l,f): a = l.title() + &amp;#39; &amp;#39; + f.title() return a  这段代码保存在name.py
