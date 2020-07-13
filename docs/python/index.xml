@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on XiaoXi Blog</title>
+    <title>Python笔记 on XiaoXi Blog</title>
     <link>/python/</link>
-    <description>Recent content in Python on XiaoXi Blog</description>
+    <description>Recent content in Python笔记 on XiaoXi Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 24 Apr 2020 19:00:52 +0800</lastBuildDate>
     
