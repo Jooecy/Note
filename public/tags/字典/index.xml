@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>字典 - 标签 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/tags/%E5%AD%97%E5%85%B8/</link>
+        <description>字典 - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E5%AD%97%E5%85%B8/" rel="self" type="application/rss+xml" /><item>
+    <title>字典</title>
+    <link>http://example.org/python/%E5%AD%97%E5%85%B8/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/%E5%AD%97%E5%85%B8/</guid>
+    <description><![CDATA[Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。 一个简单的]]></description>
+</item></channel>
+</rss>

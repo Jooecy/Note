@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>读·写 - 分类 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/categories/%E8%AF%BB%E5%86%99/</link>
+        <description>读·写 - 分类 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/categories/%E8%AF%BB%E5%86%99/" rel="self" type="application/rss+xml" /><item>
+    <title>我没有朋友</title>
+    <link>http://example.org/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</guid>
+    <description><![CDATA[不知怎地，在我的家族中 “读书” “大学生”等词汇已然成为了贬义词。 三四年前，这些字眼也仅仅是在我父亲的嘴里说出，大抵也只是有口无心的顺出一句，]]></description>
+</item><item>
+    <title>骑士</title>
+    <link>http://example.org/python/%E9%AA%91%E5%A3%AB/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/%E9%AA%91%E5%A3%AB/</guid>
+    <description><![CDATA[真是一个糟心的中午，外卖晚了一个小时才到。临近中午12点，我不得不打电话告诉骑士，把送餐地址从家变为公司。 是的，没有退单。 但在半小时前，我的]]></description>
+</item></channel>
+</rss>

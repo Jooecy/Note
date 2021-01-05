@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>while循环 - 我的全新 Hugo 网站</title><meta name="Description" content="Python的循环有两种，一种是`for...in`循环，依次把`list`或`tuple`中的每个元素迭代出来"><meta property="og:title" content="while循环" />
+<meta property="og:description" content="Python的循环有两种，一种是`for...in`循环，依次把`list`或`tuple`中的每个元素迭代出来" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/python/while%E5%BE%AA%E7%8E%AF/" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="while循环"/>
+<meta name="twitter:description" content="Python的循环有两种，一种是`for...in`循环，依次把`list`或`tuple`中的每个元素迭代出来"/>
+<meta name="application-name" content="我的全新 Hugo 网站">
+<meta name="apple-mobile-web-app-title" content="我的全新 Hugo 网站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/python/while%E5%BE%AA%E7%8E%AF/" /><link rel="prev" href="http://example.org/python/%E5%87%BD%E6%95%B0/" /><link rel="next" href="http://example.org/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "while循环",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/python\/while%E5%BE%AA%E7%8E%AF\/"
+        },"genre": "Python","keywords": "while, 循环","wordcount":  991 ,
+        "url": "http:\/\/example.org\/python\/while%E5%BE%AA%E7%8E%AF\/","datePublished": "2020-04-24T00:00:00+00:00","dateModified": "2020-04-24T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "作者"},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": "Python的循环有两种，一种是`for...in`循环，依次把`list`或`tuple`中的每个元素迭代出来"
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">while循环</h1><div class="content" id="content"><p>Python的循环有两种，一种是<code>for...in</code>循环，依次把<code>list</code>或<code>tuple</code>中的每个元素迭代出来，第二种循环是<code>while</code>循环，只要条件满足，就不断循环，条件不满足时退出循环。</p>
+<h3 id="使用while循环">使用while循环</h3>
+<p>下面的例子是使用<code>while</code>循环计算100以内奇数和：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">99</span>
+<span class="k">while</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+	<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+	<span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">-</span><span class="mi">2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div><h3 id="让用户选择何时退出">让用户选择何时退出</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="k">while</span> <span class="n">message</span> <span class="o">!=</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span>
+	<span class="n">message</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+	<span class="k">if</span> <span class="n">message</span> <span class="o">!=</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span>
+		<span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</code></pre></div><p>上面的示例代码，在用户输入<code>q</code>是退出循环，否则将循环执行打印用户输入的操作。<code>if</code>语句使用户在输入退出指令<code>q</code>时，不至于将<code>'q'</code>打印出来。</p>
+<h3 id="使用标志">使用标志</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">active</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="k">while</span> <span class="n">active</span><span class="p">:</span>
+	<span class="n">message</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+	<span class="k">if</span> <span class="n">message</span> <span class="o">==</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span>
+		<span class="n">active</span> <span class="o">=</span> <span class="bp">False</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</code></pre></div><p>我们将条件测试都放在其他地方，<code>while</code>语句就只需要检查一个条件。从而可以使用程序更加的简洁易读。</p>
+<h3 id="使用break退出循环">使用break退出循环</h3>
+<p><code>break</code>语句可以提前结束循环，例如上一个例子，可以这样改写：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+	<span class="n">message</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+	<span class="k">if</span> <span class="n">message</span> <span class="o">==</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span>
+		<span class="k">break</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</code></pre></div><h3 id="使用continue">使用continue</h3>
+<p>在循环中可以使用<code>continue</code>语句跳过当次循环，并执行下一次循环。<code>continue</code>语句不会像<code>break</code>语句那样不再执行余下的代码。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+	<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+	<span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+		<span class="k">continue</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div><p><code>break</code>语句可以在循环过程中直接退出循环，而<code>continue</code>语句可以提前结束本轮循环，并直接开始下一轮循环。这两个语句通常都必须配合<code>if</code>语句使用。</p>
+<p>要特别注意，不要滥用<code>break</code>和<code>continue</code>语句。<code>break</code>和<code>continue</code>会造成代码执行逻辑分叉过多，容易出错。大多数循环并不需要用到<code>break</code>和<code>continue</code>语句，上面的两个例子，都可以通过改写循环条件或者修改循环逻辑，去掉<code>break</code>和<code>continue</code>语句。</p>
+<h3 id="while循环处理列表和字典">while循环处理列表和字典</h3>
+<p><code>for</code>循环是遍历列表的有效方式，但不该在<code>for</code>循环中修改列表，例如移动元素的操作，因为这会导致Python无法跟踪其中的元素。然而使用<code>while</code>循环就可以在遍历时对列表进行修改。</p>
+<h3 id="在列表间移动元素">在列表间移动元素</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">l1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">l2</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">while</span> <span class="n">l1</span><span class="p">:</span>
+	<span class="n">l</span> <span class="o">=</span> <span class="n">l1</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+	<span class="n">l2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span>
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="p">[]</span>
+<span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</code></pre></div><p>可见，列表<code>l1</code>中的元素已经移动到列表<code>l2</code>中了。</p>
+<h3 id="删除包含特定值的所有列表元素">删除包含特定值的所有列表元素</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">while</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+	<span class="n">l</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</code></pre></div><h3 id="使用用户输入填充字典">使用用户输入填充字典</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">active</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">while</span> <span class="n">active</span><span class="p">:</span>
+	<span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
+	<span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;answer&#39;</span><span class="p">)</span>
+	<span class="n">d</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">b</span>
+	<span class="n">c</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;是否继续？y,n&#39;</span><span class="p">)</span>
+	<span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
+		<span class="n">active</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span>
+</code></pre></div><p>我们让用户输入姓名和答案并将其存储在字典<code>d</code>中，然后询问用户是否继续，当用户输入<code>n</code>时，标志<code>active</code>为<code>False</code>，<code>while</code>循环结束，并打印结果。</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

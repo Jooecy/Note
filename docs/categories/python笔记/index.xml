@@ -1,305 +1,132 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Python笔记 on XiaoXi Blog</title>
-    <link>/categories/python%E7%AC%94%E8%AE%B0/</link>
-    <description>Recent content in Python笔记 on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/python%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>if语句</title>
-      <link>/python/if%E8%AF%AD%E5%8F%A5/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/if%E8%AF%AD%E5%8F%A5/</guid>
-      <description>if语句可以检查程序的当前状态，本据此采取相应的措施。
-if语句的简单示例 a = [&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;] for i in a: if i == &amp;#39;joecy&amp;#39;: print(i.title()) 输出：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Python笔记 - category - XiaoXi Blog</title>
+        <link>/categories/python%E7%AC%94%E8%AE%B0/</link>
+        <description>Python笔记 - category - XiaoXi Blog</description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/categories/python%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>if语句</title>
+    <link>/python/if%E8%AF%AD%E5%8F%A5/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/if%E8%AF%AD%E5%8F%A5/</guid>
+    <description><![CDATA[if语句可以检查程序的当前状态，本据此采取相应的措施。
+if语句的简单示例 a = [&#39;joecy&#39;,&#39;wang&#39;] for i in a: if i == &#39;joecy&#39;: print(i.title()) 输出：
 Joecy wang 在这个for循环中，if语句来检测，所遍历的元素是否为joecy，如果是，就对其使用方法title()。
-条件测试 每条if语句的核心都是一个值为True或False的表达式，这种表达式被称为条件测试（布尔表达式）。例如i = &#39;joecy&#39;，Python根据条件测试的值为True或False来决定是否执行if语句中的代码：
-&amp;gt;&amp;gt;&amp;gt; car = &amp;#39;bwm&amp;#39; #检查是否相等 &amp;gt;&amp;gt;&amp;gt; car == &amp;#39;bwm&amp;#39; True &amp;gt;&amp;gt;&amp;gt; car == &amp;#39;Bwm&amp;#39; False #检查是否不相等 &amp;gt;&amp;gt;&amp;gt; car != &amp;#39;audi&amp;#39; True #比较数字 &amp;gt;&amp;gt;&amp;gt; a = 18 &amp;gt;&amp;gt;&amp;gt; a == 18 True &amp;gt;&amp;gt;&amp;gt; a &amp;gt; 10 True &amp;gt;&amp;gt;&amp;gt; a &amp;lt; 9 False &amp;gt;&amp;gt;&amp;gt; a != 3 True #使用and检查多个条件，条件同时成立为True &amp;gt;&amp;gt;&amp;gt; car == &amp;#39;bwm&amp;#39; and a == 18 True &amp;gt;&amp;gt;&amp;gt; car !</description>
-    </item>
-    
-    <item>
-      <title>Json模块</title>
-      <link>/python/json%E6%A8%A1%E5%9D%97/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/json%E6%A8%A1%E5%9D%97/</guid>
-      <description>很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。
+条件测试 每条if语句的核心都是一个值为True或False的表达式，这种表达式被称为条件测试（布尔表达式）。例如i = 'joecy'，Python根据条件测试的值为True或False来决定是否执行if语句中的代码：
+&gt;&gt;&gt; car = &#39;bwm&#39; #检查是否相等 &gt;&gt;&gt; car == &#39;bwm&#39; True &gt;&gt;&gt; car == &#39;Bwm&#39; False #检查是否不相等 &gt;&gt;&gt; car != &#39;audi&#39; True #比较数字 &gt;&gt;&gt; a = 18 &gt;&gt;&gt; a == 18 True &gt;&gt;&gt; a &gt; 10 True &gt;&gt;&gt; a &lt; 9 False &gt;&gt;&gt; a != 3 True #使用and检查多个条件，条件同时成立为True &gt;&gt;&gt; car == &#39;bwm&#39; and a == 18 True &gt;&gt;&gt; car !]]></description>
+</item><item>
+    <title>Json模块</title>
+    <link>/python/json%E6%A8%A1%E5%9D%97/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/json%E6%A8%A1%E5%9D%97/</guid>
+    <description><![CDATA[很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。
  JSON格式最初是为了JavaScript开发的，但随后成了一种常见格式，被众多编程语言采用。
  使用json.dump()存储数据 使用json.dump()可以轻松的存储数据，json.dump()接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：
-import json username = &amp;#39;111&amp;#39; with open(&amp;#39;name.json&amp;#39;,&amp;#39;w&amp;#39;) as name_obj: json.dump(username,name.json) 这时，就会报错：
-NameError: name &amp;#39;name&amp;#39; is not defined 原因是我们错误向json.dump()传入了参数name.json，这并不是要存储数据的文件==对象==，应该传入参数name_obj。
-import json username = &amp;#39;111&amp;#39; with open(&amp;#39;name.json&amp;#39;,&amp;#39;w&amp;#39;) as name_obj: json.dump(username,name_obj) 同时，也要注意在使用json.dump()存储数据时，函数open()需要传递参数&#39;w&#39;，以便获得写入权限。
+import json username = &#39;111&#39; with open(&#39;name.json&#39;,&#39;w&#39;) as name_obj: json.dump(username,name.json) 这时，就会报错：
+NameError: name &#39;name&#39; is not defined 原因是我们错误向json.dump()传入了参数name.json，这并不是要存储数据的文件==对象==，应该传入参数name_obj。
+import json username = &#39;111&#39; with open(&#39;name.json&#39;,&#39;w&#39;) as name_obj: json.dump(username,name_obj) 同时，也要注意在使用json.dump()存储数据时，函数open()需要传递参数'w'，以便获得写入权限。
 使用json.load()读取数据 同样的，使用json.load()时，传入的也是文件==对象==：
-import json with open(&amp;#39;name.json&amp;#39;) as name_obj: username_tmp = json.load(name_obj) print(username_tmp) 输出：
-111 </description>
-    </item>
-    
-    <item>
-      <title>requests基本用法</title>
-      <link>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
-      <description>基本的GET、POST请求方法
+import json with open(&#39;name.json&#39;) as name_obj: username_tmp = json.load(name_obj) print(username_tmp) 输出：
+111 ]]></description>
+</item><item>
+    <title>requests基本用法</title>
+    <link>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+    <description><![CDATA[基本的GET、POST请求方法
 GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。
-使用requests.get() import requests r = requests.get(&amp;#39;https://baidu.com/&amp;#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
-&amp;lt;class &amp;#39;requests.models.Response&amp;#39;&amp;gt; &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; 200 &amp;lt;RequestsCookieJar[&amp;lt;Cookie BDORZ=27315 for .baidu.com/&amp;gt;]&amp;gt; # 部分代码 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--STATUS OK--&amp;gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; .... &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 使用requests.get()方法，即可以GET方式请求网页。
- status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip;  如果GET请求需要附加额外信息，例如添加两个参数：
-r = requests.get(&#39;http://httpbin.org/get?name=joecy&amp;amp;age=24&#39;)
+使用requests.get() import requests r = requests.get(&#39;https://baidu.com/&#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
+&lt;class &#39;requests.models.Response&#39;&gt; &lt;class &#39;str&#39;&gt; 200 &lt;RequestsCookieJar[&lt;Cookie BDORZ=27315 for .baidu.com/&gt;]&gt; # 部分代码 &lt;!DOCTYPE html&gt; &lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt; .... &lt;/body&gt; &lt;/html&gt; 使用requests.get()方法，即可以GET方式请求网页。
+ status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&hellip;&hellip;  如果GET请求需要附加额外信息，例如添加两个参数：
+r = requests.get('http://httpbin.org/get?name=joecy&amp;age=24')
 如果写成这样未免太繁琐，这时可以利用params参数：
-import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text)  r.encoding = &#39;utf-8&#39; 用于修改编码
+import requests data = {&#39;wd&#39;:&#39;我&#39;} r = requests.get(&#39;https://baidu.com/s&#39;,params=data) print(r.status_code) r.encoding = &#39;utf-8&#39; print(r.text)  r.encoding = 'utf-8' 用于修改编码
  输出了百度关于关键词“我”的搜索结果。
-抓取网页 抓取知乎发现页面：</description>
-    </item>
-    
-    <item>
-      <title>requests库</title>
-      <link>/python/requests%E5%BA%93/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/requests%E5%BA%93/</guid>
-      <description>Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；
-相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。</description>
-    </item>
-    
-    <item>
-      <title>requests高级用法</title>
-      <link>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</guid>
-      <description>requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。
-文件上传 import requests files = {&amp;#39;file&amp;#39;:open(&amp;#39;logo.png&amp;#39;,&amp;#39;rb&amp;#39;)} r = requests.post(&amp;#39;http://httpbin.org/post&amp;#39;,files=files) print(r.text) 首先创建一个表示文件的字典：files，它的键为file，值为使用open()函数&#39;rb&#39;模式打开的待上传文件。之后在post方法中传递参数files,值为files字典。
-Cookies </description>
-    </item>
-    
-    <item>
-      <title>urllib库的使用</title>
-      <link>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-      <description>urllib库是Python内置的HTTP请求库，它包含四个模块：
- request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
-    </item>
-    
-    <item>
-      <title>while循环</title>
-      <link>/python/while%E5%BE%AA%E7%8E%AF/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/while%E5%BE%AA%E7%8E%AF/</guid>
-      <description>Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环。
+抓取网页 抓取知乎发现页面：]]></description>
+</item><item>
+    <title>requests库</title>
+    <link>/python/requests%E5%BA%93/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/requests%E5%BA%93/</guid>
+    <description><![CDATA[Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；
+相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。]]></description>
+</item><item>
+    <title>requests高级用法</title>
+    <link>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</guid>
+    <description><![CDATA[requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。
+文件上传 import requests files = {&#39;file&#39;:open(&#39;logo.png&#39;,&#39;rb&#39;)} r = requests.post(&#39;http://httpbin.org/post&#39;,files=files) print(r.text) 首先创建一个表示文件的字典：files，它的键为file，值为使用open()函数'rb'模式打开的待上传文件。之后在post方法中传递参数files,值为files字典。
+Cookies ]]></description>
+</item><item>
+    <title>urllib库的使用</title>
+    <link>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[urllib库是Python内置的HTTP请求库，它包含四个模块：
+ request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。]]></description>
+</item><item>
+    <title>while循环</title>
+    <link>/python/while%E5%BE%AA%E7%8E%AF/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/while%E5%BE%AA%E7%8E%AF/</guid>
+    <description><![CDATA[Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环。
 使用while循环 下面的例子是使用while循环计算100以内奇数和：
-a = 0 b = 99 while b &amp;gt; 0: a = a + b b = b -2 print(a) 让用户选择何时退出 message = &amp;#39;&amp;#39; while message != &amp;#39;q&amp;#39;: message = input() if message != &amp;#39;q&amp;#39;: print(message) 上面的示例代码，在用户输入q是退出循环，否则将循环执行打印用户输入的操作。if语句使用户在输入退出指令q时，不至于将&#39;q&#39;打印出来。
-使用标志 active = True message = &amp;#39;&amp;#39; while active: message = input() if message == &amp;#39;q&amp;#39;: active = False else: print(message) 我们将条件测试都放在其他地方，while语句就只需要检查一个条件。从而可以使用程序更加的简洁易读。
+a = 0 b = 99 while b &gt; 0: a = a + b b = b -2 print(a) 让用户选择何时退出 message = &#39;&#39; while message != &#39;q&#39;: message = input() if message != &#39;q&#39;: print(message) 上面的示例代码，在用户输入q是退出循环，否则将循环执行打印用户输入的操作。if语句使用户在输入退出指令q时，不至于将'q'打印出来。
+使用标志 active = True message = &#39;&#39; while active: message = input() if message == &#39;q&#39;: active = False else: print(message) 我们将条件测试都放在其他地方，while语句就只需要检查一个条件。从而可以使用程序更加的简洁易读。
 使用break退出循环 break语句可以提前结束循环，例如上一个例子，可以这样改写：
-while True: message = input() if message == &amp;#39;q&amp;#39;: break else: print(message) 使用continue 在循环中可以使用continue语句跳过当次循环，并执行下一次循环。continue语句不会像break语句那样不再执行余下的代码。</description>
-    </item>
-    
-    <item>
-      <title>函数</title>
-      <link>/python/%E5%87%BD%E6%95%B0/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E5%87%BD%E6%95%B0/</guid>
-      <description>函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。
-定义函数 def hello(): print(&amp;#39;hello&amp;#39;) hello() 输出：
+while True: message = input() if message == &#39;q&#39;: break else: print(message) 使用continue 在循环中可以使用continue语句跳过当次循环，并执行下一次循环。continue语句不会像break语句那样不再执行余下的代码。]]></description>
+</item><item>
+    <title>函数</title>
+    <link>/python/%E5%87%BD%E6%95%B0/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/%E5%87%BD%E6%95%B0/</guid>
+    <description><![CDATA[函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。
+定义函数 def hello(): print(&#39;hello&#39;) hello() 输出：
 hello 我们使用def关键字来定义函数，具体规则如下：
   函数代码块以 def关键词开头，后接函数名称和圆括号()。     任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数。     函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。     函数内容以冒:号起始，并且缩进。     return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。   向函数传递参数 例如我们定义一个计算长方形面积的函数：
-def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 示例中，函数x可以接受两个参数：形参a和形参b。在调用函数x的时候，我们向其传递了实参4、5，结果显示它成功计算除了面积。
+def x(a,b): s = a * b return s &gt;&gt;&gt; x(4,5) 20 示例中，函数x可以接受两个参数：形参a和形参b。在调用函数x的时候，我们向其传递了实参4、5，结果显示它成功计算除了面积。
 参数传递 函数中可能包含多个形参，因此我们需要传递多个实参，依据不同情况，参数传递的方式很多：位置参数、默认参数、关键字参数、可变参数等。
 位置参数 位置参数需要按照正确的顺序传入，按照位置关联依次将实参传递给形参的传递方式叫做位置参数：
 如上个例子：
-def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 值4、5按照顺序赋值给参数a、b。参数a、b都是位置参数。</description>
-    </item>
-    
-    <item>
-      <title>发送请求</title>
-      <link>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
-      <description>使用urllib的request模块，可以方便的实现请求的发送并得到响应。
+def x(a,b): s = a * b return s &gt;&gt;&gt; x(4,5) 20 值4、5按照顺序赋值给参数a、b。参数a、b都是位置参数。]]></description>
+</item><item>
+    <title>发送请求</title>
+    <link>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
+    <description><![CDATA[使用urllib的request模块，可以方便的实现请求的发送并得到响应。
 发送请求 urlopen() 抓取Python官网：
-import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.python.org&amp;#34;) print(response.read().decode(&amp;#39;utf-8&amp;#39;)) 部分输出：
-# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  decode(&#39;utf-8&#39;)方法将网页以制定编码解析。
+import urllib.request response = urllib.request.urlopen(&#34;https://www.python.org&#34;) print(response.read().decode(&#39;utf-8&#39;)) 部分输出：
+# 部分输出 &lt;script src=&#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#34;&gt;&lt;/script&gt; &lt;script&gt;window.jQuery || document.write(&#39;&lt;script src=&#34;/static/js/libs/jquery-1.8.2.min.js&#34;&gt;&lt;\/script&gt;&#39;)&lt;/script&gt; &lt;script src=&#34;/static/js/libs/masonry.pkgd.min.js&#34;&gt;&lt;/script&gt; &lt;script type=&#34;text/javascript&#34; src=&#34;/static/js/main-min.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;  decode('utf-8')方法将网页以制定编码解析。
  response是一个HTTPResponse类型的对象：
 print(type(response)) 输出如下：
-&amp;lt;class &amp;#39;http.client.HTTPResponse&amp;#39;&amp;gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。
+&lt;class &#39;http.client.HTTPResponse&#39;&gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。
 例子：
-import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.baidu.com&amp;#34;) print(response.status) print(&amp;#39;\n&amp;#39;,response.getheaders()) print(&amp;#39;\n&amp;#39;,response.getheader(&amp;#39;Server&amp;#39;)) 输出结果：
-200 [(&amp;#39;Accept-Ranges&amp;#39;, &amp;#39;bytes&amp;#39;), (&amp;#39;Cache-Control&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Content-Length&amp;#39;, &amp;#39;227&amp;#39;), (&amp;#39;Content-Type&amp;#39;, &amp;#39;text/html&amp;#39;), (&amp;#39;Date&amp;#39;, &amp;#39;Thu, 09 Aug 2018 14:49:17 GMT&amp;#39;), (&amp;#39;Etag&amp;#39;, &amp;#39;&amp;#34;5b56b4a8-e3&amp;#34;&amp;#39;), (&amp;#39;Last-Modified&amp;#39;, &amp;#39;Tue, 24 Jul 2018 05:10:00 GMT&amp;#39;), (&amp;#39;P3p&amp;#39;, &amp;#39;CP=&amp;#34; OTI DSP COR IVA OUR IND COM &amp;#34;&amp;#39;), (&amp;#39;Pragma&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Server&amp;#39;, &amp;#39;BWS/1.</description>
-    </item>
-    
-    <item>
-      <title>变量与数据类型</title>
-      <link>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
-      <description>学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。
-变量 a = &amp;#34;hello world!&amp;#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。
-变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&amp;quot;&amp;quot;）或单引号（&#39;&#39;）。
-a = &amp;#34;我是字符串。&amp;#34; b = &amp;#39;我也是字符串。&amp;#39; 这样我们就可以在字符串中包含双引号或单引号了：
-a = &amp;#34;我是&amp;#39;字符串&amp;#39;。&amp;#34; b = &amp;#39;我也是&amp;#34;字符串&amp;#34;。&amp;#39; 使用方法修改字符串大小写 name = &amp;#34;joecy wang&amp;#34; print(name.title()) 输出的结果是：
+import urllib.request response = urllib.request.urlopen(&#34;https://www.baidu.com&#34;) print(response.status) print(&#39;\n&#39;,response.getheaders()) print(&#39;\n&#39;,response.getheader(&#39;Server&#39;)) 输出结果：
+200 [(&#39;Accept-Ranges&#39;, &#39;bytes&#39;), (&#39;Cache-Control&#39;, &#39;no-cache&#39;), (&#39;Content-Length&#39;, &#39;227&#39;), (&#39;Content-Type&#39;, &#39;text/html&#39;), (&#39;Date&#39;, &#39;Thu, 09 Aug 2018 14:49:17 GMT&#39;), (&#39;Etag&#39;, &#39;&#34;5b56b4a8-e3&#34;&#39;), (&#39;Last-Modified&#39;, &#39;Tue, 24 Jul 2018 05:10:00 GMT&#39;), (&#39;P3p&#39;, &#39;CP=&#34; OTI DSP COR IVA OUR IND COM &#34;&#39;), (&#39;Pragma&#39;, &#39;no-cache&#39;), (&#39;Server&#39;, &#39;BWS/1.]]></description>
+</item><item>
+    <title>变量与数据类型</title>
+    <link>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+    <description><![CDATA[学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。
+变量 a = &#34;hello world!&#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。
+变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&quot;&quot;）或单引号（''）。
+a = &#34;我是字符串。&#34; b = &#39;我也是字符串。&#39; 这样我们就可以在字符串中包含双引号或单引号了：
+a = &#34;我是&#39;字符串&#39;。&#34; b = &#39;我也是&#34;字符串&#34;。&#39; 使用方法修改字符串大小写 name = &#34;joecy wang&#34; print(name.title()) 输出的结果是：
 Joecy Wang 我们将小写字符joecy wang存储到变量name中，在print语句中，我们对name使用方法title()，每个方法后面都会有一个括号，用于接受额外的信息，title()方法并不需要，所以它的括号是空的。
 方法title()以首字母大写的方式显示每一个单词。如果想把字符串中的单词全部变为大写或是小写，可以使用方法upper()和lower()。
-name = &amp;#34;Joecy Wang&amp;#34; print(name.upper()) print(name.lower()) 结果为：
-JOECY WANG joecy wang 拼接字符串 first_name = &amp;#34;joecy&amp;#34; last_name = &amp;#34;wang&amp;#34; name = first_name + &amp;#34; &amp;#34; + last_name print(&amp;#34;hello &amp;#34; + name.</description>
-    </item>
-    
-    <item>
-      <title>字典</title>
-      <link>/python/%E5%AD%97%E5%85%B8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E5%AD%97%E5%85%B8/</guid>
-      <description>Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。
-一个简单的字典 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) 输出：
-25 在Python中，字典是由一系列键-值对（key-value）组成。并放在花括号{}中。每一个键与一个值相关联，可以使用键来访问与其对应的值。与键相关联的值可以是数字、字符串、列表甚至另一个字典。
-键与值之间使用冒号:分隔，键-值对之间使用逗号,分隔。
-访问字典中的值 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) #指定字典名，并在[]中指定键 添加键值对 要向字典中添加键-值对，可依次指定字典名、要添加的键以及值：
-dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} dict_1[&amp;#39;muyi&amp;#39;] = 2 print(dict_1) 输出：
-{&amp;#39;joecy&amp;#39;: 25, &amp;#39;yingying&amp;#39;: 24, &amp;#39;muyi&amp;#39;: 2} 一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值替换：
-dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} dict_1[&amp;#39;muyi&amp;#39;] = 2 dict_1[&amp;#39;muyi&amp;#39;] = &amp;#39;1周岁&amp;#39; print(dict_1) 输出：
-{&amp;#39;joecy&amp;#39;: 25, &amp;#39;yingying&amp;#39;: 24, &amp;#39;muyi&amp;#39;: &amp;#39;1周岁&amp;#39;} 键&#39;muyi&#39;的值被替换为了值&#39;1周岁&#39;。 键-值对的排列顺序与添加顺序不同，Python只关心键与值之前的对应关系。
-和list比较，dict有以下几个特点：
-查找和插入的速度极快，不会随着key的增加而变慢； 需要占用大量的内存，内存浪费多。 而list相反：
-查找和插入的时间随着元素的增加而增加； 占用空间小，浪费内存很少。 所以，dict是用空间来换取时间的一种方法。（来自廖雪峰博客）
-创建空字典 当我们需要存储用户提供的信息或编写能够自动生成大量键-值对的代码时，需要事先定义一个空字典：
-d = {} d[&amp;#39;key1&amp;#39;] = &amp;#39;第一个值&amp;#39; d[&amp;#39;key2&amp;#39;] = &amp;#39;第二个值&amp;#39; print(d) 输出：</description>
-    </item>
-    
-    <item>
-      <title>操作列表</title>
-      <link>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</guid>
-      <description>很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。
-使用for循环遍历列表 a = [&amp;#39;我&amp;#39;,&amp;#39;你&amp;#39;,&amp;#39;他&amp;#39;] for i in a: print(i) 输出：
-我 你 他 创建数值列表 使用函数range() for i in range(1,5): print(i) 输出：
-1 2 3 4 函数range()从你指定的第一个数字开始，并在指定的第二个数字前面停下。
-使用函数range()创建列表 使用函数list()将函数range()的结果直接转为列表：
-num = list(range(1,5)) print(num) 输出：
-[1,2,3,4] 可以给range()函数指定步长，来完成更多工作：
-num = list(range(2,11,2)) print(num) 输出：
-[2,4,6,8,10] 在这个示例中，range()函数从2开始，并以2为步长不断增加。 使用函数range()可以创建几乎所有的数字列表：
-a = [] for i in range(1,5): a.append(i ** 2) print(a) 输出：
-[1,4,9,16] 对数字列表进行统计 &amp;gt;&amp;gt;&amp;gt; a = [1,2,3,4,5,6,7] &amp;gt;&amp;gt;&amp;gt; min(a) 1 &amp;gt;&amp;gt;&amp;gt; max(a) 7 &amp;gt;&amp;gt;&amp;gt; sum(a) 29 列表解析 列表解析将for循环和创建新元素的代码合并在一行：</description>
-    </item>
-    
-    <item>
-      <title>文件读写</title>
-      <link>/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
-      <description>要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。
-读取整个文件 with open(&#39;1.txt&#39;) as file_obj:neirong = file_obj.read()print(neirong)要使用文件内容，要先打开open()文件，接着读取read()内容到内存中，最后当我们还要关闭close()文件，以免浪费内存。
-这时使用关键字with就可以实现文件的自动关闭，Python会在合适的时候自动关闭文件。
-open()函数返回一个表示文件的对象，接着我们可以使用read()来读取这个文件内容，并存储在nrirong中。
-逐行读取 可以使用for循环逐行读取文件内容。
-with open(&#39;2.txt&#39;) as file_obj:for i in file_obj:print(i)一样的，函数open()返回一个表示文件的对象，存储在变量file_obj中，于是我们可以通过遍历文件对象file_obj来逐行读取内容。
-创建一个包含文件内容的列表 使用关键字with时，open()返回的对象只可以在with代码块内访问，要想在with代码块外使用，我们需要创建一个包含该文件各行内容的列表：
-with open(&#39;3.txt&#39;) as file_obj:lines = file_obj.readlines()for i in lines():print(i)方法readlines()，读取文件中的每一行，并将其存储在列表lines中。
-写入文件 要写入文件，需要在调用open()时，传入另外一个实参，告诉Python你要写入打开的文件：
-with open(&#39;4.txt&#39;,&#39;w&#39;) as file_obj:file_obj.write(&#39;我在写入文件&#39;)实参&#39;w&#39;告诉Python，我们要以写入模式打开文件，其他的打开模式包括&#39;r&#39;-只读模式、&#39;a&#39;-附加模式、&#39;r+&#39;-读写模式。
-如果要写入的文件不存在，Python会自动创建它，当使用&#39;w&#39;写入时，Python会在写入前清空该文件。</description>
-    </item>
-    
-    <item>
-      <title>测试代码之测试函数</title>
-      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</guid>
-      <description>测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。
-测试函数 测试通过 现在有一个格式化姓名的函数：
-def print_name(l,f): a = l.title() + &amp;#39; &amp;#39; + f.title() return a  这段代码保存在name.py
- 我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的unittest模块编写单元测试：
-import unittest from name import print_name class Test_print_name(unittest.TestCase): def test_print_name(self): a = print_name(&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;) self.assertEqual(a,&amp;#34;Joecy Wang&amp;#34;) unittest.main() 首先，导入模块unittest和要测试的函数print_name()，然后创建一个继承于unittest.TestCase的类Test_print_name，接着创建一个方法test_print_name()，用来测试print_name()，在这个方法中，我们调用了函数print_name()，并在结果（返回值）存储在变量a中。最后，我们使用断言方法assertEqual()判断输出是否是我们期望的。
- 代码行unittest.main()让Python运行这个文件中的测试。
- 运行这个单元测试，得到结果：
-. ---------------------------------------------------------------------- Ran 1 test in 0.002s OK 第一行的句点.代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，OK则表示这个测试用例中的所有单元测试都通过了。
-测试不通过 如果这时修改了函数print_name()，使其多接受一个中间名参数：
-def print_name(l,m,f): a = l.title() + &amp;#39; &amp;#39; + m.title() + &amp;#39; &amp;#39;+ f.title() return a 再次运行函数print_name()的单元测试时，输出如下：
-E ====================================================================== ERROR: test_print_name (__main__.</description>
-    </item>
-    
-    <item>
-      <title>测试代码之测试类</title>
-      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
-      <description>类的测试于函数的测试类似，但也有些许不同。
-测试类 先写出一个用于测试的类，并存储在diaocha.py中：
-class Dc(): &amp;#39;&amp;#39;&amp;#39;收集匿名调查问卷&amp;#39;&amp;#39;&amp;#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：
-import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test_oneres(self): &amp;#39;&amp;#39;&amp;#39;测试存储一个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#34;你是中国人嘛？&amp;#34; mydiaoche = Dc(question) mydiaoche.store_res(&amp;#39;是&amp;#39;) self.assertIn(&amp;#39;是&amp;#39;,mydiaoche.responses) def test_more_res(self): &amp;#39;&amp;#39;&amp;#39;测试存储多个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#39;你是中国人？&amp;#39; mydiaocha = Dc(question) huida = [&amp;#39;是&amp;#39;,&amp;#39;ok&amp;#39;,&amp;#39;你猜&amp;#39;] for i in huida: mydiaocha.store_res(i) for j in huida: self.</description>
-    </item>
-    
-    <item>
-      <title>用户输入</title>
-      <link>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
-      <description>函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。
-使用函数input获取输入 a = input() print(a) input()函数接受一个参数，即要向用户显示的提示信息：
-a = input(&amp;#39;这是提示信息。&amp;#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：
-&amp;gt;&amp;gt;&amp;gt; a = input(&amp;#39;输入数字看看&amp;#39;) 输入数字看看10 &amp;gt;&amp;gt;&amp;gt; a &amp;#39;10&amp;#39; 当我们需要将用户输入作为数字使用时，就会发生错误，所以可以使用函数int()，将字符串转为数字。
-&amp;gt;&amp;gt;&amp;gt; a = int(a) &amp;gt;&amp;gt;&amp;gt; a 10 </description>
-    </item>
-    
-    <item>
-      <title>类</title>
-      <link>/python/%E7%B1%BB/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E7%B1%BB/</guid>
-      <description>类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。
-创建和使用类 使用关键字class定义类：
-class Dog(): pass 这样就创建了Dog类。
-&amp;gt;&amp;gt;&amp;gt; d = Dog() &amp;gt;&amp;gt;&amp;gt; d.name = &amp;#39;jingjing&amp;#39; &amp;gt;&amp;gt;&amp;gt; d.name &amp;#39;jingjing&amp;#39; 我们可以像上面的例子那样，给实例变量绑定属性。
-类中的方法 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。
-class Dog(): def say_hi(self): print(&amp;#39;hello&amp;#39;) &amp;gt;&amp;gt;&amp;gt; p = Dog() &amp;gt;&amp;gt;&amp;gt; p.say_hi() hello __init__方法 类具有模板的作用，init()是一个特殊的方法，类的实例化操作会自动调用它。
-class Dog(): def __init__(self,a,b): self.name = a self.age = b 方法__init__()的第一个参数永远时self，它表示创建的实例本身，因此，在__init__()方法中，我们可以把各种属性绑定到self，因为self就指向实例本身。
-创建实例 有了__init__()方法，创建实例的时候就要传入和__init__()，相匹配的参数，但self不需要传入，因为它表示实例本身，Python会自动传入。
-class Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;) 实例属性和类属性 class Dog(): name = &amp;#39;joecy&amp;#39; #类属性 a = Dog() print(a.</description>
-    </item>
-    
-    <item>
-      <title>组织列表</title>
-      <link>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</guid>
-      <description>列表是一系列元素按照特定顺序排列的组成，列表是有序集合。
-访问列表元素 因为列表是有序集合，所以我们只要给出想要访问的元素的位置告诉Python即可：
-list1 = [1,2,3,4] print(list1[0]) 输出：
-1 同样的，我们可以对列表元素调用方法，如title()方法：
-list2 = [&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;,&amp;#39;shuaige&amp;#39;] print(list2[0].title()) 输出：
-Joecy 索引从0而不是1开始 在Python中，第一个列表元素的索引是0，在大多编程语言中都是如此。 Python为访问最后一个列表元素提供了特殊语法，可通过索引-1访问列表的最后一个元素：
-list3 = [1,2,3,4] print(list3[-1]) 输出：
-4 当然，-1、-2、-3&amp;hellip;也是可以的。
-修改、添加和删除元素 修改元素 修改列表中的元素，可指定列表名和要修改的元素索引，再指定新值。
-list4 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list4[0] = 4 print(list4) 输出：
-[&amp;#39;4&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 添加元素 在列表末尾添加元素 list5 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list5.append(&amp;#39;4&amp;#39;) print(list5) 输出：
-[&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;,&amp;#39;4&amp;#39;] 方法append()将元素4添加到了列表末尾，而又不影响其他元素。我们经常需要先创建一个空列表，并使用append()方法向其中添加元素。
-在列表中插入元素 使用方法insert()可以在列表任意位置添加新元素，只需要指定新元素的索引和值：
-list6 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list6.insert(0,&amp;#39;4&amp;#39;) print(list6) 输出：
-[&amp;#39;4&amp;#39;,&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 删除元素 使用del语句删除元素 如果知道想要删除的元素在列表中的位置，即可使用del语句。
-list7 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] del list7[0] print(list7) 输出：
-[&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 使用pop()元素删除元素 我们可以使用pop()方法删除列表中的元素并接着使用它的值：</description>
-    </item>
-    
-  </channel>
+name = &#34;Joecy Wang&#34; print(name.upper()) print(name.lower()) 结果为：
+JOECY WANG joecy wang 拼接字符串 first_name = &#34;joecy&#34; last_name = &#34;wang&#34; name = first_name + &#34; &#34; + last_name print(&#34;hello &#34; + name.]]></description>
+</item></channel>
 </rss>

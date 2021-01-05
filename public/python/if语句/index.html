@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>if语句 - 我的全新 Hugo 网站</title><meta name="Description" content="`if`语句可以检查程序的当前状态，本据此采取相应的措施。"><meta property="og:title" content="if语句" />
+<meta property="og:description" content="`if`语句可以检查程序的当前状态，本据此采取相应的措施。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/python/if%E8%AF%AD%E5%8F%A5/" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="if语句"/>
+<meta name="twitter:description" content="`if`语句可以检查程序的当前状态，本据此采取相应的措施。"/>
+<meta name="application-name" content="我的全新 Hugo 网站">
+<meta name="apple-mobile-web-app-title" content="我的全新 Hugo 网站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/python/if%E8%AF%AD%E5%8F%A5/" /><link rel="prev" href="http://example.org/python/json%E6%A8%A1%E5%9D%97/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "if语句",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/python\/if%E8%AF%AD%E5%8F%A5\/"
+        },"genre": "Python","keywords": "if语句","wordcount":  873 ,
+        "url": "http:\/\/example.org\/python\/if%E8%AF%AD%E5%8F%A5\/","datePublished": "2020-04-24T00:00:00+00:00","dateModified": "2020-04-24T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "作者"},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": "`if`语句可以检查程序的当前状态，本据此采取相应的措施。"
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">if语句</h1><div class="content" id="content"><p><code>if</code>语句可以检查程序的当前状态，本据此采取相应的措施。</p>
+<h2 id="if语句的简单示例">if语句的简单示例</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;joecy&#39;</span><span class="p">,</span><span class="s1">&#39;wang&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s1">&#39;joecy&#39;</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">Joecy</span>
+<span class="n">wang</span>
+</code></pre></div><p>在这个<code>for</code>循环中，<code>if</code>语句来检测，所遍历的元素是否为<code>joecy</code>，如果是，就对其使用方法<code>title()</code>。</p>
+<h2 id="条件测试">条件测试</h2>
+<p>每条<code>if</code>语句的核心都是一个值为<code>True</code>或<code>False</code>的表达式，这种表达式被称为<code>条件测试</code>（<code>布尔表达式</code>）。例如<code>i = 'joecy'</code>，Python根据条件测试的值为<code>True</code>或<code>False</code>来决定是否执行<code>if</code>语句中的代码：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">car</span> <span class="o">=</span> <span class="s1">&#39;bwm&#39;</span>
+
+<span class="c1">#检查是否相等</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">car</span> <span class="o">==</span> <span class="s1">&#39;bwm&#39;</span> 
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">car</span> <span class="o">==</span> <span class="s1">&#39;Bwm&#39;</span>
+<span class="bp">False</span>
+
+
+<span class="c1">#检查是否不相等</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">car</span> <span class="o">!=</span> <span class="s1">&#39;audi&#39;</span> 
+<span class="bp">True</span>
+
+
+<span class="c1">#比较数字</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">18</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">10</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">9</span>
+<span class="bp">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">3</span>
+<span class="bp">True</span>
+
+<span class="c1">#使用and检查多个条件，条件同时成立为True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">car</span> <span class="o">==</span> <span class="s1">&#39;bwm&#39;</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">18</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">car</span> <span class="o">!=</span> <span class="s1">&#39;audi&#39;</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">18</span>
+<span class="bp">True</span>
+
+
+<span class="c1">#使用or检查多个条件，只要有一个条件成立就为True</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">car</span> <span class="o">==</span> <span class="s1">&#39;bwm&#39;</span> <span class="ow">or</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">18</span>
+<span class="bp">True</span>
+
+
+<span class="c1">#检查特定值是否包含其中</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">b</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="ow">in</span> <span class="n">b</span>
+<span class="bp">False</span>
+
+
+<span class="c1">#检查特定值是否包含其中</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">b</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">b</span>
+<span class="bp">False</span>
+
+</code></pre></div><h2 id="if语句">if语句</h2>
+<p>最简单的<code>if</code>语句只包含一个条件测试表达式和一个操作：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">test</span><span class="p">:</span>
+    <span class="n">do</span> <span class="n">something</span>
+</code></pre></div><p>例如：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;你已经长大了！&#39;</span><span class="p">)</span>
+</code></pre></div><h3 id="if-else语句">if-else语句</h3>
+<p><code>if-else</code>语句用来在条件测试通过时执行一个操作，在不通过时执行另一个操作。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;你已经长大了！&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;你还没有成年呢！&#39;</span><span class="p">)</span>
+</code></pre></div><h3 id="if-elif-else语句">if-elif-else语句</h3>
+<p>但我们需要检查多个条件时，可使用<code>if-elif-else</code>语句，Python将只执行其中的一个代码块，它一次检查，直到遇到通过测试的条件。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;无需购票&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;虽然没成年，但是得买票了。&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;买票吧&#39;</span><span class="p">)</span>
+</code></pre></div><p>可根据实际情况使用<code>任意数量的elif代码块</code>。
+有时候需要<code>省略else代码块</code>，使用<code>elif</code>代码块处理更有效。因<code>为else</code>语句，只要不满足任何<code>if</code>或<code>elif</code>中的条件测试，其中的代码块就会执行。同理很多时候我们也需要仅<code>舍弃elif语句和else语句</code>使用<code>if</code>语句来测试条件。</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>with - 标签 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/tags/with/</link>
+        <description>with - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/with/" rel="self" type="application/rss+xml" /><item>
+    <title>文件读写</title>
+    <link>http://example.org/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
+    <description><![CDATA[要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。 读取整个文件 with open('1.txt') as file_obj: neirong = file_obj.read() print(neirong) 要使用文件内容]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>测试代码之测试函数 - 我的全新 Hugo 网站</title><meta name="Description" content="测试代码可以使程序面对各种情况都能按照预期那样工作。"><meta property="og:title" content="测试代码之测试函数" />
+<meta property="og:description" content="测试代码可以使程序面对各种情况都能按照预期那样工作。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试代码之测试函数"/>
+<meta name="twitter:description" content="测试代码可以使程序面对各种情况都能按照预期那样工作。"/>
+<meta name="application-name" content="我的全新 Hugo 网站">
+<meta name="apple-mobile-web-app-title" content="我的全新 Hugo 网站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/" /><link rel="prev" href="http://example.org/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/" /><link rel="next" href="http://example.org/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "测试代码之测试函数",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/python\/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0\/"
+        },"genre": "Python","keywords": "assertEqual(), unittest","wordcount":  1001 ,
+        "url": "http:\/\/example.org\/python\/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0\/","datePublished": "2020-04-24T00:00:00+00:00","dateModified": "2020-04-24T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "作者"},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": "测试代码可以使程序面对各种情况都能按照预期那样工作。"
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">测试代码之测试函数</h1><div class="content" id="content"><p>测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。</p>
+<h3 id="测试函数">测试函数</h3>
+<h4 id="测试通过">测试通过</h4>
+<p>现在有一个格式化姓名的函数：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">print_name</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">f</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">f</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">a</span>
+
+</code></pre></div><blockquote>
+<p>这段代码保存在<code>name.py</code></p>
+</blockquote>
+<p>我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的<code>unittest</code>模块编写单元测试：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">name</span> <span class="kn">import</span> <span class="n">print_name</span>
+
+<span class="k">class</span> <span class="nc">Test_print_name</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">test_print_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">print_name</span><span class="p">(</span><span class="s1">&#39;joecy&#39;</span><span class="p">,</span><span class="s1">&#39;wang&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s2">&#34;Joecy Wang&#34;</span><span class="p">)</span>
+        
+<span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</code></pre></div><p>首先，导入模块unittest和要测试的函数<code>print_name()</code>，然后创建一个继承于<code>unittest.TestCase</code>的类<code>Test_print_name</code>，接着创建一个方法<code>test_print_name()</code>，用来测试<code>print_name()</code>，在这个方法中，我们调用了函数<code>print_name()</code>，并在结果（返回值）存储在变量<code>a</code>中。最后，我们使用断言方法<code>assertEqual()</code>判断输出是否是我们期望的。</p>
+<blockquote>
+<p>代码行<code>unittest.main()</code>让Python运行这个文件中的测试。</p>
+</blockquote>
+<p>运行这个单元测试，得到结果：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">.</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">1</span> <span class="n">test</span> <span class="ow">in</span> <span class="mf">0.002</span><span class="n">s</span>
+
+<span class="n">OK</span>
+</code></pre></div><p>第一行的句点<code>.</code>代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，<code>OK</code>则表示这个测试用例中的所有单元测试都通过了。</p>
+<h4 id="测试不通过">测试不通过</h4>
+<p>如果这时修改了函数<code>print_name()</code>，使其多接受一个中间名参数：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">print_name</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">f</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="o">+</span> <span class="n">f</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">a</span>
+</code></pre></div><p>再次运行函数<code>print_name()</code>的单元测试时，输出如下：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">E</span>
+<span class="o">======================================================================</span>
+<span class="n">ERROR</span><span class="p">:</span> <span class="n">test_print_name</span> <span class="p">(</span><span class="n">__main__</span><span class="o">.</span><span class="n">Test_print_name</span><span class="p">)</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&#34;/home/joecy/Desktop/TestCode/testname.py&#34;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">7</span><span class="p">,</span> <span class="ow">in</span> <span class="n">test_print_name</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">print_name</span><span class="p">(</span><span class="s1">&#39;joecy&#39;</span><span class="p">,</span><span class="s1">&#39;wang&#39;</span><span class="p">)</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">print_name</span><span class="p">()</span> <span class="n">missing</span> <span class="mi">1</span> <span class="n">required</span> <span class="n">positional</span> <span class="n">argument</span><span class="p">:</span> <span class="s1">&#39;f&#39;</span>
+
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">1</span> <span class="n">test</span> <span class="ow">in</span> <span class="mf">0.002</span><span class="n">s</span>
+
+<span class="n">FAILED</span> <span class="p">(</span><span class="n">errors</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+</code></pre></div><p>第一行的字母<code>E</code>，表示有一个测试没通过，第二行告诉我们是哪里发生了错误，第三行是一个标准的<code>traceback</code>，告诉我们调用函数时缺少了一个必不可少的位置参数。</p>
+<p>测试不通过，说明我们新编写的代码存在问题，要检查刚刚进行的修改，并处理。</p>
+<p>修改后代码如下：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">print_name</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="o">+</span> <span class="n">f</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">f</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">a</span>
+</code></pre></div><p>中间名变为可选的，并添加了<code>if</code>测试。</p>
+<p>再次测试：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">.</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">1</span> <span class="n">test</span> <span class="ow">in</span> <span class="mf">0.001</span><span class="n">s</span>
+
+<span class="n">OK</span>
+
+</code></pre></div><p>通过了！</p>
+<h4 id="添加新测试">添加新测试</h4>
+<p>函数<code>print_name</code>现在可以处理包含中间名的姓名了，我们也需要再编写一个测试，用于测试包含中间名的姓名：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">name</span> <span class="kn">import</span> <span class="n">print_name</span>
+<span class="k">class</span> <span class="nc">Test_print_name</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">test_print_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+        <span class="n">a</span> <span class="o">=</span> <span class="n">print_name</span><span class="p">(</span><span class="s1">&#39;joecy&#39;</span><span class="p">,</span><span class="s1">&#39;wang&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s2">&#34;Joecy Wang&#34;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_print_m_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">print_name</span><span class="p">(</span><span class="s1">&#39;joecy&#39;</span><span class="p">,</span><span class="s1">&#39;wang&#39;</span><span class="p">,</span><span class="s1">&#39;li&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s2">&#34;Joecy Li Wang&#34;</span><span class="p">)</span>
+<span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+
+</code></pre></div><p>运行测试，结果如下：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">..</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">2</span> <span class="n">tests</span> <span class="ow">in</span> <span class="mf">0.003</span><span class="n">s</span>
+
+<span class="n">OK</span>
+
+</code></pre></div><p>OK！测试通过了！</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

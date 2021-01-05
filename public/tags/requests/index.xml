@@ -1,0 +1,28 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>requests - 标签 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/tags/requests/</link>
+        <description>requests - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/requests/" rel="self" type="application/rss+xml" /><item>
+    <title>requests基本用法</title>
+    <link>http://example.org/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+    <description><![CDATA[基本的GET、POST请求方法 GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。 使用reques]]></description>
+</item><item>
+    <title>requests库</title>
+    <link>http://example.org/python/requests%E5%BA%93/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/requests%E5%BA%93/</guid>
+    <description><![CDATA[Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库； 相比urllib库，Re]]></description>
+</item><item>
+    <title>requests高级用法</title>
+    <link>http://example.org/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</guid>
+    <description><![CDATA[requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。 文件上传 import requests files = {&#39;file&#39;:open(&#39;logo.png&#39;,&#39;rb&#39;)} r = requests.post(&#39;http://httpbin.org/post&#39;,files=files) print(r.text) 首先创建一个表示文]]></description>
+</item></channel>
+</rss>

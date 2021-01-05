@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>while - 标签 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/tags/while/</link>
+        <description>while - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/while/" rel="self" type="application/rss+xml" /><item>
+    <title>while循环</title>
+    <link>http://example.org/python/while%E5%BE%AA%E7%8E%AF/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/while%E5%BE%AA%E7%8E%AF/</guid>
+    <description><![CDATA[Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满]]></description>
+</item></channel>
+</rss>

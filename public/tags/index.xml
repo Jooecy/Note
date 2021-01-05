@@ -1,0 +1,77 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 标签 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/tags/</link>
+        <description>Tags - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>assertEqual()</title>
+    <link>http://example.org/tags/assertequal/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/assertequal/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>assertIn()</title>
+    <link>http://example.org/tags/assertin/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/assertin/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>for循环</title>
+    <link>http://example.org/tags/for%E5%BE%AA%E7%8E%AF/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/for%E5%BE%AA%E7%8E%AF/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>if语句</title>
+    <link>http://example.org/tags/if%E8%AF%AD%E5%8F%A5/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/if%E8%AF%AD%E5%8F%A5/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>input()</title>
+    <link>http://example.org/tags/input/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/input/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>json.dump()</title>
+    <link>http://example.org/tags/json.dump/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/json.dump/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>json.load()</title>
+    <link>http://example.org/tags/json.load/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/json.load/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>open()</title>
+    <link>http://example.org/tags/open/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/open/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>read()</title>
+    <link>http://example.org/tags/read/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/read/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>readlines()</title>
+    <link>http://example.org/tags/readlines/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/readlines/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

@@ -1,27 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>if语句 on XiaoXi Blog</title>
-    <link>/tags/if%E8%AF%AD%E5%8F%A5/</link>
-    <description>Recent content in if语句 on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/if%E8%AF%AD%E5%8F%A5/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>if语句</title>
-      <link>/python/if%E8%AF%AD%E5%8F%A5/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/if%E8%AF%AD%E5%8F%A5/</guid>
-      <description>if语句可以检查程序的当前状态，本据此采取相应的措施。
-if语句的简单示例 a = [&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;] for i in a: if i == &amp;#39;joecy&amp;#39;: print(i.title()) 输出：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>if语句 - tag - XiaoXi Blog</title>
+        <link>/tags/if%E8%AF%AD%E5%8F%A5/</link>
+        <description>if语句 - tag - XiaoXi Blog</description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/if%E8%AF%AD%E5%8F%A5/" rel="self" type="application/rss+xml" /><item>
+    <title>if语句</title>
+    <link>/python/if%E8%AF%AD%E5%8F%A5/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/if%E8%AF%AD%E5%8F%A5/</guid>
+    <description><![CDATA[if语句可以检查程序的当前状态，本据此采取相应的措施。
+if语句的简单示例 a = [&#39;joecy&#39;,&#39;wang&#39;] for i in a: if i == &#39;joecy&#39;: print(i.title()) 输出：
 Joecy wang 在这个for循环中，if语句来检测，所遍历的元素是否为joecy，如果是，就对其使用方法title()。
-条件测试 每条if语句的核心都是一个值为True或False的表达式，这种表达式被称为条件测试（布尔表达式）。例如i = &#39;joecy&#39;，Python根据条件测试的值为True或False来决定是否执行if语句中的代码：
-&amp;gt;&amp;gt;&amp;gt; car = &amp;#39;bwm&amp;#39; #检查是否相等 &amp;gt;&amp;gt;&amp;gt; car == &amp;#39;bwm&amp;#39; True &amp;gt;&amp;gt;&amp;gt; car == &amp;#39;Bwm&amp;#39; False #检查是否不相等 &amp;gt;&amp;gt;&amp;gt; car != &amp;#39;audi&amp;#39; True #比较数字 &amp;gt;&amp;gt;&amp;gt; a = 18 &amp;gt;&amp;gt;&amp;gt; a == 18 True &amp;gt;&amp;gt;&amp;gt; a &amp;gt; 10 True &amp;gt;&amp;gt;&amp;gt; a &amp;lt; 9 False &amp;gt;&amp;gt;&amp;gt; a != 3 True #使用and检查多个条件，条件同时成立为True &amp;gt;&amp;gt;&amp;gt; car == &amp;#39;bwm&amp;#39; and a == 18 True &amp;gt;&amp;gt;&amp;gt; car !</description>
-    </item>
-    
-  </channel>
+条件测试 每条if语句的核心都是一个值为True或False的表达式，这种表达式被称为条件测试（布尔表达式）。例如i = 'joecy'，Python根据条件测试的值为True或False来决定是否执行if语句中的代码：
+&gt;&gt;&gt; car = &#39;bwm&#39; #检查是否相等 &gt;&gt;&gt; car == &#39;bwm&#39; True &gt;&gt;&gt; car == &#39;Bwm&#39; False #检查是否不相等 &gt;&gt;&gt; car != &#39;audi&#39; True #比较数字 &gt;&gt;&gt; a = 18 &gt;&gt;&gt; a == 18 True &gt;&gt;&gt; a &gt; 10 True &gt;&gt;&gt; a &lt; 9 False &gt;&gt;&gt; a != 3 True #使用and检查多个条件，条件同时成立为True &gt;&gt;&gt; car == &#39;bwm&#39; and a == 18 True &gt;&gt;&gt; car !]]></description>
+</item></channel>
 </rss>

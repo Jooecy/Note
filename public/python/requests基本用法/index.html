@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>requests基本用法 - 我的全新 Hugo 网站</title><meta name="Description" content="基本的GET、POST请求方法"><meta property="og:title" content="requests基本用法" />
+<meta property="og:description" content="基本的GET、POST请求方法" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="requests基本用法"/>
+<meta name="twitter:description" content="基本的GET、POST请求方法"/>
+<meta name="application-name" content="我的全新 Hugo 网站">
+<meta name="apple-mobile-web-app-title" content="我的全新 Hugo 网站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" /><link rel="prev" href="http://example.org/python/requests%E5%BA%93/" /><link rel="next" href="http://example.org/python/json%E6%A8%A1%E5%9D%97/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "requests基本用法",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/python\/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/"
+        },"genre": "Python","keywords": "requests, 爬虫","wordcount":  1070 ,
+        "url": "http:\/\/example.org\/python\/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95\/","datePublished": "2020-04-24T00:00:00+00:00","dateModified": "2020-04-24T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "作者"},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": "基本的GET、POST请求方法"
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">requests基本用法</h1><div class="content" id="content"><p>基本的GET、POST请求方法</p>
+<h3 id="get请求">GET请求</h3>
+<p><code>HTTP</code>中最常见的请求之一就是<code>GET</code>请求，用<code>requests</code>构建<code>GET</code>请求非常方便。</p>
+<h4 id="使用requestsget">使用requests.get()</h4>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://baidu.com/&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">cookies</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="s1">&#39;&gt;</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">str</span><span class="s1">&#39;&gt;</span>
+<span class="mi">200</span>
+<span class="o">&lt;</span><span class="n">RequestsCookieJar</span><span class="p">[</span><span class="o">&lt;</span><span class="n">Cookie</span> <span class="n">BDORZ</span><span class="o">=</span><span class="mi">27315</span> <span class="k">for</span> <span class="o">.</span><span class="n">baidu</span><span class="o">.</span><span class="n">com</span><span class="o">/&gt;</span><span class="p">]</span><span class="o">&gt;</span>
+<span class="c1"># 部分代码</span>
+<span class="o">&lt;</span><span class="err">!</span><span class="n">DOCTYPE</span> <span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">!</span><span class="o">--</span><span class="n">STATUS</span> <span class="n">OK</span><span class="o">--&gt;&lt;</span><span class="n">html</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">....</span>
+ <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span> <span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</code></pre></div><p>使用<code>requests.get()</code>方法，即可以<code>GET</code>方式请求网页。</p>
+<ul>
+<li><code>status_code</code>属性获取<code>状态码</code></li>
+<li>cookies属性获取<code>cookies</code></li>
+<li>text属性获取<code>网页内容</code></li>
+<li><code>headers</code>属性获取<code>响应头</code></li>
+<li><code>url</code>属性获取<code>URL</code></li>
+<li><code>history</code>属性获取<code>请求历史</code></li>
+<li>等等&hellip;&hellip;</li>
+</ul>
+<p>如果GET请求需要附加额外信息，例如添加两个参数：</p>
+<p><code>r = requests.get('http://httpbin.org/get?name=joecy&amp;age=24')</code></p>
+<p>如果写成这样未免太繁琐，这时可以利用params参数：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;wd&#39;</span><span class="p">:</span><span class="s1">&#39;我&#39;</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://baidu.com/s&#39;</span><span class="p">,</span><span class="n">params</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="n">r</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+</code></pre></div><blockquote>
+<p><code>r.encoding = 'utf-8'</code>  用于修改编码</p>
+</blockquote>
+<p>输出了百度关于关键词“我”的搜索结果。</p>
+<h4 id="抓取网页">抓取网页</h4>
+<p>抓取知乎发现页面：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://www.zhihu.com/explore&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="n">r</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</code></pre></div><p>结果</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
+<span class="mi">400</span>
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="mi">400</span> <span class="n">Bad</span> <span class="n">Request</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span> <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&#34;white&#34;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">center</span><span class="o">&gt;&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="mi">400</span> <span class="n">Bad</span> <span class="n">Request</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">center</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">hr</span><span class="o">&gt;&lt;</span><span class="n">center</span><span class="o">&gt;</span><span class="n">openresty</span><span class="o">&lt;/</span><span class="n">center</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</code></pre></div><p>由于没有传递请求头，不能够正常抓取知乎发现页。</p>
+<p>添加<code>headers</code>：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span><span class="s1">&#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36&#39;</span>
+<span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://www.zhihu.com/explore&#39;</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="n">r</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+</code></pre></div><p>这样就可以正常抓取了。</p>
+<h4 id="抓取二进制数据">抓取二进制数据</h4>
+<p>抓取一个网页页面，实际上返回的是一个<code>HTML文档</code>，图片、音乐、视频等二进制文件需要写入文件才可以获取到：</p>
+<p>以抓取百度logo为例：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span><span class="s1">&#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36&#39;</span>
+<span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://www.baidu.com/img/bd_logo1.png&#39;</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+
+</code></pre></div><pre><code>KaPq�����o�L !��B�;��|���wx��v��yk���5?�r�{(�(I��W.����KX����jsj�!:��{&amp;�2{,�px��&amp;9��^gRݩ�΍�p�p �p �� �p �p ��p ���5���B �=B�IEND�B`�
+
+b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x02\x1c\x00\x00\x01\x02\x08\x03\x00\x00\x00\x82\x14\xfe8\
+</code></pre><p>打印<code>r.text</code>时出现乱码，是因为在打印时，它将图片直接转换为<code>'str'</code>，所以乱码。
+打印<code>r.content</code>时，打印出来的是<code>'b'</code>开头的<code>bytes</code>类型的数据。</p>
+<p>接着我们保存图片：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span><span class="s1">&#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36&#39;</span>
+<span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://www.baidu.com/img/bd_logo1.png&#39;</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;logo.png&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+
+</code></pre></div><p>将二进制数据以<em>二进制写的形式</em>（<code>'wb'</code>）写入指定的文件（<code>logo.png</code>），就可以保存这个图片了。</p>
+<p>同样的，视频和音频文件都可以这样保存。</p>
+<h3 id="post请求">POST请求</h3>
+<p>使用<code>requests</code>实现<code>POST</code>请求一样很简单。</p>
+<h4 id="使用requestspost">使用requests.post()</h4>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s1">&#39;joecy&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="s1">&#39;24&#39;</span>
+    <span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;http://httpbin.org/post&#39;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+</code></pre></div><h4 id="对比响应码">对比响应码</h4>
+<p>常见的响应码包括：</p>
+<p>200、302、404、500等，我们经常需要通过响应码判断请求状态，requests内置了一个状态码查询对象：<code>requests.codes</code>：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://baidu.com&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;请求成功&#34;</span><span class="p">)</span>
+    
+</code></pre></div><blockquote>
+<p>参考：<a href="https://#/" rel="">常见的返回码和查询条件</a></p>
+</blockquote>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

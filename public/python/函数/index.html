@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>函数 - 我的全新 Hugo 网站</title><meta name="Description" content="函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。"><meta property="og:title" content="函数" />
+<meta property="og:description" content="函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/python/%E5%87%BD%E6%95%B0/" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="函数"/>
+<meta name="twitter:description" content="函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。"/>
+<meta name="application-name" content="我的全新 Hugo 网站">
+<meta name="apple-mobile-web-app-title" content="我的全新 Hugo 网站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/python/%E5%87%BD%E6%95%B0/" /><link rel="prev" href="http://example.org/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/" /><link rel="next" href="http://example.org/python/while%E5%BE%AA%E7%8E%AF/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "函数",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/python\/%E5%87%BD%E6%95%B0\/"
+        },"genre": "Python","keywords": "函数","wordcount":  1576 ,
+        "url": "http:\/\/example.org\/python\/%E5%87%BD%E6%95%B0\/","datePublished": "2020-04-24T00:00:00+00:00","dateModified": "2020-04-24T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "作者"},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": "函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。"
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">函数</h1><div class="content" id="content"><p>函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的<code>print()</code>、<code>len()</code>、<code>range()</code>等就是函数，除此之外我们也可以自定义函数。</p>
+<h2 id="定义函数">定义函数</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="n">hello</span><span class="p">()</span>
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">hello</span>
+</code></pre></div><p>我们使用<code>def</code>关键字来定义函数，具体规则如下：</p>
+<blockquote>
+<ul>
+<li>函数代码块以 <code>def</code>关键词开头，后接<code>函数名称</code>和圆括号<code>()</code>。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>函数内容以冒<code>:</code>号起始，并且缩进。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的<code>return</code>相当于返回 <code>None</code>。</li>
+</ul>
+</blockquote>
+<h3 id="向函数传递参数">向函数传递参数</h3>
+<p>例如我们定义一个计算长方形面积的函数：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">s</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="mi">20</span>
+</code></pre></div><p>示例中，函数<code>x</code>可以接受两个参数：形参<code>a</code>和形参<code>b</code>。在调用函数<code>x</code>的时候，我们向其传递了实参<code>4</code>、<code>5</code>，结果显示它成功计算除了面积。</p>
+<h3 id="参数传递">参数传递</h3>
+<p>函数中可能包含多个形参，因此我们需要传递多个实参，依据不同情况，参数传递的方式很多：<code>位置参数</code>、<code>默认参数</code>、<code>关键字参数</code>、<code>可变参数</code>等。</p>
+<h4 id="位置参数">位置参数</h4>
+<p>位置参数需要按照正确的顺序传入，按照位置关联依次将实参传递给形参的传递方式叫做<code>位置参数</code>：</p>
+<p>如上个例子：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">s</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="mi">20</span>
+</code></pre></div><p>值<code>4</code>、<code>5</code>按照顺序赋值给参数<code>a</code>、<code>b</code>。参数<code>a</code>、<code>b</code>都是位置参数。</p>
+<h4 id="默认参数">默认参数</h4>
+<p>如果我们想要计算的长方形面积的宽大多时候都是长度为<code>5</code>，就可以使用默认参数：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">s</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="mi">20</span>
+</code></pre></div><p>在示例中，参数<code>b</code>就是一个默认参数，默认值为<code>2</code>，当我们调用函数<code>x(4)</code>时，相当于我们调用了<code>x(4,5)</code>。设置默认参数时，必选参数在前，默认参数在后。</p>
+<h4 id="可变参数">可变参数</h4>
+<p>可变参数就是传入的参数个数是可变的，可以是<code>1</code>个、<code>2</code>个到任意个，还可以是<code>0</code>个。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="o">*</span><span class="n">b</span><span class="p">):</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">b</span><span class="p">:</span>
+		<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="mi">1</span>
+<span class="mi">1</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+<span class="mi">5</span>
+<span class="mi">7</span>
+</code></pre></div><p>如果想把一个列表或元组传入可变参数，可以这样：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">*</span><span class="n">nums</span><span class="p">)</span>
+<span class="mi">1</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+</code></pre></div><p><code>*nums</code>表示把<code>nums</code>这个<code>list</code>的所有元素作为可变参数传进去。这种写法相当有用，而且很常见</p>
+<h4 id="关键字参数">关键字参数</h4>
+<p>关键字参数是传递给参数的<code>参数名称-值</code>对，使用关键字参数时无需考虑传入顺序。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">s</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="mi">20</span>
+</code></pre></div><p>关键字参数可以拓展程序的功能，试想你正在做一个用户注册的功能，除了用户名和年龄是必填项外，其他都是可选项，利用关键字参数来定义这个函数就能满足注册的需求。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">kw</span><span class="p">)</span>
+    
+<span class="n">x</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">other</span><span class="o">=</span><span class="s1">&#39;这是描述&#39;</span><span class="p">)</span>
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="mi">20</span>
+ <span class="p">{</span><span class="s1">&#39;other&#39;</span><span class="p">:</span> <span class="s1">&#39;这是描述&#39;</span><span class="p">}</span>
+</code></pre></div><h4 id="返回值">返回值</h4>
+<p>函数并非总是直接打印输出，有时它需要处理一些数据并返回一个或一组值。返回的值成为<code>返回值</code>。可以使用<code>return</code>语句将值返回到调用函数所在的代码行：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_full_name</span><span class="p">(</span><span class="n">f_name</span><span class="p">,</span><span class="n">l_name</span><span class="p">)</span>
+    <span class="n">full_name</span> <span class="o">=</span> <span class="n">f_name</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">l_name</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">full_name</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">a</span> <span class="o">=</span> <span class="n">get_full_name</span><span class="p">(</span><span class="s1">&#39;joecy&#39;</span><span class="p">,</span><span class="s1">&#39;wang&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">Joecy</span> <span class="n">Wang</span>
+</code></pre></div><p>函数<code>get_full_name</code>将处理过的姓名返回到调用行，并存储在变量<code>a</code>中。
+返回值可以将复杂工作转移到函数中去，从而简化主程序。</p>
+<h2 id="将函数存储在模块中">将函数存储在模块中</h2>
+<p>模块是一个包含所有你定义的函数和变量的文件，其后缀名是<code>.py</code>。模块可以被别的程序引入，以使用该模块中的函数等功能。假如我们已经保存了包含函数的模块<code>x.py</code>。</p>
+<h3 id="导入整个模块">导入整个模块</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">x</span>
+</code></pre></div><p>导入整个模块时，可以使用下面的语法调用模块中的函数：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">x</span><span class="o">.</span><span class="n">func</span><span class="p">()</span>
+</code></pre></div><h3 id="导入特定函数">导入特定函数</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">x</span> <span class="n">inport</span> <span class="n">func1</span>
+</code></pre></div><p>想要一次性导入更多函数，只需要将函数名用<code>,</code>号分隔：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">x</span> <span class="n">inport</span> <span class="n">func1</span><span class="p">,</span><span class="n">func2</span><span class="p">,</span><span class="n">func3</span><span class="o">...</span>
+</code></pre></div><p>导入特定函数时，调用它就无需使用句点法。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">func1</span><span class="p">()</span>  <span class="c1"># 无需使用句点法，直接调用</span>
+</code></pre></div><h3 id="使用as给函数指定别名">使用as给函数指定别名</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">x</span> <span class="n">inport</span> <span class="n">func1</span> <span class="k">as</span> <span class="n">f</span>
+</code></pre></div><p>这样，我们在调用函数<code>func1</code>时，可以简写：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">f</span><span class="p">()</span>  <span class="c1"># 等同于func1()</span>
+</code></pre></div><p>可以通过给导入的函数指定别名避免与主程序中的函数重名。</p>
+<h3 id="使用as给模块指定别名">使用as给模块指定别名</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">module</span> <span class="kn">as</span> <span class="nn">x</span>
+</code></pre></div><p>这样我们就将模块<code>module</code>指定了别名<code>x</code>，在调用其中函数时，也可以简写：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">x</span><span class="o">.</span><span class="n">func1</span><span class="p">()</span>  <span class="c1">#等同于module.func1()</span>
+</code></pre></div><p>给模块指定别名可以让我们专注函数名而忽略模块名。</p>
+<h3 id="导入模块中所有函数">导入模块中所有函数</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">x</span> <span class="nn">inport</span><span class="o">*</span>
+</code></pre></div><p>这种导入方式，将把模块中的所有函数都导入进来，且<code>无需使用句点法</code>调用。但是不推荐。</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

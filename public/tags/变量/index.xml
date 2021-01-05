@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>变量 - 标签 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/tags/%E5%8F%98%E9%87%8F/</link>
+        <description>变量 - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E5%8F%98%E9%87%8F/" rel="self" type="application/rss+xml" /><item>
+    <title>变量与数据类型</title>
+    <link>http://example.org/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+    <description><![CDATA[学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。 变量 a = &#34;hello world!&#34; print(a) 我们添加了一个名为a的变量，它存储了]]></description>
+</item></channel>
+</rss>

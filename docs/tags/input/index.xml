@@ -1,27 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>input() on XiaoXi Blog</title>
-    <link>/tags/input/</link>
-    <description>Recent content in input() on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/input/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>用户输入</title>
-      <link>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
-      <description>函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>input() - tag - XiaoXi Blog</title>
+        <link>/tags/input/</link>
+        <description>input() - tag - XiaoXi Blog</description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/input/" rel="self" type="application/rss+xml" /><item>
+    <title>用户输入</title>
+    <link>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author></author>
+    <guid>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
+    <description><![CDATA[函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。
 使用函数input获取输入 a = input() print(a) input()函数接受一个参数，即要向用户显示的提示信息：
-a = input(&amp;#39;这是提示信息。&amp;#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：
-&amp;gt;&amp;gt;&amp;gt; a = input(&amp;#39;输入数字看看&amp;#39;) 输入数字看看10 &amp;gt;&amp;gt;&amp;gt; a &amp;#39;10&amp;#39; 当我们需要将用户输入作为数字使用时，就会发生错误，所以可以使用函数int()，将字符串转为数字。
-&amp;gt;&amp;gt;&amp;gt; a = int(a) &amp;gt;&amp;gt;&amp;gt; a 10 </description>
-    </item>
-    
-  </channel>
+a = input(&#39;这是提示信息。&#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：
+&gt;&gt;&gt; a = input(&#39;输入数字看看&#39;) 输入数字看看10 &gt;&gt;&gt; a &#39;10&#39; 当我们需要将用户输入作为数字使用时，就会发生错误，所以可以使用函数int()，将字符串转为数字。
+&gt;&gt;&gt; a = int(a) &gt;&gt;&gt; a 10 ]]></description>
+</item></channel>
 </rss>

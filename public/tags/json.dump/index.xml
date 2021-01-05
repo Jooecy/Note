@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>json.dump() - 标签 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/tags/json.dump/</link>
+        <description>json.dump() - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/json.dump/" rel="self" type="application/rss+xml" /><item>
+    <title>Json模块</title>
+    <link>http://example.org/python/json%E6%A8%A1%E5%9D%97/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/json%E6%A8%A1%E5%9D%97/</guid>
+    <description><![CDATA[很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。 JSON格式最初是为了JavaScript开发的，但随后成]]></description>
+</item></channel>
+</rss>

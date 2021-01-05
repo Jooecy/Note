@@ -1,0 +1,77 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Python笔记 - 分类 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/categories/python%E7%AC%94%E8%AE%B0/</link>
+        <description>Python笔记 - 分类 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/categories/python%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>if语句</title>
+    <link>http://example.org/python/if%E8%AF%AD%E5%8F%A5/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/if%E8%AF%AD%E5%8F%A5/</guid>
+    <description><![CDATA[if语句可以检查程序的当前状态，本据此采取相应的措施。 if语句的简单示例 a = [&#39;joecy&#39;,&#39;wang&#39;] for i in a: if i == &#39;joecy&#39;: print(i.title()) 输出： Joecy wang 在这个for循环中，if语句来检测]]></description>
+</item><item>
+    <title>Json模块</title>
+    <link>http://example.org/python/json%E6%A8%A1%E5%9D%97/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/json%E6%A8%A1%E5%9D%97/</guid>
+    <description><![CDATA[很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。 JSON格式最初是为了JavaScript开发的，但随后成]]></description>
+</item><item>
+    <title>requests基本用法</title>
+    <link>http://example.org/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+    <description><![CDATA[基本的GET、POST请求方法 GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。 使用reques]]></description>
+</item><item>
+    <title>requests库</title>
+    <link>http://example.org/python/requests%E5%BA%93/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/requests%E5%BA%93/</guid>
+    <description><![CDATA[Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库； 相比urllib库，Re]]></description>
+</item><item>
+    <title>requests高级用法</title>
+    <link>http://example.org/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</guid>
+    <description><![CDATA[requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。 文件上传 import requests files = {&#39;file&#39;:open(&#39;logo.png&#39;,&#39;rb&#39;)} r = requests.post(&#39;http://httpbin.org/post&#39;,files=files) print(r.text) 首先创建一个表示文]]></description>
+</item><item>
+    <title>urllib库的使用</title>
+    <link>http://example.org/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[urllib库是Python内置的HTTP请求库，它包含四个模块： request：最基本的HTTP请求模块 error：异常处理模块 parse]]></description>
+</item><item>
+    <title>while循环</title>
+    <link>http://example.org/python/while%E5%BE%AA%E7%8E%AF/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/while%E5%BE%AA%E7%8E%AF/</guid>
+    <description><![CDATA[Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满]]></description>
+</item><item>
+    <title>函数</title>
+    <link>http://example.org/python/%E5%87%BD%E6%95%B0/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/%E5%87%BD%E6%95%B0/</guid>
+    <description><![CDATA[函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函]]></description>
+</item><item>
+    <title>发送请求</title>
+    <link>http://example.org/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
+    <description><![CDATA[使用urllib的request模块，可以方便的实现请求的发送并得到响应。 发送请求 urlopen() 抓取Python官网： import urllib.request response = urllib.request.urlopen(&#34;https://www.python.org&#34;) print(response.read().decode(&#39;utf-8&#39;)) 部分输出： # 部分输出 &lt;script]]></description>
+</item><item>
+    <title>变量与数据类型</title>
+    <link>http://example.org/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+    <description><![CDATA[学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。 变量 a = &#34;hello world!&#34; print(a) 我们添加了一个名为a的变量，它存储了]]></description>
+</item></channel>
+</rss>

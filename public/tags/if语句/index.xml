@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>if语句 - 标签 - 我的全新 Hugo 网站</title>
+        <link>http://example.org/tags/if%E8%AF%AD%E5%8F%A5/</link>
+        <description>if语句 - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/if%E8%AF%AD%E5%8F%A5/" rel="self" type="application/rss+xml" /><item>
+    <title>if语句</title>
+    <link>http://example.org/python/if%E8%AF%AD%E5%8F%A5/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/python/if%E8%AF%AD%E5%8F%A5/</guid>
+    <description><![CDATA[if语句可以检查程序的当前状态，本据此采取相应的措施。 if语句的简单示例 a = [&#39;joecy&#39;,&#39;wang&#39;] for i in a: if i == &#39;joecy&#39;: print(i.title()) 输出： Joecy wang 在这个for循环中，if语句来检测]]></description>
+</item></channel>
+</rss>

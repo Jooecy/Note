@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>测试代码之测试类 - 我的全新 Hugo 网站</title><meta name="Description" content="类的测试于函数的测试类似，但也有些许不同。"><meta property="og:title" content="测试代码之测试类" />
+<meta property="og:description" content="类的测试于函数的测试类似，但也有些许不同。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试代码之测试类"/>
+<meta name="twitter:description" content="类的测试于函数的测试类似，但也有些许不同。"/>
+<meta name="application-name" content="我的全新 Hugo 网站">
+<meta name="apple-mobile-web-app-title" content="我的全新 Hugo 网站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/" /><link rel="prev" href="http://example.org/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/" /><link rel="next" href="http://example.org/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "测试代码之测试类",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/python\/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB\/"
+        },"genre": "Python","keywords": "assertIn(), setUp(), unittest","wordcount":  822 ,
+        "url": "http:\/\/example.org\/python\/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB\/","datePublished": "2020-04-24T00:00:00+00:00","dateModified": "2020-04-24T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "作者"},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": "类的测试于函数的测试类似，但也有些许不同。"
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">测试代码之测试类</h1><div class="content" id="content"><p>类的测试于函数的测试类似，但也有些许不同。</p>
+<h3 id="测试类">测试类</h3>
+<p>先写出一个用于测试的类，并存储在<code>diaocha.py</code>中：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Dc</span><span class="p">():</span>
+    <span class="s1">&#39;&#39;&#39;收集匿名调查问卷&#39;&#39;&#39;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">question</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">question</span> <span class="o">=</span> <span class="n">question</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">responses</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">def</span> <span class="nf">printquestion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="err">‘’‘打印问题’‘’</span>
+        <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">question</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">store_res</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">newres</span><span class="p">):</span>
+        <span class="err">‘’‘存储答案’‘’</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">responses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newres</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">show_results</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="err">‘’‘打印全部答案’‘’</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">responses</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+
+</code></pre></div><p>接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">diaocha</span> <span class="kn">import</span> <span class="n">Dc</span>
+
+<span class="k">class</span> <span class="nc">TestDc</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">test_oneres</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s1">&#39;&#39;&#39;测试存储一个答案&#39;&#39;&#39;</span>
+        <span class="n">question</span> <span class="o">=</span> <span class="s2">&#34;你是中国人嘛？&#34;</span>
+        <span class="n">mydiaoche</span> <span class="o">=</span> <span class="n">Dc</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+        <span class="n">mydiaoche</span><span class="o">.</span><span class="n">store_res</span><span class="p">(</span><span class="s1">&#39;是&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="s1">&#39;是&#39;</span><span class="p">,</span><span class="n">mydiaoche</span><span class="o">.</span><span class="n">responses</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">test_more_res</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s1">&#39;&#39;&#39;测试存储多个答案&#39;&#39;&#39;</span>
+        <span class="n">question</span> <span class="o">=</span> <span class="s1">&#39;你是中国人？&#39;</span>
+        <span class="n">mydiaocha</span> <span class="o">=</span> <span class="n">Dc</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+        <span class="n">huida</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;是&#39;</span><span class="p">,</span><span class="s1">&#39;ok&#39;</span><span class="p">,</span><span class="s1">&#39;你猜&#39;</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">huida</span><span class="p">:</span>
+            <span class="n">mydiaocha</span><span class="o">.</span><span class="n">store_res</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">huida</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="n">mydiaocha</span><span class="o">.</span><span class="n">responses</span><span class="p">)</span>
+
+
+<span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+
+</code></pre></div><p>使用断言assertIn判断一个item是不是在list中，结果如下：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">..</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="n">Ran</span> <span class="mi">2</span> <span class="n">tests</span> <span class="ow">in</span> <span class="mf">0.002</span><span class="n">s</span>
+
+<span class="n">OK</span>
+
+</code></pre></div><p>两个测试都通过了！</p>
+<h3 id="方法setup">方法setUp()</h3>
+<p>在上面两个测试中，每次我们都需要创建Dc的实例，每个方法中都需要创建答案，做了很多重复的工作。</p>
+<p>可以使用unittest.TestCase类包含的方法setUp()简化代码。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">diaocha</span> <span class="kn">import</span> <span class="n">Dc</span>
+
+<span class="k">class</span> <span class="nc">TestDc</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">question</span> <span class="o">=</span> <span class="s1">&#39;你是中国人吗？&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mydiaocha</span> <span class="o">=</span> <span class="n">Dc</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">huida</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;是&#39;</span><span class="p">,</span><span class="s1">&#39;ok&#39;</span><span class="p">,</span><span class="s1">&#39;你猜&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">test_oneres</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mydiaocha</span><span class="o">.</span><span class="n">store_res</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">huida</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">huida</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="bp">self</span><span class="o">.</span><span class="n">mydiaocha</span><span class="o">.</span><span class="n">responses</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_more_res</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">huida</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mydiaocha</span><span class="o">.</span><span class="n">store_res</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">huida</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">mydiaocha</span><span class="o">.</span><span class="n">responses</span><span class="p">)</span>
+<span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+
+</code></pre></div><p>如果TestCase中包含了方法setUp()，那么Python将先运行它，再运行test_打头的方法。
+我们在setUp()方法中，创建了Dc的实例和存储答案的列表，只不过它们都包含前缀self，也就是说，我们把它们存储在属性中，这样，就可以在这个类中的任何一个地方使用它们了。</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
