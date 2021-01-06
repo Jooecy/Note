@@ -1,7 +1,8 @@
 ---
 title: if语句
-date: 2020-04-24
+date: 2020-04-28
 description: "`if`语句可以检查程序的当前状态，本据此采取相应的措施。"
+weight: 3
 toc: true
 categories:
 - Python笔记

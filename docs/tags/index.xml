@@ -5,7 +5,16 @@
     <link>/tags/</link>
     <description>Recent content in Tags on XiaoXi Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>if语句</title>
+      <link>/tags/if%E8%AF%AD%E5%8F%A5/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/if%E8%AF%AD%E5%8F%A5/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>assertEqual()</title>
       <link>/tags/assertequal/</link>
@@ -30,15 +39,6 @@
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/for%E5%BE%AA%E7%8E%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>if语句</title>
-      <link>/tags/if%E8%AF%AD%E5%8F%A5/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/if%E8%AF%AD%E5%8F%A5/</guid>
       <description></description>
     </item>
     

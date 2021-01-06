@@ -33,30 +33,29 @@ weight: 15
 ### 目前笔记内容概览
 ```
 Notes
-├── level-one
-│   ├── level-two
-│   │   ├── level-three
-│   │   │   ├── level-four
-│   │   │   │   ├── _index.md       <-- /level-one/level-two/level-three/level-four
-│   │   │   │   ├── page-4-a.md     <-- /level-one/level-two/level-three/level-four/page-4-a
-│   │   │   │   ├── page-4-b.md     <-- /level-one/level-two/level-three/level-four/page-4-b
-│   │   │   │   └── page-4-c.md     <-- /level-one/level-two/level-three/level-four/page-4-c
-│   │   │   ├── _index.md           <-- /level-one/level-two/level-three
-│   │   │   ├── page-3-a.md         <-- /level-one/level-two/level-three/page-3-a
-│   │   │   ├── page-3-b.md         <-- /level-one/level-two/level-three/page-3-b
-│   │   │   └── page-3-c.md         <-- /level-one/level-two/level-three/page-3-c
-│   │   ├── _index.md               <-- /level-one/level-two
-│   │   ├── page-2-a.md             <-- /level-one/level-two/page-2-a
-│   │   ├── page-2-b.md             <-- /level-one/level-two/page-2-b
-│   │   └── page-2-c.md             <-- /level-one/level-two/page-2-c
-│   ├── _index.md                   <-- /level-one
-│   ├── page-1-a.md                 <-- /level-one/page-1-a
-│   ├── page-1-b.md                 <-- /level-one/page-1-b
-│   └── page-1-c.md                 <-- /level-one/page-1-c
-├── _index.md                       <-- /
-└── page-top.md                     <-- /page-top
+├── Python笔记
+│   ├── 变量与数据类型
+│   ├── 操作列表
+│   ├── if语句
+│   ├── 字典
+│   ├── 用户输入
+│   ├── while循环
+│   ├── 函数
+│   ├── 类
+│   ├── 文件读写
+│   ├── Json模块
+│   ├── 组织列表
+│   ├── 测试代码之测试函数
+│   ├── 测试代码之测试类
+│   ├── requests库
+│   ├── urllib库的使用
+│   ├── requests基本用法
+│   ├── requests高级用法
+│   ├── 发送请求
+├── JavaScript笔记
+├── VueJs笔记
 ```
 {{% notice note %}}
-概览更新日期：
-博客更新日期：  
+概览更新时间：2021年01月06日22:53:58   
+博客更新时间：2021年01月06日22:53:58
 {{% /notice %}}

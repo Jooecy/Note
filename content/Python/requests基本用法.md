@@ -1,6 +1,7 @@
 ---
 title: requests基本用法
 date: 2020-04-24
+weight: 15
 description: 基本的GET、POST请求方法 
 categories:
 - Python笔记

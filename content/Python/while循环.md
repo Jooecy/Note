@@ -1,6 +1,7 @@
 ---
 title: while循环
 date: 2020-04-24
+weight: 6
 description: Python的循环有两种，一种是`for...in`循环，依次把`list`或`tuple`中的每个元素迭代出来
 categories:
 - Python笔记

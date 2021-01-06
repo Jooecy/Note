@@ -1,6 +1,7 @@
 ---
 title: urllib库的使用
 date: 2020-04-24
+weight: 13
 description: "`urllib`库是Python内置的`HTTP`请求库，它包含四个模块"
 categories:
 - Python笔记

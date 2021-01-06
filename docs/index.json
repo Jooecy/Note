@@ -7,11 +7,32 @@
 	"content": "Python Python自学笔记 Since 2019\n"
 },
 {
+	"uri": "/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/",
+	"title": "变量与数据类型",
+	"tags": ["变量", "数据类型"],
+	"description": "学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。",
+	"content": "学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。\n变量 a = \u0026#34;hello world!\u0026#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。\n变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（\u0026quot;\u0026quot;）或单引号（''）。\na = \u0026#34;我是字符串。\u0026#34; b = \u0026#39;我也是字符串。\u0026#39; 这样我们就可以在字符串中包含双引号或单引号了：\na = \u0026#34;我是\u0026#39;字符串\u0026#39;。\u0026#34; b = \u0026#39;我也是\u0026#34;字符串\u0026#34;。\u0026#39; 使用方法修改字符串大小写 name = \u0026#34;joecy wang\u0026#34; print(name.title()) 输出的结果是：\nJoecy Wang 我们将小写字符joecy wang存储到变量name中，在print语句中，我们对name使用方法title()，每个方法后面都会有一个括号，用于接受额外的信息，title()方法并不需要，所以它的括号是空的。\n方法title()以首字母大写的方式显示每一个单词。如果想把字符串中的单词全部变为大写或是小写，可以使用方法upper()和lower()。\nname = \u0026#34;Joecy Wang\u0026#34; print(name.upper()) print(name.lower()) 结果为：\nJOECY WANG joecy wang 拼接字符串 first_name = \u0026#34;joecy\u0026#34; last_name = \u0026#34;wang\u0026#34; name = first_name + \u0026#34; \u0026#34; + last_name print(\u0026#34;hello \u0026#34; + name.title() + \u0026#34;!\u0026#34;) 输出：\nhello Joecy Wang! 在字符串中添加空白 在编程中空白是指任何非打印字符，如空格、制表符和换行符。\nprint(\u0026#34;\\t制表符\u0026#34;) 输出：\n制表符 print(\u0026#34;\\n第一行\\n第二行\\n第三行\u0026#34;) 输出：\n第一行 第二行 第三行 \\n、\\t可同时使用。\n删除空白 a = \u0026#34; joecy \u0026#34; a.rstrip() a.lstrip() a.strip() 输出：\n\u0026#34; joecy\u0026#34; #删除左边空白 \u0026#34;joecy \u0026#34; #删除右边空白 \u0026#34;joecy\u0026#34; #删除全部空白 数字 在Python中，数字可进行加减乘除（+、-、*、/）运算。**表示乘方运算。\n浮点数 Python将带小数点的数字都成为浮点数。\n使用函数str()避免错误 很多时候我们需要将数字和字符串同时拼接或打印出来，这时候需要使用str()函数。\nage = 25 message = \u0026#34;happy \u0026#34; + str(age) + \u0026#34; birthday!\u0026#34; print(message) 输出：\nhappy 25 birthday! 注释 Python中使用#号注释。\n# 打印hello print(\u0026#34;hello\u0026#34;) \u0026#39;\u0026#39;\u0026#39; 这是多行注释，用三个单引号 这是多行注释，用三个单引号 这是多行注释，用三个单引号 \u0026#39;\u0026#39;\u0026#39; print(\u0026#34;Hello, World!\u0026#34;) \u0026#34;\u0026#34;\u0026#34; 这是多行注释，用三个单引号 这是多行注释，用三个单引号 这是多行注释，用三个单引号 \u0026#34;\u0026#34;\u0026#34; print(\u0026#34;Hello, World!\u0026#34;) "
+},
+{
 	"uri": "/javascript/",
 	"title": "Javascript笔记",
 	"tags": [],
 	"description": "",
 	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+},
+{
+	"uri": "/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/",
+	"title": "操作列表",
+	"tags": ["列表", "for循环"],
+	"description": "很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。",
+	"content": "很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。\n使用for循环遍历列表 a = [\u0026#39;我\u0026#39;,\u0026#39;你\u0026#39;,\u0026#39;他\u0026#39;] for i in a: print(i) 输出：\n我 你 他 创建数值列表 使用函数range() for i in range(1,5): print(i) 输出：\n1 2 3 4 函数range()从你指定的第一个数字开始，并在指定的第二个数字前面停下。\n使用函数range()创建列表 使用函数list()将函数range()的结果直接转为列表：\nnum = list(range(1,5)) print(num) 输出：\n[1,2,3,4] 可以给range()函数指定步长，来完成更多工作：\nnum = list(range(2,11,2)) print(num) 输出：\n[2,4,6,8,10] 在这个示例中，range()函数从2开始，并以2为步长不断增加。 使用函数range()可以创建几乎所有的数字列表：\na = [] for i in range(1,5): a.append(i ** 2) print(a) 输出：\n[1,4,9,16] 对数字列表进行统计 \u0026gt;\u0026gt;\u0026gt; a = [1,2,3,4,5,6,7] \u0026gt;\u0026gt;\u0026gt; min(a) 1 \u0026gt;\u0026gt;\u0026gt; max(a) 7 \u0026gt;\u0026gt;\u0026gt; sum(a) 29 列表解析 列表解析将for循环和创建新元素的代码合并在一行：\na = [i ** 2 for i in range(1,5)] print(a) 输出：\n[1,4,9,16] 使用列表解析，要先给定一个列表名，如a，在定义一个表达式，如 i ** 2，然后编写一个for循环，用于给表达式提供值，最后将表达式与for循环使用方括号[]括起来。\n使用列表一部分 切片 a = [1,2,3,4,5,6,7] print(a[0:3]) print(a[:3]) print(a[2:4]) print(a[4:]) print(a[-3:]) 输出：\n[1,2,3] [1,2,3] [3,4] [5, 6, 7] [5, 6, 7] 当不指定起始索引时，Python默认从索引0处开始，当不指定终止索引时，Python默认到最后一个元素为止。 同样的，我们可以使用for循环遍历切片。\na = [1,2,3,4,5,6,7] for i in a[0:3]: print(i) 输出：\n1 2 3 复制列表 我们可以通过创建一个包含整个列表的切片来复制列表：\na = [1,2,3,4] b = a[:] print(b) 输出：\n[1,2,3,4] 但如果我们使用这样的方式‘复制’列表：\na = [1,2,3,4] b = a #错误复制列表 print(b) 这并不是两个列表。当a列表的发生改变时，b列表会发生同样的改变。\n"
+},
+{
+	"uri": "/python/if%E8%AF%AD%E5%8F%A5/",
+	"title": "if语句",
+	"tags": ["if语句"],
+	"description": "`if`语句可以检查程序的当前状态，本据此采取相应的措施。",
+	"content": "if语句可以检查程序的当前状态，本据此采取相应的措施。\nif语句的简单示例 a = [\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;] for i in a: if i == \u0026#39;joecy\u0026#39;: print(i.title()) 输出：\nJoecy wang 在这个for循环中，if语句来检测，所遍历的元素是否为joecy，如果是，就对其使用方法title()。\n条件测试 每条if语句的核心都是一个值为True或False的表达式，这种表达式被称为条件测试（布尔表达式）。例如i = 'joecy'，Python根据条件测试的值为True或False来决定是否执行if语句中的代码：\n\u0026gt;\u0026gt;\u0026gt; car = \u0026#39;bwm\u0026#39; #检查是否相等 \u0026gt;\u0026gt;\u0026gt; car == \u0026#39;bwm\u0026#39; True \u0026gt;\u0026gt;\u0026gt; car == \u0026#39;Bwm\u0026#39; False #检查是否不相等 \u0026gt;\u0026gt;\u0026gt; car != \u0026#39;audi\u0026#39; True #比较数字 \u0026gt;\u0026gt;\u0026gt; a = 18 \u0026gt;\u0026gt;\u0026gt; a == 18 True \u0026gt;\u0026gt;\u0026gt; a \u0026gt; 10 True \u0026gt;\u0026gt;\u0026gt; a \u0026lt; 9 False \u0026gt;\u0026gt;\u0026gt; a != 3 True #使用and检查多个条件，条件同时成立为True \u0026gt;\u0026gt;\u0026gt; car == \u0026#39;bwm\u0026#39; and a == 18 True \u0026gt;\u0026gt;\u0026gt; car != \u0026#39;audi\u0026#39; and a == 18 True #使用or检查多个条件，只要有一个条件成立就为True \u0026gt;\u0026gt;\u0026gt; car == \u0026#39;bwm\u0026#39; or a != 18 True #检查特定值是否包含其中 \u0026gt;\u0026gt;\u0026gt; b = [1,2,3,4,6] \u0026gt;\u0026gt;\u0026gt; 1 in b True \u0026gt;\u0026gt;\u0026gt; 5 in b False #检查特定值是否包含其中 \u0026gt;\u0026gt;\u0026gt; 5 not in b True \u0026gt;\u0026gt;\u0026gt; 3 not in b False if语句 最简单的if语句只包含一个条件测试表达式和一个操作：\nif test: do something 例如：\nage = 18 if age \u0026gt;= 18: print(\u0026#39;你已经长大了！\u0026#39;) if-else语句 if-else语句用来在条件测试通过时执行一个操作，在不通过时执行另一个操作。\nage = 18 if age \u0026gt;= 18: print(\u0026#39;你已经长大了！\u0026#39;) else: print(\u0026#39;你还没有成年呢！\u0026#39;) if-elif-else语句 但我们需要检查多个条件时，可使用if-elif-else语句，Python将只执行其中的一个代码块，它一次检查，直到遇到通过测试的条件。\nage = 12 if age \u0026lt; 4: print(\u0026#39;无需购票\u0026#39;) elif age \u0026lt; 18: print(\u0026#39;虽然没成年，但是得买票了。\u0026#39;) else: print(\u0026#39;买票吧\u0026#39;) 可根据实际情况使用任意数量的elif代码块。 有时候需要省略else代码块，使用elif代码块处理更有效。因为else语句，只要不满足任何if或elif中的条件测试，其中的代码块就会执行。同理很多时候我们也需要仅舍弃elif语句和else语句使用if语句来测试条件。\n"
 },
 {
 	"uri": "/vuejs/",
@@ -21,11 +42,144 @@
 	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
 },
 {
+	"uri": "/python/%E5%AD%97%E5%85%B8/",
+	"title": "字典",
+	"tags": ["字典"],
+	"description": "Python字典可以将相关的信息关联起来，`字典`中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。",
+	"content": "Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。\n一个简单的字典 dict_1 = {\u0026#39;joecy\u0026#39;:25,\u0026#39;yingying\u0026#39;:24} print(dict_1[\u0026#39;joecy\u0026#39;]) 输出：\n25 在Python中，字典是由一系列键-值对（key-value）组成。并放在花括号{}中。每一个键与一个值相关联，可以使用键来访问与其对应的值。与键相关联的值可以是数字、字符串、列表甚至另一个字典。\n键与值之间使用冒号:分隔，键-值对之间使用逗号,分隔。\n访问字典中的值 dict_1 = {\u0026#39;joecy\u0026#39;:25,\u0026#39;yingying\u0026#39;:24} print(dict_1[\u0026#39;joecy\u0026#39;]) #指定字典名，并在[]中指定键 添加键值对 要向字典中添加键-值对，可依次指定字典名、要添加的键以及值：\ndict_1 = {\u0026#39;joecy\u0026#39;:25,\u0026#39;yingying\u0026#39;:24} dict_1[\u0026#39;muyi\u0026#39;] = 2 print(dict_1) 输出：\n{\u0026#39;joecy\u0026#39;: 25, \u0026#39;yingying\u0026#39;: 24, \u0026#39;muyi\u0026#39;: 2} 一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值替换：\ndict_1 = {\u0026#39;joecy\u0026#39;:25,\u0026#39;yingying\u0026#39;:24} dict_1[\u0026#39;muyi\u0026#39;] = 2 dict_1[\u0026#39;muyi\u0026#39;] = \u0026#39;1周岁\u0026#39; print(dict_1) 输出：\n{\u0026#39;joecy\u0026#39;: 25, \u0026#39;yingying\u0026#39;: 24, \u0026#39;muyi\u0026#39;: \u0026#39;1周岁\u0026#39;} 键'muyi'的值被替换为了值'1周岁'。 键-值对的排列顺序与添加顺序不同，Python只关心键与值之前的对应关系。\n和list比较，dict有以下几个特点：\n查找和插入的速度极快，不会随着key的增加而变慢； 需要占用大量的内存，内存浪费多。 而list相反：\n查找和插入的时间随着元素的增加而增加； 占用空间小，浪费内存很少。 所以，dict是用空间来换取时间的一种方法。（来自廖雪峰博客）\n创建空字典 当我们需要存储用户提供的信息或编写能够自动生成大量键-值对的代码时，需要事先定义一个空字典：\nd = {} d[\u0026#39;key1\u0026#39;] = \u0026#39;第一个值\u0026#39; d[\u0026#39;key2\u0026#39;] = \u0026#39;第二个值\u0026#39; print(d) 输出：\n{\u0026#39;key1\u0026#39;: \u0026#39;第一个值\u0026#39;, \u0026#39;key2\u0026#39;: \u0026#39;第二个值\u0026#39;} 修改字典中的值 alien_0 = {\u0026#39;x_position\u0026#39;: 0, \u0026#39;y_position\u0026#39;: 25, \u0026#39;speed\u0026#39;: \u0026#39;medium\u0026#39;} print(\u0026#34; Original x-position: \u0026#34; + str( alien_0[\u0026#39;x_position\u0026#39;])) # 向右移动外星人 # 据外星人当前速度决定将其移动多远  if alien_0[\u0026#39;speed\u0026#39;] == \u0026#39;slow\u0026#39;: x_increment = 1 elif alien_0[\u0026#39;speed\u0026#39;] == \u0026#39;medium\u0026#39;: x_increment = 2 else: # 这个外星人的速度一定很快  x_increment = 3 # 新位置等于老位置加上增量  alien_0[\u0026#39;x_position\u0026#39;] = alien_0[\u0026#39;x_position\u0026#39;] + x_increment print(\u0026#34; New x-position: \u0026#34; + str( alien_0[\u0026#39;x_position\u0026#39;]))  示例代码来源于《Python编程 从入门到实践》\n 删除键-值对 我们可以使用pop()方法或del语句删除键-值对：\nd = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} del d[\u0026#39;a\u0026#39;] print(\u0026#39;字典d\u0026#39;\\n) print(d) e = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} e.pop(\u0026#39;a\u0026#39;) print(\u0026#39;字典e\u0026#39;\\n) print(e) 输出：\n字典d {\u0026#39;b\u0026#39;: 2, \u0026#39;c\u0026#39;: 3} 字典e {\u0026#39;b\u0026#39;: 2, \u0026#39;c\u0026#39;: 3} 遍历字典 Python有多种遍历字典的方式：遍历字典的所有键-值对、``键或值。\n遍历字典所有的键值对 d = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} for i,j in d.items(): print(i,j) 输出：\na 1 b 2 c 3 在这个遍历字典d的for循环中，我们声明了两个变量i，j分别用来存储键-值对的键和值。在for循环的第二部分，我们对字典d使用了方法items()，它返回一个键-值对列表。最后for循环依次将每个键-值对存储到两个变量中。\n即使遍历字典时，键-值对的返回顺序与存储顺序也不相同。\n遍历字典中所有键 遍历字典中的键可以使用方法`keys()``。\nd = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} for i in d.keys(): print(i) 输出：\na b c 其实遍历字典时，Python默认遍历所有的键，所以我们可以将keys()方法省略：\nd = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} for i in d: print(i) 输出：\na b c 结果并不会改变，但是显式的使用方法keys()可以时程序便于理解。\n遍历字典中所有的值 d = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} for i in d.values(): print(i) 输出：\n1 2 3 这种做法提取字典中的值，不会考虑重复问题，最终的列表（结果）可能包含大量重复项。剔除重复项可使用集合set，集合set类似于列表，但其中的元素必须是独一无二的。\nl = [1,1,2,2,3,3,4,4] ll = set(l) print(ll) 输出：\n{1, 2, 3, 4} 嵌套 将字典存储在列表中，或将列表存储在字典中，称为嵌套。\n在列表中存储字典 d_1 = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} d_2 = {\u0026#39;f\u0026#39;:\u0026#39;joecy\u0026#39;,\u0026#39;g\u0026#39;:\u0026#39;yy\u0026#39;} l = [d_1,d_2] for i in l: print(i) 输出：\n{\u0026#39;a\u0026#39;: 1, \u0026#39;b\u0026#39;: 2, \u0026#39;c\u0026#39;: 3} {\u0026#39;f\u0026#39;: \u0026#39;joecy\u0026#39;, \u0026#39;g\u0026#39;: \u0026#39;yy\u0026#39;} 在字典中存储列表 d = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:[1,2,3]} 在字典中存储字典 d = {\u0026#39;dind\u0026#39;:{\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2},\u0026#39;c\u0026#39;:3} "
+},
+{
+	"uri": "/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/",
+	"title": "用户输入",
+	"tags": ["input()"],
+	"description": "函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。",
+	"content": "函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。\n使用函数input获取输入 a = input() print(a) input()函数接受一个参数，即要向用户显示的提示信息：\na = input(\u0026#39;这是提示信息。\u0026#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：\n\u0026gt;\u0026gt;\u0026gt; a = input(\u0026#39;输入数字看看\u0026#39;) 输入数字看看10 \u0026gt;\u0026gt;\u0026gt; a \u0026#39;10\u0026#39; 当我们需要将用户输入作为数字使用时，就会发生错误，所以可以使用函数int()，将字符串转为数字。\n\u0026gt;\u0026gt;\u0026gt; a = int(a) \u0026gt;\u0026gt;\u0026gt; a 10 "
+},
+{
+	"uri": "/python/while%E5%BE%AA%E7%8E%AF/",
+	"title": "while循环",
+	"tags": ["while", "循环"],
+	"description": "Python的循环有两种，一种是`for...in`循环，依次把`list`或`tuple`中的每个元素迭代出来",
+	"content": "Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环。\n使用while循环 下面的例子是使用while循环计算100以内奇数和：\na = 0 b = 99 while b \u0026gt; 0: a = a + b b = b -2 print(a) 让用户选择何时退出 message = \u0026#39;\u0026#39; while message != \u0026#39;q\u0026#39;: message = input() if message != \u0026#39;q\u0026#39;: print(message) 上面的示例代码，在用户输入q是退出循环，否则将循环执行打印用户输入的操作。if语句使用户在输入退出指令q时，不至于将'q'打印出来。\n使用标志 active = True message = \u0026#39;\u0026#39; while active: message = input() if message == \u0026#39;q\u0026#39;: active = False else: print(message) 我们将条件测试都放在其他地方，while语句就只需要检查一个条件。从而可以使用程序更加的简洁易读。\n使用break退出循环 break语句可以提前结束循环，例如上一个例子，可以这样改写：\nwhile True: message = input() if message == \u0026#39;q\u0026#39;: break else: print(message) 使用continue 在循环中可以使用continue语句跳过当次循环，并执行下一次循环。continue语句不会像break语句那样不再执行余下的代码。\na = 0 while a \u0026lt; 10: a = a + 1 if a % 2 == 0: continue print(a) break语句可以在循环过程中直接退出循环，而continue语句可以提前结束本轮循环，并直接开始下一轮循环。这两个语句通常都必须配合if语句使用。\n要特别注意，不要滥用break和continue语句。break和continue会造成代码执行逻辑分叉过多，容易出错。大多数循环并不需要用到break和continue语句，上面的两个例子，都可以通过改写循环条件或者修改循环逻辑，去掉break和continue语句。\nwhile循环处理列表和字典 for循环是遍历列表的有效方式，但不该在for循环中修改列表，例如移动元素的操作，因为这会导致Python无法跟踪其中的元素。然而使用while循环就可以在遍历时对列表进行修改。\n在列表间移动元素 l1 = [1,2,3,4] l2 = [] while l1: l = l1.pop() l2.append(l) print(l1) print(l2) 输出：\n[] [4, 3, 2, 1] 可见，列表l1中的元素已经移动到列表l2中了。\n删除包含特定值的所有列表元素 l = [1,2,1,3,1,4,5,1] while 1 in l: l.remove(1) print(l) 输出：\n[2, 3, 4, 5] 使用用户输入填充字典 d = {} active = True while active: a = input(\u0026#39;name\u0026#39;) b = input(\u0026#39;answer\u0026#39;) d[a] = b c = input(\u0026#39;是否继续？y,n\u0026#39;) if c == \u0026#39;n\u0026#39;: active = False for i,j in d.items(): print(i,j) 我们让用户输入姓名和答案并将其存储在字典d中，然后询问用户是否继续，当用户输入n时，标志active为False，while循环结束，并打印结果。\n"
+},
+{
+	"uri": "/python/%E5%87%BD%E6%95%B0/",
+	"title": "函数",
+	"tags": ["函数"],
+	"description": "函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。",
+	"content": "函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。\n定义函数 def hello(): print(\u0026#39;hello\u0026#39;) hello() 输出：\nhello 我们使用def关键字来定义函数，具体规则如下：\n  函数代码块以 def关键词开头，后接函数名称和圆括号()。     任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数。     函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。     函数内容以冒:号起始，并且缩进。     return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。   向函数传递参数 例如我们定义一个计算长方形面积的函数：\ndef x(a,b): s = a * b return s \u0026gt;\u0026gt;\u0026gt; x(4,5) 20 示例中，函数x可以接受两个参数：形参a和形参b。在调用函数x的时候，我们向其传递了实参4、5，结果显示它成功计算除了面积。\n参数传递 函数中可能包含多个形参，因此我们需要传递多个实参，依据不同情况，参数传递的方式很多：位置参数、默认参数、关键字参数、可变参数等。\n位置参数 位置参数需要按照正确的顺序传入，按照位置关联依次将实参传递给形参的传递方式叫做位置参数：\n如上个例子：\ndef x(a,b): s = a * b return s \u0026gt;\u0026gt;\u0026gt; x(4,5) 20 值4、5按照顺序赋值给参数a、b。参数a、b都是位置参数。\n默认参数 如果我们想要计算的长方形面积的宽大多时候都是长度为5，就可以使用默认参数：\ndef x(a,b=5): s = a * b return s \u0026gt;\u0026gt;\u0026gt; x(4) 20 在示例中，参数b就是一个默认参数，默认值为2，当我们调用函数x(4)时，相当于我们调用了x(4,5)。设置默认参数时，必选参数在前，默认参数在后。\n可变参数 可变参数就是传入的参数个数是可变的，可以是1个、2个到任意个，还可以是0个。\ndef x(a,*b): print(a) for i in b: print(i) x(1) x(1,1,2,3,4,5,7) 输出：\n1 1 1 2 3 4 5 7 如果想把一个列表或元组传入可变参数，可以这样：\n\u0026gt;\u0026gt;\u0026gt; nums = [1, 2, 3] \u0026gt;\u0026gt;\u0026gt; x(1,*nums) 1 1 2 3 *nums表示把nums这个list的所有元素作为可变参数传进去。这种写法相当有用，而且很常见\n关键字参数 关键字参数是传递给参数的参数名称-值对，使用关键字参数时无需考虑传入顺序。\ndef x(a,b): s = a * b return s \u0026gt;\u0026gt;\u0026gt; x(b=4,a=5) 20 关键字参数可以拓展程序的功能，试想你正在做一个用户注册的功能，除了用户名和年龄是必填项外，其他都是可选项，利用关键字参数来定义这个函数就能满足注册的需求。\ndef x(a,b,**kw): s = a * b print(s,\u0026#39;\\n\u0026#39;,kw) x(4,5,other=\u0026#39;这是描述\u0026#39;) 输出：\n20 {\u0026#39;other\u0026#39;: \u0026#39;这是描述\u0026#39;} 返回值 函数并非总是直接打印输出，有时它需要处理一些数据并返回一个或一组值。返回的值成为返回值。可以使用return语句将值返回到调用函数所在的代码行：\ndef get_full_name(f_name,l_name) full_name = f_name.title() + \u0026#39; \u0026#39; + l_name.title() return full_name a = get_full_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) print(a) 输出：\nJoecy Wang 函数get_full_name将处理过的姓名返回到调用行，并存储在变量a中。 返回值可以将复杂工作转移到函数中去，从而简化主程序。\n将函数存储在模块中 模块是一个包含所有你定义的函数和变量的文件，其后缀名是.py。模块可以被别的程序引入，以使用该模块中的函数等功能。假如我们已经保存了包含函数的模块x.py。\n导入整个模块 import x 导入整个模块时，可以使用下面的语法调用模块中的函数：\nx.func() 导入特定函数 for x inport func1 想要一次性导入更多函数，只需要将函数名用,号分隔：\nfor x inport func1,func2,func3... 导入特定函数时，调用它就无需使用句点法。\nfunc1() # 无需使用句点法，直接调用 使用as给函数指定别名 for x inport func1 as f 这样，我们在调用函数func1时，可以简写：\nf() # 等同于func1() 可以通过给导入的函数指定别名避免与主程序中的函数重名。\n使用as给模块指定别名 import module as x 这样我们就将模块module指定了别名x，在调用其中函数时，也可以简写：\nx.func1() #等同于module.func1() 给模块指定别名可以让我们专注函数名而忽略模块名。\n导入模块中所有函数 from x inport* 这种导入方式，将把模块中的所有函数都导入进来，且无需使用句点法调用。但是不推荐。\n"
+},
+{
+	"uri": "/python/%E7%B1%BB/",
+	"title": "类",
+	"tags": ["类"],
+	"description": "类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。",
+	"content": "类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。\n创建和使用类 使用关键字class定义类：\nclass Dog(): pass 这样就创建了Dog类。\n\u0026gt;\u0026gt;\u0026gt; d = Dog() \u0026gt;\u0026gt;\u0026gt; d.name = \u0026#39;jingjing\u0026#39; \u0026gt;\u0026gt;\u0026gt; d.name \u0026#39;jingjing\u0026#39; 我们可以像上面的例子那样，给实例变量绑定属性。\n类中的方法 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。\nclass Dog(): def say_hi(self): print(\u0026#39;hello\u0026#39;) \u0026gt;\u0026gt;\u0026gt; p = Dog() \u0026gt;\u0026gt;\u0026gt; p.say_hi() hello __init__方法 类具有模板的作用，init()是一个特殊的方法，类的实例化操作会自动调用它。\nclass Dog(): def __init__(self,a,b): self.name = a self.age = b 方法__init__()的第一个参数永远时self，它表示创建的实例本身，因此，在__init__()方法中，我们可以把各种属性绑定到self，因为self就指向实例本身。\n创建实例 有了__init__()方法，创建实例的时候就要传入和__init__()，相匹配的参数，但self不需要传入，因为它表示实例本身，Python会自动传入。\nclass Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) 实例属性和类属性 class Dog(): name = \u0026#39;joecy\u0026#39; #类属性 a = Dog() print(a.name) 输出：\njoecy a.name = wang #给实例属性赋值 print(a.name) 输出：\nwang 可见，在编写程序的时候，千万不要对实例属性和类属性使用相同的名字，因为相同名称的实例属性将屏蔽掉类属性，但是当你删除实例属性后，再使用相同的名称，访问到的将是类属性。\n类的继承 class A(): def p(self): print(\u0026#39;我会打印\u0026#39;) class B(A): def s(self): print(\u0026#39;我会唱歌\u0026#39;) x = B() print(x.p()) 这样类B就完全继承了类A的所有属性和方法。\n重写父类方法 class A(): def p(self): print(\u0026#39;我会打印\u0026#39;) class B(A): def s(self): print(\u0026#39;我会唱歌\u0026#39;) def p(self): print(\u0026#39;我重写了方法\u0026#39;) x = B() print(x.p()) 输出：\n我重写了方法 当子类和父类都存在相同的方法p()时，子类的p()覆盖了父类的p()，在代码运行的时候，总是会调用子类的p()。这样就完成了父类方法的重写。\n将实例用作属性 class A(): def p(self): print(\u0026#39;我会打印\u0026#39;) class B(): def __init__(self): self.work = A() x = B() print(x.work.p()) 输出：\n我会打印 将实例用作类的属性，可以将大类拆分为多个小类，避免程序杂乱。\n"
+},
+{
+	"uri": "/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/",
+	"title": "文件读写",
+	"tags": ["open()", "read()", "readlines()", "with"],
+	"description": "要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。",
+	"content": "要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。\n读取整个文件 with open('1.txt') as file_obj: neirong = file_obj.read() print(neirong) 要使用文件内容，要先打开open()文件，接着读取read()内容到内存中，最后当我们还要关闭close()文件，以免浪费内存。\n这时使用关键字with就可以实现文件的自动关闭，Python会在合适的时候自动关闭文件。\nopen()函数返回一个表示文件的对象，接着我们可以使用read()来读取这个文件内容，并存储在nrirong中。\n逐行读取 可以使用for循环逐行读取文件内容。\nwith open('2.txt') as file_obj: for i in file_obj: print(i) 一样的，函数open()返回一个表示文件的对象，存储在变量file_obj中，于是我们可以通过遍历文件对象file_obj来逐行读取内容。\n创建一个包含文件内容的列表 使用关键字with时，open()返回的对象只可以在with代码块内访问，要想在with代码块外使用，我们需要创建一个包含该文件各行内容的列表：\nwith open('3.txt') as file_obj: lines = file_obj.readlines() for i in lines(): print(i) 方法readlines()，读取文件中的每一行，并将其存储在列表lines中。\n写入文件 要写入文件，需要在调用open()时，传入另外一个实参，告诉Python你要写入打开的文件：\nwith open('4.txt','w') as file_obj: file_obj.write('我在写入文件') 实参'w'告诉Python，我们要以写入模式打开文件，其他的打开模式包括'r'-只读模式、'a'-附加模式、'r+'-读写模式。\n如果要写入的文件不存在，Python会自动创建它，当使用'w'写入时，Python会在写入前清空该文件。\n"
+},
+{
+	"uri": "/python/json%E6%A8%A1%E5%9D%97/",
+	"title": "Json模块",
+	"tags": ["json.load()", "json.dump()"],
+	"description": "很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。",
+	"content": "很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。\n JSON格式最初是为了JavaScript开发的，但随后成了一种常见格式，被众多编程语言采用。\n 使用json.dump()存储数据 使用json.dump()可以轻松的存储数据，json.dump()接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：\nimport json username = \u0026#39;111\u0026#39; with open(\u0026#39;name.json\u0026#39;,\u0026#39;w\u0026#39;) as name_obj: json.dump(username,name.json) 这时，就会报错：\nNameError: name \u0026#39;name\u0026#39; is not defined 原因是我们错误向json.dump()传入了参数name.json，这并不是要存储数据的文件==对象==，应该传入参数name_obj。\nimport json username = \u0026#39;111\u0026#39; with open(\u0026#39;name.json\u0026#39;,\u0026#39;w\u0026#39;) as name_obj: json.dump(username,name_obj) 同时，也要注意在使用json.dump()存储数据时，函数open()需要传递参数'w'，以便获得写入权限。\n使用json.load()读取数据 同样的，使用json.load()时，传入的也是文件==对象==：\nimport json with open(\u0026#39;name.json\u0026#39;) as name_obj: username_tmp = json.load(name_obj) print(username_tmp) 输出：\n111 "
+},
+{
+	"uri": "/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/",
+	"title": "组织列表",
+	"tags": ["列表"],
+	"description": "`列表`是一系列元素按照特定顺序排列的组成，列表是有序集合。",
+	"content": "列表是一系列元素按照特定顺序排列的组成，列表是有序集合。\n访问列表元素 因为列表是有序集合，所以我们只要给出想要访问的元素的位置告诉Python即可：\nlist1 = [1,2,3,4] print(list1[0]) 输出：\n1 同样的，我们可以对列表元素调用方法，如title()方法：\nlist2 = [\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;,\u0026#39;shuaige\u0026#39;] print(list2[0].title()) 输出：\nJoecy 索引从0而不是1开始 在Python中，第一个列表元素的索引是0，在大多编程语言中都是如此。 Python为访问最后一个列表元素提供了特殊语法，可通过索引-1访问列表的最后一个元素：\nlist3 = [1,2,3,4] print(list3[-1]) 输出：\n4 当然，-1、-2、-3\u0026hellip;也是可以的。\n修改、添加和删除元素 修改元素 修改列表中的元素，可指定列表名和要修改的元素索引，再指定新值。\nlist4 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] list4[0] = 4 print(list4) 输出：\n[\u0026#39;4\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] 添加元素 在列表末尾添加元素 list5 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] list5.append(\u0026#39;4\u0026#39;) print(list5) 输出：\n[\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;,\u0026#39;4\u0026#39;] 方法append()将元素4添加到了列表末尾，而又不影响其他元素。我们经常需要先创建一个空列表，并使用append()方法向其中添加元素。\n在列表中插入元素 使用方法insert()可以在列表任意位置添加新元素，只需要指定新元素的索引和值：\nlist6 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] list6.insert(0,\u0026#39;4\u0026#39;) print(list6) 输出：\n[\u0026#39;4\u0026#39;,\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] 删除元素 使用del语句删除元素 如果知道想要删除的元素在列表中的位置，即可使用del语句。\nlist7 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] del list7[0] print(list7) 输出：\n[\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] 使用pop()元素删除元素 我们可以使用pop()方法删除列表中的元素并接着使用它的值：\nlist8 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] a = list8.pop() print(list8) print(a) 输出：\n[\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;] 3 实际上我们可以使用方法pop()弹出任意位置的元素，只要在pop()提供要删除的元素的索引即可：\nlist9 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] a = list9.pop(1) print(list9) print(a) 输出：\n[\u0026#39;1\u0026#39;,\u0026#39;3\u0026#39;] 2 根据值删除元素 list10 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] list10.remove(\u0026#39;1\u0026#39;) print(list10) 输出：\n[\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] 当列表中存在多个相同的值时，方法remove()只删除第一个指定的值。\n组织列表 使用sort()方法对列表进行永久排序 a = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] a.sort() print(a) 输出：\n[\u0026#39;a\u0026#39;,\u0026#39;b\u0026#39;,\u0026#39;c\u0026#39;,\u0026#39;d\u0026#39;] 如果需要反向排列，只需要向sort()方法传递参数reverse=True即可：\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] a.sort(reverse=True) print(a) 输出：\n[\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;,\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;] 使用sorted()函数对列表进行临时排序 要保留原来列表的排列顺序，同时以特定顺序呈现它们，可使用函数sorted()：\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] print(a) print(sorted(a)) 输出：\n[\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] [\u0026#39;a\u0026#39;,\u0026#39;b\u0026#39;,\u0026#39;c\u0026#39;,\u0026#39;d\u0026#39;] 同样的，如果我们需要临时反向呈现列表元素，也可以向函数sorted()传递参数reverse=True:\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] print(a) print(sorted(a,reverse=True)) 输出：\n[\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;,\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;] 倒着打印列表 要反转列表元素的排列顺序，可使用方法reverse()：\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] a.reverse() print(a) 输出：\n[\u0026#39;c\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;b\u0026#39;] 方法reverse()使列表元素排序顺序永久性反转，要想恢复原来的排列顺序，再次使用方法reverse()即可。\n确定列表长度 使用函数len()可以快速的得到列表元素的长度。\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] print(len(a)) 输出：\n4 "
+},
+{
+	"uri": "/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/",
+	"title": "测试代码之测试函数",
+	"tags": ["assertEqual()", "unittest"],
+	"description": "测试代码可以使程序面对各种情况都能按照预期那样工作。",
+	"content": "测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。\n测试函数 测试通过 现在有一个格式化姓名的函数：\ndef print_name(l,f): a = l.title() + \u0026#39; \u0026#39; + f.title() return a  这段代码保存在name.py\n 我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的unittest模块编写单元测试：\nimport unittest from name import print_name class Test_print_name(unittest.TestCase): def test_print_name(self): a = print_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) self.assertEqual(a,\u0026#34;Joecy Wang\u0026#34;) unittest.main() 首先，导入模块unittest和要测试的函数print_name()，然后创建一个继承于unittest.TestCase的类Test_print_name，接着创建一个方法test_print_name()，用来测试print_name()，在这个方法中，我们调用了函数print_name()，并在结果（返回值）存储在变量a中。最后，我们使用断言方法assertEqual()判断输出是否是我们期望的。\n 代码行unittest.main()让Python运行这个文件中的测试。\n 运行这个单元测试，得到结果：\n. ---------------------------------------------------------------------- Ran 1 test in 0.002s OK 第一行的句点.代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，OK则表示这个测试用例中的所有单元测试都通过了。\n测试不通过 如果这时修改了函数print_name()，使其多接受一个中间名参数：\ndef print_name(l,m,f): a = l.title() + \u0026#39; \u0026#39; + m.title() + \u0026#39; \u0026#39;+ f.title() return a 再次运行函数print_name()的单元测试时，输出如下：\nE ====================================================================== ERROR: test_print_name (__main__.Test_print_name) ---------------------------------------------------------------------- Traceback (most recent call last): File \u0026#34;/home/joecy/Desktop/TestCode/testname.py\u0026#34;, line 7, in test_print_name a = print_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) TypeError: print_name() missing 1 required positional argument: \u0026#39;f\u0026#39; ---------------------------------------------------------------------- Ran 1 test in 0.002s FAILED (errors=1) 第一行的字母E，表示有一个测试没通过，第二行告诉我们是哪里发生了错误，第三行是一个标准的traceback，告诉我们调用函数时缺少了一个必不可少的位置参数。\n测试不通过，说明我们新编写的代码存在问题，要检查刚刚进行的修改，并处理。\n修改后代码如下：\ndef print_name(l,f,m=\u0026#39;\u0026#39;): if m: a = l.title() + \u0026#39; \u0026#39; + m.title() + \u0026#39; \u0026#39;+ f.title() else: a = l.title() + \u0026#39; \u0026#39; + f.title() return a 中间名变为可选的，并添加了if测试。\n再次测试：\n. ---------------------------------------------------------------------- Ran 1 test in 0.001s OK 通过了！\n添加新测试 函数print_name现在可以处理包含中间名的姓名了，我们也需要再编写一个测试，用于测试包含中间名的姓名：\nimport unittest from name import print_name class Test_print_name(unittest.TestCase): def test_print_name(self): a = print_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) self.assertEqual(a,\u0026#34;Joecy Wang\u0026#34;) def test_print_m_name(self): a = print_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;,\u0026#39;li\u0026#39;) self.assertEqual(a,\u0026#34;Joecy Li Wang\u0026#34;) unittest.main() 运行测试，结果如下：\n.. ---------------------------------------------------------------------- Ran 2 tests in 0.003s OK OK！测试通过了！\n"
+},
+{
+	"uri": "/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/",
+	"title": "测试代码之测试类",
+	"tags": ["assertIn()", "setUp()", "unittest"],
+	"description": "类的测试于函数的测试类似，但也有些许不同。",
+	"content": "类的测试于函数的测试类似，但也有些许不同。\n测试类 先写出一个用于测试的类，并存储在diaocha.py中：\nclass Dc(): \u0026#39;\u0026#39;\u0026#39;收集匿名调查问卷\u0026#39;\u0026#39;\u0026#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：\nimport unittest from diaocha import Dc class TestDc(unittest.TestCase): def test_oneres(self): \u0026#39;\u0026#39;\u0026#39;测试存储一个答案\u0026#39;\u0026#39;\u0026#39; question = \u0026#34;你是中国人嘛？\u0026#34; mydiaoche = Dc(question) mydiaoche.store_res(\u0026#39;是\u0026#39;) self.assertIn(\u0026#39;是\u0026#39;,mydiaoche.responses) def test_more_res(self): \u0026#39;\u0026#39;\u0026#39;测试存储多个答案\u0026#39;\u0026#39;\u0026#39; question = \u0026#39;你是中国人？\u0026#39; mydiaocha = Dc(question) huida = [\u0026#39;是\u0026#39;,\u0026#39;ok\u0026#39;,\u0026#39;你猜\u0026#39;] for i in huida: mydiaocha.store_res(i) for j in huida: self.assertIn(j,mydiaocha.responses) unittest.main() 使用断言assertIn判断一个item是不是在list中，结果如下：\n.. ---------------------------------------------------------------------- Ran 2 tests in 0.002s OK 两个测试都通过了！\n方法setUp() 在上面两个测试中，每次我们都需要创建Dc的实例，每个方法中都需要创建答案，做了很多重复的工作。\n可以使用unittest.TestCase类包含的方法setUp()简化代码。\nimport unittest from diaocha import Dc class TestDc(unittest.TestCase): def setUp(self): question = \u0026#39;你是中国人吗？\u0026#39; self.mydiaocha = Dc(question) self.huida = [\u0026#39;是\u0026#39;,\u0026#39;ok\u0026#39;,\u0026#39;你猜\u0026#39;] def test_oneres(self): self.mydiaocha.store_res(self.huida[0]) self.assertIn(self.huida[0],self.mydiaocha.responses) def test_more_res(self): for i in self.huida: self.mydiaocha.store_res(i) for j in self.huida: self.assertIn(j,self.mydiaocha.responses) unittest.main() 如果TestCase中包含了方法setUp()，那么Python将先运行它，再运行test_打头的方法。 我们在setUp()方法中，创建了Dc的实例和存储答案的列表，只不过它们都包含前缀self，也就是说，我们把它们存储在属性中，这样，就可以在这个类中的任何一个地方使用它们了。\n"
+},
+{
+	"uri": "/python/requests%E5%BA%93/",
+	"title": "requests库",
+	"tags": ["requests", "爬虫"],
+	"description": "`Requests`库是用Python编写的，基于`urllib`，采用`Apache2 Licensed`开源协议的`HTTP`库",
+	"content": "Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；\n相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。\n"
+},
+{
+	"uri": "/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/",
+	"title": "urllib库的使用",
+	"tags": ["urllib", "爬虫"],
+	"description": "`urllib`库是Python内置的`HTTP`请求库，它包含四个模块",
+	"content": "urllib库是Python内置的HTTP请求库，它包含四个模块：\n request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。\n"
+},
+{
+	"uri": "/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/",
+	"title": "requests基本用法",
+	"tags": ["requests", "爬虫"],
+	"description": "基本的GET、POST请求方法",
+	"content": "基本的GET、POST请求方法\nGET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。\n使用requests.get() import requests r = requests.get(\u0026#39;https://baidu.com/\u0026#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：\n\u0026lt;class \u0026#39;requests.models.Response\u0026#39;\u0026gt; \u0026lt;class \u0026#39;str\u0026#39;\u0026gt; 200 \u0026lt;RequestsCookieJar[\u0026lt;Cookie BDORZ=27315 for .baidu.com/\u0026gt;]\u0026gt; # 部分代码 \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;!--STATUS OK--\u0026gt;\u0026lt;html\u0026gt; \u0026lt;head\u0026gt; .... \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; 使用requests.get()方法，即可以GET方式请求网页。\n status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等\u0026hellip;\u0026hellip;  如果GET请求需要附加额外信息，例如添加两个参数：\nr = requests.get('http://httpbin.org/get?name=joecy\u0026amp;age=24')\n如果写成这样未免太繁琐，这时可以利用params参数：\nimport requests data = {\u0026#39;wd\u0026#39;:\u0026#39;我\u0026#39;} r = requests.get(\u0026#39;https://baidu.com/s\u0026#39;,params=data) print(r.status_code) r.encoding = \u0026#39;utf-8\u0026#39; print(r.text)  r.encoding = 'utf-8' 用于修改编码\n 输出了百度关于关键词“我”的搜索结果。\n抓取网页 抓取知乎发现页面：\nimport requests r = requests.get(\u0026#39;https://www.zhihu.com/explore\u0026#39;) print(r.status_code) r.encoding = \u0026#39;utf-8\u0026#39; print(r.text) 结果\n400 \u0026lt;html\u0026gt; \u0026lt;head\u0026gt;\u0026lt;title\u0026gt;400 Bad Request\u0026lt;/title\u0026gt;\u0026lt;/head\u0026gt; \u0026lt;body bgcolor=\u0026#34;white\u0026#34;\u0026gt; \u0026lt;center\u0026gt;\u0026lt;h1\u0026gt;400 Bad Request\u0026lt;/h1\u0026gt;\u0026lt;/center\u0026gt; \u0026lt;hr\u0026gt;\u0026lt;center\u0026gt;openresty\u0026lt;/center\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; 由于没有传递请求头，不能够正常抓取知乎发现页。\n添加headers：\nimport requests headers = { \u0026#39;User-Agent\u0026#39;:\u0026#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36\u0026#39; } r = requests.get(\u0026#39;https://www.zhihu.com/explore\u0026#39;,headers=headers) print(r.status_code) r.encoding = \u0026#39;utf-8\u0026#39; print(r.text) 这样就可以正常抓取了。\n抓取二进制数据 抓取一个网页页面，实际上返回的是一个HTML文档，图片、音乐、视频等二进制文件需要写入文件才可以获取到：\n以抓取百度logo为例：\nimport requests headers = { \u0026#39;User-Agent\u0026#39;:\u0026#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36\u0026#39; } r = requests.get(\u0026#39;https://www.baidu.com/img/bd_logo1.png\u0026#39;,headers=headers) print(r.text) print(r.content) KaPq�����o�L !��B�;��|���wx��v��yk���5?�r�{(�(I��W.����KX����jsj�!:��{\u0026amp;�2{,�px��\u0026amp;9��^gRݩ�΍�p�p �p �� �p �p ��p ���5�\u001f��B �=B�IEND�B`� b'\\x89PNG\\r\\n\\x1a\\n\\x00\\x00\\x00\\rIHDR\\x00\\x00\\x02\\x1c\\x00\\x00\\x01\\x02\\x08\\x03\\x00\\x00\\x00\\x82\\x14\\xfe8\\ 打印r.text时出现乱码，是因为在打印时，它将图片直接转换为'str'，所以乱码。 打印r.content时，打印出来的是'b'开头的bytes类型的数据。\n接着我们保存图片：\nimport requests headers = { \u0026#39;User-Agent\u0026#39;:\u0026#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36\u0026#39; } r = requests.get(\u0026#39;https://www.baidu.com/img/bd_logo1.png\u0026#39;,headers=headers) with open(\u0026#39;logo.png\u0026#39;,\u0026#39;wb\u0026#39;) as f: f.write(r.content) 将二进制数据以二进制写的形式（'wb'）写入指定的文件（logo.png），就可以保存这个图片了。\n同样的，视频和音频文件都可以这样保存。\nPOST请求 使用requests实现POST请求一样很简单。\n使用requests.post() import requests data = { \u0026#39;name\u0026#39;:\u0026#39;joecy\u0026#39;, \u0026#39;age\u0026#39;:\u0026#39;24\u0026#39; } r = requests.post(\u0026#39;http://httpbin.org/post\u0026#39;,data=data) print(r.text) 对比响应码 常见的响应码包括：\n200、302、404、500等，我们经常需要通过响应码判断请求状态，requests内置了一个状态码查询对象：requests.codes：\nimport requests r = requests.get(\u0026#39;https://baidu.com\u0026#39;) if r.status_code == requests.codes.ok: print(\u0026#34;请求成功\u0026#34;)  参考：常见的返回码和查询条件\n "
+},
+{
 	"uri": "/",
 	"title": "Notes",
 	"tags": [],
 	"description": "",
-	"content": "学习笔记 很多时候，当一个已经解决过的问题过了一段时间再次出现时，往往还是需要花费同样甚至更多的时间去解决它，因为我们知道，这个问题之前遇到过，所以会浪费额外的时间去回想当时是如何解决它的，而不是立刻着手于问题本身。但是，回想起解决这个问题的步骤，哪怕只是其中一两个关键点都不太可能。\n人的记忆本就如此。\n所以笔记 就是非常重要的东西了。\n笔记的作用:  对新知识先有个印象。当新的知识被记录时，除了知识本身，也同时记录了我们对新知识的第一感觉、第一印象。 释放学习压力。一段时间内接收的信息量太大时，大脑就会混乱不堪，进而难以接收其他信息，记笔记就可以将一部分知识暂存起来，哪怕还没有真正掌握这些知识，这对舒缓大脑紧绷的感觉十分有效。 减少重复学习时间。就像开头说的那样，对于笔记中记录过的问题，再次遇到时，翻翻笔记就可以迅速定位问题的关键，从而轻松解决问题。 还有很多\u0026hellip;  谨记：\n笔记是工具，不是目的。\n 目前笔记内容概览 Notes ├── level-one │ ├── level-two │ │ ├── level-three │ │ │ ├── level-four │ │ │ │ ├── _index.md \u0026lt;-- /level-one/level-two/level-three/level-four │ │ │ │ ├── page-4-a.md \u0026lt;-- /level-one/level-two/level-three/level-four/page-4-a │ │ │ │ ├── page-4-b.md \u0026lt;-- /level-one/level-two/level-three/level-four/page-4-b │ │ │ │ └── page-4-c.md \u0026lt;-- /level-one/level-two/level-three/level-four/page-4-c │ │ │ ├── _index.md \u0026lt;-- /level-one/level-two/level-three │ │ │ ├── page-3-a.md \u0026lt;-- /level-one/level-two/level-three/page-3-a │ │ │ ├── page-3-b.md \u0026lt;-- /level-one/level-two/level-three/page-3-b │ │ │ └── page-3-c.md \u0026lt;-- /level-one/level-two/level-three/page-3-c │ │ ├── _index.md \u0026lt;-- /level-one/level-two │ │ ├── page-2-a.md \u0026lt;-- /level-one/level-two/page-2-a │ │ ├── page-2-b.md \u0026lt;-- /level-one/level-two/page-2-b │ │ └── page-2-c.md \u0026lt;-- /level-one/level-two/page-2-c │ ├── _index.md \u0026lt;-- /level-one │ ├── page-1-a.md \u0026lt;-- /level-one/page-1-a │ ├── page-1-b.md \u0026lt;-- /level-one/page-1-b │ └── page-1-c.md \u0026lt;-- /level-one/page-1-c ├── _index.md \u0026lt;-- / └── page-top.md \u0026lt;-- /page-top  概览更新日期： 博客更新日期：\n "
+	"content": "学习笔记 很多时候，当一个已经解决过的问题过了一段时间再次出现时，往往还是需要花费同样甚至更多的时间去解决它，因为我们知道，这个问题之前遇到过，所以会浪费额外的时间去回想当时是如何解决它的，而不是立刻着手于问题本身。但是，回想起解决这个问题的步骤，哪怕只是其中一两个关键点都不太可能。\n人的记忆本就如此。\n所以笔记 就是非常重要的东西了。\n笔记的作用:  对新知识先有个印象。当新的知识被记录时，除了知识本身，也同时记录了我们对新知识的第一感觉、第一印象。 释放学习压力。一段时间内接收的信息量太大时，大脑就会混乱不堪，进而难以接收其他信息，记笔记就可以将一部分知识暂存起来，哪怕还没有真正掌握这些知识，这对舒缓大脑紧绷的感觉十分有效。 减少重复学习时间。就像开头说的那样，对于笔记中记录过的问题，再次遇到时，翻翻笔记就可以迅速定位问题的关键，从而轻松解决问题。 还有很多\u0026hellip;  谨记：\n笔记是工具，不是目的。\n 目前笔记内容概览 Notes ├── Python笔记 │ ├── 变量与数据类型 │ ├── 操作列表 │ ├── if语句 │ ├── 字典 │ ├── 用户输入 │ ├── while循环 │ ├── 函数 │ ├── 类 │ ├── 文件读写 │ ├── Json模块 │ ├── 组织列表 │ ├── 测试代码之测试函数 │ ├── 测试代码之测试类 │ ├── requests库 │ ├── urllib库的使用 │ ├── requests基本用法 │ ├── requests高级用法 │ ├── 发送请求 ├── JavaScript笔记 ├── VueJs笔记  概览更新时间：2021年01月06日22:53:58\n博客更新时间：2021年01月06日22:53:58\n "
+},
+{
+	"uri": "/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/",
+	"title": "requests高级用法",
+	"tags": ["requests"],
+	"description": "requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。",
+	"content": "requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。\n文件上传 import requests files = {\u0026#39;file\u0026#39;:open(\u0026#39;logo.png\u0026#39;,\u0026#39;rb\u0026#39;)} r = requests.post(\u0026#39;http://httpbin.org/post\u0026#39;,files=files) print(r.text) 首先创建一个表示文件的字典：files，它的键为file，值为使用open()函数'rb'模式打开的待上传文件。之后在post方法中传递参数files,值为files字典。\nCookies "
+},
+{
+	"uri": "/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/",
+	"title": "发送请求",
+	"tags": ["urlopen()", "urllib", "爬虫"],
+	"description": "使用urllib的request模块，可以方便的实现请求的发送并得到响应。",
+	"content": "使用urllib的request模块，可以方便的实现请求的发送并得到响应。\n发送请求 urlopen() 抓取Python官网：\nimport urllib.request response = urllib.request.urlopen(\u0026#34;https://www.python.org\u0026#34;) print(response.read().decode(\u0026#39;utf-8\u0026#39;)) 部分输出：\n# 部分输出 \u0026lt;script src=\u0026#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script\u0026gt;window.jQuery || document.write(\u0026#39;\u0026lt;script src=\u0026#34;/static/js/libs/jquery-1.8.2.min.js\u0026#34;\u0026gt;\u0026lt;\\/script\u0026gt;\u0026#39;)\u0026lt;/script\u0026gt; \u0026lt;script src=\u0026#34;/static/js/libs/masonry.pkgd.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script type=\u0026#34;text/javascript\u0026#34; src=\u0026#34;/static/js/main-min.js\u0026#34; charset=\u0026#34;utf-8\u0026#34;\u0026gt;\u0026lt;/script\u0026gt;  decode('utf-8')方法将网页以制定编码解析。\n response是一个HTTPResponse类型的对象：\nprint(type(response)) 输出如下：\n\u0026lt;class \u0026#39;http.client.HTTPResponse\u0026#39;\u0026gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。\n例子：\nimport urllib.request response = urllib.request.urlopen(\u0026#34;https://www.baidu.com\u0026#34;) print(response.status) print(\u0026#39;\\n\u0026#39;,response.getheaders()) print(\u0026#39;\\n\u0026#39;,response.getheader(\u0026#39;Server\u0026#39;)) 输出结果：\n200 [(\u0026#39;Accept-Ranges\u0026#39;, \u0026#39;bytes\u0026#39;), (\u0026#39;Cache-Control\u0026#39;, \u0026#39;no-cache\u0026#39;), (\u0026#39;Content-Length\u0026#39;, \u0026#39;227\u0026#39;), (\u0026#39;Content-Type\u0026#39;, \u0026#39;text/html\u0026#39;), (\u0026#39;Date\u0026#39;, \u0026#39;Thu, 09 Aug 2018 14:49:17 GMT\u0026#39;), (\u0026#39;Etag\u0026#39;, \u0026#39;\u0026#34;5b56b4a8-e3\u0026#34;\u0026#39;), (\u0026#39;Last-Modified\u0026#39;, \u0026#39;Tue, 24 Jul 2018 05:10:00 GMT\u0026#39;), (\u0026#39;P3p\u0026#39;, \u0026#39;CP=\u0026#34; OTI DSP COR IVA OUR IND COM \u0026#34;\u0026#39;), (\u0026#39;Pragma\u0026#39;, \u0026#39;no-cache\u0026#39;), (\u0026#39;Server\u0026#39;, \u0026#39;BWS/1.1\u0026#39;), (\u0026#39;Set-Cookie\u0026#39;, \u0026#39;BD_NOT_HTTPS=1; path=/; Max-Age=300\u0026#39;), (\u0026#39;Set-Cookie\u0026#39;,\u0026#39;BIDUPSID=9FA4E613328025CC47152BC4A49E9AB3; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\u0026#39;), (\u0026#39;Set-Cookie\u0026#39;, \u0026#39;PSTM=1533826157; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\u0026#39;), (\u0026#39;Strict-Transport-Security\u0026#39;, \u0026#39;max-age=0\u0026#39;), (\u0026#39;X-Ua-Compatible\u0026#39;, \u0026#39;IE=Edge,chrome=1\u0026#39;), (\u0026#39;Connection\u0026#39;, \u0026#39;close\u0026#39;)] BWS/1.1 可见，分别输出了状态码、响应头和响应头里面的Server值。\nurlopen()的参数 urlopen()可以给链接传递一些参数，它的API如下：\nurllib.request.urlopen(url,data=None,[timeout,]*,cafile=None,cadefault=False,comtext=None) data参数 如果添加该参数，且它是bytes（字节流）类型，则需要通过bytes()方法转化，传递了该参数，它的请求方式就不再是GET，而是POST方式。\nimport urllib.parse import urllib.request data = bytes(urllib.parse.urlencode({\u0026#39;word\u0026#39;:\u0026#39;hello\u0026#39;}),encoding=\u0026#39;utf-8\u0026#39;) response = urllib.request.urlopen(\u0026#34;http://httpbin.org/post\u0026#34;,data=data) print(response.read()) 转换为bytes（字节流）类型的方法types()需要两个参数： 第一个是str（字符串）类型的参数，第二个是指定编码格式。\n需要使用urllib.parse模块的urlencode()方法，将字典转化为字符串。\ntimeout参数 timeout参数用于设置超时时间，单位为秒，如果请求超过了设置的时间，就会抛出异常。它支持HTTP、HTTPS、FTP请求。\nimport urllib.request response = urllib.request.urlopen(\u0026#34;http://joecy.wang\u0026#34;,timeout=0.001) print(response.read()) 输出：\n# 部分代码 Traceback (most recent call last): File \u0026#34;/home/joecy/Desktop/TestCode/Untitled-3.py\u0026#34;, line 3, in \u0026lt;module\u0026gt; ...... urllib.error.URLError: \u0026lt;urlopen error timed out\u0026gt; 使用try-except处理异常：\nimport socket import urllib.request try: response = urllib.request.urlopen(\u0026#34;http://joecy.wang\u0026#34;,timeout=0.001) except urllib.error.URLError as e: if isinstance(e.reason,socket.timeout): print(\u0026#34;超时\u0026#34;)  使用ininstance判断异常e.reason是不是socket.timeout类型。\n 输出：\n超时 "
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/if%E8%AF%AD%E5%8F%A5/",
+	"title": "if语句",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/categories/python%E7%AC%94%E8%AE%B0/",
+	"title": "Python笔记",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/tags/assertequal/",
@@ -42,32 +196,11 @@
 	"content": ""
 },
 {
-	"uri": "/categories/",
-	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "/tags/for%E5%BE%AA%E7%8E%AF/",
 	"title": "for循环",
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/tags/if%E8%AF%AD%E5%8F%A5/",
-	"title": "if语句",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/python/if%E8%AF%AD%E5%8F%A5/",
-	"title": "if语句",
-	"tags": ["if语句"],
-	"description": "`if`语句可以检查程序的当前状态，本据此采取相应的措施。",
-	"content": "if语句可以检查程序的当前状态，本据此采取相应的措施。\nif语句的简单示例 a = [\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;] for i in a: if i == \u0026#39;joecy\u0026#39;: print(i.title()) 输出：\nJoecy wang 在这个for循环中，if语句来检测，所遍历的元素是否为joecy，如果是，就对其使用方法title()。\n条件测试 每条if语句的核心都是一个值为True或False的表达式，这种表达式被称为条件测试（布尔表达式）。例如i = 'joecy'，Python根据条件测试的值为True或False来决定是否执行if语句中的代码：\n\u0026gt;\u0026gt;\u0026gt; car = \u0026#39;bwm\u0026#39; #检查是否相等 \u0026gt;\u0026gt;\u0026gt; car == \u0026#39;bwm\u0026#39; True \u0026gt;\u0026gt;\u0026gt; car == \u0026#39;Bwm\u0026#39; False #检查是否不相等 \u0026gt;\u0026gt;\u0026gt; car != \u0026#39;audi\u0026#39; True #比较数字 \u0026gt;\u0026gt;\u0026gt; a = 18 \u0026gt;\u0026gt;\u0026gt; a == 18 True \u0026gt;\u0026gt;\u0026gt; a \u0026gt; 10 True \u0026gt;\u0026gt;\u0026gt; a \u0026lt; 9 False \u0026gt;\u0026gt;\u0026gt; a != 3 True #使用and检查多个条件，条件同时成立为True \u0026gt;\u0026gt;\u0026gt; car == \u0026#39;bwm\u0026#39; and a == 18 True \u0026gt;\u0026gt;\u0026gt; car != \u0026#39;audi\u0026#39; and a == 18 True #使用or检查多个条件，只要有一个条件成立就为True \u0026gt;\u0026gt;\u0026gt; car == \u0026#39;bwm\u0026#39; or a != 18 True #检查特定值是否包含其中 \u0026gt;\u0026gt;\u0026gt; b = [1,2,3,4,6] \u0026gt;\u0026gt;\u0026gt; 1 in b True \u0026gt;\u0026gt;\u0026gt; 5 in b False #检查特定值是否包含其中 \u0026gt;\u0026gt;\u0026gt; 5 not in b True \u0026gt;\u0026gt;\u0026gt; 3 not in b False if语句 最简单的if语句只包含一个条件测试表达式和一个操作：\nif test: do something 例如：\nage = 18 if age \u0026gt;= 18: print(\u0026#39;你已经长大了！\u0026#39;) if-else语句 if-else语句用来在条件测试通过时执行一个操作，在不通过时执行另一个操作。\nage = 18 if age \u0026gt;= 18: print(\u0026#39;你已经长大了！\u0026#39;) else: print(\u0026#39;你还没有成年呢！\u0026#39;) if-elif-else语句 但我们需要检查多个条件时，可使用if-elif-else语句，Python将只执行其中的一个代码块，它一次检查，直到遇到通过测试的条件。\nage = 12 if age \u0026lt; 4: print(\u0026#39;无需购票\u0026#39;) elif age \u0026lt; 18: print(\u0026#39;虽然没成年，但是得买票了。\u0026#39;) else: print(\u0026#39;买票吧\u0026#39;) 可根据实际情况使用任意数量的elif代码块。 有时候需要省略else代码块，使用elif代码块处理更有效。因为else语句，只要不满足任何if或elif中的条件测试，其中的代码块就会执行。同理很多时候我们也需要仅舍弃elif语句和else语句使用if语句来测试条件。\n"
 },
 {
 	"uri": "/tags/input/",
@@ -91,22 +224,8 @@
 	"content": ""
 },
 {
-	"uri": "/python/json%E6%A8%A1%E5%9D%97/",
-	"title": "Json模块",
-	"tags": ["json.load()", "json.dump()"],
-	"description": "很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。",
-	"content": "很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。\n JSON格式最初是为了JavaScript开发的，但随后成了一种常见格式，被众多编程语言采用。\n 使用json.dump()存储数据 使用json.dump()可以轻松的存储数据，json.dump()接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：\nimport json username = \u0026#39;111\u0026#39; with open(\u0026#39;name.json\u0026#39;,\u0026#39;w\u0026#39;) as name_obj: json.dump(username,name.json) 这时，就会报错：\nNameError: name \u0026#39;name\u0026#39; is not defined 原因是我们错误向json.dump()传入了参数name.json，这并不是要存储数据的文件==对象==，应该传入参数name_obj。\nimport json username = \u0026#39;111\u0026#39; with open(\u0026#39;name.json\u0026#39;,\u0026#39;w\u0026#39;) as name_obj: json.dump(username,name_obj) 同时，也要注意在使用json.dump()存储数据时，函数open()需要传递参数'w'，以便获得写入权限。\n使用json.load()读取数据 同样的，使用json.load()时，传入的也是文件==对象==：\nimport json with open(\u0026#39;name.json\u0026#39;) as name_obj: username_tmp = json.load(name_obj) print(username_tmp) 输出：\n111 "
-},
-{
 	"uri": "/tags/open/",
 	"title": "open()",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/categories/python%E7%AC%94%E8%AE%B0/",
-	"title": "Python笔记",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -133,36 +252,8 @@
 	"content": ""
 },
 {
-	"uri": "/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/",
-	"title": "requests基本用法",
-	"tags": ["requests", "爬虫"],
-	"description": "基本的GET、POST请求方法",
-	"content": "基本的GET、POST请求方法\nGET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。\n使用requests.get() import requests r = requests.get(\u0026#39;https://baidu.com/\u0026#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：\n\u0026lt;class \u0026#39;requests.models.Response\u0026#39;\u0026gt; \u0026lt;class \u0026#39;str\u0026#39;\u0026gt; 200 \u0026lt;RequestsCookieJar[\u0026lt;Cookie BDORZ=27315 for .baidu.com/\u0026gt;]\u0026gt; # 部分代码 \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;!--STATUS OK--\u0026gt;\u0026lt;html\u0026gt; \u0026lt;head\u0026gt; .... \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; 使用requests.get()方法，即可以GET方式请求网页。\n status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等\u0026hellip;\u0026hellip;  如果GET请求需要附加额外信息，例如添加两个参数：\nr = requests.get('http://httpbin.org/get?name=joecy\u0026amp;age=24')\n如果写成这样未免太繁琐，这时可以利用params参数：\nimport requests data = {\u0026#39;wd\u0026#39;:\u0026#39;我\u0026#39;} r = requests.get(\u0026#39;https://baidu.com/s\u0026#39;,params=data) print(r.status_code) r.encoding = \u0026#39;utf-8\u0026#39; print(r.text)  r.encoding = 'utf-8' 用于修改编码\n 输出了百度关于关键词“我”的搜索结果。\n抓取网页 抓取知乎发现页面：\nimport requests r = requests.get(\u0026#39;https://www.zhihu.com/explore\u0026#39;) print(r.status_code) r.encoding = \u0026#39;utf-8\u0026#39; print(r.text) 结果\n400 \u0026lt;html\u0026gt; \u0026lt;head\u0026gt;\u0026lt;title\u0026gt;400 Bad Request\u0026lt;/title\u0026gt;\u0026lt;/head\u0026gt; \u0026lt;body bgcolor=\u0026#34;white\u0026#34;\u0026gt; \u0026lt;center\u0026gt;\u0026lt;h1\u0026gt;400 Bad Request\u0026lt;/h1\u0026gt;\u0026lt;/center\u0026gt; \u0026lt;hr\u0026gt;\u0026lt;center\u0026gt;openresty\u0026lt;/center\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; 由于没有传递请求头，不能够正常抓取知乎发现页。\n添加headers：\nimport requests headers = { \u0026#39;User-Agent\u0026#39;:\u0026#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36\u0026#39; } r = requests.get(\u0026#39;https://www.zhihu.com/explore\u0026#39;,headers=headers) print(r.status_code) r.encoding = \u0026#39;utf-8\u0026#39; print(r.text) 这样就可以正常抓取了。\n抓取二进制数据 抓取一个网页页面，实际上返回的是一个HTML文档，图片、音乐、视频等二进制文件需要写入文件才可以获取到：\n以抓取百度logo为例：\nimport requests headers = { \u0026#39;User-Agent\u0026#39;:\u0026#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36\u0026#39; } r = requests.get(\u0026#39;https://www.baidu.com/img/bd_logo1.png\u0026#39;,headers=headers) print(r.text) print(r.content) KaPq�����o�L !��B�;��|���wx��v��yk���5?�r�{(�(I��W.����KX����jsj�!:��{\u0026amp;�2{,�px��\u0026amp;9��^gRݩ�΍�p�p �p �� �p �p ��p ���5�\u001f��B �=B�IEND�B`� b'\\x89PNG\\r\\n\\x1a\\n\\x00\\x00\\x00\\rIHDR\\x00\\x00\\x02\\x1c\\x00\\x00\\x01\\x02\\x08\\x03\\x00\\x00\\x00\\x82\\x14\\xfe8\\ 打印r.text时出现乱码，是因为在打印时，它将图片直接转换为'str'，所以乱码。 打印r.content时，打印出来的是'b'开头的bytes类型的数据。\n接着我们保存图片：\nimport requests headers = { \u0026#39;User-Agent\u0026#39;:\u0026#39;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36\u0026#39; } r = requests.get(\u0026#39;https://www.baidu.com/img/bd_logo1.png\u0026#39;,headers=headers) with open(\u0026#39;logo.png\u0026#39;,\u0026#39;wb\u0026#39;) as f: f.write(r.content) 将二进制数据以二进制写的形式（'wb'）写入指定的文件（logo.png），就可以保存这个图片了。\n同样的，视频和音频文件都可以这样保存。\nPOST请求 使用requests实现POST请求一样很简单。\n使用requests.post() import requests data = { \u0026#39;name\u0026#39;:\u0026#39;joecy\u0026#39;, \u0026#39;age\u0026#39;:\u0026#39;24\u0026#39; } r = requests.post(\u0026#39;http://httpbin.org/post\u0026#39;,data=data) print(r.text) 对比响应码 常见的响应码包括：\n200、302、404、500等，我们经常需要通过响应码判断请求状态，requests内置了一个状态码查询对象：requests.codes：\nimport requests r = requests.get(\u0026#39;https://baidu.com\u0026#39;) if r.status_code == requests.codes.ok: print(\u0026#34;请求成功\u0026#34;)  参考：常见的返回码和查询条件\n "
-},
-{
-	"uri": "/python/requests%E5%BA%93/",
-	"title": "requests库",
-	"tags": ["requests", "爬虫"],
-	"description": "`Requests`库是用Python编写的，基于`urllib`，采用`Apache2 Licensed`开源协议的`HTTP`库",
-	"content": "Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；\n相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。\n"
-},
-{
-	"uri": "/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/",
-	"title": "requests高级用法",
-	"tags": ["requests"],
-	"description": "requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。",
-	"content": "requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。\n文件上传 import requests files = {\u0026#39;file\u0026#39;:open(\u0026#39;logo.png\u0026#39;,\u0026#39;rb\u0026#39;)} r = requests.post(\u0026#39;http://httpbin.org/post\u0026#39;,files=files) print(r.text) 首先创建一个表示文件的字典：files，它的键为file，值为使用open()函数'rb'模式打开的待上传文件。之后在post方法中传递参数files,值为files字典。\nCookies "
-},
-{
 	"uri": "/tags/setup/",
 	"title": "setUp()",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/",
-	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -182,13 +273,6 @@
 	"content": ""
 },
 {
-	"uri": "/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/",
-	"title": "urllib库的使用",
-	"tags": ["urllib", "爬虫"],
-	"description": "`urllib`库是Python内置的`HTTP`请求库，它包含四个模块",
-	"content": "urllib库是Python内置的HTTP请求库，它包含四个模块：\n request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。\n"
-},
-{
 	"uri": "/tags/urlopen/",
 	"title": "urlopen()",
 	"tags": [],
@@ -201,13 +285,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/python/while%E5%BE%AA%E7%8E%AF/",
-	"title": "while循环",
-	"tags": ["while", "循环"],
-	"description": "Python的循环有两种，一种是`for...in`循环，依次把`list`或`tuple`中的每个元素迭代出来",
-	"content": "Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环。\n使用while循环 下面的例子是使用while循环计算100以内奇数和：\na = 0 b = 99 while b \u0026gt; 0: a = a + b b = b -2 print(a) 让用户选择何时退出 message = \u0026#39;\u0026#39; while message != \u0026#39;q\u0026#39;: message = input() if message != \u0026#39;q\u0026#39;: print(message) 上面的示例代码，在用户输入q是退出循环，否则将循环执行打印用户输入的操作。if语句使用户在输入退出指令q时，不至于将'q'打印出来。\n使用标志 active = True message = \u0026#39;\u0026#39; while active: message = input() if message == \u0026#39;q\u0026#39;: active = False else: print(message) 我们将条件测试都放在其他地方，while语句就只需要检查一个条件。从而可以使用程序更加的简洁易读。\n使用break退出循环 break语句可以提前结束循环，例如上一个例子，可以这样改写：\nwhile True: message = input() if message == \u0026#39;q\u0026#39;: break else: print(message) 使用continue 在循环中可以使用continue语句跳过当次循环，并执行下一次循环。continue语句不会像break语句那样不再执行余下的代码。\na = 0 while a \u0026lt; 10: a = a + 1 if a % 2 == 0: continue print(a) break语句可以在循环过程中直接退出循环，而continue语句可以提前结束本轮循环，并直接开始下一轮循环。这两个语句通常都必须配合if语句使用。\n要特别注意，不要滥用break和continue语句。break和continue会造成代码执行逻辑分叉过多，容易出错。大多数循环并不需要用到break和continue语句，上面的两个例子，都可以通过改写循环条件或者修改循环逻辑，去掉break和continue语句。\nwhile循环处理列表和字典 for循环是遍历列表的有效方式，但不该在for循环中修改列表，例如移动元素的操作，因为这会导致Python无法跟踪其中的元素。然而使用while循环就可以在遍历时对列表进行修改。\n在列表间移动元素 l1 = [1,2,3,4] l2 = [] while l1: l = l1.pop() l2.append(l) print(l1) print(l2) 输出：\n[] [4, 3, 2, 1] 可见，列表l1中的元素已经移动到列表l2中了。\n删除包含特定值的所有列表元素 l = [1,2,1,3,1,4,5,1] while 1 in l: l.remove(1) print(l) 输出：\n[2, 3, 4, 5] 使用用户输入填充字典 d = {} active = True while active: a = input(\u0026#39;name\u0026#39;) b = input(\u0026#39;answer\u0026#39;) d[a] = b c = input(\u0026#39;是否继续？y,n\u0026#39;) if c == \u0026#39;n\u0026#39;: active = False for i,j in d.items(): print(i,j) 我们让用户输入姓名和答案并将其存储在字典d中，然后询问用户是否继续，当用户输入n时，标志active为False，while循环结束，并打印结果。\n"
 },
 {
 	"uri": "/tags/with/",
@@ -224,25 +301,11 @@
 	"content": ""
 },
 {
-	"uri": "/python/%E5%87%BD%E6%95%B0/",
-	"title": "函数",
-	"tags": ["函数"],
-	"description": "函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。",
-	"content": "函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。\n定义函数 def hello(): print(\u0026#39;hello\u0026#39;) hello() 输出：\nhello 我们使用def关键字来定义函数，具体规则如下：\n  函数代码块以 def关键词开头，后接函数名称和圆括号()。     任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数。     函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。     函数内容以冒:号起始，并且缩进。     return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。   向函数传递参数 例如我们定义一个计算长方形面积的函数：\ndef x(a,b): s = a * b return s \u0026gt;\u0026gt;\u0026gt; x(4,5) 20 示例中，函数x可以接受两个参数：形参a和形参b。在调用函数x的时候，我们向其传递了实参4、5，结果显示它成功计算除了面积。\n参数传递 函数中可能包含多个形参，因此我们需要传递多个实参，依据不同情况，参数传递的方式很多：位置参数、默认参数、关键字参数、可变参数等。\n位置参数 位置参数需要按照正确的顺序传入，按照位置关联依次将实参传递给形参的传递方式叫做位置参数：\n如上个例子：\ndef x(a,b): s = a * b return s \u0026gt;\u0026gt;\u0026gt; x(4,5) 20 值4、5按照顺序赋值给参数a、b。参数a、b都是位置参数。\n默认参数 如果我们想要计算的长方形面积的宽大多时候都是长度为5，就可以使用默认参数：\ndef x(a,b=5): s = a * b return s \u0026gt;\u0026gt;\u0026gt; x(4) 20 在示例中，参数b就是一个默认参数，默认值为2，当我们调用函数x(4)时，相当于我们调用了x(4,5)。设置默认参数时，必选参数在前，默认参数在后。\n可变参数 可变参数就是传入的参数个数是可变的，可以是1个、2个到任意个，还可以是0个。\ndef x(a,*b): print(a) for i in b: print(i) x(1) x(1,1,2,3,4,5,7) 输出：\n1 1 1 2 3 4 5 7 如果想把一个列表或元组传入可变参数，可以这样：\n\u0026gt;\u0026gt;\u0026gt; nums = [1, 2, 3] \u0026gt;\u0026gt;\u0026gt; x(1,*nums) 1 1 2 3 *nums表示把nums这个list的所有元素作为可变参数传进去。这种写法相当有用，而且很常见\n关键字参数 关键字参数是传递给参数的参数名称-值对，使用关键字参数时无需考虑传入顺序。\ndef x(a,b): s = a * b return s \u0026gt;\u0026gt;\u0026gt; x(b=4,a=5) 20 关键字参数可以拓展程序的功能，试想你正在做一个用户注册的功能，除了用户名和年龄是必填项外，其他都是可选项，利用关键字参数来定义这个函数就能满足注册的需求。\ndef x(a,b,**kw): s = a * b print(s,\u0026#39;\\n\u0026#39;,kw) x(4,5,other=\u0026#39;这是描述\u0026#39;) 输出：\n20 {\u0026#39;other\u0026#39;: \u0026#39;这是描述\u0026#39;} 返回值 函数并非总是直接打印输出，有时它需要处理一些数据并返回一个或一组值。返回的值成为返回值。可以使用return语句将值返回到调用函数所在的代码行：\ndef get_full_name(f_name,l_name) full_name = f_name.title() + \u0026#39; \u0026#39; + l_name.title() return full_name a = get_full_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) print(a) 输出：\nJoecy Wang 函数get_full_name将处理过的姓名返回到调用行，并存储在变量a中。 返回值可以将复杂工作转移到函数中去，从而简化主程序。\n将函数存储在模块中 模块是一个包含所有你定义的函数和变量的文件，其后缀名是.py。模块可以被别的程序引入，以使用该模块中的函数等功能。假如我们已经保存了包含函数的模块x.py。\n导入整个模块 import x 导入整个模块时，可以使用下面的语法调用模块中的函数：\nx.func() 导入特定函数 for x inport func1 想要一次性导入更多函数，只需要将函数名用,号分隔：\nfor x inport func1,func2,func3... 导入特定函数时，调用它就无需使用句点法。\nfunc1() # 无需使用句点法，直接调用 使用as给函数指定别名 for x inport func1 as f 这样，我们在调用函数func1时，可以简写：\nf() # 等同于func1() 可以通过给导入的函数指定别名避免与主程序中的函数重名。\n使用as给模块指定别名 import module as x 这样我们就将模块module指定了别名x，在调用其中函数时，也可以简写：\nx.func1() #等同于module.func1() 给模块指定别名可以让我们专注函数名而忽略模块名。\n导入模块中所有函数 from x inport* 这种导入方式，将把模块中的所有函数都导入进来，且无需使用句点法调用。但是不推荐。\n"
-},
-{
 	"uri": "/tags/%E5%88%97%E8%A1%A8/",
 	"title": "列表",
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/",
-	"title": "发送请求",
-	"tags": ["urlopen()", "urllib", "爬虫"],
-	"description": "使用urllib的request模块，可以方便的实现请求的发送并得到响应。",
-	"content": "使用urllib的request模块，可以方便的实现请求的发送并得到响应。\n发送请求 urlopen() 抓取Python官网：\nimport urllib.request response = urllib.request.urlopen(\u0026#34;https://www.python.org\u0026#34;) print(response.read().decode(\u0026#39;utf-8\u0026#39;)) 部分输出：\n# 部分输出 \u0026lt;script src=\u0026#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script\u0026gt;window.jQuery || document.write(\u0026#39;\u0026lt;script src=\u0026#34;/static/js/libs/jquery-1.8.2.min.js\u0026#34;\u0026gt;\u0026lt;\\/script\u0026gt;\u0026#39;)\u0026lt;/script\u0026gt; \u0026lt;script src=\u0026#34;/static/js/libs/masonry.pkgd.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;script type=\u0026#34;text/javascript\u0026#34; src=\u0026#34;/static/js/main-min.js\u0026#34; charset=\u0026#34;utf-8\u0026#34;\u0026gt;\u0026lt;/script\u0026gt;  decode('utf-8')方法将网页以制定编码解析。\n response是一个HTTPResponse类型的对象：\nprint(type(response)) 输出如下：\n\u0026lt;class \u0026#39;http.client.HTTPResponse\u0026#39;\u0026gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。\n例子：\nimport urllib.request response = urllib.request.urlopen(\u0026#34;https://www.baidu.com\u0026#34;) print(response.status) print(\u0026#39;\\n\u0026#39;,response.getheaders()) print(\u0026#39;\\n\u0026#39;,response.getheader(\u0026#39;Server\u0026#39;)) 输出结果：\n200 [(\u0026#39;Accept-Ranges\u0026#39;, \u0026#39;bytes\u0026#39;), (\u0026#39;Cache-Control\u0026#39;, \u0026#39;no-cache\u0026#39;), (\u0026#39;Content-Length\u0026#39;, \u0026#39;227\u0026#39;), (\u0026#39;Content-Type\u0026#39;, \u0026#39;text/html\u0026#39;), (\u0026#39;Date\u0026#39;, \u0026#39;Thu, 09 Aug 2018 14:49:17 GMT\u0026#39;), (\u0026#39;Etag\u0026#39;, \u0026#39;\u0026#34;5b56b4a8-e3\u0026#34;\u0026#39;), (\u0026#39;Last-Modified\u0026#39;, \u0026#39;Tue, 24 Jul 2018 05:10:00 GMT\u0026#39;), (\u0026#39;P3p\u0026#39;, \u0026#39;CP=\u0026#34; OTI DSP COR IVA OUR IND COM \u0026#34;\u0026#39;), (\u0026#39;Pragma\u0026#39;, \u0026#39;no-cache\u0026#39;), (\u0026#39;Server\u0026#39;, \u0026#39;BWS/1.1\u0026#39;), (\u0026#39;Set-Cookie\u0026#39;, \u0026#39;BD_NOT_HTTPS=1; path=/; Max-Age=300\u0026#39;), (\u0026#39;Set-Cookie\u0026#39;,\u0026#39;BIDUPSID=9FA4E613328025CC47152BC4A49E9AB3; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\u0026#39;), (\u0026#39;Set-Cookie\u0026#39;, \u0026#39;PSTM=1533826157; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\u0026#39;), (\u0026#39;Strict-Transport-Security\u0026#39;, \u0026#39;max-age=0\u0026#39;), (\u0026#39;X-Ua-Compatible\u0026#39;, \u0026#39;IE=Edge,chrome=1\u0026#39;), (\u0026#39;Connection\u0026#39;, \u0026#39;close\u0026#39;)] BWS/1.1 可见，分别输出了状态码、响应头和响应头里面的Server值。\nurlopen()的参数 urlopen()可以给链接传递一些参数，它的API如下：\nurllib.request.urlopen(url,data=None,[timeout,]*,cafile=None,cadefault=False,comtext=None) data参数 如果添加该参数，且它是bytes（字节流）类型，则需要通过bytes()方法转化，传递了该参数，它的请求方式就不再是GET，而是POST方式。\nimport urllib.parse import urllib.request data = bytes(urllib.parse.urlencode({\u0026#39;word\u0026#39;:\u0026#39;hello\u0026#39;}),encoding=\u0026#39;utf-8\u0026#39;) response = urllib.request.urlopen(\u0026#34;http://httpbin.org/post\u0026#34;,data=data) print(response.read()) 转换为bytes（字节流）类型的方法types()需要两个参数： 第一个是str（字符串）类型的参数，第二个是指定编码格式。\n需要使用urllib.parse模块的urlencode()方法，将字典转化为字符串。\ntimeout参数 timeout参数用于设置超时时间，单位为秒，如果请求超过了设置的时间，就会抛出异常。它支持HTTP、HTTPS、FTP请求。\nimport urllib.request response = urllib.request.urlopen(\u0026#34;http://joecy.wang\u0026#34;,timeout=0.001) print(response.read()) 输出：\n# 部分代码 Traceback (most recent call last): File \u0026#34;/home/joecy/Desktop/TestCode/Untitled-3.py\u0026#34;, line 3, in \u0026lt;module\u0026gt; ...... urllib.error.URLError: \u0026lt;urlopen error timed out\u0026gt; 使用try-except处理异常：\nimport socket import urllib.request try: response = urllib.request.urlopen(\u0026#34;http://joecy.wang\u0026#34;,timeout=0.001) except urllib.error.URLError as e: if isinstance(e.reason,socket.timeout): print(\u0026#34;超时\u0026#34;)  使用ininstance判断异常e.reason是不是socket.timeout类型。\n 输出：\n超时 "
 },
 {
 	"uri": "/tags/%E5%8F%98%E9%87%8F/",
@@ -252,25 +315,11 @@
 	"content": ""
 },
 {
-	"uri": "/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/",
-	"title": "变量与数据类型",
-	"tags": ["变量", "数据类型"],
-	"description": "学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。",
-	"content": "学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。\n变量 a = \u0026#34;hello world!\u0026#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。\n变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（\u0026quot;\u0026quot;）或单引号（''）。\na = \u0026#34;我是字符串。\u0026#34; b = \u0026#39;我也是字符串。\u0026#39; 这样我们就可以在字符串中包含双引号或单引号了：\na = \u0026#34;我是\u0026#39;字符串\u0026#39;。\u0026#34; b = \u0026#39;我也是\u0026#34;字符串\u0026#34;。\u0026#39; 使用方法修改字符串大小写 name = \u0026#34;joecy wang\u0026#34; print(name.title()) 输出的结果是：\nJoecy Wang 我们将小写字符joecy wang存储到变量name中，在print语句中，我们对name使用方法title()，每个方法后面都会有一个括号，用于接受额外的信息，title()方法并不需要，所以它的括号是空的。\n方法title()以首字母大写的方式显示每一个单词。如果想把字符串中的单词全部变为大写或是小写，可以使用方法upper()和lower()。\nname = \u0026#34;Joecy Wang\u0026#34; print(name.upper()) print(name.lower()) 结果为：\nJOECY WANG joecy wang 拼接字符串 first_name = \u0026#34;joecy\u0026#34; last_name = \u0026#34;wang\u0026#34; name = first_name + \u0026#34; \u0026#34; + last_name print(\u0026#34;hello \u0026#34; + name.title() + \u0026#34;!\u0026#34;) 输出：\nhello Joecy Wang! 在字符串中添加空白 在编程中空白是指任何非打印字符，如空格、制表符和换行符。\nprint(\u0026#34;\\t制表符\u0026#34;) 输出：\n制表符 print(\u0026#34;\\n第一行\\n第二行\\n第三行\u0026#34;) 输出：\n第一行 第二行 第三行 \\n、\\t可同时使用。\n删除空白 a = \u0026#34; joecy \u0026#34; a.rstrip() a.lstrip() a.strip() 输出：\n\u0026#34; joecy\u0026#34; #删除左边空白 \u0026#34;joecy \u0026#34; #删除右边空白 \u0026#34;joecy\u0026#34; #删除全部空白 数字 在Python中，数字可进行加减乘除（+、-、*、/）运算。**表示乘方运算。\n浮点数 Python将带小数点的数字都成为浮点数。\n使用函数str()避免错误 很多时候我们需要将数字和字符串同时拼接或打印出来，这时候需要使用str()函数。\nage = 25 message = \u0026#34;happy \u0026#34; + str(age) + \u0026#34; birthday!\u0026#34; print(message) 输出：\nhappy 25 birthday! 注释 Python中使用#号注释。\n# 打印hello print(\u0026#34;hello\u0026#34;) \u0026#39;\u0026#39;\u0026#39; 这是多行注释，用三个单引号 这是多行注释，用三个单引号 这是多行注释，用三个单引号 \u0026#39;\u0026#39;\u0026#39; print(\u0026#34;Hello, World!\u0026#34;) \u0026#34;\u0026#34;\u0026#34; 这是多行注释，用三个单引号 这是多行注释，用三个单引号 这是多行注释，用三个单引号 \u0026#34;\u0026#34;\u0026#34; print(\u0026#34;Hello, World!\u0026#34;) "
-},
-{
 	"uri": "/tags/%E5%AD%97%E5%85%B8/",
 	"title": "字典",
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/python/%E5%AD%97%E5%85%B8/",
-	"title": "字典",
-	"tags": ["字典"],
-	"description": "Python字典可以将相关的信息关联起来，`字典`中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。",
-	"content": "Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。\n一个简单的字典 dict_1 = {\u0026#39;joecy\u0026#39;:25,\u0026#39;yingying\u0026#39;:24} print(dict_1[\u0026#39;joecy\u0026#39;]) 输出：\n25 在Python中，字典是由一系列键-值对（key-value）组成。并放在花括号{}中。每一个键与一个值相关联，可以使用键来访问与其对应的值。与键相关联的值可以是数字、字符串、列表甚至另一个字典。\n键与值之间使用冒号:分隔，键-值对之间使用逗号,分隔。\n访问字典中的值 dict_1 = {\u0026#39;joecy\u0026#39;:25,\u0026#39;yingying\u0026#39;:24} print(dict_1[\u0026#39;joecy\u0026#39;]) #指定字典名，并在[]中指定键 添加键值对 要向字典中添加键-值对，可依次指定字典名、要添加的键以及值：\ndict_1 = {\u0026#39;joecy\u0026#39;:25,\u0026#39;yingying\u0026#39;:24} dict_1[\u0026#39;muyi\u0026#39;] = 2 print(dict_1) 输出：\n{\u0026#39;joecy\u0026#39;: 25, \u0026#39;yingying\u0026#39;: 24, \u0026#39;muyi\u0026#39;: 2} 一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值替换：\ndict_1 = {\u0026#39;joecy\u0026#39;:25,\u0026#39;yingying\u0026#39;:24} dict_1[\u0026#39;muyi\u0026#39;] = 2 dict_1[\u0026#39;muyi\u0026#39;] = \u0026#39;1周岁\u0026#39; print(dict_1) 输出：\n{\u0026#39;joecy\u0026#39;: 25, \u0026#39;yingying\u0026#39;: 24, \u0026#39;muyi\u0026#39;: \u0026#39;1周岁\u0026#39;} 键'muyi'的值被替换为了值'1周岁'。 键-值对的排列顺序与添加顺序不同，Python只关心键与值之前的对应关系。\n和list比较，dict有以下几个特点：\n查找和插入的速度极快，不会随着key的增加而变慢； 需要占用大量的内存，内存浪费多。 而list相反：\n查找和插入的时间随着元素的增加而增加； 占用空间小，浪费内存很少。 所以，dict是用空间来换取时间的一种方法。（来自廖雪峰博客）\n创建空字典 当我们需要存储用户提供的信息或编写能够自动生成大量键-值对的代码时，需要事先定义一个空字典：\nd = {} d[\u0026#39;key1\u0026#39;] = \u0026#39;第一个值\u0026#39; d[\u0026#39;key2\u0026#39;] = \u0026#39;第二个值\u0026#39; print(d) 输出：\n{\u0026#39;key1\u0026#39;: \u0026#39;第一个值\u0026#39;, \u0026#39;key2\u0026#39;: \u0026#39;第二个值\u0026#39;} 修改字典中的值 alien_0 = {\u0026#39;x_position\u0026#39;: 0, \u0026#39;y_position\u0026#39;: 25, \u0026#39;speed\u0026#39;: \u0026#39;medium\u0026#39;} print(\u0026#34; Original x-position: \u0026#34; + str( alien_0[\u0026#39;x_position\u0026#39;])) # 向右移动外星人 # 据外星人当前速度决定将其移动多远  if alien_0[\u0026#39;speed\u0026#39;] == \u0026#39;slow\u0026#39;: x_increment = 1 elif alien_0[\u0026#39;speed\u0026#39;] == \u0026#39;medium\u0026#39;: x_increment = 2 else: # 这个外星人的速度一定很快  x_increment = 3 # 新位置等于老位置加上增量  alien_0[\u0026#39;x_position\u0026#39;] = alien_0[\u0026#39;x_position\u0026#39;] + x_increment print(\u0026#34; New x-position: \u0026#34; + str( alien_0[\u0026#39;x_position\u0026#39;]))  示例代码来源于《Python编程 从入门到实践》\n 删除键-值对 我们可以使用pop()方法或del语句删除键-值对：\nd = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} del d[\u0026#39;a\u0026#39;] print(\u0026#39;字典d\u0026#39;\\n) print(d) e = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} e.pop(\u0026#39;a\u0026#39;) print(\u0026#39;字典e\u0026#39;\\n) print(e) 输出：\n字典d {\u0026#39;b\u0026#39;: 2, \u0026#39;c\u0026#39;: 3} 字典e {\u0026#39;b\u0026#39;: 2, \u0026#39;c\u0026#39;: 3} 遍历字典 Python有多种遍历字典的方式：遍历字典的所有键-值对、``键或值。\n遍历字典所有的键值对 d = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} for i,j in d.items(): print(i,j) 输出：\na 1 b 2 c 3 在这个遍历字典d的for循环中，我们声明了两个变量i，j分别用来存储键-值对的键和值。在for循环的第二部分，我们对字典d使用了方法items()，它返回一个键-值对列表。最后for循环依次将每个键-值对存储到两个变量中。\n即使遍历字典时，键-值对的返回顺序与存储顺序也不相同。\n遍历字典中所有键 遍历字典中的键可以使用方法`keys()``。\nd = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} for i in d.keys(): print(i) 输出：\na b c 其实遍历字典时，Python默认遍历所有的键，所以我们可以将keys()方法省略：\nd = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} for i in d: print(i) 输出：\na b c 结果并不会改变，但是显式的使用方法keys()可以时程序便于理解。\n遍历字典中所有的值 d = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} for i in d.values(): print(i) 输出：\n1 2 3 这种做法提取字典中的值，不会考虑重复问题，最终的列表（结果）可能包含大量重复项。剔除重复项可使用集合set，集合set类似于列表，但其中的元素必须是独一无二的。\nl = [1,1,2,2,3,3,4,4] ll = set(l) print(ll) 输出：\n{1, 2, 3, 4} 嵌套 将字典存储在列表中，或将列表存储在字典中，称为嵌套。\n在列表中存储字典 d_1 = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2,\u0026#39;c\u0026#39;:3} d_2 = {\u0026#39;f\u0026#39;:\u0026#39;joecy\u0026#39;,\u0026#39;g\u0026#39;:\u0026#39;yy\u0026#39;} l = [d_1,d_2] for i in l: print(i) 输出：\n{\u0026#39;a\u0026#39;: 1, \u0026#39;b\u0026#39;: 2, \u0026#39;c\u0026#39;: 3} {\u0026#39;f\u0026#39;: \u0026#39;joecy\u0026#39;, \u0026#39;g\u0026#39;: \u0026#39;yy\u0026#39;} 在字典中存储列表 d = {\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:[1,2,3]} 在字典中存储字典 d = {\u0026#39;dind\u0026#39;:{\u0026#39;a\u0026#39;:1,\u0026#39;b\u0026#39;:2},\u0026#39;c\u0026#39;:3} "
 },
 {
 	"uri": "/tags/%E5%BE%AA%E7%8E%AF/",
@@ -294,39 +343,11 @@
 	"content": "不知怎地，在我的家族中 “读书” “大学生”等词汇已然成为了贬义词。\n三四年前，这些字眼也仅仅是在我父亲的嘴里说出，大抵也只是有口无心的顺出一句，“这都不会做，读书读傻了？”而已。渐渐的，七大姑八大姨也跟风笑了起来 “这孩子连个街坊都不认识。” “上学不还得回来上班？”\n刚毕业那会，听见这样的话，心里很烦，出于礼貌也只是一笑而过。不过的确影响我颇深，2016年那会，我像个傻逼一样，坚持向我的爱人灌输 ：“以后孩子爱读书就读，不读就学点什么吧？”这样的思想。认定了有个手艺，养活自己就算大功告成了。如今回想，啊呸！\n今年春节，故事重现。在他们嘴里，读书无用论再次演变，又成为了我没有朋友的原因。\n我可能真的没有朋友，没有牌友、赌友，没有那种一口一个你妈逼却是表达和你无所忌讳的兄弟，也没有酒桌上牛逼吹的伊拉克的朋友。\n心里话，我想有这样的朋友，但是他们不找我，所以，我是真的没有朋友。\n那几天我一直在想，要不要趁着过年，我也约几个，凑一局？要不要找个兄弟打个电话骂他几句你妈逼再拜个年？可当我拿起电话时，才发觉，压根没有这样的朋友？打给谁呢？\n“没有朋友”是因为脱节了。\n读书和社会的脱节，和实践的脱节，和基本人群沟通的脱节。这是很严重的问题，只是不同段位的人很少越级沟通，也就不以为然，可当你突然出现在他们习以为常的生活环境中时，就像沙丁鱼看到了鲶鱼一样，总会带来些搅动，他们沉迷于自身的阶段的环境越深，反应也愈加明显！\n几年前，我总会以为，沙丁鱼不就是一群垃圾？可没想到，沙丁鱼眼中的鲶鱼却也只像个会写字的煞笔。\n至此，算是明了了。\n我脱节了就要接上，尽量知行合一；\n沙丁鱼不是垃圾，鲶鱼也不是煞笔。\n每种生活和见解都是珍贵的、有意义的，但不要用自己的生活环境下产生的想法对别人的作为评头论足。这都是该想，该明白的。不想不思考还死坚持自己的那一套，是有多可悲？\n你Diss人很屌，你长得好看，你有钱，你牛逼，你朋友多，你能喝\u0026hellip;\u0026hellip;这都值得欣慰。因为那真真切切就是你的。你沾沾自喜、洋洋得意、臭美乐呵，都是人之常情，但再怎么自得，也要谦逊，更要适可而止，因为再进一步，就是傻，就是糊涂了！\n"
 },
 {
-	"uri": "/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/",
-	"title": "操作列表",
-	"tags": ["列表", "for循环"],
-	"description": "很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。",
-	"content": "很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。\n使用for循环遍历列表 a = [\u0026#39;我\u0026#39;,\u0026#39;你\u0026#39;,\u0026#39;他\u0026#39;] for i in a: print(i) 输出：\n我 你 他 创建数值列表 使用函数range() for i in range(1,5): print(i) 输出：\n1 2 3 4 函数range()从你指定的第一个数字开始，并在指定的第二个数字前面停下。\n使用函数range()创建列表 使用函数list()将函数range()的结果直接转为列表：\nnum = list(range(1,5)) print(num) 输出：\n[1,2,3,4] 可以给range()函数指定步长，来完成更多工作：\nnum = list(range(2,11,2)) print(num) 输出：\n[2,4,6,8,10] 在这个示例中，range()函数从2开始，并以2为步长不断增加。 使用函数range()可以创建几乎所有的数字列表：\na = [] for i in range(1,5): a.append(i ** 2) print(a) 输出：\n[1,4,9,16] 对数字列表进行统计 \u0026gt;\u0026gt;\u0026gt; a = [1,2,3,4,5,6,7] \u0026gt;\u0026gt;\u0026gt; min(a) 1 \u0026gt;\u0026gt;\u0026gt; max(a) 7 \u0026gt;\u0026gt;\u0026gt; sum(a) 29 列表解析 列表解析将for循环和创建新元素的代码合并在一行：\na = [i ** 2 for i in range(1,5)] print(a) 输出：\n[1,4,9,16] 使用列表解析，要先给定一个列表名，如a，在定义一个表达式，如 i ** 2，然后编写一个for循环，用于给表达式提供值，最后将表达式与for循环使用方括号[]括起来。\n使用列表一部分 切片 a = [1,2,3,4,5,6,7] print(a[0:3]) print(a[:3]) print(a[2:4]) print(a[4:]) print(a[-3:]) 输出：\n[1,2,3] [1,2,3] [3,4] [5, 6, 7] [5, 6, 7] 当不指定起始索引时，Python默认从索引0处开始，当不指定终止索引时，Python默认到最后一个元素为止。 同样的，我们可以使用for循环遍历切片。\na = [1,2,3,4,5,6,7] for i in a[0:3]: print(i) 输出：\n1 2 3 复制列表 我们可以通过创建一个包含整个列表的切片来复制列表：\na = [1,2,3,4] b = a[:] print(b) 输出：\n[1,2,3,4] 但如果我们使用这样的方式‘复制’列表：\na = [1,2,3,4] b = a #错误复制列表 print(b) 这并不是两个列表。当a列表的发生改变时，b列表会发生同样的改变。\n"
-},
-{
 	"uri": "/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/",
 	"title": "数据类型",
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/",
-	"title": "文件读写",
-	"tags": ["open()", "read()", "readlines()", "with"],
-	"description": "要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。",
-	"content": "要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。\n读取整个文件 with open('1.txt') as file_obj: neirong = file_obj.read() print(neirong) 要使用文件内容，要先打开open()文件，接着读取read()内容到内存中，最后当我们还要关闭close()文件，以免浪费内存。\n这时使用关键字with就可以实现文件的自动关闭，Python会在合适的时候自动关闭文件。\nopen()函数返回一个表示文件的对象，接着我们可以使用read()来读取这个文件内容，并存储在nrirong中。\n逐行读取 可以使用for循环逐行读取文件内容。\nwith open('2.txt') as file_obj: for i in file_obj: print(i) 一样的，函数open()返回一个表示文件的对象，存储在变量file_obj中，于是我们可以通过遍历文件对象file_obj来逐行读取内容。\n创建一个包含文件内容的列表 使用关键字with时，open()返回的对象只可以在with代码块内访问，要想在with代码块外使用，我们需要创建一个包含该文件各行内容的列表：\nwith open('3.txt') as file_obj: lines = file_obj.readlines() for i in lines(): print(i) 方法readlines()，读取文件中的每一行，并将其存储在列表lines中。\n写入文件 要写入文件，需要在调用open()时，传入另外一个实参，告诉Python你要写入打开的文件：\nwith open('4.txt','w') as file_obj: file_obj.write('我在写入文件') 实参'w'告诉Python，我们要以写入模式打开文件，其他的打开模式包括'r'-只读模式、'a'-附加模式、'r+'-读写模式。\n如果要写入的文件不存在，Python会自动创建它，当使用'w'写入时，Python会在写入前清空该文件。\n"
-},
-{
-	"uri": "/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/",
-	"title": "测试代码之测试函数",
-	"tags": ["assertEqual()", "unittest"],
-	"description": "测试代码可以使程序面对各种情况都能按照预期那样工作。",
-	"content": "测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。\n测试函数 测试通过 现在有一个格式化姓名的函数：\ndef print_name(l,f): a = l.title() + \u0026#39; \u0026#39; + f.title() return a  这段代码保存在name.py\n 我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的unittest模块编写单元测试：\nimport unittest from name import print_name class Test_print_name(unittest.TestCase): def test_print_name(self): a = print_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) self.assertEqual(a,\u0026#34;Joecy Wang\u0026#34;) unittest.main() 首先，导入模块unittest和要测试的函数print_name()，然后创建一个继承于unittest.TestCase的类Test_print_name，接着创建一个方法test_print_name()，用来测试print_name()，在这个方法中，我们调用了函数print_name()，并在结果（返回值）存储在变量a中。最后，我们使用断言方法assertEqual()判断输出是否是我们期望的。\n 代码行unittest.main()让Python运行这个文件中的测试。\n 运行这个单元测试，得到结果：\n. ---------------------------------------------------------------------- Ran 1 test in 0.002s OK 第一行的句点.代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，OK则表示这个测试用例中的所有单元测试都通过了。\n测试不通过 如果这时修改了函数print_name()，使其多接受一个中间名参数：\ndef print_name(l,m,f): a = l.title() + \u0026#39; \u0026#39; + m.title() + \u0026#39; \u0026#39;+ f.title() return a 再次运行函数print_name()的单元测试时，输出如下：\nE ====================================================================== ERROR: test_print_name (__main__.Test_print_name) ---------------------------------------------------------------------- Traceback (most recent call last): File \u0026#34;/home/joecy/Desktop/TestCode/testname.py\u0026#34;, line 7, in test_print_name a = print_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) TypeError: print_name() missing 1 required positional argument: \u0026#39;f\u0026#39; ---------------------------------------------------------------------- Ran 1 test in 0.002s FAILED (errors=1) 第一行的字母E，表示有一个测试没通过，第二行告诉我们是哪里发生了错误，第三行是一个标准的traceback，告诉我们调用函数时缺少了一个必不可少的位置参数。\n测试不通过，说明我们新编写的代码存在问题，要检查刚刚进行的修改，并处理。\n修改后代码如下：\ndef print_name(l,f,m=\u0026#39;\u0026#39;): if m: a = l.title() + \u0026#39; \u0026#39; + m.title() + \u0026#39; \u0026#39;+ f.title() else: a = l.title() + \u0026#39; \u0026#39; + f.title() return a 中间名变为可选的，并添加了if测试。\n再次测试：\n. ---------------------------------------------------------------------- Ran 1 test in 0.001s OK 通过了！\n添加新测试 函数print_name现在可以处理包含中间名的姓名了，我们也需要再编写一个测试，用于测试包含中间名的姓名：\nimport unittest from name import print_name class Test_print_name(unittest.TestCase): def test_print_name(self): a = print_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) self.assertEqual(a,\u0026#34;Joecy Wang\u0026#34;) def test_print_m_name(self): a = print_name(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;,\u0026#39;li\u0026#39;) self.assertEqual(a,\u0026#34;Joecy Li Wang\u0026#34;) unittest.main() 运行测试，结果如下：\n.. ---------------------------------------------------------------------- Ran 2 tests in 0.003s OK OK！测试通过了！\n"
-},
-{
-	"uri": "/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/",
-	"title": "测试代码之测试类",
-	"tags": ["assertIn()", "setUp()", "unittest"],
-	"description": "类的测试于函数的测试类似，但也有些许不同。",
-	"content": "类的测试于函数的测试类似，但也有些许不同。\n测试类 先写出一个用于测试的类，并存储在diaocha.py中：\nclass Dc(): \u0026#39;\u0026#39;\u0026#39;收集匿名调查问卷\u0026#39;\u0026#39;\u0026#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：\nimport unittest from diaocha import Dc class TestDc(unittest.TestCase): def test_oneres(self): \u0026#39;\u0026#39;\u0026#39;测试存储一个答案\u0026#39;\u0026#39;\u0026#39; question = \u0026#34;你是中国人嘛？\u0026#34; mydiaoche = Dc(question) mydiaoche.store_res(\u0026#39;是\u0026#39;) self.assertIn(\u0026#39;是\u0026#39;,mydiaoche.responses) def test_more_res(self): \u0026#39;\u0026#39;\u0026#39;测试存储多个答案\u0026#39;\u0026#39;\u0026#39; question = \u0026#39;你是中国人？\u0026#39; mydiaocha = Dc(question) huida = [\u0026#39;是\u0026#39;,\u0026#39;ok\u0026#39;,\u0026#39;你猜\u0026#39;] for i in huida: mydiaocha.store_res(i) for j in huida: self.assertIn(j,mydiaocha.responses) unittest.main() 使用断言assertIn判断一个item是不是在list中，结果如下：\n.. ---------------------------------------------------------------------- Ran 2 tests in 0.002s OK 两个测试都通过了！\n方法setUp() 在上面两个测试中，每次我们都需要创建Dc的实例，每个方法中都需要创建答案，做了很多重复的工作。\n可以使用unittest.TestCase类包含的方法setUp()简化代码。\nimport unittest from diaocha import Dc class TestDc(unittest.TestCase): def setUp(self): question = \u0026#39;你是中国人吗？\u0026#39; self.mydiaocha = Dc(question) self.huida = [\u0026#39;是\u0026#39;,\u0026#39;ok\u0026#39;,\u0026#39;你猜\u0026#39;] def test_oneres(self): self.mydiaocha.store_res(self.huida[0]) self.assertIn(self.huida[0],self.mydiaocha.responses) def test_more_res(self): for i in self.huida: self.mydiaocha.store_res(i) for j in self.huida: self.assertIn(j,self.mydiaocha.responses) unittest.main() 如果TestCase中包含了方法setUp()，那么Python将先运行它，再运行test_打头的方法。 我们在setUp()方法中，创建了Dc的实例和存储答案的列表，只不过它们都包含前缀self，也就是说，我们把它们存储在属性中，这样，就可以在这个类中的任何一个地方使用它们了。\n"
 },
 {
 	"uri": "/tags/%E7%88%AC%E8%99%AB/",
@@ -336,32 +357,11 @@
 	"content": ""
 },
 {
-	"uri": "/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/",
-	"title": "用户输入",
-	"tags": ["input()"],
-	"description": "函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。",
-	"content": "函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。\n使用函数input获取输入 a = input() print(a) input()函数接受一个参数，即要向用户显示的提示信息：\na = input(\u0026#39;这是提示信息。\u0026#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：\n\u0026gt;\u0026gt;\u0026gt; a = input(\u0026#39;输入数字看看\u0026#39;) 输入数字看看10 \u0026gt;\u0026gt;\u0026gt; a \u0026#39;10\u0026#39; 当我们需要将用户输入作为数字使用时，就会发生错误，所以可以使用函数int()，将字符串转为数字。\n\u0026gt;\u0026gt;\u0026gt; a = int(a) \u0026gt;\u0026gt;\u0026gt; a 10 "
-},
-{
 	"uri": "/tags/%E7%B1%BB/",
 	"title": "类",
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/python/%E7%B1%BB/",
-	"title": "类",
-	"tags": ["类"],
-	"description": "类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。",
-	"content": "类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。\n创建和使用类 使用关键字class定义类：\nclass Dog(): pass 这样就创建了Dog类。\n\u0026gt;\u0026gt;\u0026gt; d = Dog() \u0026gt;\u0026gt;\u0026gt; d.name = \u0026#39;jingjing\u0026#39; \u0026gt;\u0026gt;\u0026gt; d.name \u0026#39;jingjing\u0026#39; 我们可以像上面的例子那样，给实例变量绑定属性。\n类中的方法 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。\nclass Dog(): def say_hi(self): print(\u0026#39;hello\u0026#39;) \u0026gt;\u0026gt;\u0026gt; p = Dog() \u0026gt;\u0026gt;\u0026gt; p.say_hi() hello __init__方法 类具有模板的作用，init()是一个特殊的方法，类的实例化操作会自动调用它。\nclass Dog(): def __init__(self,a,b): self.name = a self.age = b 方法__init__()的第一个参数永远时self，它表示创建的实例本身，因此，在__init__()方法中，我们可以把各种属性绑定到self，因为self就指向实例本身。\n创建实例 有了__init__()方法，创建实例的时候就要传入和__init__()，相匹配的参数，但self不需要传入，因为它表示实例本身，Python会自动传入。\nclass Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;) 实例属性和类属性 class Dog(): name = \u0026#39;joecy\u0026#39; #类属性 a = Dog() print(a.name) 输出：\njoecy a.name = wang #给实例属性赋值 print(a.name) 输出：\nwang 可见，在编写程序的时候，千万不要对实例属性和类属性使用相同的名字，因为相同名称的实例属性将屏蔽掉类属性，但是当你删除实例属性后，再使用相同的名称，访问到的将是类属性。\n类的继承 class A(): def p(self): print(\u0026#39;我会打印\u0026#39;) class B(A): def s(self): print(\u0026#39;我会唱歌\u0026#39;) x = B() print(x.p()) 这样类B就完全继承了类A的所有属性和方法。\n重写父类方法 class A(): def p(self): print(\u0026#39;我会打印\u0026#39;) class B(A): def s(self): print(\u0026#39;我会唱歌\u0026#39;) def p(self): print(\u0026#39;我重写了方法\u0026#39;) x = B() print(x.p()) 输出：\n我重写了方法 当子类和父类都存在相同的方法p()时，子类的p()覆盖了父类的p()，在代码运行的时候，总是会调用子类的p()。这样就完成了父类方法的重写。\n将实例用作属性 class A(): def p(self): print(\u0026#39;我会打印\u0026#39;) class B(): def __init__(self): self.work = A() x = B() print(x.work.p()) 输出：\n我会打印 将实例用作类的属性，可以将大类拆分为多个小类，避免程序杂乱。\n"
-},
-{
-	"uri": "/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/",
-	"title": "组织列表",
-	"tags": ["列表"],
-	"description": "`列表`是一系列元素按照特定顺序排列的组成，列表是有序集合。",
-	"content": "列表是一系列元素按照特定顺序排列的组成，列表是有序集合。\n访问列表元素 因为列表是有序集合，所以我们只要给出想要访问的元素的位置告诉Python即可：\nlist1 = [1,2,3,4] print(list1[0]) 输出：\n1 同样的，我们可以对列表元素调用方法，如title()方法：\nlist2 = [\u0026#39;joecy\u0026#39;,\u0026#39;wang\u0026#39;,\u0026#39;shuaige\u0026#39;] print(list2[0].title()) 输出：\nJoecy 索引从0而不是1开始 在Python中，第一个列表元素的索引是0，在大多编程语言中都是如此。 Python为访问最后一个列表元素提供了特殊语法，可通过索引-1访问列表的最后一个元素：\nlist3 = [1,2,3,4] print(list3[-1]) 输出：\n4 当然，-1、-2、-3\u0026hellip;也是可以的。\n修改、添加和删除元素 修改元素 修改列表中的元素，可指定列表名和要修改的元素索引，再指定新值。\nlist4 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] list4[0] = 4 print(list4) 输出：\n[\u0026#39;4\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] 添加元素 在列表末尾添加元素 list5 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] list5.append(\u0026#39;4\u0026#39;) print(list5) 输出：\n[\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;,\u0026#39;4\u0026#39;] 方法append()将元素4添加到了列表末尾，而又不影响其他元素。我们经常需要先创建一个空列表，并使用append()方法向其中添加元素。\n在列表中插入元素 使用方法insert()可以在列表任意位置添加新元素，只需要指定新元素的索引和值：\nlist6 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] list6.insert(0,\u0026#39;4\u0026#39;) print(list6) 输出：\n[\u0026#39;4\u0026#39;,\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] 删除元素 使用del语句删除元素 如果知道想要删除的元素在列表中的位置，即可使用del语句。\nlist7 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] del list7[0] print(list7) 输出：\n[\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] 使用pop()元素删除元素 我们可以使用pop()方法删除列表中的元素并接着使用它的值：\nlist8 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] a = list8.pop() print(list8) print(a) 输出：\n[\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;] 3 实际上我们可以使用方法pop()弹出任意位置的元素，只要在pop()提供要删除的元素的索引即可：\nlist9 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] a = list9.pop(1) print(list9) print(a) 输出：\n[\u0026#39;1\u0026#39;,\u0026#39;3\u0026#39;] 2 根据值删除元素 list10 = [\u0026#39;1\u0026#39;,\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] list10.remove(\u0026#39;1\u0026#39;) print(list10) 输出：\n[\u0026#39;2\u0026#39;,\u0026#39;3\u0026#39;] 当列表中存在多个相同的值时，方法remove()只删除第一个指定的值。\n组织列表 使用sort()方法对列表进行永久排序 a = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] a.sort() print(a) 输出：\n[\u0026#39;a\u0026#39;,\u0026#39;b\u0026#39;,\u0026#39;c\u0026#39;,\u0026#39;d\u0026#39;] 如果需要反向排列，只需要向sort()方法传递参数reverse=True即可：\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] a.sort(reverse=True) print(a) 输出：\n[\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;,\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;] 使用sorted()函数对列表进行临时排序 要保留原来列表的排列顺序，同时以特定顺序呈现它们，可使用函数sorted()：\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] print(a) print(sorted(a)) 输出：\n[\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] [\u0026#39;a\u0026#39;,\u0026#39;b\u0026#39;,\u0026#39;c\u0026#39;,\u0026#39;d\u0026#39;] 同样的，如果我们需要临时反向呈现列表元素，也可以向函数sorted()传递参数reverse=True:\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] print(a) print(sorted(a,reverse=True)) 输出：\n[\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;,\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;] 倒着打印列表 要反转列表元素的排列顺序，可使用方法reverse()：\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] a.reverse() print(a) 输出：\n[\u0026#39;c\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;b\u0026#39;] 方法reverse()使列表元素排序顺序永久性反转，要想恢复原来的排列顺序，再次使用方法reverse()即可。\n确定列表长度 使用函数len()可以快速的得到列表元素的长度。\na = [\u0026#39;b\u0026#39;,\u0026#39;a\u0026#39;,\u0026#39;d\u0026#39;,\u0026#39;c\u0026#39;] print(len(a)) 输出：\n4 "
 },
 {
 	"uri": "/categories/%E8%AF%BB%E5%86%99/",

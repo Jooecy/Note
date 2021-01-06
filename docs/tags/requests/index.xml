@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/requests/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>requests库</title>
+      <link>/python/requests%E5%BA%93/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/requests%E5%BA%93/</guid>
+      <description>Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；
+相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。</description>
+    </item>
+    
+    <item>
       <title>requests基本用法</title>
       <link>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
@@ -22,16 +32,6 @@ r = requests.get(&#39;http://httpbin.org/get?name=joecy&amp;amp;age=24&#39;)
 import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text)  r.encoding = &#39;utf-8&#39; 用于修改编码
  输出了百度关于关键词“我”的搜索结果。
 抓取网页 抓取知乎发现页面：</description>
-    </item>
-    
-    <item>
-      <title>requests库</title>
-      <link>/python/requests%E5%BA%93/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/requests%E5%BA%93/</guid>
-      <description>Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；
-相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。</description>
     </item>
     
     <item>

@@ -7,9 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>变量与数据类型</title>
+      <link>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。
+变量 a = &amp;#34;hello world!&amp;#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。
+变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&amp;quot;&amp;quot;）或单引号（&#39;&#39;）。
+a = &amp;#34;我是字符串。&amp;#34; b = &amp;#39;我也是字符串。&amp;#39; 这样我们就可以在字符串中包含双引号或单引号了：
+a = &amp;#34;我是&amp;#39;字符串&amp;#39;。&amp;#34; b = &amp;#39;我也是&amp;#34;字符串&amp;#34;。&amp;#39; 使用方法修改字符串大小写 name = &amp;#34;joecy wang&amp;#34; print(name.title()) 输出的结果是：
+Joecy Wang 我们将小写字符joecy wang存储到变量name中，在print语句中，我们对name使用方法title()，每个方法后面都会有一个括号，用于接受额外的信息，title()方法并不需要，所以它的括号是空的。
+方法title()以首字母大写的方式显示每一个单词。如果想把字符串中的单词全部变为大写或是小写，可以使用方法upper()和lower()。
+name = &amp;#34;Joecy Wang&amp;#34; print(name.upper()) print(name.lower()) 结果为：
+JOECY WANG joecy wang 拼接字符串 first_name = &amp;#34;joecy&amp;#34; last_name = &amp;#34;wang&amp;#34; name = first_name + &amp;#34; &amp;#34; + last_name print(&amp;#34;hello &amp;#34; + name.</description>
+    </item>
+    
+    <item>
+      <title>操作列表</title>
+      <link>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</guid>
+      <description>很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。
+使用for循环遍历列表 a = [&amp;#39;我&amp;#39;,&amp;#39;你&amp;#39;,&amp;#39;他&amp;#39;] for i in a: print(i) 输出：
+我 你 他 创建数值列表 使用函数range() for i in range(1,5): print(i) 输出：
+1 2 3 4 函数range()从你指定的第一个数字开始，并在指定的第二个数字前面停下。
+使用函数range()创建列表 使用函数list()将函数range()的结果直接转为列表：
+num = list(range(1,5)) print(num) 输出：
+[1,2,3,4] 可以给range()函数指定步长，来完成更多工作：
+num = list(range(2,11,2)) print(num) 输出：
+[2,4,6,8,10] 在这个示例中，range()函数从2开始，并以2为步长不断增加。 使用函数range()可以创建几乎所有的数字列表：
+a = [] for i in range(1,5): a.append(i ** 2) print(a) 输出：
+[1,4,9,16] 对数字列表进行统计 &amp;gt;&amp;gt;&amp;gt; a = [1,2,3,4,5,6,7] &amp;gt;&amp;gt;&amp;gt; min(a) 1 &amp;gt;&amp;gt;&amp;gt; max(a) 7 &amp;gt;&amp;gt;&amp;gt; sum(a) 29 列表解析 列表解析将for循环和创建新元素的代码合并在一行：</description>
+    </item>
+    
+    <item>
       <title>if语句</title>
       <link>/python/if%E8%AF%AD%E5%8F%A5/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/python/if%E8%AF%AD%E5%8F%A5/</guid>
       <description>if语句可以检查程序的当前状态，本据此采取相应的措施。
@@ -20,69 +56,38 @@ Joecy wang 在这个for循环中，if语句来检测，所遍历的元素是否�
     </item>
     
     <item>
-      <title>Json模块</title>
-      <link>/python/json%E6%A8%A1%E5%9D%97/</link>
+      <title>字典</title>
+      <link>/python/%E5%AD%97%E5%85%B8/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/python/json%E6%A8%A1%E5%9D%97/</guid>
-      <description>很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。
- JSON格式最初是为了JavaScript开发的，但随后成了一种常见格式，被众多编程语言采用。
- 使用json.dump()存储数据 使用json.dump()可以轻松的存储数据，json.dump()接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：
-import json username = &amp;#39;111&amp;#39; with open(&amp;#39;name.json&amp;#39;,&amp;#39;w&amp;#39;) as name_obj: json.dump(username,name.json) 这时，就会报错：
-NameError: name &amp;#39;name&amp;#39; is not defined 原因是我们错误向json.dump()传入了参数name.json，这并不是要存储数据的文件==对象==，应该传入参数name_obj。
-import json username = &amp;#39;111&amp;#39; with open(&amp;#39;name.json&amp;#39;,&amp;#39;w&amp;#39;) as name_obj: json.dump(username,name_obj) 同时，也要注意在使用json.dump()存储数据时，函数open()需要传递参数&#39;w&#39;，以便获得写入权限。
-使用json.load()读取数据 同样的，使用json.load()时，传入的也是文件==对象==：
-import json with open(&amp;#39;name.json&amp;#39;) as name_obj: username_tmp = json.load(name_obj) print(username_tmp) 输出：
-111 </description>
+      <guid>/python/%E5%AD%97%E5%85%B8/</guid>
+      <description>Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。
+一个简单的字典 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) 输出：
+25 在Python中，字典是由一系列键-值对（key-value）组成。并放在花括号{}中。每一个键与一个值相关联，可以使用键来访问与其对应的值。与键相关联的值可以是数字、字符串、列表甚至另一个字典。
+键与值之间使用冒号:分隔，键-值对之间使用逗号,分隔。
+访问字典中的值 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) #指定字典名，并在[]中指定键 添加键值对 要向字典中添加键-值对，可依次指定字典名、要添加的键以及值：
+dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} dict_1[&amp;#39;muyi&amp;#39;] = 2 print(dict_1) 输出：
+{&amp;#39;joecy&amp;#39;: 25, &amp;#39;yingying&amp;#39;: 24, &amp;#39;muyi&amp;#39;: 2} 一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值替换：
+dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} dict_1[&amp;#39;muyi&amp;#39;] = 2 dict_1[&amp;#39;muyi&amp;#39;] = &amp;#39;1周岁&amp;#39; print(dict_1) 输出：
+{&amp;#39;joecy&amp;#39;: 25, &amp;#39;yingying&amp;#39;: 24, &amp;#39;muyi&amp;#39;: &amp;#39;1周岁&amp;#39;} 键&#39;muyi&#39;的值被替换为了值&#39;1周岁&#39;。 键-值对的排列顺序与添加顺序不同，Python只关心键与值之前的对应关系。
+和list比较，dict有以下几个特点：
+查找和插入的速度极快，不会随着key的增加而变慢； 需要占用大量的内存，内存浪费多。 而list相反：
+查找和插入的时间随着元素的增加而增加； 占用空间小，浪费内存很少。 所以，dict是用空间来换取时间的一种方法。（来自廖雪峰博客）
+创建空字典 当我们需要存储用户提供的信息或编写能够自动生成大量键-值对的代码时，需要事先定义一个空字典：
+d = {} d[&amp;#39;key1&amp;#39;] = &amp;#39;第一个值&amp;#39; d[&amp;#39;key2&amp;#39;] = &amp;#39;第二个值&amp;#39; print(d) 输出：</description>
     </item>
     
     <item>
-      <title>requests基本用法</title>
-      <link>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <title>用户输入</title>
+      <link>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
-      <description>基本的GET、POST请求方法
-GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。
-使用requests.get() import requests r = requests.get(&amp;#39;https://baidu.com/&amp;#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
-&amp;lt;class &amp;#39;requests.models.Response&amp;#39;&amp;gt; &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; 200 &amp;lt;RequestsCookieJar[&amp;lt;Cookie BDORZ=27315 for .baidu.com/&amp;gt;]&amp;gt; # 部分代码 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--STATUS OK--&amp;gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; .... &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 使用requests.get()方法，即可以GET方式请求网页。
- status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip;  如果GET请求需要附加额外信息，例如添加两个参数：
-r = requests.get(&#39;http://httpbin.org/get?name=joecy&amp;amp;age=24&#39;)
-如果写成这样未免太繁琐，这时可以利用params参数：
-import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text)  r.encoding = &#39;utf-8&#39; 用于修改编码
- 输出了百度关于关键词“我”的搜索结果。
-抓取网页 抓取知乎发现页面：</description>
-    </item>
-    
-    <item>
-      <title>requests库</title>
-      <link>/python/requests%E5%BA%93/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/requests%E5%BA%93/</guid>
-      <description>Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；
-相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。</description>
-    </item>
-    
-    <item>
-      <title>requests高级用法</title>
-      <link>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</guid>
-      <description>requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。
-文件上传 import requests files = {&amp;#39;file&amp;#39;:open(&amp;#39;logo.png&amp;#39;,&amp;#39;rb&amp;#39;)} r = requests.post(&amp;#39;http://httpbin.org/post&amp;#39;,files=files) print(r.text) 首先创建一个表示文件的字典：files，它的键为file，值为使用open()函数&#39;rb&#39;模式打开的待上传文件。之后在post方法中传递参数files,值为files字典。
-Cookies </description>
-    </item>
-    
-    <item>
-      <title>urllib库的使用</title>
-      <link>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-      <description>urllib库是Python内置的HTTP请求库，它包含四个模块：
- request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
+      <guid>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
+      <description>函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。
+使用函数input获取输入 a = input() print(a) input()函数接受一个参数，即要向用户显示的提示信息：
+a = input(&amp;#39;这是提示信息。&amp;#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：
+&amp;gt;&amp;gt;&amp;gt; a = input(&amp;#39;输入数字看看&amp;#39;) 输入数字看看10 &amp;gt;&amp;gt;&amp;gt; a &amp;#39;10&amp;#39; 当我们需要将用户输入作为数字使用时，就会发生错误，所以可以使用函数int()，将字符串转为数字。
+&amp;gt;&amp;gt;&amp;gt; a = int(a) &amp;gt;&amp;gt;&amp;gt; a 10 </description>
     </item>
     
     <item>
@@ -117,102 +122,20 @@ def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 值4、5按照
     </item>
     
     <item>
-      <title>发送请求</title>
-      <link>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
+      <title>类</title>
+      <link>/python/%E7%B1%BB/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
-      <description>使用urllib的request模块，可以方便的实现请求的发送并得到响应。
-发送请求 urlopen() 抓取Python官网：
-import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.python.org&amp;#34;) print(response.read().decode(&amp;#39;utf-8&amp;#39;)) 部分输出：
-# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  decode(&#39;utf-8&#39;)方法将网页以制定编码解析。
- response是一个HTTPResponse类型的对象：
-print(type(response)) 输出如下：
-&amp;lt;class &amp;#39;http.client.HTTPResponse&amp;#39;&amp;gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。
-例子：
-import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.baidu.com&amp;#34;) print(response.status) print(&amp;#39;\n&amp;#39;,response.getheaders()) print(&amp;#39;\n&amp;#39;,response.getheader(&amp;#39;Server&amp;#39;)) 输出结果：
-200 [(&amp;#39;Accept-Ranges&amp;#39;, &amp;#39;bytes&amp;#39;), (&amp;#39;Cache-Control&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Content-Length&amp;#39;, &amp;#39;227&amp;#39;), (&amp;#39;Content-Type&amp;#39;, &amp;#39;text/html&amp;#39;), (&amp;#39;Date&amp;#39;, &amp;#39;Thu, 09 Aug 2018 14:49:17 GMT&amp;#39;), (&amp;#39;Etag&amp;#39;, &amp;#39;&amp;#34;5b56b4a8-e3&amp;#34;&amp;#39;), (&amp;#39;Last-Modified&amp;#39;, &amp;#39;Tue, 24 Jul 2018 05:10:00 GMT&amp;#39;), (&amp;#39;P3p&amp;#39;, &amp;#39;CP=&amp;#34; OTI DSP COR IVA OUR IND COM &amp;#34;&amp;#39;), (&amp;#39;Pragma&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Server&amp;#39;, &amp;#39;BWS/1.</description>
-    </item>
-    
-    <item>
-      <title>变量与数据类型</title>
-      <link>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
-      <description>学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。
-变量 a = &amp;#34;hello world!&amp;#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。
-变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&amp;quot;&amp;quot;）或单引号（&#39;&#39;）。
-a = &amp;#34;我是字符串。&amp;#34; b = &amp;#39;我也是字符串。&amp;#39; 这样我们就可以在字符串中包含双引号或单引号了：
-a = &amp;#34;我是&amp;#39;字符串&amp;#39;。&amp;#34; b = &amp;#39;我也是&amp;#34;字符串&amp;#34;。&amp;#39; 使用方法修改字符串大小写 name = &amp;#34;joecy wang&amp;#34; print(name.title()) 输出的结果是：
-Joecy Wang 我们将小写字符joecy wang存储到变量name中，在print语句中，我们对name使用方法title()，每个方法后面都会有一个括号，用于接受额外的信息，title()方法并不需要，所以它的括号是空的。
-方法title()以首字母大写的方式显示每一个单词。如果想把字符串中的单词全部变为大写或是小写，可以使用方法upper()和lower()。
-name = &amp;#34;Joecy Wang&amp;#34; print(name.upper()) print(name.lower()) 结果为：
-JOECY WANG joecy wang 拼接字符串 first_name = &amp;#34;joecy&amp;#34; last_name = &amp;#34;wang&amp;#34; name = first_name + &amp;#34; &amp;#34; + last_name print(&amp;#34;hello &amp;#34; + name.</description>
-    </item>
-    
-    <item>
-      <title>字典</title>
-      <link>/python/%E5%AD%97%E5%85%B8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E5%AD%97%E5%85%B8/</guid>
-      <description>Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。
-一个简单的字典 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) 输出：
-25 在Python中，字典是由一系列键-值对（key-value）组成。并放在花括号{}中。每一个键与一个值相关联，可以使用键来访问与其对应的值。与键相关联的值可以是数字、字符串、列表甚至另一个字典。
-键与值之间使用冒号:分隔，键-值对之间使用逗号,分隔。
-访问字典中的值 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) #指定字典名，并在[]中指定键 添加键值对 要向字典中添加键-值对，可依次指定字典名、要添加的键以及值：
-dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} dict_1[&amp;#39;muyi&amp;#39;] = 2 print(dict_1) 输出：
-{&amp;#39;joecy&amp;#39;: 25, &amp;#39;yingying&amp;#39;: 24, &amp;#39;muyi&amp;#39;: 2} 一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值替换：
-dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} dict_1[&amp;#39;muyi&amp;#39;] = 2 dict_1[&amp;#39;muyi&amp;#39;] = &amp;#39;1周岁&amp;#39; print(dict_1) 输出：
-{&amp;#39;joecy&amp;#39;: 25, &amp;#39;yingying&amp;#39;: 24, &amp;#39;muyi&amp;#39;: &amp;#39;1周岁&amp;#39;} 键&#39;muyi&#39;的值被替换为了值&#39;1周岁&#39;。 键-值对的排列顺序与添加顺序不同，Python只关心键与值之前的对应关系。
-和list比较，dict有以下几个特点：
-查找和插入的速度极快，不会随着key的增加而变慢； 需要占用大量的内存，内存浪费多。 而list相反：
-查找和插入的时间随着元素的增加而增加； 占用空间小，浪费内存很少。 所以，dict是用空间来换取时间的一种方法。（来自廖雪峰博客）
-创建空字典 当我们需要存储用户提供的信息或编写能够自动生成大量键-值对的代码时，需要事先定义一个空字典：
-d = {} d[&amp;#39;key1&amp;#39;] = &amp;#39;第一个值&amp;#39; d[&amp;#39;key2&amp;#39;] = &amp;#39;第二个值&amp;#39; print(d) 输出：</description>
-    </item>
-    
-    <item>
-      <title>我没有朋友</title>
-      <link>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</guid>
-      <description>不知怎地，在我的家族中 “读书” “大学生”等词汇已然成为了贬义词。
-三四年前，这些字眼也仅仅是在我父亲的嘴里说出，大抵也只是有口无心的顺出一句，“这都不会做，读书读傻了？”而已。渐渐的，七大姑八大姨也跟风笑了起来 “这孩子连个街坊都不认识。” “上学不还得回来上班？”
-刚毕业那会，听见这样的话，心里很烦，出于礼貌也只是一笑而过。不过的确影响我颇深，2016年那会，我像个傻逼一样，坚持向我的爱人灌输 ：“以后孩子爱读书就读，不读就学点什么吧？”这样的思想。认定了有个手艺，养活自己就算大功告成了。如今回想，啊呸！
-今年春节，故事重现。在他们嘴里，读书无用论再次演变，又成为了我没有朋友的原因。
-我可能真的没有朋友，没有牌友、赌友，没有那种一口一个你妈逼却是表达和你无所忌讳的兄弟，也没有酒桌上牛逼吹的伊拉克的朋友。
-心里话，我想有这样的朋友，但是他们不找我，所以，我是真的没有朋友。
-那几天我一直在想，要不要趁着过年，我也约几个，凑一局？要不要找个兄弟打个电话骂他几句你妈逼再拜个年？可当我拿起电话时，才发觉，压根没有这样的朋友？打给谁呢？
-“没有朋友”是因为脱节了。
-读书和社会的脱节，和实践的脱节，和基本人群沟通的脱节。这是很严重的问题，只是不同段位的人很少越级沟通，也就不以为然，可当你突然出现在他们习以为常的生活环境中时，就像沙丁鱼看到了鲶鱼一样，总会带来些搅动，他们沉迷于自身的阶段的环境越深，反应也愈加明显！
-几年前，我总会以为，沙丁鱼不就是一群垃圾？可没想到，沙丁鱼眼中的鲶鱼却也只像个会写字的煞笔。
-至此，算是明了了。
-我脱节了就要接上，尽量知行合一；
-沙丁鱼不是垃圾，鲶鱼也不是煞笔。
-每种生活和见解都是珍贵的、有意义的，但不要用自己的生活环境下产生的想法对别人的作为评头论足。这都是该想，该明白的。不想不思考还死坚持自己的那一套，是有多可悲？
-你Diss人很屌，你长得好看，你有钱，你牛逼，你朋友多，你能喝&amp;hellip;&amp;hellip;这都值得欣慰。因为那真真切切就是你的。你沾沾自喜、洋洋得意、臭美乐呵，都是人之常情，但再怎么自得，也要谦逊，更要适可而止，因为再进一步，就是傻，就是糊涂了！</description>
-    </item>
-    
-    <item>
-      <title>操作列表</title>
-      <link>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</guid>
-      <description>很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。
-使用for循环遍历列表 a = [&amp;#39;我&amp;#39;,&amp;#39;你&amp;#39;,&amp;#39;他&amp;#39;] for i in a: print(i) 输出：
-我 你 他 创建数值列表 使用函数range() for i in range(1,5): print(i) 输出：
-1 2 3 4 函数range()从你指定的第一个数字开始，并在指定的第二个数字前面停下。
-使用函数range()创建列表 使用函数list()将函数range()的结果直接转为列表：
-num = list(range(1,5)) print(num) 输出：
-[1,2,3,4] 可以给range()函数指定步长，来完成更多工作：
-num = list(range(2,11,2)) print(num) 输出：
-[2,4,6,8,10] 在这个示例中，range()函数从2开始，并以2为步长不断增加。 使用函数range()可以创建几乎所有的数字列表：
-a = [] for i in range(1,5): a.append(i ** 2) print(a) 输出：
-[1,4,9,16] 对数字列表进行统计 &amp;gt;&amp;gt;&amp;gt; a = [1,2,3,4,5,6,7] &amp;gt;&amp;gt;&amp;gt; min(a) 1 &amp;gt;&amp;gt;&amp;gt; max(a) 7 &amp;gt;&amp;gt;&amp;gt; sum(a) 29 列表解析 列表解析将for循环和创建新元素的代码合并在一行：</description>
+      <guid>/python/%E7%B1%BB/</guid>
+      <description>类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。
+创建和使用类 使用关键字class定义类：
+class Dog(): pass 这样就创建了Dog类。
+&amp;gt;&amp;gt;&amp;gt; d = Dog() &amp;gt;&amp;gt;&amp;gt; d.name = &amp;#39;jingjing&amp;#39; &amp;gt;&amp;gt;&amp;gt; d.name &amp;#39;jingjing&amp;#39; 我们可以像上面的例子那样，给实例变量绑定属性。
+类中的方法 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。
+class Dog(): def say_hi(self): print(&amp;#39;hello&amp;#39;) &amp;gt;&amp;gt;&amp;gt; p = Dog() &amp;gt;&amp;gt;&amp;gt; p.say_hi() hello __init__方法 类具有模板的作用，init()是一个特殊的方法，类的实例化操作会自动调用它。
+class Dog(): def __init__(self,a,b): self.name = a self.age = b 方法__init__()的第一个参数永远时self，它表示创建的实例本身，因此，在__init__()方法中，我们可以把各种属性绑定到self，因为self就指向实例本身。
+创建实例 有了__init__()方法，创建实例的时候就要传入和__init__()，相匹配的参数，但self不需要传入，因为它表示实例本身，Python会自动传入。
+class Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;) 实例属性和类属性 class Dog(): name = &amp;#39;joecy&amp;#39; #类属性 a = Dog() print(a.</description>
     </item>
     
     <item>
@@ -232,6 +155,48 @@ with open(&#39;3.txt&#39;) as file_obj: lines = file_obj.readlines() for i in li
 写入文件 要写入文件，需要在调用open()时，传入另外一个实参，告诉Python你要写入打开的文件：
 with open(&#39;4.txt&#39;,&#39;w&#39;) as file_obj: file_obj.write(&#39;我在写入文件&#39;) 实参&#39;w&#39;告诉Python，我们要以写入模式打开文件，其他的打开模式包括&#39;r&#39;-只读模式、&#39;a&#39;-附加模式、&#39;r+&#39;-读写模式。
 如果要写入的文件不存在，Python会自动创建它，当使用&#39;w&#39;写入时，Python会在写入前清空该文件。</description>
+    </item>
+    
+    <item>
+      <title>Json模块</title>
+      <link>/python/json%E6%A8%A1%E5%9D%97/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/json%E6%A8%A1%E5%9D%97/</guid>
+      <description>很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。
+ JSON格式最初是为了JavaScript开发的，但随后成了一种常见格式，被众多编程语言采用。
+ 使用json.dump()存储数据 使用json.dump()可以轻松的存储数据，json.dump()接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：
+import json username = &amp;#39;111&amp;#39; with open(&amp;#39;name.json&amp;#39;,&amp;#39;w&amp;#39;) as name_obj: json.dump(username,name.json) 这时，就会报错：
+NameError: name &amp;#39;name&amp;#39; is not defined 原因是我们错误向json.dump()传入了参数name.json，这并不是要存储数据的文件==对象==，应该传入参数name_obj。
+import json username = &amp;#39;111&amp;#39; with open(&amp;#39;name.json&amp;#39;,&amp;#39;w&amp;#39;) as name_obj: json.dump(username,name_obj) 同时，也要注意在使用json.dump()存储数据时，函数open()需要传递参数&#39;w&#39;，以便获得写入权限。
+使用json.load()读取数据 同样的，使用json.load()时，传入的也是文件==对象==：
+import json with open(&amp;#39;name.json&amp;#39;) as name_obj: username_tmp = json.load(name_obj) print(username_tmp) 输出：
+111 </description>
+    </item>
+    
+    <item>
+      <title>组织列表</title>
+      <link>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</guid>
+      <description>列表是一系列元素按照特定顺序排列的组成，列表是有序集合。
+访问列表元素 因为列表是有序集合，所以我们只要给出想要访问的元素的位置告诉Python即可：
+list1 = [1,2,3,4] print(list1[0]) 输出：
+1 同样的，我们可以对列表元素调用方法，如title()方法：
+list2 = [&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;,&amp;#39;shuaige&amp;#39;] print(list2[0].title()) 输出：
+Joecy 索引从0而不是1开始 在Python中，第一个列表元素的索引是0，在大多编程语言中都是如此。 Python为访问最后一个列表元素提供了特殊语法，可通过索引-1访问列表的最后一个元素：
+list3 = [1,2,3,4] print(list3[-1]) 输出：
+4 当然，-1、-2、-3&amp;hellip;也是可以的。
+修改、添加和删除元素 修改元素 修改列表中的元素，可指定列表名和要修改的元素索引，再指定新值。
+list4 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list4[0] = 4 print(list4) 输出：
+[&amp;#39;4&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 添加元素 在列表末尾添加元素 list5 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list5.append(&amp;#39;4&amp;#39;) print(list5) 输出：
+[&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;,&amp;#39;4&amp;#39;] 方法append()将元素4添加到了列表末尾，而又不影响其他元素。我们经常需要先创建一个空列表，并使用append()方法向其中添加元素。
+在列表中插入元素 使用方法insert()可以在列表任意位置添加新元素，只需要指定新元素的索引和值：
+list6 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list6.insert(0,&amp;#39;4&amp;#39;) print(list6) 输出：
+[&amp;#39;4&amp;#39;,&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 删除元素 使用del语句删除元素 如果知道想要删除的元素在列表中的位置，即可使用del语句。
+list7 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] del list7[0] print(list7) 输出：
+[&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 使用pop()元素删除元素 我们可以使用pop()方法删除列表中的元素并接着使用它的值：</description>
     </item>
     
     <item>
@@ -266,58 +231,93 @@ import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test
     </item>
     
     <item>
-      <title>用户输入</title>
-      <link>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</link>
+      <title>requests库</title>
+      <link>/python/requests%E5%BA%93/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/</guid>
-      <description>函数input()让程序暂停运行，等待用户输入一些文本。获取用户输入后，Python将其存储在一个变量中，供我们使用。
-使用函数input获取输入 a = input() print(a) input()函数接受一个参数，即要向用户显示的提示信息：
-a = input(&amp;#39;这是提示信息。&amp;#39;) print(a) 使用函数int()来获得数值输入 在使用函数input时，Python将用户输入解读为字符串，即便我们输了的是一个‘数字’：
-&amp;gt;&amp;gt;&amp;gt; a = input(&amp;#39;输入数字看看&amp;#39;) 输入数字看看10 &amp;gt;&amp;gt;&amp;gt; a &amp;#39;10&amp;#39; 当我们需要将用户输入作为数字使用时，就会发生错误，所以可以使用函数int()，将字符串转为数字。
-&amp;gt;&amp;gt;&amp;gt; a = int(a) &amp;gt;&amp;gt;&amp;gt; a 10 </description>
+      <guid>/python/requests%E5%BA%93/</guid>
+      <description>Requests库是用Python编写的，基于urllib，采用Apache2 Licensed开源协议的HTTP库；
+相比urllib库，Requests库更加方便，可以节约我们大量的工作，完全满足HTTP测试需求。</description>
     </item>
     
     <item>
-      <title>类</title>
-      <link>/python/%E7%B1%BB/</link>
+      <title>urllib库的使用</title>
+      <link>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/python/%E7%B1%BB/</guid>
-      <description>类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。
-创建和使用类 使用关键字class定义类：
-class Dog(): pass 这样就创建了Dog类。
-&amp;gt;&amp;gt;&amp;gt; d = Dog() &amp;gt;&amp;gt;&amp;gt; d.name = &amp;#39;jingjing&amp;#39; &amp;gt;&amp;gt;&amp;gt; d.name &amp;#39;jingjing&amp;#39; 我们可以像上面的例子那样，给实例变量绑定属性。
-类中的方法 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。
-class Dog(): def say_hi(self): print(&amp;#39;hello&amp;#39;) &amp;gt;&amp;gt;&amp;gt; p = Dog() &amp;gt;&amp;gt;&amp;gt; p.say_hi() hello __init__方法 类具有模板的作用，init()是一个特殊的方法，类的实例化操作会自动调用它。
-class Dog(): def __init__(self,a,b): self.name = a self.age = b 方法__init__()的第一个参数永远时self，它表示创建的实例本身，因此，在__init__()方法中，我们可以把各种属性绑定到self，因为self就指向实例本身。
-创建实例 有了__init__()方法，创建实例的时候就要传入和__init__()，相匹配的参数，但self不需要传入，因为它表示实例本身，Python会自动传入。
-class Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;) 实例属性和类属性 class Dog(): name = &amp;#39;joecy&amp;#39; #类属性 a = Dog() print(a.</description>
+      <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>urllib库是Python内置的HTTP请求库，它包含四个模块：
+ request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
     </item>
     
     <item>
-      <title>组织列表</title>
-      <link>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</link>
+      <title>requests基本用法</title>
+      <link>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/</guid>
-      <description>列表是一系列元素按照特定顺序排列的组成，列表是有序集合。
-访问列表元素 因为列表是有序集合，所以我们只要给出想要访问的元素的位置告诉Python即可：
-list1 = [1,2,3,4] print(list1[0]) 输出：
-1 同样的，我们可以对列表元素调用方法，如title()方法：
-list2 = [&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;,&amp;#39;shuaige&amp;#39;] print(list2[0].title()) 输出：
-Joecy 索引从0而不是1开始 在Python中，第一个列表元素的索引是0，在大多编程语言中都是如此。 Python为访问最后一个列表元素提供了特殊语法，可通过索引-1访问列表的最后一个元素：
-list3 = [1,2,3,4] print(list3[-1]) 输出：
-4 当然，-1、-2、-3&amp;hellip;也是可以的。
-修改、添加和删除元素 修改元素 修改列表中的元素，可指定列表名和要修改的元素索引，再指定新值。
-list4 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list4[0] = 4 print(list4) 输出：
-[&amp;#39;4&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 添加元素 在列表末尾添加元素 list5 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list5.append(&amp;#39;4&amp;#39;) print(list5) 输出：
-[&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;,&amp;#39;4&amp;#39;] 方法append()将元素4添加到了列表末尾，而又不影响其他元素。我们经常需要先创建一个空列表，并使用append()方法向其中添加元素。
-在列表中插入元素 使用方法insert()可以在列表任意位置添加新元素，只需要指定新元素的索引和值：
-list6 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] list6.insert(0,&amp;#39;4&amp;#39;) print(list6) 输出：
-[&amp;#39;4&amp;#39;,&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 删除元素 使用del语句删除元素 如果知道想要删除的元素在列表中的位置，即可使用del语句。
-list7 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] del list7[0] print(list7) 输出：
-[&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] 使用pop()元素删除元素 我们可以使用pop()方法删除列表中的元素并接着使用它的值：</description>
+      <guid>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>基本的GET、POST请求方法
+GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。
+使用requests.get() import requests r = requests.get(&amp;#39;https://baidu.com/&amp;#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
+&amp;lt;class &amp;#39;requests.models.Response&amp;#39;&amp;gt; &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; 200 &amp;lt;RequestsCookieJar[&amp;lt;Cookie BDORZ=27315 for .baidu.com/&amp;gt;]&amp;gt; # 部分代码 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--STATUS OK--&amp;gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; .... &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 使用requests.get()方法，即可以GET方式请求网页。
+ status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip;  如果GET请求需要附加额外信息，例如添加两个参数：
+r = requests.get(&#39;http://httpbin.org/get?name=joecy&amp;amp;age=24&#39;)
+如果写成这样未免太繁琐，这时可以利用params参数：
+import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text)  r.encoding = &#39;utf-8&#39; 用于修改编码
+ 输出了百度关于关键词“我”的搜索结果。
+抓取网页 抓取知乎发现页面：</description>
+    </item>
+    
+    <item>
+      <title>requests高级用法</title>
+      <link>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/</guid>
+      <description>requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。
+文件上传 import requests files = {&amp;#39;file&amp;#39;:open(&amp;#39;logo.png&amp;#39;,&amp;#39;rb&amp;#39;)} r = requests.post(&amp;#39;http://httpbin.org/post&amp;#39;,files=files) print(r.text) 首先创建一个表示文件的字典：files，它的键为file，值为使用open()函数&#39;rb&#39;模式打开的待上传文件。之后在post方法中传递参数files,值为files字典。
+Cookies </description>
+    </item>
+    
+    <item>
+      <title>发送请求</title>
+      <link>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
+      <description>使用urllib的request模块，可以方便的实现请求的发送并得到响应。
+发送请求 urlopen() 抓取Python官网：
+import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.python.org&amp;#34;) print(response.read().decode(&amp;#39;utf-8&amp;#39;)) 部分输出：
+# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  decode(&#39;utf-8&#39;)方法将网页以制定编码解析。
+ response是一个HTTPResponse类型的对象：
+print(type(response)) 输出如下：
+&amp;lt;class &amp;#39;http.client.HTTPResponse&amp;#39;&amp;gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。
+例子：
+import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.baidu.com&amp;#34;) print(response.status) print(&amp;#39;\n&amp;#39;,response.getheaders()) print(&amp;#39;\n&amp;#39;,response.getheader(&amp;#39;Server&amp;#39;)) 输出结果：
+200 [(&amp;#39;Accept-Ranges&amp;#39;, &amp;#39;bytes&amp;#39;), (&amp;#39;Cache-Control&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Content-Length&amp;#39;, &amp;#39;227&amp;#39;), (&amp;#39;Content-Type&amp;#39;, &amp;#39;text/html&amp;#39;), (&amp;#39;Date&amp;#39;, &amp;#39;Thu, 09 Aug 2018 14:49:17 GMT&amp;#39;), (&amp;#39;Etag&amp;#39;, &amp;#39;&amp;#34;5b56b4a8-e3&amp;#34;&amp;#39;), (&amp;#39;Last-Modified&amp;#39;, &amp;#39;Tue, 24 Jul 2018 05:10:00 GMT&amp;#39;), (&amp;#39;P3p&amp;#39;, &amp;#39;CP=&amp;#34; OTI DSP COR IVA OUR IND COM &amp;#34;&amp;#39;), (&amp;#39;Pragma&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Server&amp;#39;, &amp;#39;BWS/1.</description>
+    </item>
+    
+    <item>
+      <title>我没有朋友</title>
+      <link>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</guid>
+      <description>不知怎地，在我的家族中 “读书” “大学生”等词汇已然成为了贬义词。
+三四年前，这些字眼也仅仅是在我父亲的嘴里说出，大抵也只是有口无心的顺出一句，“这都不会做，读书读傻了？”而已。渐渐的，七大姑八大姨也跟风笑了起来 “这孩子连个街坊都不认识。” “上学不还得回来上班？”
+刚毕业那会，听见这样的话，心里很烦，出于礼貌也只是一笑而过。不过的确影响我颇深，2016年那会，我像个傻逼一样，坚持向我的爱人灌输 ：“以后孩子爱读书就读，不读就学点什么吧？”这样的思想。认定了有个手艺，养活自己就算大功告成了。如今回想，啊呸！
+今年春节，故事重现。在他们嘴里，读书无用论再次演变，又成为了我没有朋友的原因。
+我可能真的没有朋友，没有牌友、赌友，没有那种一口一个你妈逼却是表达和你无所忌讳的兄弟，也没有酒桌上牛逼吹的伊拉克的朋友。
+心里话，我想有这样的朋友，但是他们不找我，所以，我是真的没有朋友。
+那几天我一直在想，要不要趁着过年，我也约几个，凑一局？要不要找个兄弟打个电话骂他几句你妈逼再拜个年？可当我拿起电话时，才发觉，压根没有这样的朋友？打给谁呢？
+“没有朋友”是因为脱节了。
+读书和社会的脱节，和实践的脱节，和基本人群沟通的脱节。这是很严重的问题，只是不同段位的人很少越级沟通，也就不以为然，可当你突然出现在他们习以为常的生活环境中时，就像沙丁鱼看到了鲶鱼一样，总会带来些搅动，他们沉迷于自身的阶段的环境越深，反应也愈加明显！
+几年前，我总会以为，沙丁鱼不就是一群垃圾？可没想到，沙丁鱼眼中的鲶鱼却也只像个会写字的煞笔。
+至此，算是明了了。
+我脱节了就要接上，尽量知行合一；
+沙丁鱼不是垃圾，鲶鱼也不是煞笔。
+每种生活和见解都是珍贵的、有意义的，但不要用自己的生活环境下产生的想法对别人的作为评头论足。这都是该想，该明白的。不想不思考还死坚持自己的那一套，是有多可悲？
+你Diss人很屌，你长得好看，你有钱，你牛逼，你朋友多，你能喝&amp;hellip;&amp;hellip;这都值得欣慰。因为那真真切切就是你的。你沾沾自喜、洋洋得意、臭美乐呵，都是人之常情，但再怎么自得，也要谦逊，更要适可而止，因为再进一步，就是傻，就是糊涂了！</description>
     </item>
     
     <item>

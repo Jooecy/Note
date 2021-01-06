@@ -7,24 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>requests基本用法</title>
-      <link>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
-      <description>基本的GET、POST请求方法
-GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。
-使用requests.get() import requests r = requests.get(&amp;#39;https://baidu.com/&amp;#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
-&amp;lt;class &amp;#39;requests.models.Response&amp;#39;&amp;gt; &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; 200 &amp;lt;RequestsCookieJar[&amp;lt;Cookie BDORZ=27315 for .baidu.com/&amp;gt;]&amp;gt; # 部分代码 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--STATUS OK--&amp;gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; .... &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 使用requests.get()方法，即可以GET方式请求网页。
- status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip;  如果GET请求需要附加额外信息，例如添加两个参数：
-r = requests.get(&#39;http://httpbin.org/get?name=joecy&amp;amp;age=24&#39;)
-如果写成这样未免太繁琐，这时可以利用params参数：
-import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text)  r.encoding = &#39;utf-8&#39; 用于修改编码
- 输出了百度关于关键词“我”的搜索结果。
-抓取网页 抓取知乎发现页面：</description>
-    </item>
-    
-    <item>
       <title>requests库</title>
       <link>/python/requests%E5%BA%93/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
@@ -42,6 +24,24 @@ import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests
       <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
       <description>urllib库是Python内置的HTTP请求库，它包含四个模块：
  request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
+    </item>
+    
+    <item>
+      <title>requests基本用法</title>
+      <link>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>基本的GET、POST请求方法
+GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。
+使用requests.get() import requests r = requests.get(&amp;#39;https://baidu.com/&amp;#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
+&amp;lt;class &amp;#39;requests.models.Response&amp;#39;&amp;gt; &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; 200 &amp;lt;RequestsCookieJar[&amp;lt;Cookie BDORZ=27315 for .baidu.com/&amp;gt;]&amp;gt; # 部分代码 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--STATUS OK--&amp;gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; .... &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 使用requests.get()方法，即可以GET方式请求网页。
+ status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip;  如果GET请求需要附加额外信息，例如添加两个参数：
+r = requests.get(&#39;http://httpbin.org/get?name=joecy&amp;amp;age=24&#39;)
+如果写成这样未免太繁琐，这时可以利用params参数：
+import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text)  r.encoding = &#39;utf-8&#39; 用于修改编码
+ 输出了百度关于关键词“我”的搜索结果。
+抓取网页 抓取知乎发现页面：</description>
     </item>
     
     <item>

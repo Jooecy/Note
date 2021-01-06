@@ -1,6 +1,7 @@
 ---
 title: Json模块
 date: 2020-04-24
+weight: 10
 description: 很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。
 categories:
 - Python笔记
