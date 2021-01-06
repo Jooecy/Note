@@ -1,15 +1,18 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>随笔 - tag - XiaoXi Blog</title>
-        <link>/tags/%E9%9A%8F%E7%AC%94/</link>
-        <description>随笔 - tag - XiaoXi Blog</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/%E9%9A%8F%E7%AC%94/" rel="self" type="application/rss+xml" /><item>
-    <title>骑士</title>
-    <link>/python/%E9%AA%91%E5%A3%AB/</link>
-    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author></author>
-    <guid>/python/%E9%AA%91%E5%A3%AB/</guid>
-    <description><![CDATA[真是一个糟心的中午，外卖晚了一个小时才到。临近中午12点，我不得不打电话告诉骑士，把送餐地址从家变为公司。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随笔 on XiaoXi Blog</title>
+    <link>/tags/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on XiaoXi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>骑士</title>
+      <link>/python/%E9%AA%91%E5%A3%AB/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E9%AA%91%E5%A3%AB/</guid>
+      <description>真是一个糟心的中午，外卖晚了一个小时才到。临近中午12点，我不得不打电话告诉骑士，把送餐地址从家变为公司。
 是的，没有退单。
 但在半小时前，我的的确确怒火中烧。我向商家和骑士分别询问关于这笔订单的详情，商家说骑士没来，骑士说商家没做他要先去送已有的外卖。
 这样的对话很轻易的就攫起人的愠怒。
@@ -51,6 +54,8 @@
 我的确对自己的内心有些不堪理喻。长久以来，我一直要事事为他人多考虑半分。这样我很累。“都不容易”、“互相理解”像似布道文一般刻在心里。
 这样不好，我觉得。
 但这样也一定有道理。
-比如，为了这些该被温柔以待的人！]]></description>
-</item></channel>
+比如，为了这些该被温柔以待的人！</description>
+    </item>
+    
+  </channel>
 </rss>

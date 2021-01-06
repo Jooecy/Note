@@ -1,19 +1,24 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>while - tag - XiaoXi Blog</title>
-        <link>/tags/while/</link>
-        <description>while - tag - XiaoXi Blog</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/while/" rel="self" type="application/rss+xml" /><item>
-    <title>while循环</title>
-    <link>/python/while%E5%BE%AA%E7%8E%AF/</link>
-    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author></author>
-    <guid>/python/while%E5%BE%AA%E7%8E%AF/</guid>
-    <description><![CDATA[Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>while on XiaoXi Blog</title>
+    <link>/tags/while/</link>
+    <description>Recent content in while on XiaoXi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/while/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>while循环</title>
+      <link>/python/while%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/while%E5%BE%AA%E7%8E%AF/</guid>
+      <description>Python的循环有两种，一种是for...in循环，依次把list或tuple中的每个元素迭代出来，第二种循环是while循环，只要条件满足，就不断循环，条件不满足时退出循环。
 使用while循环 下面的例子是使用while循环计算100以内奇数和：
-a = 0 b = 99 while b &gt; 0: a = a + b b = b -2 print(a) 让用户选择何时退出 message = &#39;&#39; while message != &#39;q&#39;: message = input() if message != &#39;q&#39;: print(message) 上面的示例代码，在用户输入q是退出循环，否则将循环执行打印用户输入的操作。if语句使用户在输入退出指令q时，不至于将'q'打印出来。
-使用标志 active = True message = &#39;&#39; while active: message = input() if message == &#39;q&#39;: active = False else: print(message) 我们将条件测试都放在其他地方，while语句就只需要检查一个条件。从而可以使用程序更加的简洁易读。
+a = 0 b = 99 while b &amp;gt; 0: a = a + b b = b -2 print(a) 让用户选择何时退出 message = &amp;#39;&amp;#39; while message != &amp;#39;q&amp;#39;: message = input() if message != &amp;#39;q&amp;#39;: print(message) 上面的示例代码，在用户输入q是退出循环，否则将循环执行打印用户输入的操作。if语句使用户在输入退出指令q时，不至于将&#39;q&#39;打印出来。
+使用标志 active = True message = &amp;#39;&amp;#39; while active: message = input() if message == &amp;#39;q&amp;#39;: active = False else: print(message) 我们将条件测试都放在其他地方，while语句就只需要检查一个条件。从而可以使用程序更加的简洁易读。
 使用break退出循环 break语句可以提前结束循环，例如上一个例子，可以这样改写：
-while True: message = input() if message == &#39;q&#39;: break else: print(message) 使用continue 在循环中可以使用continue语句跳过当次循环，并执行下一次循环。continue语句不会像break语句那样不再执行余下的代码。]]></description>
-</item></channel>
+while True: message = input() if message == &amp;#39;q&amp;#39;: break else: print(message) 使用continue 在循环中可以使用continue语句跳过当次循环，并执行下一次循环。continue语句不会像break语句那样不再执行余下的代码。</description>
+    </item>
+    
+  </channel>
 </rss>

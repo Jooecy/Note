@@ -1,22 +1,27 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>类 - tag - XiaoXi Blog</title>
-        <link>/tags/%E7%B1%BB/</link>
-        <description>类 - tag - XiaoXi Blog</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/%E7%B1%BB/" rel="self" type="application/rss+xml" /><item>
-    <title>类</title>
-    <link>/python/%E7%B1%BB/</link>
-    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author></author>
-    <guid>/python/%E7%B1%BB/</guid>
-    <description><![CDATA[类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>类 on XiaoXi Blog</title>
+    <link>/tags/%E7%B1%BB/</link>
+    <description>Recent content in 类 on XiaoXi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>类</title>
+      <link>/python/%E7%B1%BB/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E7%B1%BB/</guid>
+      <description>类是抽象的模板，而实例是根据类创建出来的一个个具体的“对象”。class后面紧接着是类名，类名通常是大写开头的单词。
 创建和使用类 使用关键字class定义类：
 class Dog(): pass 这样就创建了Dog类。
-&gt;&gt;&gt; d = Dog() &gt;&gt;&gt; d.name = &#39;jingjing&#39; &gt;&gt;&gt; d.name &#39;jingjing&#39; 我们可以像上面的例子那样，给实例变量绑定属性。
+&amp;gt;&amp;gt;&amp;gt; d = Dog() &amp;gt;&amp;gt;&amp;gt; d.name = &amp;#39;jingjing&amp;#39; &amp;gt;&amp;gt;&amp;gt; d.name &amp;#39;jingjing&amp;#39; 我们可以像上面的例子那样，给实例变量绑定属性。
 类中的方法 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数。
-class Dog(): def say_hi(self): print(&#39;hello&#39;) &gt;&gt;&gt; p = Dog() &gt;&gt;&gt; p.say_hi() hello __init__方法 类具有模板的作用，init()是一个特殊的方法，类的实例化操作会自动调用它。
+class Dog(): def say_hi(self): print(&amp;#39;hello&amp;#39;) &amp;gt;&amp;gt;&amp;gt; p = Dog() &amp;gt;&amp;gt;&amp;gt; p.say_hi() hello __init__方法 类具有模板的作用，init()是一个特殊的方法，类的实例化操作会自动调用它。
 class Dog(): def __init__(self,a,b): self.name = a self.age = b 方法__init__()的第一个参数永远时self，它表示创建的实例本身，因此，在__init__()方法中，我们可以把各种属性绑定到self，因为self就指向实例本身。
 创建实例 有了__init__()方法，创建实例的时候就要传入和__init__()，相匹配的参数，但self不需要传入，因为它表示实例本身，Python会自动传入。
-class Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(&#39;joecy&#39;,&#39;wang&#39;) 实例属性和类属性 class Dog(): name = &#39;joecy&#39; #类属性 a = Dog() print(a.]]></description>
-</item></channel>
+class Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;) 实例属性和类属性 class Dog(): name = &amp;#39;joecy&amp;#39; #类属性 a = Dog() print(a.</description>
+    </item>
+    
+  </channel>
 </rss>

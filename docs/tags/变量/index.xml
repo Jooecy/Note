@@ -1,22 +1,27 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>变量 - tag - XiaoXi Blog</title>
-        <link>/tags/%E5%8F%98%E9%87%8F/</link>
-        <description>变量 - tag - XiaoXi Blog</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/%E5%8F%98%E9%87%8F/" rel="self" type="application/rss+xml" /><item>
-    <title>变量与数据类型</title>
-    <link>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
-    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author></author>
-    <guid>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
-    <description><![CDATA[学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。
-变量 a = &#34;hello world!&#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。
-变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&quot;&quot;）或单引号（''）。
-a = &#34;我是字符串。&#34; b = &#39;我也是字符串。&#39; 这样我们就可以在字符串中包含双引号或单引号了：
-a = &#34;我是&#39;字符串&#39;。&#34; b = &#39;我也是&#34;字符串&#34;。&#39; 使用方法修改字符串大小写 name = &#34;joecy wang&#34; print(name.title()) 输出的结果是：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>变量 on XiaoXi Blog</title>
+    <link>/tags/%E5%8F%98%E9%87%8F/</link>
+    <description>Recent content in 变量 on XiaoXi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%8F%98%E9%87%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>变量与数据类型</title>
+      <link>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。
+变量 a = &amp;#34;hello world!&amp;#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。
+变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&amp;quot;&amp;quot;）或单引号（&#39;&#39;）。
+a = &amp;#34;我是字符串。&amp;#34; b = &amp;#39;我也是字符串。&amp;#39; 这样我们就可以在字符串中包含双引号或单引号了：
+a = &amp;#34;我是&amp;#39;字符串&amp;#39;。&amp;#34; b = &amp;#39;我也是&amp;#34;字符串&amp;#34;。&amp;#39; 使用方法修改字符串大小写 name = &amp;#34;joecy wang&amp;#34; print(name.title()) 输出的结果是：
 Joecy Wang 我们将小写字符joecy wang存储到变量name中，在print语句中，我们对name使用方法title()，每个方法后面都会有一个括号，用于接受额外的信息，title()方法并不需要，所以它的括号是空的。
 方法title()以首字母大写的方式显示每一个单词。如果想把字符串中的单词全部变为大写或是小写，可以使用方法upper()和lower()。
-name = &#34;Joecy Wang&#34; print(name.upper()) print(name.lower()) 结果为：
-JOECY WANG joecy wang 拼接字符串 first_name = &#34;joecy&#34; last_name = &#34;wang&#34; name = first_name + &#34; &#34; + last_name print(&#34;hello &#34; + name.]]></description>
-</item></channel>
+name = &amp;#34;Joecy Wang&amp;#34; print(name.upper()) print(name.lower()) 结果为：
+JOECY WANG joecy wang 拼接字符串 first_name = &amp;#34;joecy&amp;#34; last_name = &amp;#34;wang&amp;#34; name = first_name + &amp;#34; &amp;#34; + last_name print(&amp;#34;hello &amp;#34; + name.</description>
+    </item>
+    
+  </channel>
 </rss>

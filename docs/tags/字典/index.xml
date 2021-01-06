@@ -1,27 +1,32 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>字典 - tag - XiaoXi Blog</title>
-        <link>/tags/%E5%AD%97%E5%85%B8/</link>
-        <description>字典 - tag - XiaoXi Blog</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/%E5%AD%97%E5%85%B8/" rel="self" type="application/rss+xml" /><item>
-    <title>字典</title>
-    <link>/python/%E5%AD%97%E5%85%B8/</link>
-    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author></author>
-    <guid>/python/%E5%AD%97%E5%85%B8/</guid>
-    <description><![CDATA[Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。
-一个简单的字典 dict_1 = {&#39;joecy&#39;:25,&#39;yingying&#39;:24} print(dict_1[&#39;joecy&#39;]) 输出：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>字典 on XiaoXi Blog</title>
+    <link>/tags/%E5%AD%97%E5%85%B8/</link>
+    <description>Recent content in 字典 on XiaoXi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%AD%97%E5%85%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>字典</title>
+      <link>/python/%E5%AD%97%E5%85%B8/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E5%AD%97%E5%85%B8/</guid>
+      <description>Python字典可以将相关的信息关联起来，字典中可存储的信息量几乎不受限制，而且查找速度极快。使用字典可以准确的模拟真实事物建模。
+一个简单的字典 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) 输出：
 25 在Python中，字典是由一系列键-值对（key-value）组成。并放在花括号{}中。每一个键与一个值相关联，可以使用键来访问与其对应的值。与键相关联的值可以是数字、字符串、列表甚至另一个字典。
 键与值之间使用冒号:分隔，键-值对之间使用逗号,分隔。
-访问字典中的值 dict_1 = {&#39;joecy&#39;:25,&#39;yingying&#39;:24} print(dict_1[&#39;joecy&#39;]) #指定字典名，并在[]中指定键 添加键值对 要向字典中添加键-值对，可依次指定字典名、要添加的键以及值：
-dict_1 = {&#39;joecy&#39;:25,&#39;yingying&#39;:24} dict_1[&#39;muyi&#39;] = 2 print(dict_1) 输出：
-{&#39;joecy&#39;: 25, &#39;yingying&#39;: 24, &#39;muyi&#39;: 2} 一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值替换：
-dict_1 = {&#39;joecy&#39;:25,&#39;yingying&#39;:24} dict_1[&#39;muyi&#39;] = 2 dict_1[&#39;muyi&#39;] = &#39;1周岁&#39; print(dict_1) 输出：
-{&#39;joecy&#39;: 25, &#39;yingying&#39;: 24, &#39;muyi&#39;: &#39;1周岁&#39;} 键'muyi'的值被替换为了值'1周岁'。 键-值对的排列顺序与添加顺序不同，Python只关心键与值之前的对应关系。
+访问字典中的值 dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} print(dict_1[&amp;#39;joecy&amp;#39;]) #指定字典名，并在[]中指定键 添加键值对 要向字典中添加键-值对，可依次指定字典名、要添加的键以及值：
+dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} dict_1[&amp;#39;muyi&amp;#39;] = 2 print(dict_1) 输出：
+{&amp;#39;joecy&amp;#39;: 25, &amp;#39;yingying&amp;#39;: 24, &amp;#39;muyi&amp;#39;: 2} 一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值替换：
+dict_1 = {&amp;#39;joecy&amp;#39;:25,&amp;#39;yingying&amp;#39;:24} dict_1[&amp;#39;muyi&amp;#39;] = 2 dict_1[&amp;#39;muyi&amp;#39;] = &amp;#39;1周岁&amp;#39; print(dict_1) 输出：
+{&amp;#39;joecy&amp;#39;: 25, &amp;#39;yingying&amp;#39;: 24, &amp;#39;muyi&amp;#39;: &amp;#39;1周岁&amp;#39;} 键&#39;muyi&#39;的值被替换为了值&#39;1周岁&#39;。 键-值对的排列顺序与添加顺序不同，Python只关心键与值之前的对应关系。
 和list比较，dict有以下几个特点：
 查找和插入的速度极快，不会随着key的增加而变慢； 需要占用大量的内存，内存浪费多。 而list相反：
 查找和插入的时间随着元素的增加而增加； 占用空间小，浪费内存很少。 所以，dict是用空间来换取时间的一种方法。（来自廖雪峰博客）
 创建空字典 当我们需要存储用户提供的信息或编写能够自动生成大量键-值对的代码时，需要事先定义一个空字典：
-d = {} d[&#39;key1&#39;] = &#39;第一个值&#39; d[&#39;key2&#39;] = &#39;第二个值&#39; print(d) 输出：]]></description>
-</item></channel>
+d = {} d[&amp;#39;key1&amp;#39;] = &amp;#39;第一个值&amp;#39; d[&amp;#39;key2&amp;#39;] = &amp;#39;第二个值&amp;#39; print(d) 输出：</description>
+    </item>
+    
+  </channel>
 </rss>

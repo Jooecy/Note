@@ -1,17 +1,22 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>assertIn() - tag - XiaoXi Blog</title>
-        <link>/tags/assertin/</link>
-        <description>assertIn() - tag - XiaoXi Blog</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/assertin/" rel="self" type="application/rss+xml" /><item>
-    <title>测试代码之测试类</title>
-    <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
-    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author></author>
-    <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
-    <description><![CDATA[类的测试于函数的测试类似，但也有些许不同。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>assertIn() on XiaoXi Blog</title>
+    <link>/tags/assertin/</link>
+    <description>Recent content in assertIn() on XiaoXi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/assertin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试代码之测试类</title>
+      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
+      <description>类的测试于函数的测试类似，但也有些许不同。
 测试类 先写出一个用于测试的类，并存储在diaocha.py中：
-class Dc(): &#39;&#39;&#39;收集匿名调查问卷&#39;&#39;&#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：
-import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test_oneres(self): &#39;&#39;&#39;测试存储一个答案&#39;&#39;&#39; question = &#34;你是中国人嘛？&#34; mydiaoche = Dc(question) mydiaoche.store_res(&#39;是&#39;) self.assertIn(&#39;是&#39;,mydiaoche.responses) def test_more_res(self): &#39;&#39;&#39;测试存储多个答案&#39;&#39;&#39; question = &#39;你是中国人？&#39; mydiaocha = Dc(question) huida = [&#39;是&#39;,&#39;ok&#39;,&#39;你猜&#39;] for i in huida: mydiaocha.store_res(i) for j in huida: self.]]></description>
-</item></channel>
+class Dc(): &amp;#39;&amp;#39;&amp;#39;收集匿名调查问卷&amp;#39;&amp;#39;&amp;#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：
+import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test_oneres(self): &amp;#39;&amp;#39;&amp;#39;测试存储一个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#34;你是中国人嘛？&amp;#34; mydiaoche = Dc(question) mydiaoche.store_res(&amp;#39;是&amp;#39;) self.assertIn(&amp;#39;是&amp;#39;,mydiaoche.responses) def test_more_res(self): &amp;#39;&amp;#39;&amp;#39;测试存储多个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#39;你是中国人？&amp;#39; mydiaocha = Dc(question) huida = [&amp;#39;是&amp;#39;,&amp;#39;ok&amp;#39;,&amp;#39;你猜&amp;#39;] for i in huida: mydiaocha.store_res(i) for j in huida: self.</description>
+    </item>
+    
+  </channel>
 </rss>

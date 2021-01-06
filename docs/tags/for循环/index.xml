@@ -1,16 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>for循环 - tag - XiaoXi Blog</title>
-        <link>/tags/for%E5%BE%AA%E7%8E%AF/</link>
-        <description>for循环 - tag - XiaoXi Blog</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/for%E5%BE%AA%E7%8E%AF/" rel="self" type="application/rss+xml" /><item>
-    <title>操作列表</title>
-    <link>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</link>
-    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author></author>
-    <guid>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</guid>
-    <description><![CDATA[很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。
-使用for循环遍历列表 a = [&#39;我&#39;,&#39;你&#39;,&#39;他&#39;] for i in a: print(i) 输出：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>for循环 on XiaoXi Blog</title>
+    <link>/tags/for%E5%BE%AA%E7%8E%AF/</link>
+    <description>Recent content in for循环 on XiaoXi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/for%E5%BE%AA%E7%8E%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>操作列表</title>
+      <link>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/</guid>
+      <description>很多时候我们需要对列表中的元素进行统一的操作，这时候，我们就需要遍历列表。
+使用for循环遍历列表 a = [&amp;#39;我&amp;#39;,&amp;#39;你&amp;#39;,&amp;#39;他&amp;#39;] for i in a: print(i) 输出：
 我 你 他 创建数值列表 使用函数range() for i in range(1,5): print(i) 输出：
 1 2 3 4 函数range()从你指定的第一个数字开始，并在指定的第二个数字前面停下。
 使用函数range()创建列表 使用函数list()将函数range()的结果直接转为列表：
@@ -19,6 +22,8 @@ num = list(range(1,5)) print(num) 输出：
 num = list(range(2,11,2)) print(num) 输出：
 [2,4,6,8,10] 在这个示例中，range()函数从2开始，并以2为步长不断增加。 使用函数range()可以创建几乎所有的数字列表：
 a = [] for i in range(1,5): a.append(i ** 2) print(a) 输出：
-[1,4,9,16] 对数字列表进行统计 &gt;&gt;&gt; a = [1,2,3,4,5,6,7] &gt;&gt;&gt; min(a) 1 &gt;&gt;&gt; max(a) 7 &gt;&gt;&gt; sum(a) 29 列表解析 列表解析将for循环和创建新元素的代码合并在一行：]]></description>
-</item></channel>
+[1,4,9,16] 对数字列表进行统计 &amp;gt;&amp;gt;&amp;gt; a = [1,2,3,4,5,6,7] &amp;gt;&amp;gt;&amp;gt; min(a) 1 &amp;gt;&amp;gt;&amp;gt; max(a) 7 &amp;gt;&amp;gt;&amp;gt; sum(a) 29 列表解析 列表解析将for循环和创建新元素的代码合并在一行：</description>
+    </item>
+    
+  </channel>
 </rss>
