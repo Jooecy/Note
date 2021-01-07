@@ -37,7 +37,8 @@
     {{ $disableShortcutsTitle := .Site.Params.DisableShortcutsTitle}}
     {{with .Site.Menus.shortcuts}}
       <section id="shortcuts">
-        <h3>{{ if not $disableShortcutsTitle}}{{ T "Shortcuts-Title"}}{{ end }}</h3>
+        <!-- <h3>{{ if not $disableShortcutsTitle}}{{ T "Shortcuts-Title"}}{{ end }}</h3> -->
+        <hr>
         <ul>
           {{ range sort . "Weight"}}
               <li>
