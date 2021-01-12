@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on XiaoXi Blog</title>
+    <link>/tags/django/</link>
+    <description>Recent content in Django on XiaoXi Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创建Django应用</title>
+      <link>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/</guid>
+      <description>现在我们就可以在虚拟环境中创建Django项目了。
+安装Django 使用如下命令安装Django最新版本：
+(sxb_env) sxb_env$ pip install Django 创建Django应用 现在创建一个名为sxb的Django项目：
+(sxb_env) sxb_env$ django-admin startproject sxb 这时在虚拟环境sxb_env中会创建一个名为sxb的文件夹，这便是我们的Django项目文件夹。
+进入sxb文件夹：
+(sxb_env) sxb_env$ cd sxb/ (sxb_env) sxb_env/sxb$ 现在看看sxb中都包含哪些文件：
+(sxb_env) sxb_env/sxb$ ls manage.py sxb 接下来使用管理文件manage.py来创建第一个APP：
+(sxb_env) python manage.py startapp webapp webapp应用已经创建成功：
+(sxb_env) sxb_env/sxb$ ls manage.py sxb webapp </description>
+    </item>
+    
+  </channel>
+</rss>

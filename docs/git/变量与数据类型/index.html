@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="description" content="学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。">
+<meta name="author" content="XiaoXi">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>安装Git - XiaoXi Blog</title>
+
+    
+    <link href="/css/nucleus.css?1610453713" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1610453713" rel="stylesheet">
+    <link href="/css/hybrid.css?1610453713" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1610453713" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1610453713" rel="stylesheet">
+    <link href="/css/auto-complete.css?1610453713" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1610453713" rel="stylesheet">
+    <link href="/css/theme.css?1610453713" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1610453713" rel="stylesheet">
+    
+    <link href="/css/theme-green.css?1610453713" rel="stylesheet">
+    
+    <link href="/css/foo.css?1610453713" rel="stylesheet"><link href="/css/bar.css?1610453713" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1610453713"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/'>
+   <h3 style="margin-top: 0; margin-bottom: 0;"> <b><p style="color: rgba(255, 255, 255, 0.911); letter-spacing: 0.15em; margin-top: 0; margin-bottom: 0;">晓溪博客</p></b> </h3> 
+  
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="搜索...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1610453713"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1610453713"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1610453713"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/git/" title="Git笔记" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/git/">
+          <b>1. </b>Git笔记
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="安装Git" class="dd-item active">
+        <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+        安装Git
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python/" title="Python笔记" class="dd-item
+        
+        
+        
+        ">
+      <a href="/python/">
+          <b>2. </b>Python笔记
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="变量与数据类型" class="dd-item ">
+        <a href="/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+        变量与数据类型
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/" title="操作列表" class="dd-item ">
+        <a href="/python/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/">
+        操作列表
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/if%E8%AF%AD%E5%8F%A5/" title="if语句" class="dd-item ">
+        <a href="/python/if%E8%AF%AD%E5%8F%A5/">
+        if语句
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E5%AD%97%E5%85%B8/" title="字典" class="dd-item ">
+        <a href="/python/%E5%AD%97%E5%85%B8/">
+        字典
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/" title="用户输入" class="dd-item ">
+        <a href="/python/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5/">
+        用户输入
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/while%E5%BE%AA%E7%8E%AF/" title="while循环" class="dd-item ">
+        <a href="/python/while%E5%BE%AA%E7%8E%AF/">
+        while循环
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E5%87%BD%E6%95%B0/" title="函数" class="dd-item ">
+        <a href="/python/%E5%87%BD%E6%95%B0/">
+        函数
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E7%B1%BB/" title="类" class="dd-item ">
+        <a href="/python/%E7%B1%BB/">
+        类
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/" title="文件读写" class="dd-item ">
+        <a href="/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/">
+        文件读写
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/json%E6%A8%A1%E5%9D%97/" title="Json模块" class="dd-item ">
+        <a href="/python/json%E6%A8%A1%E5%9D%97/">
+        Json模块
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/" title="组织列表" class="dd-item ">
+        <a href="/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/">
+        组织列表
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/" title="测试代码之测试函数" class="dd-item ">
+        <a href="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/">
+        测试代码之测试函数
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/" title="测试代码之测试类" class="dd-item ">
+        <a href="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/">
+        测试代码之测试类
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/requests%E5%BA%93/" title="requests库" class="dd-item ">
+        <a href="/python/requests%E5%BA%93/">
+        requests库
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/" title="urllib库的使用" class="dd-item ">
+        <a href="/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/">
+        urllib库的使用
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="requests基本用法" class="dd-item ">
+        <a href="/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
+        requests基本用法
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/" title="requests高级用法" class="dd-item ">
+        <a href="/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/">
+        requests高级用法
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/" title="发送请求" class="dd-item ">
+        <a href="/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/">
+        发送请求
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+          
+            
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="Javascript笔记" class="dd-item
+        
+        
+        
+        ">
+      <a href="/javascript/">
+          <b>3. </b>Javascript笔记
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vuejs/" title="VueJs笔记" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vuejs/">
+          <b>4. </b>VueJs笔记
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" title="随学本开发日志" class="dd-item
+        
+        
+        
+        ">
+      <a href="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/">
+          <b>5. </b>随学本开发日志
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" title="创建python虚拟环境" class="dd-item ">
+        <a href="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">
+        创建python虚拟环境
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/" title="创建Django应用" class="dd-item ">
+        <a href="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/">
+        创建Django应用
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        
+        <hr>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="/categories"><i class='fas fa-folder-open'></i> Categories</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> 清理历史记录</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p> 
+    <a href="https://github.com/matcornic/hugo-theme-learn">晓溪博客</a>  
+    <i style="color: #ea4aaa;" class="fas fa-heart"></i>      
+    <a href="https://beian.miit.gov.cn">辽ICP备16011612号-5</a>
+</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   安装Git
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#变量">变量</a>
+      <ul>
+        <li><a href="#变量的命名">变量的命名</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据类型">数据类型</a>
+      <ul>
+        <li><a href="#字符串">字符串</a></li>
+        <li><a href="#数字">数字</a></li>
+        <li><a href="#注释">注释</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/%E5%8F%98%E9%87%8F">变量</a>
+
+  <a class="tag-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              安装Git
+            </h1>
+          
+
+        
+
+
+<p>学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。</p>
+<h2 id="变量">变量</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world!&#34;</span>
+<span style="color:#66d9ef">print</span>(a)
+</code></pre></div><p>我们添加了一个名为<code>a</code>的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。</p>
+<h3 id="变量的命名">变量的命名</h3>
+<ul>
+<li>变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为<code>a_1</code>，但不可以命名为<code>1_a</code>。</li>
+<li>变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：<code>get_num</code>。</li>
+<li>不能以Python的关键字和函数名作为变量名。如：<code>print</code>。</li>
+<li>变量要简单且具有描述性：<code>name``比n</code>好，<code>student_name</code>比<code>sn</code>好。</li>
+<li>慎用小写字母<code>l</code>和大写字母<code>O</code>。</li>
+</ul>
+<h2 id="数据类型">数据类型</h2>
+<h3 id="字符串">字符串</h3>
+<p><code>字符串</code>就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（<code>&quot;&quot;</code>）或单引号（<code>''</code>）。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;我是字符串。&#34;</span>
+b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;我也是字符串。&#39;</span>
+</code></pre></div><p>这样我们就可以在字符串中包含双引号或单引号了：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;我是&#39;字符串&#39;。&#34;</span>
+b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;我也是&#34;字符串&#34;。&#39;</span>
+</code></pre></div><h4 id="使用方法修改字符串大小写">使用方法修改字符串大小写</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;joecy wang&#34;</span>
+<span style="color:#66d9ef">print</span>(name<span style="color:#f92672">.</span>title())
+</code></pre></div><p>输出的结果是：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Joecy Wang
+</code></pre></div><p>我们将小写字符<code>joecy wang</code>存储到变量<code>name</code>中，在<code>print</code>语句中，我们对<code>name</code>使用方法<code>title()</code>，每个方法后面都会有一个括号，用于接受额外的信息，<code>title()</code>方法并不需要，所以它的括号是空的。</p>
+<p>方法<code>title()</code>以首字母大写的方式显示每一个单词。如果想把字符串中的单词全部变为大写或是小写，可以使用方法<code>upper()</code>和<code>lower()</code>。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Joecy Wang&#34;</span>
+<span style="color:#66d9ef">print</span>(name<span style="color:#f92672">.</span>upper())
+<span style="color:#66d9ef">print</span>(name<span style="color:#f92672">.</span>lower())
+</code></pre></div><p>结果为：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">JOECY WANG
+joecy wang
+</code></pre></div><h4 id="拼接字符串">拼接字符串</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">first_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;joecy&#34;</span>
+last_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wang&#34;</span>
+name <span style="color:#f92672">=</span> first_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> last_name
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;hello &#34;</span> <span style="color:#f92672">+</span> name<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;!&#34;</span>)
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">hello Joecy Wang<span style="color:#960050;background-color:#1e0010">!</span>
+</code></pre></div><h4 id="在字符串中添加空白">在字符串中添加空白</h4>
+<p>在编程中<code>空白</code>是指任何非打印字符，如空格、制表符和换行符。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">制表符&#34;</span>)
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">            <span style="color:#960050;background-color:#1e0010">制表符</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">第一行</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">第二行</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">第三行&#34;</span>)
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#960050;background-color:#1e0010">第一行</span>
+<span style="color:#960050;background-color:#1e0010">第二行</span>
+<span style="color:#960050;background-color:#1e0010">第三行</span>
+</code></pre></div><p><code>\n</code>、<code>\t</code>可同时使用。</p>
+<h4 id="删除空白">删除空白</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; joecy &#34;</span>
+a<span style="color:#f92672">.</span>rstrip()
+a<span style="color:#f92672">.</span>lstrip()
+a<span style="color:#f92672">.</span>strip()
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34; joecy&#34;</span>  <span style="color:#75715e">#删除左边空白</span>
+<span style="color:#e6db74">&#34;joecy &#34;</span>  <span style="color:#75715e">#删除右边空白</span>
+<span style="color:#e6db74">&#34;joecy&#34;</span>   <span style="color:#75715e">#删除全部空白</span>
+</code></pre></div><h3 id="数字">数字</h3>
+<p>在Python中，数字可进行<code>加减乘除（+、-、*、/）</code>运算。<code>**</code>表示乘方运算。</p>
+<h4 id="浮点数">浮点数</h4>
+<p>Python将带小数点的数字都成为<code>浮点数</code>。</p>
+<h4 id="使用函数str避免错误">使用函数str()避免错误</h4>
+<p>很多时候我们需要将数字和字符串同时拼接或打印出来，这时候需要使用<code>str()</code>函数。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">age <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>
+message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;happy &#34;</span> <span style="color:#f92672">+</span> str(age) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; birthday!&#34;</span>
+<span style="color:#66d9ef">print</span>(message)
+</code></pre></div><p>输出：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">happy <span style="color:#ae81ff">25</span> birthday<span style="color:#960050;background-color:#1e0010">!</span>
+</code></pre></div><h3 id="注释">注释</h3>
+<p>Python中使用<code>#</code>号注释。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#75715e"># 打印hello</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;hello&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="color:#e6db74">这是多行注释，用三个单引号
+</span><span style="color:#e6db74">这是多行注释，用三个单引号 
+</span><span style="color:#e6db74">这是多行注释，用三个单引号
+</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello, World!&#34;</span>) 
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">这是多行注释，用三个单引号
+</span><span style="color:#e6db74">这是多行注释，用三个单引号 
+</span><span style="color:#e6db74">这是多行注释，用三个单引号
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello, World!&#34;</span>) 
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/git/" title="Git笔记"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/python/" title="Python笔记" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1610453713"></script>
+    <script src="/js/perfect-scrollbar.min.js?1610453713"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1610453713"></script>
+    <script src="/js/jquery.sticky.js?1610453713"></script>
+    <script src="/js/featherlight.min.js?1610453713"></script>
+    <script src="/js/highlight.pack.js?1610453713"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1610453713"></script>
+    <script src="/js/learn.js?1610453713"></script>
+    <script src="/js/hugo-learn.js?1610453713"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1610453713"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
