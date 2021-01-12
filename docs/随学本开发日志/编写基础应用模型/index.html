@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.80.0" />
-    <meta name="description" content="requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。">
+    <meta name="description" content="编写基础应用模型">
 <meta name="author" content="XiaoXi">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>requests高级用法 - XiaoXi Blog</title>
+    <title>编写基础应用模型 - XiaoXi Blog</title>
 
     
     <link href="/css/nucleus.css?1610464262" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/">
+  <body class="" data-url="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/python/" title="Python笔记" class="dd-item
-        parent
+        
         
         
         ">
@@ -504,7 +504,7 @@
  
   
     
-      <li data-nav-id="/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/" title="requests高级用法" class="dd-item active">
+      <li data-nav-id="/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/" title="requests高级用法" class="dd-item ">
         <a href="/python/requests%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/">
         requests高级用法
         <i class="fas fa-check read-icon"></i>
@@ -612,7 +612,7 @@
   
     
     <li data-nav-id="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" title="随学本开发日志" class="dd-item
-        
+        parent
         
         
         ">
@@ -682,7 +682,7 @@
  
   
     
-      <li data-nav-id="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/" title="编写基础应用模型" class="dd-item ">
+      <li data-nav-id="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/" title="编写基础应用模型" class="dd-item active">
         <a href="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/">
         编写基础应用模型
         <i class="fas fa-check read-icon"></i>
@@ -770,7 +770,7 @@
                   <span class="links">
                  
                  
-                   requests高级用法
+                   编写基础应用模型
                  
                   </span>
                 </div>
@@ -779,8 +779,13 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#文件上传">文件上传</a></li>
-    <li><a href="#cookies">Cookies</a></li>
+    <li><a href="#编写简单的应用模型">编写简单的应用模型</a></li>
+    <li><a href="#初始化数据库">初始化数据库</a></li>
+    <li><a href="#创建超级用户">创建超级用户</a></li>
+    <li><a href="#注册应用">注册应用</a></li>
+    <li><a href="#创建迁移文件">创建迁移文件</a></li>
+    <li><a href="#自定义后台">自定义后台</a></li>
+    <li><a href="#启动本地服务">启动本地服务</a></li>
   </ul>
 </nav>
     </div>
@@ -794,7 +799,7 @@
         
 <div class="tags">
 
-  <a class="tag-link" href="/tags/requests">requests</a>
+  <a class="tag-link" href="/tags/django">Django</a>
 
 </div>
 
@@ -804,23 +809,97 @@
           
             <h1>
               
-              requests高级用法
+              编写基础应用模型
             </h1>
           
 
         
 
 
-<p>requests的高级用法包括如：文件上传、Cookies设置、代理设置、会话维持、超时设置等。</p>
-<h2 id="文件上传">文件上传</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
+<h2 id="编写简单的应用模型">编写简单的应用模型</h2>
+<p>现在打开<code>sxbweb</code>文件夹下的应用模型文件<code>models.py</code>编辑基础的应用模型：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> django.db <span style="color:#f92672">import</span> models
+<span style="color:#f92672">from</span> django.contrib.auth.models <span style="color:#f92672">import</span> User
 
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemType</span>(models<span style="color:#f92672">.</span>Model):
+    type_name <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>CharField(max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
 
-files <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;file&#39;</span>:open(<span style="color:#e6db74">&#39;logo.png&#39;</span>,<span style="color:#e6db74">&#39;rb&#39;</span>)}
-r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>post(<span style="color:#e6db74">&#39;http://httpbin.org/post&#39;</span>,files<span style="color:#f92672">=</span>files)
-<span style="color:#66d9ef">print</span>(r<span style="color:#f92672">.</span>text)
-</code></pre></div><p>首先创建一个表示文件的字典：files，它的键为file，值为使用open()函数<code>'rb'</code>模式打开的待上传文件。之后在post方法中传递参数files,值为files字典。</p>
-<h2 id="cookies">Cookies</h2>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Item</span>(models<span style="color:#f92672">.</span>Model):
+    title <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>CharField(max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
+    blog_type <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>ForeignKey(ItemType, on_delete<span style="color:#f92672">=</span>models<span style="color:#f92672">.</span>DO_NOTHING)
+    content <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>TextField()
+    author <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>ForeignKey(User, on_delete<span style="color:#f92672">=</span>models<span style="color:#f92672">.</span>DO_NOTHING)
+    created_time <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>DateTimeField(auto_now_add<span style="color:#f92672">=</span>True)
+    last_update_time <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>DateTimeField(auto_now<span style="color:#f92672">=</span>True)
+</code></pre></div>
+<div class="notices tip" ><p>代码变更：<br>
+这里使用了VSCode进行代码编辑，之后的命令行代码均已VSCode中PowerShell的样式呈现。</p>
+</div>
+
+<h2 id="初始化数据库">初始化数据库</h2>
+<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py migrate
+</code></pre><h2 id="创建超级用户">创建超级用户</h2>
+<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py createsuperuser
+Username (leave blank to use 'xiaoxi'): xiaoxi
+Email address: xiao-xi@example.com
+Password: 
+Password (again):
+This password is too short. It must contain at least 8 characters.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+</code></pre><h2 id="注册应用">注册应用</h2>
+<p>打开项目设置文件，在其中注册应用<code>sxbweb</code>，其位于：<code>C:\Users\xiaoxi\Desktop\sxb_env\sxb\sxb\settings.py</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">...</span>
+<span style="color:#75715e"># Application definition</span>
+
+INSTALLED_APPS <span style="color:#f92672">=</span> [
+    <span style="color:#e6db74">&#39;django.contrib.admin&#39;</span>,
+    <span style="color:#e6db74">&#39;django.contrib.auth&#39;</span>,
+    <span style="color:#e6db74">&#39;django.contrib.contenttypes&#39;</span>,
+    <span style="color:#e6db74">&#39;django.contrib.sessions&#39;</span>,
+    <span style="color:#e6db74">&#39;django.contrib.messages&#39;</span>,
+    <span style="color:#e6db74">&#39;django.contrib.staticfiles&#39;</span>,
+    <span style="color:#e6db74">&#39;sxbweb&#39;</span>, <span style="color:#75715e"># 注册应用</span>
+]
+<span style="color:#f92672">...</span>
+</code></pre></div><h2 id="创建迁移文件">创建迁移文件</h2>
+<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py makemigrations
+Migrations for 'sxbweb':
+  sxbweb\migrations\0001_initial.py
+    - Create model ItemType
+    - Create model Item
+</code></pre><p>接下来将迁移文件同步至数据库：</p>
+<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, sxbweb
+Running migrations:
+  Applying sxbweb.0001_initial... OK
+</code></pre><h2 id="自定义后台">自定义后台</h2>
+<p>自定义应用的后台显示表单，打开<code>C:\Users\xiaoxi\Desktop\sxb_env\sxb\sxbweb\admin.py</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> django.contrib <span style="color:#f92672">import</span> admin
+<span style="color:#f92672">from</span> .models <span style="color:#f92672">import</span> ItemType, Item
+
+<span style="color:#a6e22e">@admin.register</span>(ItemType)
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemTypeAdmin</span>(admin<span style="color:#f92672">.</span>ModelAdmin):
+    list_display <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;type_name&#39;</span>)
+
+<span style="color:#a6e22e">@admin.register</span>(Item)
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemAdmin</span>(admin<span style="color:#f92672">.</span>ModelAdmin):
+    list_display <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;title&#39;</span>, <span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;author&#39;</span>, <span style="color:#e6db74">&#39;item_type&#39;</span>)
+</code></pre></div><h2 id="启动本地服务">启动本地服务</h2>
+<p>输入以下命令以启动调试用的Django本地服务：</p>
+<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py runserver
+</code></pre><p>现在可以看到如下的返回信息：</p>
+<pre><code>Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2021 - 23:06:14
+Django version 3.1.5, using settings 'sxb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+</code></pre><p>打开 http://127.0.0.1:8000/admin 即可访问该应用管理页面。</p>
 
 
 <footer class="footline">
@@ -893,7 +972,6 @@ r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</sp
             
                 
                     
-                    
                 
                 
 
@@ -907,8 +985,37 @@ r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</sp
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
                     
                 
                 
@@ -1164,42 +1271,6 @@ r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</sp
                         
             
             
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
         
                     
                         
@@ -1247,6 +1318,7 @@ r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</sp
             
                 
                     
+                    
                 
                 
 
@@ -1259,6 +1331,9 @@ r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</sp
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1291,6 +1366,7 @@ r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</sp
             
             
                 
+                    
                     
                 
                 
@@ -1315,10 +1391,10 @@ r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</sp
 	 
 	 
 		
-			<a class="nav nav-prev" href="/python/requests%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" title="requests基本用法"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/" title="创建Django应用"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/" title="发送请求" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" title="创建python虚拟环境" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

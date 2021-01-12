@@ -13,12 +13,11 @@
       
       <guid>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
       <description>创建虚拟环境使我们可以在虚拟环境中安装某个项目所需要的各种包，并与其他python包相互独立，避免多个项目所需的包互相冲突，而且在部署时可以快速的导出项目所需要的包的列表。
-创建虚拟环境 在(L)Ubuntu中，想要创建虚拟环境，首先需要安装python3-venv：
-$ sudo apt-get install python3-venv 接着创建虚拟环境：
-$ python3 -m venv sxb_env 激活虚拟环境 创建完成后，即可使用下面的命令激活虚拟环境：
-Projects$ source sxb_env/bin/activate (sxb_env) Projects$ 当看见环境名sxb_env包含在括号中时，就说明虚拟环境已经成功激活。
+创建虚拟环境 对于高版本的Python，我们可以直接使用如下名了创建虚拟环境：
+C:\Users\xiaoxi\Desktop&amp;gt;python -m venv sxb_env激活虚拟环境 创建完成后，即可使用下面的命令激活虚拟环境：
+C:\Users\xiaoxi\Desktop&amp;gt;cd sxb_envC:\Users\xiaoxi\Desktop\sxb_env&amp;gt;C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;Scripts\activate(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;当看见环境名sxb_env包含在括号中时，就说明虚拟环境已经成功激活。
 需要关闭虚拟环境时，只需执行：
-Projects$ deactivate 现在已经成功创建了虚拟环境，并掌握了激活和退出虚拟环境的命令，接下来就进一步创建Django应用了。</description>
+(sxb_env) D:\Study\sxb_env\Scripts&amp;gt;deactivate现在已经成功创建了虚拟环境，并掌握了激活和退出虚拟环境的命令，接下来就进一步创建Django应用了。</description>
     </item>
     
     <item>
@@ -29,13 +28,23 @@ Projects$ deactivate 现在已经成功创建了虚拟环境，并掌握了激�
       <guid>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/</guid>
       <description>现在我们就可以在虚拟环境中创建Django项目了。
 安装Django 使用如下命令安装Django最新版本：
-(sxb_env) sxb_env$ pip install Django 创建Django应用 现在创建一个名为sxb的Django项目：
-(sxb_env) sxb_env$ django-admin startproject sxb 这时在虚拟环境sxb_env中会创建一个名为sxb的文件夹，这便是我们的Django项目文件夹。
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;pip install django创建Django应用 现在创建一个名为sxb的Django项目：
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;django-admin startproject sxb这时在虚拟环境sxb_env中会创建一个名为sxb的文件夹，这便是我们的Django项目文件夹。
 进入sxb文件夹：
-(sxb_env) sxb_env$ cd sxb/ (sxb_env) sxb_env/sxb$ 现在看看sxb中都包含哪些文件：
-(sxb_env) sxb_env/sxb$ ls manage.py sxb 接下来使用管理文件manage.py来创建第一个APP：
-(sxb_env) python manage.py startapp webapp webapp应用已经创建成功：
-(sxb_env) sxb_env/sxb$ ls manage.py sxb webapp </description>
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt; cd sxb(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt;接下来使用管理文件manage.py来创建第一个APP：
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python manage.py startapp webappwebapp应用已经创建成功： 接下来我们就可以去编辑简单的应用模型了。</description>
+    </item>
+    
+    <item>
+      <title>编写基础应用模型</title>
+      <link>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/</guid>
+      <description>编写简单的应用模型 现在打开sxbweb文件夹下的应用模型文件models.py编辑基础的应用模型：
+from django.db import models from django.contrib.auth.models import User class ItemType(models.Model): type_name = models.CharField(max_length=30) class Item(models.Model): title = models.CharField(max_length=30) blog_type = models.ForeignKey(ItemType, on_delete=models.DO_NOTHING) content = models.TextField() author = models.ForeignKey(User, on_delete=models.DO_NOTHING) created_time = models.DateTimeField(auto_now_add=True) last_update_time = models.DateTimeField(auto_now=True) 代码变更：
+这里使用了VSCode进行代码编辑，之后的命令行代码均已VSCode中PowerShell的样式呈现。
+初始化数据库 (sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python .\manage.py migrate创建超级用户 (sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python .\manage.py createsuperuserUsername (leave blank to use &#39;xiaoxi&#39;): xiaoxiEmail address: xiao-xi@example.comPassword: Password (again):This password is too short.</description>
     </item>
     
   </channel>
