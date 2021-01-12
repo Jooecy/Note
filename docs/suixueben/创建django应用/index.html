@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.80.0" />
-    <meta name="description" content="测试代码可以使程序面对各种情况都能按照预期那样工作。">
+    <meta name="description" content="创建Django应用">
 <meta name="author" content="XiaoXi">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>测试代码之测试函数 - XiaoXi Blog</title>
+    <title>创建Django应用 - XiaoXi Blog</title>
 
     
     <link href="/css/nucleus.css?1610465270" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/">
+  <body class="" data-url="/suixueben/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/python/" title="Python笔记" class="dd-item
-        parent
+        
         
         
         ">
@@ -399,7 +399,7 @@
  
   
     
-      <li data-nav-id="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/" title="测试代码之测试函数" class="dd-item active">
+      <li data-nav-id="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/" title="测试代码之测试函数" class="dd-item ">
         <a href="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/">
         测试代码之测试函数
         <i class="fas fa-check read-icon"></i>
@@ -612,7 +612,7 @@
   
     
     <li data-nav-id="/suixueben/" title="随学本开发日志" class="dd-item
-        
+        parent
         
         
         ">
@@ -661,7 +661,7 @@
  
   
     
-      <li data-nav-id="/suixueben/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/" title="创建Django应用" class="dd-item ">
+      <li data-nav-id="/suixueben/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/" title="创建Django应用" class="dd-item active">
         <a href="/suixueben/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/">
         创建Django应用
         <i class="fas fa-check read-icon"></i>
@@ -770,7 +770,7 @@
                   <span class="links">
                  
                  
-                   测试代码之测试函数
+                   创建Django应用
                  
                   </span>
                 </div>
@@ -779,11 +779,8 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#测试函数">测试函数</a></li>
-      </ul>
-    </li>
+    <li><a href="#安装django">安装Django</a></li>
+    <li><a href="#创建django应用">创建Django应用</a></li>
   </ul>
 </nav>
     </div>
@@ -797,9 +794,7 @@
         
 <div class="tags">
 
-  <a class="tag-link" href="/tags/assertequal">assertEqual()</a>
-
-  <a class="tag-link" href="/tags/unittest">unittest</a>
+  <a class="tag-link" href="/tags/django">Django</a>
 
 </div>
 
@@ -809,108 +804,28 @@
           
             <h1>
               
-              测试代码之测试函数
+              创建Django应用
             </h1>
           
 
         
 
 
-<p>测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。</p>
-<h3 id="测试函数">测试函数</h3>
-<h4 id="测试通过">测试通过</h4>
-<p>现在有一个格式化姓名的函数：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,f):
-    a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
-    <span style="color:#66d9ef">return</span> a
-
-</code></pre></div><blockquote>
-<p>这段代码保存在<code>name.py</code></p>
-</blockquote>
-<p>我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的<code>unittest</code>模块编写单元测试：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> unittest
-<span style="color:#f92672">from</span> name <span style="color:#f92672">import</span> print_name
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test_print_name</span>(unittest<span style="color:#f92672">.</span>TestCase):
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_name</span>(self):
-        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
-        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Wang&#34;</span>)
-        
-unittest<span style="color:#f92672">.</span>main()
-</code></pre></div><p>首先，导入模块unittest和要测试的函数<code>print_name()</code>，然后创建一个继承于<code>unittest.TestCase</code>的类<code>Test_print_name</code>，接着创建一个方法<code>test_print_name()</code>，用来测试<code>print_name()</code>，在这个方法中，我们调用了函数<code>print_name()</code>，并在结果（返回值）存储在变量<code>a</code>中。最后，我们使用断言方法<code>assertEqual()</code>判断输出是否是我们期望的。</p>
-<blockquote>
-<p>代码行<code>unittest.main()</code>让Python运行这个文件中的测试。</p>
-</blockquote>
-<p>运行这个单元测试，得到结果：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">.</span>
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.002</span>s
-
-OK
-</code></pre></div><p>第一行的句点<code>.</code>代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，<code>OK</code>则表示这个测试用例中的所有单元测试都通过了。</p>
-<h4 id="测试不通过">测试不通过</h4>
-<p>如果这时修改了函数<code>print_name()</code>，使其多接受一个中间名参数：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,m,f):
-    a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> m<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
-    <span style="color:#66d9ef">return</span> a
-</code></pre></div><p>再次运行函数<code>print_name()</code>的单元测试时，输出如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">E
-<span style="color:#f92672">======================================================================</span>
-ERROR: test_print_name (__main__<span style="color:#f92672">.</span>Test_print_name)
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Traceback (most recent call last):
-  File <span style="color:#e6db74">&#34;/home/joecy/Desktop/TestCode/testname.py&#34;</span>, line <span style="color:#ae81ff">7</span>, <span style="color:#f92672">in</span> test_print_name
-    a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
-<span style="color:#a6e22e">TypeError</span>: print_name() missing <span style="color:#ae81ff">1</span> required positional argument: <span style="color:#e6db74">&#39;f&#39;</span>
-
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.002</span>s
-
-FAILED (errors<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-
-</code></pre></div><p>第一行的字母<code>E</code>，表示有一个测试没通过，第二行告诉我们是哪里发生了错误，第三行是一个标准的<code>traceback</code>，告诉我们调用函数时缺少了一个必不可少的位置参数。</p>
-<p>测试不通过，说明我们新编写的代码存在问题，要检查刚刚进行的修改，并处理。</p>
-<p>修改后代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,f,m<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>):
-    <span style="color:#66d9ef">if</span> m:
-        a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> m<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
-    <span style="color:#66d9ef">else</span>:
-        a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
-    <span style="color:#66d9ef">return</span> a
-</code></pre></div><p>中间名变为可选的，并添加了<code>if</code>测试。</p>
-<p>再次测试：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">.</span>
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.001</span>s
-
-OK
-
-</code></pre></div><p>通过了！</p>
-<h4 id="添加新测试">添加新测试</h4>
-<p>函数<code>print_name</code>现在可以处理包含中间名的姓名了，我们也需要再编写一个测试，用于测试包含中间名的姓名：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> unittest
-<span style="color:#f92672">from</span> name <span style="color:#f92672">import</span> print_name
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test_print_name</span>(unittest<span style="color:#f92672">.</span>TestCase):
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_name</span>(self):
-
-        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
-        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Wang&#34;</span>)
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_m_name</span>(self):
-        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>,<span style="color:#e6db74">&#39;li&#39;</span>)
-        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Li Wang&#34;</span>)
-unittest<span style="color:#f92672">.</span>main()
-
-</code></pre></div><p>运行测试，结果如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">..</span>
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Ran <span style="color:#ae81ff">2</span> tests <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.003</span>s
-
-OK
-
-</code></pre></div><p>OK！测试通过了！</p>
+<p>现在我们就可以在虚拟环境中创建Django项目了。</p>
+<h2 id="安装django">安装Django</h2>
+<p>使用如下命令安装Django最新版本：</p>
+<pre><code>(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&gt;pip install django
+</code></pre><h2 id="创建django应用">创建Django应用</h2>
+<p>现在创建一个名为sxb的Django项目：</p>
+<pre><code>(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&gt;django-admin startproject sxb
+</code></pre><p>这时在虚拟环境<code>sxb_env</code>中会创建一个名为<code>sxb</code>的文件夹，这便是我们的Django项目文件夹。</p>
+<p>进入sxb文件夹：</p>
+<pre><code>(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&gt; cd sxb
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt;
+</code></pre><p>接下来使用管理文件<code>manage.py</code>来创建第一个APP：</p>
+<pre><code>(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python manage.py startapp webapp
+</code></pre><p><code>webapp</code>应用已经创建成功：
+接下来我们就可以去编辑简单的应用模型了。</p>
 
 
 <footer class="footline">
@@ -983,7 +898,6 @@ OK
             
                 
                     
-                    
                 
                 
 
@@ -997,8 +911,37 @@ OK
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
                     
                 
                 
@@ -1176,42 +1119,6 @@ OK
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -1337,6 +1244,7 @@ OK
             
                 
                     
+                    
                 
                 
 
@@ -1349,6 +1257,9 @@ OK
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1366,6 +1277,7 @@ OK
             
                 
                     
+                    
                 
                 
 
@@ -1381,6 +1293,9 @@ OK
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1405,10 +1320,10 @@ OK
 	 
 	 
 		
-			<a class="nav nav-prev" href="/python/%E7%BB%84%E7%BB%87%E5%88%97%E8%A1%A8/" title="组织列表"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" title="创建python虚拟环境"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/" title="测试代码之测试类" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/suixueben/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/" title="编写基础应用模型" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

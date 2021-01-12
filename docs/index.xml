@@ -8,10 +8,10 @@
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>创建python虚拟环境</title>
-      <link>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <link>/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <guid>/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
       <description>创建虚拟环境使我们可以在虚拟环境中安装某个项目所需要的各种包，并与其他python包相互独立，避免多个项目所需的包互相冲突，而且在部署时可以快速的导出项目所需要的包的列表。
 创建虚拟环境 对于高版本的Python，我们可以直接使用如下名了创建虚拟环境：
 C:\Users\xiaoxi\Desktop&amp;gt;python -m venv sxb_env激活虚拟环境 创建完成后，即可使用下面的命令激活虚拟环境：
@@ -56,10 +56,10 @@ JOECY WANG joecy wang 拼接字符串 first_name = &amp;#34;joecy&amp;#34; last_
     
     <item>
       <title>创建Django应用</title>
-      <link>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/</link>
+      <link>/suixueben/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/</guid>
+      <guid>/suixueben/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/</guid>
       <description>现在我们就可以在虚拟环境中创建Django项目了。
 安装Django 使用如下命令安装Django最新版本：
 (sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;pip install django创建Django应用 现在创建一个名为sxb的Django项目：
@@ -90,10 +90,10 @@ a = [] for i in range(1,5): a.append(i ** 2) print(a) 输出：
     
     <item>
       <title>编写基础应用模型</title>
-      <link>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/</link>
+      <link>/suixueben/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>/suixueben/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/</guid>
       <description>编写简单的应用模型 现在打开sxbweb文件夹下的应用模型文件models.py编辑基础的应用模型：
 from django.db import models from django.contrib.auth.models import User class ItemType(models.Model): type_name = models.CharField(max_length=30) class Item(models.Model): title = models.CharField(max_length=30) blog_type = models.ForeignKey(ItemType, on_delete=models.DO_NOTHING) content = models.TextField() author = models.ForeignKey(User, on_delete=models.DO_NOTHING) created_time = models.DateTimeField(auto_now_add=True) last_update_time = models.DateTimeField(auto_now=True) 代码变更：
 这里使用了VSCode进行代码编辑，之后的命令行代码均已VSCode中PowerShell的样式呈现。

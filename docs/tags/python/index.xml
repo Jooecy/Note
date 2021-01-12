@@ -8,10 +8,10 @@
     <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>创建python虚拟环境</title>
-      <link>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <link>/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/%E9%9A%8F%E5%AD%A6%E6%9C%AC%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <guid>/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
       <description>创建虚拟环境使我们可以在虚拟环境中安装某个项目所需要的各种包，并与其他python包相互独立，避免多个项目所需的包互相冲突，而且在部署时可以快速的导出项目所需要的包的列表。
 创建虚拟环境 对于高版本的Python，我们可以直接使用如下名了创建虚拟环境：
 C:\Users\xiaoxi\Desktop&amp;gt;python -m venv sxb_env激活虚拟环境 创建完成后，即可使用下面的命令激活虚拟环境：
