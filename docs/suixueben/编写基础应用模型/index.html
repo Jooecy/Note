@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.111.3">
     <meta name="description" content="编写基础应用模型">
 <meta name="author" content="XiaoXi">
 
@@ -12,21 +12,21 @@
     <title>编写基础应用模型 - XiaoXi Blog</title>
 
     
-    <link href="/css/nucleus.css?1610465270" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1610465270" rel="stylesheet">
-    <link href="/css/hybrid.css?1610465270" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1610465270" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1610465270" rel="stylesheet">
-    <link href="/css/auto-complete.css?1610465270" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1610465270" rel="stylesheet">
-    <link href="/css/theme.css?1610465270" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1610465270" rel="stylesheet">
+    <link href="/css/nucleus.css?1680007256" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1680007256" rel="stylesheet">
+    <link href="/css/hybrid.css?1680007256" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1680007256" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1680007256" rel="stylesheet">
+    <link href="/css/auto-complete.css?1680007256" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1680007256" rel="stylesheet">
+    <link href="/css/theme.css?1680007256" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1680007256" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1610465270" rel="stylesheet">
+    <link href="/css/theme-green.css?1680007256" rel="stylesheet">
     
-    <link href="/css/foo.css?1610465270" rel="stylesheet"><link href="/css/bar.css?1610465270" rel="stylesheet">
+    <link href="/css/foo.css?1680007256" rel="stylesheet"><link href="/css/bar.css?1680007256" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1610465270"></script>
+    <script src="/js/jquery-3.3.1.min.js?1680007256"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -56,14 +56,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1610465270"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1610465270"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1680007256"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1680007256"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1610465270"></script>
+<script type="text/javascript" src="/js/search.js?1680007256"></script>
 
     
   </div>
@@ -114,6 +114,27 @@
       <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="安装Git" class="dd-item ">
         <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
         安装Git
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%89%AF%E6%9C%AC/" title="安装Git2222" class="dd-item ">
+        <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%89%AF%E6%9C%AC/">
+        安装Git2222
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -818,29 +839,29 @@
 
 <h2 id="编写简单的应用模型">编写简单的应用模型</h2>
 <p>现在打开<code>sxbweb</code>文件夹下的应用模型文件<code>models.py</code>编辑基础的应用模型：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> django.db <span style="color:#f92672">import</span> models
-<span style="color:#f92672">from</span> django.contrib.auth.models <span style="color:#f92672">import</span> User
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemType</span>(models<span style="color:#f92672">.</span>Model):
-    type_name <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>CharField(max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Item</span>(models<span style="color:#f92672">.</span>Model):
-    title <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>CharField(max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
-    blog_type <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>ForeignKey(ItemType, on_delete<span style="color:#f92672">=</span>models<span style="color:#f92672">.</span>DO_NOTHING)
-    content <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>TextField()
-    author <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>ForeignKey(User, on_delete<span style="color:#f92672">=</span>models<span style="color:#f92672">.</span>DO_NOTHING)
-    created_time <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>DateTimeField(auto_now_add<span style="color:#f92672">=</span>True)
-    last_update_time <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>DateTimeField(auto_now<span style="color:#f92672">=</span>True)
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> django.db <span style="color:#f92672">import</span> models
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> django.contrib.auth.models <span style="color:#f92672">import</span> User
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemType</span>(models<span style="color:#f92672">.</span>Model):
+</span></span><span style="display:flex;"><span>    type_name <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>CharField(max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Item</span>(models<span style="color:#f92672">.</span>Model):
+</span></span><span style="display:flex;"><span>    title <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>CharField(max_length<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
+</span></span><span style="display:flex;"><span>    blog_type <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>ForeignKey(ItemType, on_delete<span style="color:#f92672">=</span>models<span style="color:#f92672">.</span>DO_NOTHING)
+</span></span><span style="display:flex;"><span>    content <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>TextField()
+</span></span><span style="display:flex;"><span>    author <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>ForeignKey(User, on_delete<span style="color:#f92672">=</span>models<span style="color:#f92672">.</span>DO_NOTHING)
+</span></span><span style="display:flex;"><span>    created_time <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>DateTimeField(auto_now_add<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    last_update_time <span style="color:#f92672">=</span> models<span style="color:#f92672">.</span>DateTimeField(auto_now<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span></code></pre></div>
 <div class="notices tip" ><p>代码变更：<br>
 这里使用了VSCode进行代码编辑，之后的命令行代码均已VSCode中PowerShell的样式呈现。</p>
 </div>
 
 <h2 id="初始化数据库">初始化数据库</h2>
-<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py migrate
+<pre tabindex="0"><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py migrate
 </code></pre><h2 id="创建超级用户">创建超级用户</h2>
-<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py createsuperuser
-Username (leave blank to use 'xiaoxi'): xiaoxi
+<pre tabindex="0"><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py createsuperuser
+Username (leave blank to use &#39;xiaoxi&#39;): xiaoxi
 Email address: xiao-xi@example.com
 Password: 
 Password (again):
@@ -850,53 +871,53 @@ Bypass password validation and create user anyway? [y/N]: y
 Superuser created successfully.
 </code></pre><h2 id="注册应用">注册应用</h2>
 <p>打开项目设置文件，在其中注册应用<code>sxbweb</code>，其位于：<code>C:\Users\xiaoxi\Desktop\sxb_env\sxb\sxb\settings.py</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">...</span>
-<span style="color:#75715e"># Application definition</span>
-
-INSTALLED_APPS <span style="color:#f92672">=</span> [
-    <span style="color:#e6db74">&#39;django.contrib.admin&#39;</span>,
-    <span style="color:#e6db74">&#39;django.contrib.auth&#39;</span>,
-    <span style="color:#e6db74">&#39;django.contrib.contenttypes&#39;</span>,
-    <span style="color:#e6db74">&#39;django.contrib.sessions&#39;</span>,
-    <span style="color:#e6db74">&#39;django.contrib.messages&#39;</span>,
-    <span style="color:#e6db74">&#39;django.contrib.staticfiles&#39;</span>,
-    <span style="color:#e6db74">&#39;sxbweb&#39;</span>, <span style="color:#75715e"># 注册应用</span>
-]
-<span style="color:#f92672">...</span>
-</code></pre></div><h2 id="创建迁移文件">创建迁移文件</h2>
-<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py makemigrations
-Migrations for 'sxbweb':
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Application definition</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>INSTALLED_APPS <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;django.contrib.admin&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;django.contrib.auth&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;django.contrib.contenttypes&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;django.contrib.sessions&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;django.contrib.messages&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;django.contrib.staticfiles&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;sxbweb&#39;</span>, <span style="color:#75715e"># 注册应用</span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><h2 id="创建迁移文件">创建迁移文件</h2>
+<pre tabindex="0"><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py makemigrations
+Migrations for &#39;sxbweb&#39;:
   sxbweb\migrations\0001_initial.py
     - Create model ItemType
     - Create model Item
 </code></pre><p>接下来将迁移文件同步至数据库：</p>
-<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py migrate
+<pre tabindex="0"><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py migrate
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, sessions, sxbweb
 Running migrations:
   Applying sxbweb.0001_initial... OK
 </code></pre><h2 id="自定义后台">自定义后台</h2>
 <p>自定义应用的后台显示表单，打开<code>C:\Users\xiaoxi\Desktop\sxb_env\sxb\sxbweb\admin.py</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> django.contrib <span style="color:#f92672">import</span> admin
-<span style="color:#f92672">from</span> .models <span style="color:#f92672">import</span> ItemType, Item
-
-<span style="color:#a6e22e">@admin.register</span>(ItemType)
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemTypeAdmin</span>(admin<span style="color:#f92672">.</span>ModelAdmin):
-    list_display <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;type_name&#39;</span>)
-
-<span style="color:#a6e22e">@admin.register</span>(Item)
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemAdmin</span>(admin<span style="color:#f92672">.</span>ModelAdmin):
-    list_display <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;title&#39;</span>, <span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;author&#39;</span>, <span style="color:#e6db74">&#39;item_type&#39;</span>)
-</code></pre></div><h2 id="启动本地服务">启动本地服务</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> django.contrib <span style="color:#f92672">import</span> admin
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> .models <span style="color:#f92672">import</span> ItemType, Item
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@admin.register</span>(ItemType)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemTypeAdmin</span>(admin<span style="color:#f92672">.</span>ModelAdmin):
+</span></span><span style="display:flex;"><span>    list_display <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;type_name&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@admin.register</span>(Item)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemAdmin</span>(admin<span style="color:#f92672">.</span>ModelAdmin):
+</span></span><span style="display:flex;"><span>    list_display <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;title&#39;</span>, <span style="color:#e6db74">&#39;id&#39;</span>, <span style="color:#e6db74">&#39;author&#39;</span>, <span style="color:#e6db74">&#39;item_type&#39;</span>)
+</span></span></code></pre></div><h2 id="启动本地服务">启动本地服务</h2>
 <p>输入以下命令以启动调试用的Django本地服务：</p>
-<pre><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py runserver
+<pre tabindex="0"><code>(sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&gt; python .\manage.py runserver
 </code></pre><p>现在可以看到如下的返回信息：</p>
-<pre><code>Watching for file changes with StatReloader
+<pre tabindex="0"><code>Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
 January 12, 2021 - 23:06:14
-Django version 3.1.5, using settings 'sxb.settings'
+Django version 3.1.5, using settings &#39;sxb.settings&#39;
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 </code></pre><p>打开 http://127.0.0.1:8000/admin 即可访问该应用管理页面。</p>
@@ -947,6 +968,22 @@ Quit the server with CTRL-BREAK.
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1404,19 +1441,19 @@ Quit the server with CTRL-BREAK.
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1610465270"></script>
-    <script src="/js/perfect-scrollbar.min.js?1610465270"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1610465270"></script>
-    <script src="/js/jquery.sticky.js?1610465270"></script>
-    <script src="/js/featherlight.min.js?1610465270"></script>
-    <script src="/js/highlight.pack.js?1610465270"></script>
+    <script src="/js/clipboard.min.js?1680007256"></script>
+    <script src="/js/perfect-scrollbar.min.js?1680007256"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1680007256"></script>
+    <script src="/js/jquery.sticky.js?1680007256"></script>
+    <script src="/js/featherlight.min.js?1680007256"></script>
+    <script src="/js/highlight.pack.js?1680007256"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1610465270"></script>
-    <script src="/js/learn.js?1610465270"></script>
-    <script src="/js/hugo-learn.js?1610465270"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1680007256"></script>
+    <script src="/js/learn.js?1680007256"></script>
+    <script src="/js/hugo-learn.js?1680007256"></script>
     
         
-            <script src="/mermaid/mermaid.js?1610465270"></script>
+            <script src="/mermaid/mermaid.js?1680007256"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

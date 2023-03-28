@@ -14,11 +14,11 @@
       <guid>/suixueben/%E5%88%9B%E5%BB%BAdjango%E5%BA%94%E7%94%A8/</guid>
       <description>现在我们就可以在虚拟环境中创建Django项目了。
 安装Django 使用如下命令安装Django最新版本：
-(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;pip install django创建Django应用 现在创建一个名为sxb的Django项目：
-(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;django-admin startproject sxb这时在虚拟环境sxb_env中会创建一个名为sxb的文件夹，这便是我们的Django项目文件夹。
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;pip install django 创建Django应用 现在创建一个名为sxb的Django项目：
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;django-admin startproject sxb 这时在虚拟环境sxb_env中会创建一个名为sxb的文件夹，这便是我们的Django项目文件夹。
 进入sxb文件夹：
-(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt; cd sxb(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt;接下来使用管理文件manage.py来创建第一个APP：
-(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python manage.py startapp webappwebapp应用已经创建成功： 接下来我们就可以去编辑简单的应用模型了。</description>
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt; cd sxb(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; 接下来使用管理文件manage.py来创建第一个APP：
+(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python manage.py startapp webapp webapp应用已经创建成功： 接下来我们就可以去编辑简单的应用模型了。</description>
     </item>
     
     <item>
@@ -28,9 +28,9 @@
       
       <guid>/suixueben/%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B/</guid>
       <description>编写简单的应用模型 现在打开sxbweb文件夹下的应用模型文件models.py编辑基础的应用模型：
-from django.db import models from django.contrib.auth.models import User class ItemType(models.Model): type_name = models.CharField(max_length=30) class Item(models.Model): title = models.CharField(max_length=30) blog_type = models.ForeignKey(ItemType, on_delete=models.DO_NOTHING) content = models.TextField() author = models.ForeignKey(User, on_delete=models.DO_NOTHING) created_time = models.DateTimeField(auto_now_add=True) last_update_time = models.DateTimeField(auto_now=True) 代码变更：
+from django.db import models from django.contrib.auth.models import User class ItemType(models.Model): type_name = models.CharField(max_length=30) class Item(models.Model): title = models.CharField(max_length=30) blog_type = models.ForeignKey(ItemType, on_delete=models.DO_NOTHING) content = models.TextField() author = models.ForeignKey(User, on_delete=models.DO_NOTHING) created_time = models.DateTimeField(auto_now_add=True) last_update_time = models.DateTimeField(auto_now=True) 代码变更：
 这里使用了VSCode进行代码编辑，之后的命令行代码均已VSCode中PowerShell的样式呈现。
-初始化数据库 (sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python .\manage.py migrate创建超级用户 (sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python .\manage.py createsuperuserUsername (leave blank to use &#39;xiaoxi&#39;): xiaoxiEmail address: xiao-xi@example.comPassword: Password (again):This password is too short.</description>
+初始化数据库 (sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python .\manage.py migrate 创建超级用户 (sxb_env) PS C:\Users\xiaoxi\Desktop\sxb_env\sxb&amp;gt; python .\manage.py createsuperuserUsername (leave blank to use &amp;#39;xiaoxi&amp;#39;): xiaoxiEmail address: xiao-xi@example.comPassword: Password (again):This password is too short.</description>
     </item>
     
   </channel>

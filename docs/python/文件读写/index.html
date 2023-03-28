@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.111.3">
     <meta name="description" content="要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。">
 <meta name="author" content="XiaoXi">
 
@@ -12,21 +12,21 @@
     <title>文件读写 - XiaoXi Blog</title>
 
     
-    <link href="/css/nucleus.css?1610465270" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1610465270" rel="stylesheet">
-    <link href="/css/hybrid.css?1610465270" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1610465270" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1610465270" rel="stylesheet">
-    <link href="/css/auto-complete.css?1610465270" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1610465270" rel="stylesheet">
-    <link href="/css/theme.css?1610465270" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1610465270" rel="stylesheet">
+    <link href="/css/nucleus.css?1680007256" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1680007256" rel="stylesheet">
+    <link href="/css/hybrid.css?1680007256" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1680007256" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1680007256" rel="stylesheet">
+    <link href="/css/auto-complete.css?1680007256" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1680007256" rel="stylesheet">
+    <link href="/css/theme.css?1680007256" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1680007256" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1610465270" rel="stylesheet">
+    <link href="/css/theme-green.css?1680007256" rel="stylesheet">
     
-    <link href="/css/foo.css?1610465270" rel="stylesheet"><link href="/css/bar.css?1610465270" rel="stylesheet">
+    <link href="/css/foo.css?1680007256" rel="stylesheet"><link href="/css/bar.css?1680007256" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1610465270"></script>
+    <script src="/js/jquery-3.3.1.min.js?1680007256"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -56,14 +56,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1610465270"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1610465270"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1680007256"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1680007256"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1610465270"></script>
+<script type="text/javascript" src="/js/search.js?1680007256"></script>
 
     
   </div>
@@ -114,6 +114,27 @@
       <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="安装Git" class="dd-item ">
         <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
         安装Git
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%89%AF%E6%9C%AC/" title="安装Git2222" class="dd-item ">
+        <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%89%AF%E6%9C%AC/">
+        安装Git2222
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -825,7 +846,7 @@
 
 <p>要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。</p>
 <h3 id="读取整个文件">读取整个文件</h3>
-<pre><code>with open('1.txt') as file_obj:
+<pre tabindex="0"><code>with open(&#39;1.txt&#39;) as file_obj:
     neirong = file_obj.read()
     print(neirong)
 </code></pre><p>要使用文件内容，要先打开<code>open()</code>文件，接着读取<code>read()</code>内容到内存中，最后当我们还要关闭<code>close()</code>文件，以免浪费内存。</p>
@@ -833,13 +854,13 @@
 <p><code>open()</code>函数返回一个表示文件的对象，接着我们可以使用<code>read()</code>来读取这个文件内容，并存储在<code>nrirong</code>中。</p>
 <h3 id="逐行读取">逐行读取</h3>
 <p>可以使用<code>for</code>循环逐行读取文件内容。</p>
-<pre><code>with open('2.txt') as file_obj:
+<pre tabindex="0"><code>with open(&#39;2.txt&#39;) as file_obj:
     for i in file_obj:
     print(i)
 </code></pre><p>一样的，函数<code>open()</code>返回一个表示文件的对象，存储在变量<code>file_obj</code>中，于是我们可以通过遍历文件对象<code>file_obj</code>来逐行读取内容。</p>
 <h3 id="创建一个包含文件内容的列表">创建一个包含文件内容的列表</h3>
 <p>使用关键字<code>with</code>时，<code>open()</code>返回的对象只可以在<code>with</code>代码块内访问，要想在<code>with</code>代码块外使用，我们需要创建一个包含该文件各行内容的<code>列表</code>：</p>
-<pre><code>with open('3.txt') as file_obj:
+<pre tabindex="0"><code>with open(&#39;3.txt&#39;) as file_obj:
     lines = file_obj.readlines()
 
 for i in lines():
@@ -847,8 +868,8 @@ for i in lines():
 </code></pre><p>方法<code>readlines()</code>，读取文件中的每一行，并将其存储在<em><strong>列表</strong></em><code>lines</code>中。</p>
 <h3 id="写入文件">写入文件</h3>
 <p>要写入文件，需要在调用<code>open()</code>时，传入另外一个实参，告诉Python你要写入打开的文件：</p>
-<pre><code>with open('4.txt','w') as file_obj:
-    file_obj.write('我在写入文件')
+<pre tabindex="0"><code>with open(&#39;4.txt&#39;,&#39;w&#39;) as file_obj:
+    file_obj.write(&#39;我在写入文件&#39;)
 </code></pre><p>实参<code>'w'</code>告诉Python，我们要以<em>写入模式</em>打开文件，其他的打开模式包括<code>'r'</code>-<em>只读模式</em>、<code>'a'</code>-<em>附加模式</em>、<code>'r+'</code>-<em>读写模式</em>。</p>
 <p>如果要写入的文件不存在，Python会自动创建它，当使用<code>'w'</code>写入时，Python会在写入前清空该文件。</p>
 
@@ -898,6 +919,22 @@ for i in lines():
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1358,19 +1395,19 @@ for i in lines():
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1610465270"></script>
-    <script src="/js/perfect-scrollbar.min.js?1610465270"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1610465270"></script>
-    <script src="/js/jquery.sticky.js?1610465270"></script>
-    <script src="/js/featherlight.min.js?1610465270"></script>
-    <script src="/js/highlight.pack.js?1610465270"></script>
+    <script src="/js/clipboard.min.js?1680007256"></script>
+    <script src="/js/perfect-scrollbar.min.js?1680007256"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1680007256"></script>
+    <script src="/js/jquery.sticky.js?1680007256"></script>
+    <script src="/js/featherlight.min.js?1680007256"></script>
+    <script src="/js/highlight.pack.js?1680007256"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1610465270"></script>
-    <script src="/js/learn.js?1610465270"></script>
-    <script src="/js/hugo-learn.js?1610465270"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1680007256"></script>
+    <script src="/js/learn.js?1680007256"></script>
+    <script src="/js/hugo-learn.js?1680007256"></script>
     
         
-            <script src="/mermaid/mermaid.js?1610465270"></script>
+            <script src="/mermaid/mermaid.js?1680007256"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

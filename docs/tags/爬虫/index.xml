@@ -23,7 +23,7 @@
       
       <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
       <description>urllib库是Python内置的HTTP请求库，它包含四个模块：
- request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
+request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt 使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
     </item>
     
     <item>
@@ -36,12 +36,13 @@
 GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。
 使用requests.get() import requests r = requests.get(&amp;#39;https://baidu.com/&amp;#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
 &amp;lt;class &amp;#39;requests.models.Response&amp;#39;&amp;gt; &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; 200 &amp;lt;RequestsCookieJar[&amp;lt;Cookie BDORZ=27315 for .baidu.com/&amp;gt;]&amp;gt; # 部分代码 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--STATUS OK--&amp;gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; .... &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 使用requests.get()方法，即可以GET方式请求网页。
- status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip;  如果GET请求需要附加额外信息，例如添加两个参数：
+status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip; 如果GET请求需要附加额外信息，例如添加两个参数：
 r = requests.get(&#39;http://httpbin.org/get?name=joecy&amp;amp;age=24&#39;)
 如果写成这样未免太繁琐，这时可以利用params参数：
-import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text)  r.encoding = &#39;utf-8&#39; 用于修改编码
- 输出了百度关于关键词“我”的搜索结果。
-抓取网页 抓取知乎发现页面：</description>
+import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text) r.encoding = &#39;utf-8&#39; 用于修改编码
+输出了百度关于关键词“我”的搜索结果。
+抓取网页 抓取知乎发现页面：
+import requests r = requests.</description>
     </item>
     
     <item>
@@ -53,8 +54,8 @@ import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests
       <description>使用urllib的request模块，可以方便的实现请求的发送并得到响应。
 发送请求 urlopen() 抓取Python官网：
 import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.python.org&amp;#34;) print(response.read().decode(&amp;#39;utf-8&amp;#39;)) 部分输出：
-# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  decode(&#39;utf-8&#39;)方法将网页以制定编码解析。
- response是一个HTTPResponse类型的对象：
+# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; decode(&#39;utf-8&#39;)方法将网页以制定编码解析。
+response是一个HTTPResponse类型的对象：
 print(type(response)) 输出如下：
 &amp;lt;class &amp;#39;http.client.HTTPResponse&amp;#39;&amp;gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。
 例子：

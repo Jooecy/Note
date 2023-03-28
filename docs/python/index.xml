@@ -14,7 +14,7 @@
       <guid>/python/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
       <description>学习使用Python中的各种数据，并将这些数据存储到变量中，以及如何在程序中使用这些变量。
 变量 a = &amp;#34;hello world!&amp;#34; print(a) 我们添加了一个名为a的变量，它存储了一个值：文本“hello world!”。每一个变量都会存储一个值，我们可以在程序中随时修改变量的值，而python将会记录并使用变量的最新值。
-变量的命名  变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。  数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&amp;quot;&amp;quot;）或单引号（&#39;&#39;）。
+变量的命名 变量只能包含字母、数字、下划线。变量不能以数字开头。变量可以命名为a_1，但不可以命名为1_a。 变量名不可以包含空格。在需要分隔单词时使用下划线分隔。如：get_num。 不能以Python的关键字和函数名作为变量名。如：print。 变量要简单且具有描述性：name``比n好，student_name比sn好。 慎用小写字母l和大写字母O。 数据类型 字符串 字符串就是一系列的字符。在Python中用引号括起来的都是字符串。其中的引号可以是双引号（&amp;quot;&amp;quot;）或单引号（&#39;&#39;）。
 a = &amp;#34;我是字符串。&amp;#34; b = &amp;#39;我也是字符串。&amp;#39; 这样我们就可以在字符串中包含双引号或单引号了：
 a = &amp;#34;我是&amp;#39;字符串&amp;#39;。&amp;#34; b = &amp;#39;我也是&amp;#34;字符串&amp;#34;。&amp;#39; 使用方法修改字符串大小写 name = &amp;#34;joecy wang&amp;#34; print(name.title()) 输出的结果是：
 Joecy Wang 我们将小写字符joecy wang存储到变量name中，在print语句中，我们对name使用方法title()，每个方法后面都会有一个括号，用于接受额外的信息，title()方法并不需要，所以它的括号是空的。
@@ -113,12 +113,16 @@ while True: message = input() if message == &amp;#39;q&amp;#39;: break else: pri
       <description>函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。
 定义函数 def hello(): print(&amp;#39;hello&amp;#39;) hello() 输出：
 hello 我们使用def关键字来定义函数，具体规则如下：
-  函数代码块以 def关键词开头，后接函数名称和圆括号()。     任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数。     函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。     函数内容以冒:号起始，并且缩进。     return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。   向函数传递参数 例如我们定义一个计算长方形面积的函数：
+函数代码块以 def关键词开头，后接函数名称和圆括号()。 任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数。 函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。 函数内容以冒:号起始，并且缩进。 return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。 向函数传递参数 例如我们定义一个计算长方形面积的函数：
 def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 示例中，函数x可以接受两个参数：形参a和形参b。在调用函数x的时候，我们向其传递了实参4、5，结果显示它成功计算除了面积。
 参数传递 函数中可能包含多个形参，因此我们需要传递多个实参，依据不同情况，参数传递的方式很多：位置参数、默认参数、关键字参数、可变参数等。
 位置参数 位置参数需要按照正确的顺序传入，按照位置关联依次将实参传递给形参的传递方式叫做位置参数：
 如上个例子：
-def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 值4、5按照顺序赋值给参数a、b。参数a、b都是位置参数。</description>
+def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 值4、5按照顺序赋值给参数a、b。参数a、b都是位置参数。
+默认参数 如果我们想要计算的长方形面积的宽大多时候都是长度为5，就可以使用默认参数：
+def x(a,b=5): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4) 20 在示例中，参数b就是一个默认参数，默认值为2，当我们调用函数x(4)时，相当于我们调用了x(4,5)。设置默认参数时，必选参数在前，默认参数在后。
+可变参数 可变参数就是传入的参数个数是可变的，可以是1个、2个到任意个，还可以是0个。
+def x(a,*b): print(a) for i in b: print(i) x(1) x(1,1,2,3,4,5,7) 输出：</description>
     </item>
     
     <item>
@@ -145,15 +149,15 @@ class Dog(): def __init__(self,a,b): self.name = a self.age = b a = Dog(&amp;#39
       
       <guid>/python/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
       <description>要使用文本中的信息，首先要将内容读取到内存当中，我们可以一次性读取文件的全部内容，也可以逐行读取。
-读取整个文件 with open(&#39;1.txt&#39;) as file_obj:neirong = file_obj.read()print(neirong)要使用文件内容，要先打开open()文件，接着读取read()内容到内存中，最后当我们还要关闭close()文件，以免浪费内存。
+读取整个文件 with open(&amp;#39;1.txt&amp;#39;) as file_obj:neirong = file_obj.read()print(neirong) 要使用文件内容，要先打开open()文件，接着读取read()内容到内存中，最后当我们还要关闭close()文件，以免浪费内存。
 这时使用关键字with就可以实现文件的自动关闭，Python会在合适的时候自动关闭文件。
 open()函数返回一个表示文件的对象，接着我们可以使用read()来读取这个文件内容，并存储在nrirong中。
 逐行读取 可以使用for循环逐行读取文件内容。
-with open(&#39;2.txt&#39;) as file_obj:for i in file_obj:print(i)一样的，函数open()返回一个表示文件的对象，存储在变量file_obj中，于是我们可以通过遍历文件对象file_obj来逐行读取内容。
+with open(&amp;#39;2.txt&amp;#39;) as file_obj:for i in file_obj:print(i) 一样的，函数open()返回一个表示文件的对象，存储在变量file_obj中，于是我们可以通过遍历文件对象file_obj来逐行读取内容。
 创建一个包含文件内容的列表 使用关键字with时，open()返回的对象只可以在with代码块内访问，要想在with代码块外使用，我们需要创建一个包含该文件各行内容的列表：
-with open(&#39;3.txt&#39;) as file_obj:lines = file_obj.readlines()for i in lines():print(i)方法readlines()，读取文件中的每一行，并将其存储在列表lines中。
+with open(&amp;#39;3.txt&amp;#39;) as file_obj:lines = file_obj.readlines()for i in lines():print(i) 方法readlines()，读取文件中的每一行，并将其存储在列表lines中。
 写入文件 要写入文件，需要在调用open()时，传入另外一个实参，告诉Python你要写入打开的文件：
-with open(&#39;4.txt&#39;,&#39;w&#39;) as file_obj:file_obj.write(&#39;我在写入文件&#39;)实参&#39;w&#39;告诉Python，我们要以写入模式打开文件，其他的打开模式包括&#39;r&#39;-只读模式、&#39;a&#39;-附加模式、&#39;r+&#39;-读写模式。
+with open(&amp;#39;4.txt&amp;#39;,&amp;#39;w&amp;#39;) as file_obj:file_obj.write(&amp;#39;我在写入文件&amp;#39;) 实参&#39;w&#39;告诉Python，我们要以写入模式打开文件，其他的打开模式包括&#39;r&#39;-只读模式、&#39;a&#39;-附加模式、&#39;r+&#39;-读写模式。
 如果要写入的文件不存在，Python会自动创建它，当使用&#39;w&#39;写入时，Python会在写入前清空该文件。</description>
     </item>
     
@@ -164,8 +168,8 @@ with open(&#39;4.txt&#39;,&#39;w&#39;) as file_obj:file_obj.write(&#39;我在�
       
       <guid>/python/json%E6%A8%A1%E5%9D%97/</guid>
       <description>很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。
- JSON格式最初是为了JavaScript开发的，但随后成了一种常见格式，被众多编程语言采用。
- 使用json.dump()存储数据 使用json.dump()可以轻松的存储数据，json.dump()接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：
+JSON格式最初是为了JavaScript开发的，但随后成了一种常见格式，被众多编程语言采用。
+使用json.dump()存储数据 使用json.dump()可以轻松的存储数据，json.dump()接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：
 import json username = &amp;#39;111&amp;#39; with open(&amp;#39;name.json&amp;#39;,&amp;#39;w&amp;#39;) as name_obj: json.dump(username,name.json) 这时，就会报错：
 NameError: name &amp;#39;name&amp;#39; is not defined 原因是我们错误向json.dump()传入了参数name.json，这并不是要存储数据的文件==对象==，应该传入参数name_obj。
 import json username = &amp;#39;111&amp;#39; with open(&amp;#39;name.json&amp;#39;,&amp;#39;w&amp;#39;) as name_obj: json.dump(username,name_obj) 同时，也要注意在使用json.dump()存储数据时，函数open()需要传递参数&#39;w&#39;，以便获得写入权限。
@@ -207,15 +211,15 @@ list7 = [&amp;#39;1&amp;#39;,&amp;#39;2&amp;#39;,&amp;#39;3&amp;#39;] del list7[
       <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</guid>
       <description>测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。
 测试函数 测试通过 现在有一个格式化姓名的函数：
-def print_name(l,f): a = l.title() + &amp;#39; &amp;#39; + f.title() return a  这段代码保存在name.py
- 我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的unittest模块编写单元测试：
+def print_name(l,f): a = l.title() + &amp;#39; &amp;#39; + f.title() return a 这段代码保存在name.py
+我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的unittest模块编写单元测试：
 import unittest from name import print_name class Test_print_name(unittest.TestCase): def test_print_name(self): a = print_name(&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;) self.assertEqual(a,&amp;#34;Joecy Wang&amp;#34;) unittest.main() 首先，导入模块unittest和要测试的函数print_name()，然后创建一个继承于unittest.TestCase的类Test_print_name，接着创建一个方法test_print_name()，用来测试print_name()，在这个方法中，我们调用了函数print_name()，并在结果（返回值）存储在变量a中。最后，我们使用断言方法assertEqual()判断输出是否是我们期望的。
- 代码行unittest.main()让Python运行这个文件中的测试。
- 运行这个单元测试，得到结果：
+代码行unittest.main()让Python运行这个文件中的测试。
+运行这个单元测试，得到结果：
 . ---------------------------------------------------------------------- Ran 1 test in 0.002s OK 第一行的句点.代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，OK则表示这个测试用例中的所有单元测试都通过了。
 测试不通过 如果这时修改了函数print_name()，使其多接受一个中间名参数：
 def print_name(l,m,f): a = l.title() + &amp;#39; &amp;#39; + m.title() + &amp;#39; &amp;#39;+ f.title() return a 再次运行函数print_name()的单元测试时，输出如下：
-E ====================================================================== ERROR: test_print_name (__main__.</description>
+E ====================================================================== ERROR: test_print_name (__main__.Test_print_name) ---------------------------------------------------------------------- Traceback (most recent call last): File &amp;#34;/home/joecy/Desktop/TestCode/testname.</description>
     </item>
     
     <item>
@@ -247,7 +251,7 @@ import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test
       
       <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
       <description>urllib库是Python内置的HTTP请求库，它包含四个模块：
- request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt  使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
+request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt 使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
     </item>
     
     <item>
@@ -260,12 +264,13 @@ import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test
 GET请求 HTTP中最常见的请求之一就是GET请求，用requests构建GET请求非常方便。
 使用requests.get() import requests r = requests.get(&amp;#39;https://baidu.com/&amp;#39;) print(type(r)) print(type(r.text)) print(r.status_code) print(r.cookies) print(r.text) 输出：
 &amp;lt;class &amp;#39;requests.models.Response&amp;#39;&amp;gt; &amp;lt;class &amp;#39;str&amp;#39;&amp;gt; 200 &amp;lt;RequestsCookieJar[&amp;lt;Cookie BDORZ=27315 for .baidu.com/&amp;gt;]&amp;gt; # 部分代码 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--STATUS OK--&amp;gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; .... &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 使用requests.get()方法，即可以GET方式请求网页。
- status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip;  如果GET请求需要附加额外信息，例如添加两个参数：
+status_code属性获取状态码 cookies属性获取cookies text属性获取网页内容 headers属性获取响应头 url属性获取URL history属性获取请求历史 等等&amp;hellip;&amp;hellip; 如果GET请求需要附加额外信息，例如添加两个参数：
 r = requests.get(&#39;http://httpbin.org/get?name=joecy&amp;amp;age=24&#39;)
 如果写成这样未免太繁琐，这时可以利用params参数：
-import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text)  r.encoding = &#39;utf-8&#39; 用于修改编码
- 输出了百度关于关键词“我”的搜索结果。
-抓取网页 抓取知乎发现页面：</description>
+import requests data = {&amp;#39;wd&amp;#39;:&amp;#39;我&amp;#39;} r = requests.get(&amp;#39;https://baidu.com/s&amp;#39;,params=data) print(r.status_code) r.encoding = &amp;#39;utf-8&amp;#39; print(r.text) r.encoding = &#39;utf-8&#39; 用于修改编码
+输出了百度关于关键词“我”的搜索结果。
+抓取网页 抓取知乎发现页面：
+import requests r = requests.</description>
     </item>
     
     <item>
@@ -288,36 +293,13 @@ Cookies </description>
       <description>使用urllib的request模块，可以方便的实现请求的发送并得到响应。
 发送请求 urlopen() 抓取Python官网：
 import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.python.org&amp;#34;) print(response.read().decode(&amp;#39;utf-8&amp;#39;)) 部分输出：
-# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  decode(&#39;utf-8&#39;)方法将网页以制定编码解析。
- response是一个HTTPResponse类型的对象：
+# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; decode(&#39;utf-8&#39;)方法将网页以制定编码解析。
+response是一个HTTPResponse类型的对象：
 print(type(response)) 输出如下：
 &amp;lt;class &amp;#39;http.client.HTTPResponse&amp;#39;&amp;gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。
 例子：
 import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.baidu.com&amp;#34;) print(response.status) print(&amp;#39;\n&amp;#39;,response.getheaders()) print(&amp;#39;\n&amp;#39;,response.getheader(&amp;#39;Server&amp;#39;)) 输出结果：
 200 [(&amp;#39;Accept-Ranges&amp;#39;, &amp;#39;bytes&amp;#39;), (&amp;#39;Cache-Control&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Content-Length&amp;#39;, &amp;#39;227&amp;#39;), (&amp;#39;Content-Type&amp;#39;, &amp;#39;text/html&amp;#39;), (&amp;#39;Date&amp;#39;, &amp;#39;Thu, 09 Aug 2018 14:49:17 GMT&amp;#39;), (&amp;#39;Etag&amp;#39;, &amp;#39;&amp;#34;5b56b4a8-e3&amp;#34;&amp;#39;), (&amp;#39;Last-Modified&amp;#39;, &amp;#39;Tue, 24 Jul 2018 05:10:00 GMT&amp;#39;), (&amp;#39;P3p&amp;#39;, &amp;#39;CP=&amp;#34; OTI DSP COR IVA OUR IND COM &amp;#34;&amp;#39;), (&amp;#39;Pragma&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Server&amp;#39;, &amp;#39;BWS/1.</description>
-    </item>
-    
-    <item>
-      <title>我没有朋友</title>
-      <link>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</guid>
-      <description>不知怎地，在我的家族中 “读书” “大学生”等词汇已然成为了贬义词。
-三四年前，这些字眼也仅仅是在我父亲的嘴里说出，大抵也只是有口无心的顺出一句，“这都不会做，读书读傻了？”而已。渐渐的，七大姑八大姨也跟风笑了起来 “这孩子连个街坊都不认识。” “上学不还得回来上班？”
-刚毕业那会，听见这样的话，心里很烦，出于礼貌也只是一笑而过。不过的确影响我颇深，2016年那会，我像个傻逼一样，坚持向我的爱人灌输 ：“以后孩子爱读书就读，不读就学点什么吧？”这样的思想。认定了有个手艺，养活自己就算大功告成了。如今回想，啊呸！
-今年春节，故事重现。在他们嘴里，读书无用论再次演变，又成为了我没有朋友的原因。
-我可能真的没有朋友，没有牌友、赌友，没有那种一口一个你妈逼却是表达和你无所忌讳的兄弟，也没有酒桌上牛逼吹的伊拉克的朋友。
-心里话，我想有这样的朋友，但是他们不找我，所以，我是真的没有朋友。
-那几天我一直在想，要不要趁着过年，我也约几个，凑一局？要不要找个兄弟打个电话骂他几句你妈逼再拜个年？可当我拿起电话时，才发觉，压根没有这样的朋友？打给谁呢？
-“没有朋友”是因为脱节了。
-读书和社会的脱节，和实践的脱节，和基本人群沟通的脱节。这是很严重的问题，只是不同段位的人很少越级沟通，也就不以为然，可当你突然出现在他们习以为常的生活环境中时，就像沙丁鱼看到了鲶鱼一样，总会带来些搅动，他们沉迷于自身的阶段的环境越深，反应也愈加明显！
-几年前，我总会以为，沙丁鱼不就是一群垃圾？可没想到，沙丁鱼眼中的鲶鱼却也只像个会写字的煞笔。
-至此，算是明了了。
-我脱节了就要接上，尽量知行合一；
-沙丁鱼不是垃圾，鲶鱼也不是煞笔。
-每种生活和见解都是珍贵的、有意义的，但不要用自己的生活环境下产生的想法对别人的作为评头论足。这都是该想，该明白的。不想不思考还死坚持自己的那一套，是有多可悲？
-你Diss人很屌，你长得好看，你有钱，你牛逼，你朋友多，你能喝&amp;hellip;&amp;hellip;这都值得欣慰。因为那真真切切就是你的。你沾沾自喜、洋洋得意、臭美乐呵，都是人之常情，但再怎么自得，也要谦逊，更要适可而止，因为再进一步，就是傻，就是糊涂了！</description>
     </item>
     
     <item>
@@ -369,6 +351,29 @@ import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.bai
 这样不好，我觉得。
 但这样也一定有道理。
 比如，为了这些该被温柔以待的人！</description>
+    </item>
+    
+    <item>
+      <title>我没有朋友</title>
+      <link>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/python/%E6%88%91%E6%B2%A1%E6%9C%89%E6%9C%8B%E5%8F%8B/</guid>
+      <description>不知怎地，在我的家族中 “读书” “大学生”等词汇已然成为了贬义词。
+三四年前，这些字眼也仅仅是在我父亲的嘴里说出，大抵也只是有口无心的顺出一句，“这都不会做，读书读傻了？”而已。渐渐的，七大姑八大姨也跟风笑了起来 “这孩子连个街坊都不认识。” “上学不还得回来上班？”
+刚毕业那会，听见这样的话，心里很烦，出于礼貌也只是一笑而过。不过的确影响我颇深，2016年那会，我像个傻逼一样，坚持向我的爱人灌输 ：“以后孩子爱读书就读，不读就学点什么吧？”这样的思想。认定了有个手艺，养活自己就算大功告成了。如今回想，啊呸！
+今年春节，故事重现。在他们嘴里，读书无用论再次演变，又成为了我没有朋友的原因。
+我可能真的没有朋友，没有牌友、赌友，没有那种一口一个你妈逼却是表达和你无所忌讳的兄弟，也没有酒桌上牛逼吹的伊拉克的朋友。
+心里话，我想有这样的朋友，但是他们不找我，所以，我是真的没有朋友。
+那几天我一直在想，要不要趁着过年，我也约几个，凑一局？要不要找个兄弟打个电话骂他几句你妈逼再拜个年？可当我拿起电话时，才发觉，压根没有这样的朋友？打给谁呢？
+“没有朋友”是因为脱节了。
+读书和社会的脱节，和实践的脱节，和基本人群沟通的脱节。这是很严重的问题，只是不同段位的人很少越级沟通，也就不以为然，可当你突然出现在他们习以为常的生活环境中时，就像沙丁鱼看到了鲶鱼一样，总会带来些搅动，他们沉迷于自身的阶段的环境越深，反应也愈加明显！
+几年前，我总会以为，沙丁鱼不就是一群垃圾？可没想到，沙丁鱼眼中的鲶鱼却也只像个会写字的煞笔。
+至此，算是明了了。
+我脱节了就要接上，尽量知行合一；
+沙丁鱼不是垃圾，鲶鱼也不是煞笔。
+每种生活和见解都是珍贵的、有意义的，但不要用自己的生活环境下产生的想法对别人的作为评头论足。这都是该想，该明白的。不想不思考还死坚持自己的那一套，是有多可悲？
+你Diss人很屌，你长得好看，你有钱，你牛逼，你朋友多，你能喝&amp;hellip;&amp;hellip;这都值得欣慰。因为那真真切切就是你的。你沾沾自喜、洋洋得意、臭美乐呵，都是人之常情，但再怎么自得，也要谦逊，更要适可而止，因为再进一步，就是傻，就是糊涂了！</description>
     </item>
     
   </channel>

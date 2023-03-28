@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.111.3">
     <meta name="description" content="很多时候，我们需要保存用户提供的信息，一种简单的方式时通过模块json来存储数据。">
 <meta name="author" content="XiaoXi">
 
@@ -12,21 +12,21 @@
     <title>Json模块 - XiaoXi Blog</title>
 
     
-    <link href="/css/nucleus.css?1610465270" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1610465270" rel="stylesheet">
-    <link href="/css/hybrid.css?1610465270" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1610465270" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1610465270" rel="stylesheet">
-    <link href="/css/auto-complete.css?1610465270" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1610465270" rel="stylesheet">
-    <link href="/css/theme.css?1610465270" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1610465270" rel="stylesheet">
+    <link href="/css/nucleus.css?1680007256" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1680007256" rel="stylesheet">
+    <link href="/css/hybrid.css?1680007256" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1680007256" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1680007256" rel="stylesheet">
+    <link href="/css/auto-complete.css?1680007256" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1680007256" rel="stylesheet">
+    <link href="/css/theme.css?1680007256" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1680007256" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1610465270" rel="stylesheet">
+    <link href="/css/theme-green.css?1680007256" rel="stylesheet">
     
-    <link href="/css/foo.css?1610465270" rel="stylesheet"><link href="/css/bar.css?1610465270" rel="stylesheet">
+    <link href="/css/foo.css?1680007256" rel="stylesheet"><link href="/css/bar.css?1680007256" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1610465270"></script>
+    <script src="/js/jquery-3.3.1.min.js?1680007256"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -56,14 +56,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1610465270"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1610465270"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1680007256"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1680007256"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1610465270"></script>
+<script type="text/javascript" src="/js/search.js?1680007256"></script>
 
     
   </div>
@@ -114,6 +114,27 @@
       <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="安装Git" class="dd-item ">
         <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
         安装Git
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%89%AF%E6%9C%AC/" title="安装Git2222" class="dd-item ">
+        <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%89%AF%E6%9C%AC/">
+        安装Git2222
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -823,28 +844,28 @@
 </blockquote>
 <h3 id="使用jsondump存储数据">使用json.dump()存储数据</h3>
 <p>使用<code>json.dump()</code>可以轻松的存储数据，<code>json.dump()</code>接受两个参数：要存储的数据以及可用于存储数据的文件==对象==，很多时候在提供第二个参数时，都会错误的提供了文件名称，而不是文件==对象==，例如：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> json
-username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;111&#39;</span>
-<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;name.json&#39;</span>,<span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> name_obj:
-    json<span style="color:#f92672">.</span>dump(username,name<span style="color:#f92672">.</span>json)
-</code></pre></div><p>这时，就会报错：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">NameError</span>: name <span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> defined
-</code></pre></div><p>原因是我们错误向<code>json.dump()</code>传入了参数<code>name.json</code>，这并不是要存储数据的文件==对象==，应该传入参数<code>name_obj</code>。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> json
-username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;111&#39;</span>
-<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;name.json&#39;</span>,<span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> name_obj:
-    json<span style="color:#f92672">.</span>dump(username,name_obj)
-</code></pre></div><p>同时，也要注意在使用<code>json.dump()</code>存储数据时，函数<code>open()</code>需要传递参数<code>'w'</code>，以便获得写入权限。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;111&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;name.json&#39;</span>,<span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> name_obj:
+</span></span><span style="display:flex;"><span>    json<span style="color:#f92672">.</span>dump(username,name<span style="color:#f92672">.</span>json)
+</span></span></code></pre></div><p>这时，就会报错：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">NameError</span>: name <span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> defined
+</span></span></code></pre></div><p>原因是我们错误向<code>json.dump()</code>传入了参数<code>name.json</code>，这并不是要存储数据的文件==对象==，应该传入参数<code>name_obj</code>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;111&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;name.json&#39;</span>,<span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> name_obj:
+</span></span><span style="display:flex;"><span>    json<span style="color:#f92672">.</span>dump(username,name_obj)
+</span></span></code></pre></div><p>同时，也要注意在使用<code>json.dump()</code>存储数据时，函数<code>open()</code>需要传递参数<code>'w'</code>，以便获得写入权限。</p>
 <h3 id="使用jsonload读取数据">使用json.load()读取数据</h3>
 <p>同样的，使用<code>json.load()</code>时，传入的也是文件==对象==：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> json
-
-<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;name.json&#39;</span>) <span style="color:#66d9ef">as</span> name_obj:
-    username_tmp <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(name_obj)
-<span style="color:#66d9ef">print</span>(username_tmp)
-</code></pre></div><p>输出：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">111</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;name.json&#39;</span>) <span style="color:#66d9ef">as</span> name_obj:
+</span></span><span style="display:flex;"><span>    username_tmp <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(name_obj)
+</span></span><span style="display:flex;"><span>print(username_tmp)
+</span></span></code></pre></div><p>输出：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">111</span>
+</span></span></code></pre></div>
 
 <footer class="footline">
 	
@@ -891,6 +912,22 @@ username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1351,19 +1388,19 @@ username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1610465270"></script>
-    <script src="/js/perfect-scrollbar.min.js?1610465270"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1610465270"></script>
-    <script src="/js/jquery.sticky.js?1610465270"></script>
-    <script src="/js/featherlight.min.js?1610465270"></script>
-    <script src="/js/highlight.pack.js?1610465270"></script>
+    <script src="/js/clipboard.min.js?1680007256"></script>
+    <script src="/js/perfect-scrollbar.min.js?1680007256"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1680007256"></script>
+    <script src="/js/jquery.sticky.js?1680007256"></script>
+    <script src="/js/featherlight.min.js?1680007256"></script>
+    <script src="/js/highlight.pack.js?1680007256"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1610465270"></script>
-    <script src="/js/learn.js?1610465270"></script>
-    <script src="/js/hugo-learn.js?1610465270"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1680007256"></script>
+    <script src="/js/learn.js?1680007256"></script>
+    <script src="/js/hugo-learn.js?1680007256"></script>
     
         
-            <script src="/mermaid/mermaid.js?1610465270"></script>
+            <script src="/mermaid/mermaid.js?1680007256"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

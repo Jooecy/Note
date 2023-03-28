@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.111.3">
     <meta name="description" content="测试代码可以使程序面对各种情况都能按照预期那样工作。">
 <meta name="author" content="XiaoXi">
 
@@ -12,21 +12,21 @@
     <title>测试代码之测试函数 - XiaoXi Blog</title>
 
     
-    <link href="/css/nucleus.css?1610465270" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1610465270" rel="stylesheet">
-    <link href="/css/hybrid.css?1610465270" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1610465270" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1610465270" rel="stylesheet">
-    <link href="/css/auto-complete.css?1610465270" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1610465270" rel="stylesheet">
-    <link href="/css/theme.css?1610465270" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1610465270" rel="stylesheet">
+    <link href="/css/nucleus.css?1680007256" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1680007256" rel="stylesheet">
+    <link href="/css/hybrid.css?1680007256" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1680007256" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1680007256" rel="stylesheet">
+    <link href="/css/auto-complete.css?1680007256" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1680007256" rel="stylesheet">
+    <link href="/css/theme.css?1680007256" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1680007256" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1610465270" rel="stylesheet">
+    <link href="/css/theme-green.css?1680007256" rel="stylesheet">
     
-    <link href="/css/foo.css?1610465270" rel="stylesheet"><link href="/css/bar.css?1610465270" rel="stylesheet">
+    <link href="/css/foo.css?1680007256" rel="stylesheet"><link href="/css/bar.css?1680007256" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1610465270"></script>
+    <script src="/js/jquery-3.3.1.min.js?1680007256"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -56,14 +56,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1610465270"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1610465270"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1680007256"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1680007256"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1610465270"></script>
+<script type="text/javascript" src="/js/search.js?1680007256"></script>
 
     
   </div>
@@ -114,6 +114,27 @@
       <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="安装Git" class="dd-item ">
         <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
         安装Git
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%89%AF%E6%9C%AC/" title="安装Git2222" class="dd-item ">
+        <a href="/git/%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%89%AF%E6%9C%AC/">
+        安装Git2222
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -820,97 +841,92 @@
 <h3 id="测试函数">测试函数</h3>
 <h4 id="测试通过">测试通过</h4>
 <p>现在有一个格式化姓名的函数：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,f):
-    a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
-    <span style="color:#66d9ef">return</span> a
-
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,f):
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a
+</span></span></code></pre></div><blockquote>
 <p>这段代码保存在<code>name.py</code></p>
 </blockquote>
 <p>我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的<code>unittest</code>模块编写单元测试：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> unittest
-<span style="color:#f92672">from</span> name <span style="color:#f92672">import</span> print_name
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test_print_name</span>(unittest<span style="color:#f92672">.</span>TestCase):
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_name</span>(self):
-        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
-        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Wang&#34;</span>)
-        
-unittest<span style="color:#f92672">.</span>main()
-</code></pre></div><p>首先，导入模块unittest和要测试的函数<code>print_name()</code>，然后创建一个继承于<code>unittest.TestCase</code>的类<code>Test_print_name</code>，接着创建一个方法<code>test_print_name()</code>，用来测试<code>print_name()</code>，在这个方法中，我们调用了函数<code>print_name()</code>，并在结果（返回值）存储在变量<code>a</code>中。最后，我们使用断言方法<code>assertEqual()</code>判断输出是否是我们期望的。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> unittest
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> name <span style="color:#f92672">import</span> print_name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test_print_name</span>(unittest<span style="color:#f92672">.</span>TestCase):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_name</span>(self):
+</span></span><span style="display:flex;"><span>        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Wang&#34;</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>unittest<span style="color:#f92672">.</span>main()
+</span></span></code></pre></div><p>首先，导入模块unittest和要测试的函数<code>print_name()</code>，然后创建一个继承于<code>unittest.TestCase</code>的类<code>Test_print_name</code>，接着创建一个方法<code>test_print_name()</code>，用来测试<code>print_name()</code>，在这个方法中，我们调用了函数<code>print_name()</code>，并在结果（返回值）存储在变量<code>a</code>中。最后，我们使用断言方法<code>assertEqual()</code>判断输出是否是我们期望的。</p>
 <blockquote>
 <p>代码行<code>unittest.main()</code>让Python运行这个文件中的测试。</p>
 </blockquote>
 <p>运行这个单元测试，得到结果：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">.</span>
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.002</span>s
-
-OK
-</code></pre></div><p>第一行的句点<code>.</code>代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，<code>OK</code>则表示这个测试用例中的所有单元测试都通过了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span>Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.002</span>s
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>OK
+</span></span></code></pre></div><p>第一行的句点<code>.</code>代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，<code>OK</code>则表示这个测试用例中的所有单元测试都通过了。</p>
 <h4 id="测试不通过">测试不通过</h4>
 <p>如果这时修改了函数<code>print_name()</code>，使其多接受一个中间名参数：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,m,f):
-    a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> m<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
-    <span style="color:#66d9ef">return</span> a
-</code></pre></div><p>再次运行函数<code>print_name()</code>的单元测试时，输出如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">E
-<span style="color:#f92672">======================================================================</span>
-ERROR: test_print_name (__main__<span style="color:#f92672">.</span>Test_print_name)
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Traceback (most recent call last):
-  File <span style="color:#e6db74">&#34;/home/joecy/Desktop/TestCode/testname.py&#34;</span>, line <span style="color:#ae81ff">7</span>, <span style="color:#f92672">in</span> test_print_name
-    a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
-<span style="color:#a6e22e">TypeError</span>: print_name() missing <span style="color:#ae81ff">1</span> required positional argument: <span style="color:#e6db74">&#39;f&#39;</span>
-
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.002</span>s
-
-FAILED (errors<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-
-</code></pre></div><p>第一行的字母<code>E</code>，表示有一个测试没通过，第二行告诉我们是哪里发生了错误，第三行是一个标准的<code>traceback</code>，告诉我们调用函数时缺少了一个必不可少的位置参数。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,m,f):
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> m<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a
+</span></span></code></pre></div><p>再次运行函数<code>print_name()</code>的单元测试时，输出如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>E
+</span></span><span style="display:flex;"><span><span style="color:#f92672">======================================================================</span>
+</span></span><span style="display:flex;"><span>ERROR: test_print_name (__main__<span style="color:#f92672">.</span>Test_print_name)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span>Traceback (most recent call last):
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/home/joecy/Desktop/TestCode/testname.py&#34;</span>, line <span style="color:#ae81ff">7</span>, <span style="color:#f92672">in</span> test_print_name
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TypeError</span>: print_name() missing <span style="color:#ae81ff">1</span> required positional argument: <span style="color:#e6db74">&#39;f&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span>Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.002</span>s
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>FAILED (errors<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>第一行的字母<code>E</code>，表示有一个测试没通过，第二行告诉我们是哪里发生了错误，第三行是一个标准的<code>traceback</code>，告诉我们调用函数时缺少了一个必不可少的位置参数。</p>
 <p>测试不通过，说明我们新编写的代码存在问题，要检查刚刚进行的修改，并处理。</p>
 <p>修改后代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,f,m<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>):
-    <span style="color:#66d9ef">if</span> m:
-        a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> m<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
-    <span style="color:#66d9ef">else</span>:
-        a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
-    <span style="color:#66d9ef">return</span> a
-</code></pre></div><p>中间名变为可选的，并添加了<code>if</code>测试。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_name</span>(l,f,m<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> m:
+</span></span><span style="display:flex;"><span>        a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> m<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        a <span style="color:#f92672">=</span> l<span style="color:#f92672">.</span>title() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#f92672">+</span> f<span style="color:#f92672">.</span>title()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a
+</span></span></code></pre></div><p>中间名变为可选的，并添加了<code>if</code>测试。</p>
 <p>再次测试：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">.</span>
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.001</span>s
-
-OK
-
-</code></pre></div><p>通过了！</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span>Ran <span style="color:#ae81ff">1</span> test <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.001</span>s
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>OK
+</span></span></code></pre></div><p>通过了！</p>
 <h4 id="添加新测试">添加新测试</h4>
 <p>函数<code>print_name</code>现在可以处理包含中间名的姓名了，我们也需要再编写一个测试，用于测试包含中间名的姓名：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> unittest
-<span style="color:#f92672">from</span> name <span style="color:#f92672">import</span> print_name
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test_print_name</span>(unittest<span style="color:#f92672">.</span>TestCase):
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_name</span>(self):
-
-        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
-        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Wang&#34;</span>)
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_m_name</span>(self):
-        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>,<span style="color:#e6db74">&#39;li&#39;</span>)
-        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Li Wang&#34;</span>)
-unittest<span style="color:#f92672">.</span>main()
-
-</code></pre></div><p>运行测试，结果如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">..</span>
-<span style="color:#f92672">----------------------------------------------------------------------</span>
-Ran <span style="color:#ae81ff">2</span> tests <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.003</span>s
-
-OK
-
-</code></pre></div><p>OK！测试通过了！</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> unittest
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> name <span style="color:#f92672">import</span> print_name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test_print_name</span>(unittest<span style="color:#f92672">.</span>TestCase):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_name</span>(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Wang&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_print_m_name</span>(self):
+</span></span><span style="display:flex;"><span>        a <span style="color:#f92672">=</span> print_name(<span style="color:#e6db74">&#39;joecy&#39;</span>,<span style="color:#e6db74">&#39;wang&#39;</span>,<span style="color:#e6db74">&#39;li&#39;</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>assertEqual(a,<span style="color:#e6db74">&#34;Joecy Li Wang&#34;</span>)
+</span></span><span style="display:flex;"><span>unittest<span style="color:#f92672">.</span>main()
+</span></span></code></pre></div><p>运行测试，结果如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">..</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span>Ran <span style="color:#ae81ff">2</span> tests <span style="color:#f92672">in</span> <span style="color:#ae81ff">0.003</span>s
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>OK
+</span></span></code></pre></div><p>OK！测试通过了！</p>
 
 
 <footer class="footline">
@@ -958,6 +974,22 @@ OK
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1418,19 +1450,19 @@ OK
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1610465270"></script>
-    <script src="/js/perfect-scrollbar.min.js?1610465270"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1610465270"></script>
-    <script src="/js/jquery.sticky.js?1610465270"></script>
-    <script src="/js/featherlight.min.js?1610465270"></script>
-    <script src="/js/highlight.pack.js?1610465270"></script>
+    <script src="/js/clipboard.min.js?1680007256"></script>
+    <script src="/js/perfect-scrollbar.min.js?1680007256"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1680007256"></script>
+    <script src="/js/jquery.sticky.js?1680007256"></script>
+    <script src="/js/featherlight.min.js?1680007256"></script>
+    <script src="/js/highlight.pack.js?1680007256"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1610465270"></script>
-    <script src="/js/learn.js?1610465270"></script>
-    <script src="/js/hugo-learn.js?1610465270"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1680007256"></script>
+    <script src="/js/learn.js?1680007256"></script>
+    <script src="/js/hugo-learn.js?1680007256"></script>
     
         
-            <script src="/mermaid/mermaid.js?1610465270"></script>
+            <script src="/mermaid/mermaid.js?1680007256"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
