@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on XiaoXi Blog</title>
-    <link>/tags/python/</link>
-    <description>Recent content in Python on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <title>Python on 我的生活与学习</title>
+    <link>//localhost:1313/tags/python/</link>
+    <description>Recent content in Python on 我的生活与学习</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>创建python虚拟环境</title>
-      <link>/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <link>//localhost:1313/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
-      <description>创建虚拟环境使我们可以在虚拟环境中安装某个项目所需要的各种包，并与其他python包相互独立，避免多个项目所需的包互相冲突，而且在部署时可以快速的导出项目所需要的包的列表。
-创建虚拟环境 对于高版本的Python，我们可以直接使用如下名了创建虚拟环境：
-C:\Users\xiaoxi\Desktop&amp;gt;python -m venv sxb_env 激活虚拟环境 创建完成后，即可使用下面的命令激活虚拟环境：
-C:\Users\xiaoxi\Desktop&amp;gt;cd sxb_envC:\Users\xiaoxi\Desktop\sxb_env&amp;gt;C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;Scripts\activate(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt; 当看见环境名sxb_env包含在括号中时，就说明虚拟环境已经成功激活。
-需要关闭虚拟环境时，只需执行：
-(sxb_env) D:\Study\sxb_env\Scripts&amp;gt;deactivate 现在已经成功创建了虚拟环境，并掌握了激活和退出虚拟环境的命令，接下来就进一步创建Django应用了。</description>
+      <guid>//localhost:1313/suixueben/%E5%88%9B%E5%BB%BApython%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <description>创建虚拟环境使我们可以在虚拟环境中安装某个项目所需要的各种包，并与其他python包相互独立，避免多个项目所需的包互相冲突，而且在部署时可以快速的导出项目所需要的包的列表。&#xA;创建虚拟环境 对于高版本的Python，我们可以直接使用如下名了创建虚拟环境：&#xA;C:\Users\xiaoxi\Desktop&amp;gt;python -m venv sxb_env 激活虚拟环境 创建完成后，即可使用下面的命令激活虚拟环境：&#xA;C:\Users\xiaoxi\Desktop&amp;gt;cd sxb_env&#xD;C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;&#xD;C:\Users\xiaoxi\Desktop\sxb_env&amp;gt;Scripts\activate&#xD;(sxb_env) C:\Users\xiaoxi\Desktop\sxb_env&amp;gt; 当看见环境名sxb_env包含在括号中时，就说明虚拟环境已经成功激活。&#xA;需要关闭虚拟环境时，只需执行：&#xA;(sxb_env) D:\Study\sxb_env\Scripts&amp;gt;deactivate 现在已经成功创建了虚拟环境，并掌握了激活和退出虚拟环境的命令，接下来就进一步创建Django应用了。</description>
     </item>
-    
   </channel>
 </rss>

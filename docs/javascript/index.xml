@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript笔记 on XiaoXi Blog</title>
-    <link>/javascript/</link>
-    <description>Recent content in Javascript笔记 on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 20:18:44 +0800</lastBuildDate><atom:link href="/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <title>Javascript笔记 on 我的生活与学习</title>
+    <link>//localhost:1313/javascript/</link>
+    <description>Recent content in Javascript笔记 on 我的生活与学习</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="//localhost:1313/javascript/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

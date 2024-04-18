@@ -1,38 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>urllib on XiaoXi Blog</title>
-    <link>/tags/urllib/</link>
-    <description>Recent content in urllib on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/urllib/index.xml" rel="self" type="application/rss+xml" />
+    <title>Urllib on 我的生活与学习</title>
+    <link>//localhost:1313/tags/urllib/</link>
+    <description>Recent content in Urllib on 我的生活与学习</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/urllib/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>urllib库的使用</title>
-      <link>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <link>//localhost:1313/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-      <description>urllib库是Python内置的HTTP请求库，它包含四个模块：
-request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt 使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
+      <guid>//localhost:1313/python/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>urllib库是Python内置的HTTP请求库，它包含四个模块：&#xA;request：最基本的HTTP请求模块 error：异常处理模块 parse：工具模块 robotparser：识别robots.txt 使用urllib库，我们只需要关心请求的链接和需要传的参数是什么，以及设置请求头。不需要深入到底层去了解它。</description>
     </item>
-    
     <item>
       <title>发送请求</title>
-      <link>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
+      <link>//localhost:1313/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
-      <description>使用urllib的request模块，可以方便的实现请求的发送并得到响应。
-发送请求 urlopen() 抓取Python官网：
-import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.python.org&amp;#34;) print(response.read().decode(&amp;#39;utf-8&amp;#39;)) 部分输出：
-# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; decode(&#39;utf-8&#39;)方法将网页以制定编码解析。
-response是一个HTTPResponse类型的对象：
-print(type(response)) 输出如下：
-&amp;lt;class &amp;#39;http.client.HTTPResponse&amp;#39;&amp;gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。
-例子：
-import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.baidu.com&amp;#34;) print(response.status) print(&amp;#39;\n&amp;#39;,response.getheaders()) print(&amp;#39;\n&amp;#39;,response.getheader(&amp;#39;Server&amp;#39;)) 输出结果：
-200 [(&amp;#39;Accept-Ranges&amp;#39;, &amp;#39;bytes&amp;#39;), (&amp;#39;Cache-Control&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Content-Length&amp;#39;, &amp;#39;227&amp;#39;), (&amp;#39;Content-Type&amp;#39;, &amp;#39;text/html&amp;#39;), (&amp;#39;Date&amp;#39;, &amp;#39;Thu, 09 Aug 2018 14:49:17 GMT&amp;#39;), (&amp;#39;Etag&amp;#39;, &amp;#39;&amp;#34;5b56b4a8-e3&amp;#34;&amp;#39;), (&amp;#39;Last-Modified&amp;#39;, &amp;#39;Tue, 24 Jul 2018 05:10:00 GMT&amp;#39;), (&amp;#39;P3p&amp;#39;, &amp;#39;CP=&amp;#34; OTI DSP COR IVA OUR IND COM &amp;#34;&amp;#39;), (&amp;#39;Pragma&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Server&amp;#39;, &amp;#39;BWS/1.</description>
+      <guid>//localhost:1313/python/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82/</guid>
+      <description>使用urllib的request模块，可以方便的实现请求的发送并得到响应。&#xA;发送请求 urlopen() 抓取Python官网：&#xA;import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.python.org&amp;#34;) print(response.read().decode(&amp;#39;utf-8&amp;#39;)) 部分输出：&#xA;# 部分输出 &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;window.jQuery || document.write(&amp;#39;&amp;lt;script src=&amp;#34;/static/js/libs/jquery-1.8.2.min.js&amp;#34;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;)&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;#34;/static/js/libs/masonry.pkgd.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/static/js/main-min.js&amp;#34; charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; decode(&#39;utf-8&#39;)方法将网页以制定编码解析。&#xA;response是一个HTTPResponse类型的对象：&#xA;print(type(response)) 输出如下：&#xA;&amp;lt;class &amp;#39;http.client.HTTPResponse&amp;#39;&amp;gt; 它包含read()、readinto()、getheader(name)、getheaders()、fileno()等方法，以及msg、version、status、reason、debuglevel、closed等属性。&#xA;例子：&#xA;import urllib.request response = urllib.request.urlopen(&amp;#34;https://www.baidu.com&amp;#34;) print(response.status) print(&amp;#39;\n&amp;#39;,response.getheaders()) print(&amp;#39;\n&amp;#39;,response.getheader(&amp;#39;Server&amp;#39;)) 输出结果：&#xA;200 [(&amp;#39;Accept-Ranges&amp;#39;, &amp;#39;bytes&amp;#39;), (&amp;#39;Cache-Control&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Content-Length&amp;#39;, &amp;#39;227&amp;#39;), (&amp;#39;Content-Type&amp;#39;, &amp;#39;text/html&amp;#39;), (&amp;#39;Date&amp;#39;, &amp;#39;Thu, 09 Aug 2018 14:49:17 GMT&amp;#39;), (&amp;#39;Etag&amp;#39;, &amp;#39;&amp;#34;5b56b4a8-e3&amp;#34;&amp;#39;), (&amp;#39;Last-Modified&amp;#39;, &amp;#39;Tue, 24 Jul 2018 05:10:00 GMT&amp;#39;), (&amp;#39;P3p&amp;#39;, &amp;#39;CP=&amp;#34; OTI DSP COR IVA OUR IND COM &amp;#34;&amp;#39;), (&amp;#39;Pragma&amp;#39;, &amp;#39;no-cache&amp;#39;), (&amp;#39;Server&amp;#39;, &amp;#39;BWS/1.</description>
     </item>
-    
   </channel>
 </rss>

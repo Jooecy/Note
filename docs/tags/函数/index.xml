@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>函数 on XiaoXi Blog</title>
-    <link>/tags/%E5%87%BD%E6%95%B0/</link>
-    <description>Recent content in 函数 on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <title>函数 on 我的生活与学习</title>
+    <link>//localhost:1313/tags/%E5%87%BD%E6%95%B0/</link>
+    <description>Recent content in 函数 on 我的生活与学习</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>函数</title>
-      <link>/python/%E5%87%BD%E6%95%B0/</link>
+      <link>//localhost:1313/python/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E5%87%BD%E6%95%B0/</guid>
-      <description>函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。
-定义函数 def hello(): print(&amp;#39;hello&amp;#39;) hello() 输出：
-hello 我们使用def关键字来定义函数，具体规则如下：
-函数代码块以 def关键词开头，后接函数名称和圆括号()。 任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数。 函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。 函数内容以冒:号起始，并且缩进。 return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。 向函数传递参数 例如我们定义一个计算长方形面积的函数：
-def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 示例中，函数x可以接受两个参数：形参a和形参b。在调用函数x的时候，我们向其传递了实参4、5，结果显示它成功计算除了面积。
-参数传递 函数中可能包含多个形参，因此我们需要传递多个实参，依据不同情况，参数传递的方式很多：位置参数、默认参数、关键字参数、可变参数等。
-位置参数 位置参数需要按照正确的顺序传入，按照位置关联依次将实参传递给形参的传递方式叫做位置参数：
-如上个例子：
-def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 值4、5按照顺序赋值给参数a、b。参数a、b都是位置参数。
-默认参数 如果我们想要计算的长方形面积的宽大多时候都是长度为5，就可以使用默认参数：
-def x(a,b=5): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4) 20 在示例中，参数b就是一个默认参数，默认值为2，当我们调用函数x(4)时，相当于我们调用了x(4,5)。设置默认参数时，必选参数在前，默认参数在后。
-可变参数 可变参数就是传入的参数个数是可变的，可以是1个、2个到任意个，还可以是0个。
-def x(a,*b): print(a) for i in b: print(i) x(1) x(1,1,2,3,4,5,7) 输出：</description>
+      <guid>//localhost:1313/python/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数是带名字的、可被重复使用的代码块，用来完成单一或是相关联的功能。例如Python内置的print()、len()、range()等就是函数，除此之外我们也可以自定义函数。&#xA;定义函数 def hello(): print(&amp;#39;hello&amp;#39;) hello() 输出：&#xA;hello 我们使用def关键字来定义函数，具体规则如下：&#xA;函数代码块以 def关键词开头，后接函数名称和圆括号()。 任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数。 函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。 函数内容以冒:号起始，并且缩进。 return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。 向函数传递参数 例如我们定义一个计算长方形面积的函数：&#xA;def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 示例中，函数x可以接受两个参数：形参a和形参b。在调用函数x的时候，我们向其传递了实参4、5，结果显示它成功计算除了面积。&#xA;参数传递 函数中可能包含多个形参，因此我们需要传递多个实参，依据不同情况，参数传递的方式很多：位置参数、默认参数、关键字参数、可变参数等。&#xA;位置参数 位置参数需要按照正确的顺序传入，按照位置关联依次将实参传递给形参的传递方式叫做位置参数：&#xA;如上个例子：&#xA;def x(a,b): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4,5) 20 值4、5按照顺序赋值给参数a、b。参数a、b都是位置参数。&#xA;默认参数 如果我们想要计算的长方形面积的宽大多时候都是长度为5，就可以使用默认参数：&#xA;def x(a,b=5): s = a * b return s &amp;gt;&amp;gt;&amp;gt; x(4) 20 在示例中，参数b就是一个默认参数，默认值为2，当我们调用函数x(4)时，相当于我们调用了x(4,5)。设置默认参数时，必选参数在前，默认参数在后。&#xA;可变参数 可变参数就是传入的参数个数是可变的，可以是1个、2个到任意个，还可以是0个。&#xA;def x(a,*b): print(a) for i in b: print(i) x(1) x(1,1,2,3,4,5,7) 输出：</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,280 +1,222 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on XiaoXi Blog</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <title>Tags on 我的生活与学习</title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on 我的生活与学习</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django</title>
-      <link>/tags/django/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/django/</guid>
+      <link>//localhost:1313/tags/django/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/django/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/python/</guid>
+      <link>//localhost:1313/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>变量</title>
-      <link>/tags/%E5%8F%98%E9%87%8F/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E5%8F%98%E9%87%8F/</guid>
+      <link>//localhost:1313/tags/%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E5%8F%98%E9%87%8F/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>数据类型</title>
-      <link>/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <link>//localhost:1313/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>虚拟环境</title>
-      <link>/tags/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <link>//localhost:1313/tags/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>if语句</title>
-      <link>/tags/if%E8%AF%AD%E5%8F%A5/</link>
-      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/if%E8%AF%AD%E5%8F%A5/</guid>
+      <title>If语句</title>
+      <link>//localhost:1313/tags/if%E8%AF%AD%E5%8F%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/if%E8%AF%AD%E5%8F%A5/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>assertEqual()</title>
-      <link>/tags/assertequal/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/assertequal/</guid>
+      <title>AssertEqual()</title>
+      <link>//localhost:1313/tags/assertequal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/assertequal/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>assertIn()</title>
-      <link>/tags/assertin/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/assertin/</guid>
+      <title>AssertIn()</title>
+      <link>//localhost:1313/tags/assertin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/assertin/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>for循环</title>
-      <link>/tags/for%E5%BE%AA%E7%8E%AF/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/for%E5%BE%AA%E7%8E%AF/</guid>
+      <title>For循环</title>
+      <link>//localhost:1313/tags/for%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/for%E5%BE%AA%E7%8E%AF/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>input()</title>
-      <link>/tags/input/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/input/</guid>
+      <title>Input()</title>
+      <link>//localhost:1313/tags/input/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/input/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>json.dump()</title>
-      <link>/tags/json.dump/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/json.dump/</guid>
+      <title>Json.dump()</title>
+      <link>//localhost:1313/tags/json.dump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/json.dump/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>json.load()</title>
-      <link>/tags/json.load/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/json.load/</guid>
+      <title>Json.load()</title>
+      <link>//localhost:1313/tags/json.load/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/json.load/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>open()</title>
-      <link>/tags/open/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/open/</guid>
+      <title>Open()</title>
+      <link>//localhost:1313/tags/open/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/open/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>read()</title>
-      <link>/tags/read/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/read/</guid>
+      <title>Read()</title>
+      <link>//localhost:1313/tags/read/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/read/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>readlines()</title>
-      <link>/tags/readlines/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/readlines/</guid>
+      <title>Readlines()</title>
+      <link>//localhost:1313/tags/readlines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/readlines/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>requests</title>
-      <link>/tags/requests/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/requests/</guid>
+      <title>Requests</title>
+      <link>//localhost:1313/tags/requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/requests/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>setUp()</title>
-      <link>/tags/setup/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/setup/</guid>
+      <title>SetUp()</title>
+      <link>//localhost:1313/tags/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/setup/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>unittest</title>
-      <link>/tags/unittest/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/unittest/</guid>
+      <title>Unittest</title>
+      <link>//localhost:1313/tags/unittest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/unittest/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>urllib</title>
-      <link>/tags/urllib/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/urllib/</guid>
+      <title>Urllib</title>
+      <link>//localhost:1313/tags/urllib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/urllib/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>urlopen()</title>
-      <link>/tags/urlopen/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/urlopen/</guid>
+      <title>Urlopen()</title>
+      <link>//localhost:1313/tags/urlopen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/urlopen/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>while</title>
-      <link>/tags/while/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/while/</guid>
+      <title>While</title>
+      <link>//localhost:1313/tags/while/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/while/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>with</title>
-      <link>/tags/with/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/with/</guid>
+      <title>With</title>
+      <link>//localhost:1313/tags/with/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/with/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>感想</title>
-      <link>/tags/%E6%84%9F%E6%83%B3/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E6%84%9F%E6%83%B3/</guid>
+      <link>//localhost:1313/tags/%E6%84%9F%E6%83%B3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E6%84%9F%E6%83%B3/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>函数</title>
-      <link>/tags/%E5%87%BD%E6%95%B0/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E5%87%BD%E6%95%B0/</guid>
+      <link>//localhost:1313/tags/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E5%87%BD%E6%95%B0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>类</title>
-      <link>/tags/%E7%B1%BB/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E7%B1%BB/</guid>
+      <link>//localhost:1313/tags/%E7%B1%BB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E7%B1%BB/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>列表</title>
-      <link>/tags/%E5%88%97%E8%A1%A8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E5%88%97%E8%A1%A8/</guid>
+      <link>//localhost:1313/tags/%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E5%88%97%E8%A1%A8/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>爬虫</title>
-      <link>/tags/%E7%88%AC%E8%99%AB/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E7%88%AC%E8%99%AB/</guid>
+      <link>//localhost:1313/tags/%E7%88%AC%E8%99%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E7%88%AC%E8%99%AB/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>随笔</title>
-      <link>/tags/%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E9%9A%8F%E7%AC%94/</guid>
+      <link>//localhost:1313/tags/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>循环</title>
-      <link>/tags/%E5%BE%AA%E7%8E%AF/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E5%BE%AA%E7%8E%AF/</guid>
+      <link>//localhost:1313/tags/%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E5%BE%AA%E7%8E%AF/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>字典</title>
-      <link>/tags/%E5%AD%97%E5%85%B8/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E5%AD%97%E5%85%B8/</guid>
+      <link>//localhost:1313/tags/%E5%AD%97%E5%85%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E5%AD%97%E5%85%B8/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

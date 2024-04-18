@@ -1,41 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>unittest on XiaoXi Blog</title>
-    <link>/tags/unittest/</link>
-    <description>Recent content in unittest on XiaoXi Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/unittest/index.xml" rel="self" type="application/rss+xml" />
+    <title>Unittest on 我的生活与学习</title>
+    <link>//localhost:1313/tags/unittest/</link>
+    <description>Recent content in Unittest on 我的生活与学习</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/unittest/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试代码之测试函数</title>
-      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</link>
+      <link>//localhost:1313/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</guid>
-      <description>测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。
-测试函数 测试通过 现在有一个格式化姓名的函数：
-def print_name(l,f): a = l.title() + &amp;#39; &amp;#39; + f.title() return a 这段代码保存在name.py
-我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的unittest模块编写单元测试：
-import unittest from name import print_name class Test_print_name(unittest.TestCase): def test_print_name(self): a = print_name(&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;) self.assertEqual(a,&amp;#34;Joecy Wang&amp;#34;) unittest.main() 首先，导入模块unittest和要测试的函数print_name()，然后创建一个继承于unittest.TestCase的类Test_print_name，接着创建一个方法test_print_name()，用来测试print_name()，在这个方法中，我们调用了函数print_name()，并在结果（返回值）存储在变量a中。最后，我们使用断言方法assertEqual()判断输出是否是我们期望的。
-代码行unittest.main()让Python运行这个文件中的测试。
-运行这个单元测试，得到结果：
-. ---------------------------------------------------------------------- Ran 1 test in 0.002s OK 第一行的句点.代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，OK则表示这个测试用例中的所有单元测试都通过了。
-测试不通过 如果这时修改了函数print_name()，使其多接受一个中间名参数：
-def print_name(l,m,f): a = l.title() + &amp;#39; &amp;#39; + m.title() + &amp;#39; &amp;#39;+ f.title() return a 再次运行函数print_name()的单元测试时，输出如下：
-E ====================================================================== ERROR: test_print_name (__main__.Test_print_name) ---------------------------------------------------------------------- Traceback (most recent call last): File &amp;#34;/home/joecy/Desktop/TestCode/testname.</description>
+      <guid>//localhost:1313/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0/</guid>
+      <description>测试代码可以使程序面对各种情况都能按照预期那样工作。编写单元测试，如果我们对已经通过该单元测试的代码进行了修改，那么再进行一次单元测试，可以快速定位程序问题——如果通过了，说明我们的修改未对原程序造成影响；如果没通过，就说明我们的修改存在问题，要么修改代码，要么修改测试。&#xA;测试函数 测试通过 现在有一个格式化姓名的函数：&#xA;def print_name(l,f): a = l.title() + &amp;#39; &amp;#39; + f.title() return a 这段代码保存在name.py&#xA;我们要测试这段代码在处理我们提供的姓名时能否正确工作。这时可以使用Python自带的unittest模块编写单元测试：&#xA;import unittest from name import print_name class Test_print_name(unittest.TestCase): def test_print_name(self): a = print_name(&amp;#39;joecy&amp;#39;,&amp;#39;wang&amp;#39;) self.assertEqual(a,&amp;#34;Joecy Wang&amp;#34;) unittest.main() 首先，导入模块unittest和要测试的函数print_name()，然后创建一个继承于unittest.TestCase的类Test_print_name，接着创建一个方法test_print_name()，用来测试print_name()，在这个方法中，我们调用了函数print_name()，并在结果（返回值）存储在变量a中。最后，我们使用断言方法assertEqual()判断输出是否是我们期望的。&#xA;代码行unittest.main()让Python运行这个文件中的测试。&#xA;运行这个单元测试，得到结果：&#xA;. ---------------------------------------------------------------------- Ran 1 test in 0.002s OK 第一行的句点.代表有一个测试通过了，下一行显示的是Python运行这个测试的耗时，OK则表示这个测试用例中的所有单元测试都通过了。&#xA;测试不通过 如果这时修改了函数print_name()，使其多接受一个中间名参数：&#xA;def print_name(l,m,f): a = l.title() + &amp;#39; &amp;#39; + m.title() + &amp;#39; &amp;#39;+ f.title() return a 再次运行函数print_name()的单元测试时，输出如下：&#xA;E ====================================================================== ERROR: test_print_name (__main__.Test_print_name) ---------------------------------------------------------------------- Traceback (most recent call last): File &amp;#34;/home/joecy/Desktop/TestCode/testname.</description>
     </item>
-    
     <item>
       <title>测试代码之测试类</title>
-      <link>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
+      <link>//localhost:1313/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
-      <description>类的测试于函数的测试类似，但也有些许不同。
-测试类 先写出一个用于测试的类，并存储在diaocha.py中：
-class Dc(): &amp;#39;&amp;#39;&amp;#39;收集匿名调查问卷&amp;#39;&amp;#39;&amp;#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：
-import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test_oneres(self): &amp;#39;&amp;#39;&amp;#39;测试存储一个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#34;你是中国人嘛？&amp;#34; mydiaoche = Dc(question) mydiaoche.store_res(&amp;#39;是&amp;#39;) self.assertIn(&amp;#39;是&amp;#39;,mydiaoche.responses) def test_more_res(self): &amp;#39;&amp;#39;&amp;#39;测试存储多个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#39;你是中国人？&amp;#39; mydiaocha = Dc(question) huida = [&amp;#39;是&amp;#39;,&amp;#39;ok&amp;#39;,&amp;#39;你猜&amp;#39;] for i in huida: mydiaocha.store_res(i) for j in huida: self.</description>
+      <guid>//localhost:1313/python/%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81%E4%B9%8B%E6%B5%8B%E8%AF%95%E7%B1%BB/</guid>
+      <description>类的测试于函数的测试类似，但也有些许不同。&#xA;测试类 先写出一个用于测试的类，并存储在diaocha.py中：&#xA;class Dc(): &amp;#39;&amp;#39;&amp;#39;收集匿名调查问卷&amp;#39;&amp;#39;&amp;#39; def __init__(self,question): self.question = question self.responses = [] def printquestion(self): ‘’‘打印问题’‘’ print(self.question) def store_res(self,newres): ‘’‘存储答案’‘’ self.responses.append(newres) def show_results(self): ‘’‘打印全部答案’‘’ for i in self.responses: print(i) 接下来我们编写测试，用于测试Dc中的方法store_res()能否正常存储答案：&#xA;import unittest from diaocha import Dc class TestDc(unittest.TestCase): def test_oneres(self): &amp;#39;&amp;#39;&amp;#39;测试存储一个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#34;你是中国人嘛？&amp;#34; mydiaoche = Dc(question) mydiaoche.store_res(&amp;#39;是&amp;#39;) self.assertIn(&amp;#39;是&amp;#39;,mydiaoche.responses) def test_more_res(self): &amp;#39;&amp;#39;&amp;#39;测试存储多个答案&amp;#39;&amp;#39;&amp;#39; question = &amp;#39;你是中国人？&amp;#39; mydiaocha = Dc(question) huida = [&amp;#39;是&amp;#39;,&amp;#39;ok&amp;#39;,&amp;#39;你猜&amp;#39;] for i in huida: mydiaocha.store_res(i) for j in huida: self.</description>
     </item>
-    
   </channel>
 </rss>
